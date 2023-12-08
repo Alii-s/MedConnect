@@ -7,3 +7,13 @@ C:\Users\Ali\Desktop\DBapplication\DBapplication\obj\x86\Debug\DBapplication.pdb
 C:\Users\Ali\Desktop\DBapplication\DBapplication\bin\Debug\DBapplication.exe.config
 C:\Users\Ali\Desktop\DBapplication\DBapplication\bin\Debug\DBapplication.exe
 C:\Users\Ali\Desktop\DBapplication\DBapplication\bin\Debug\DBapplication.pdb
+C:\Users\Ali\Desktop\MedConnect\MedConnect\DBapplication\bin\Debug\MedConnect.exe.config
+C:\Users\Ali\Desktop\MedConnect\MedConnect\DBapplication\bin\Debug\MedConnect.exe
+C:\Users\Ali\Desktop\MedConnect\MedConnect\DBapplication\bin\Debug\MedConnect.pdb
+C:\Users\Ali\Desktop\MedConnect\MedConnect\DBapplication\obj\x86\Debug\MedConnect.csproj.AssemblyReference.cache
+C:\Users\Ali\Desktop\MedConnect\MedConnect\DBapplication\obj\x86\Debug\MedConnect.Properties.Resources.resources
+C:\Users\Ali\Desktop\MedConnect\MedConnect\DBapplication\obj\x86\Debug\MedConnect.Trigger.resources
+C:\Users\Ali\Desktop\MedConnect\MedConnect\DBapplication\obj\x86\Debug\MedConnect.csproj.GenerateResource.cache
+C:\Users\Ali\Desktop\MedConnect\MedConnect\DBapplication\obj\x86\Debug\MedConnect.csproj.CoreCompileInputs.cache
+C:\Users\Ali\Desktop\MedConnect\MedConnect\DBapplication\obj\x86\Debug\MedConnect.exe
+C:\Users\Ali\Desktop\MedConnect\MedConnect\DBapplication\obj\x86\Debug\MedConnect.pdb
