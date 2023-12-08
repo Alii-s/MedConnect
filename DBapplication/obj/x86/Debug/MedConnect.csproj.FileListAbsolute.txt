@@ -1,0 +1,9 @@
+C:\Users\Ali\Desktop\DBapplication\DBapplication\obj\x86\Debug\MedConnect.csproj.AssemblyReference.cache
+C:\Users\Ali\Desktop\DBapplication\DBapplication\obj\x86\Debug\DBapplication.Properties.Resources.resources
+C:\Users\Ali\Desktop\DBapplication\DBapplication\obj\x86\Debug\MedConnect.csproj.GenerateResource.cache
+C:\Users\Ali\Desktop\DBapplication\DBapplication\obj\x86\Debug\MedConnect.csproj.CoreCompileInputs.cache
+C:\Users\Ali\Desktop\DBapplication\DBapplication\obj\x86\Debug\DBapplication.exe
+C:\Users\Ali\Desktop\DBapplication\DBapplication\obj\x86\Debug\DBapplication.pdb
+C:\Users\Ali\Desktop\DBapplication\DBapplication\bin\Debug\DBapplication.exe.config
+C:\Users\Ali\Desktop\DBapplication\DBapplication\bin\Debug\DBapplication.exe
+C:\Users\Ali\Desktop\DBapplication\DBapplication\bin\Debug\DBapplication.pdb
