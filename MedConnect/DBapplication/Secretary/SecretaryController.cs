@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace MedConnect.Secertary
 {
-    internal class SecertaryController
+    internal class SecretaryController
     {
     }
 }

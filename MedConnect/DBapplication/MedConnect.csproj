@@ -52,6 +52,10 @@
     <Compile Include="Admin\AdminController.cs" />
     <Compile Include="Controller.cs" />
     <Compile Include="DBManager.cs" />
+    <Compile Include="Doctor\DoctorController.cs" />
+    <Compile Include="Patient\PatientController.cs" />
+    <Compile Include="Pharmacist\PharmacistController.cs" />
+    <Compile Include="Secretary\SecretaryController.cs" />
     <Compile Include="Trigger.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -84,12 +88,7 @@
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Doctor\" />
-    <Folder Include="Patient\" />
-    <Folder Include="Pharmacist\" />
-    <Folder Include="Secertary\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
