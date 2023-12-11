@@ -279,7 +279,7 @@ namespace MedConnect.Patient
                 }
             }
             // If it's not a letter, allow Backspace and Space
-            else if (e.KeyChar != (char)Keys.Back && e.KeyChar != (char)Keys.Space)
+            else if (e.KeyChar != (char)Keys.Back)
             {
                 // Suppress the key press
                 e.Handled = true;
