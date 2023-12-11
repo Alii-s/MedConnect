@@ -19,7 +19,9 @@ namespace MedConnect.Patient
 
         private void updatInfo_Click(object sender, EventArgs e)
         {
-
+            this.Hide();
+            Patient_Info patient_Info = new Patient_Info();
+            patient_Info.Show();
         }
 
         private void button3_Click(object sender, EventArgs e)

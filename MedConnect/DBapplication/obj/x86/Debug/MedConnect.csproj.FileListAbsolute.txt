@@ -23,3 +23,4 @@ C:\Users\Ali\Desktop\MedConnect\MedConnect\DBapplication\bin\Debug\ComponentFact
 C:\Users\Ali\Desktop\MedConnect\MedConnect\DBapplication\bin\Debug\ComponentFactory.Krypton.Toolkit.pdb
 C:\Users\Ali\Desktop\MedConnect\MedConnect\DBapplication\obj\x86\Debug\MedConnect.Patient.PatientMainForm.resources
 C:\Users\Ali\Desktop\MedConnect\MedConnect\DBapplication\obj\x86\Debug\MedConnect.csproj.CopyComplete
+C:\Users\Ali\Desktop\MedConnect\MedConnect\DBapplication\obj\x86\Debug\MedConnect.Patient.Patient_Info.resources
