@@ -51,9 +51,10 @@
             this.updatInfo.Font = new System.Drawing.Font("OCR A Extended", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.updatInfo.Image = ((System.Drawing.Image)(resources.GetObject("updatInfo.Image")));
             this.updatInfo.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.updatInfo.Location = new System.Drawing.Point(141, 262);
+            this.updatInfo.Location = new System.Drawing.Point(94, 170);
+            this.updatInfo.Margin = new System.Windows.Forms.Padding(2);
             this.updatInfo.Name = "updatInfo";
-            this.updatInfo.Size = new System.Drawing.Size(304, 260);
+            this.updatInfo.Size = new System.Drawing.Size(203, 169);
             this.updatInfo.TabIndex = 1;
             this.updatInfo.Text = "Update Info";
             this.updatInfo.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -69,9 +70,10 @@
             this.button1.Font = new System.Drawing.Font("OCR A Extended", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
             this.button1.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.button1.Location = new System.Drawing.Point(561, 262);
+            this.button1.Location = new System.Drawing.Point(374, 170);
+            this.button1.Margin = new System.Windows.Forms.Padding(2);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(370, 260);
+            this.button1.Size = new System.Drawing.Size(247, 169);
             this.button1.TabIndex = 2;
             this.button1.Text = "View Medical Records";
             this.button1.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -85,9 +87,10 @@
             this.billsAndPayment.Font = new System.Drawing.Font("OCR A Extended", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.billsAndPayment.Image = ((System.Drawing.Image)(resources.GetObject("billsAndPayment.Image")));
             this.billsAndPayment.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.billsAndPayment.Location = new System.Drawing.Point(1018, 262);
+            this.billsAndPayment.Location = new System.Drawing.Point(679, 170);
+            this.billsAndPayment.Margin = new System.Windows.Forms.Padding(2);
             this.billsAndPayment.Name = "billsAndPayment";
-            this.billsAndPayment.Size = new System.Drawing.Size(327, 260);
+            this.billsAndPayment.Size = new System.Drawing.Size(218, 169);
             this.billsAndPayment.TabIndex = 3;
             this.billsAndPayment.Text = "Bills and Payments";
             this.billsAndPayment.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -101,9 +104,10 @@
             this.button3.Font = new System.Drawing.Font("OCR A Extended", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button3.Image = ((System.Drawing.Image)(resources.GetObject("button3.Image")));
             this.button3.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.button3.Location = new System.Drawing.Point(330, 602);
+            this.button3.Location = new System.Drawing.Point(220, 391);
+            this.button3.Margin = new System.Windows.Forms.Padding(2);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(304, 248);
+            this.button3.Size = new System.Drawing.Size(203, 161);
             this.button3.TabIndex = 4;
             this.button3.Text = "Reservations";
             this.button3.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -118,9 +122,10 @@
             this.rateSession.Font = new System.Drawing.Font("OCR A Extended", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rateSession.Image = ((System.Drawing.Image)(resources.GetObject("rateSession.Image")));
             this.rateSession.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.rateSession.Location = new System.Drawing.Point(813, 602);
+            this.rateSession.Location = new System.Drawing.Point(542, 391);
+            this.rateSession.Margin = new System.Windows.Forms.Padding(2);
             this.rateSession.Name = "rateSession";
-            this.rateSession.Size = new System.Drawing.Size(304, 248);
+            this.rateSession.Size = new System.Drawing.Size(203, 161);
             this.rateSession.TabIndex = 5;
             this.rateSession.Text = "Rate Session";
             this.rateSession.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -131,25 +136,27 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("OCR A Extended", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Black;
-            this.label1.Location = new System.Drawing.Point(360, 58);
+            this.label1.Location = new System.Drawing.Point(240, 38);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(247, 75);
+            this.label1.Size = new System.Drawing.Size(167, 50);
             this.label1.TabIndex = 0;
             this.label1.Text = "Hello";
             // 
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(141, 22);
+            this.pictureBox1.Location = new System.Drawing.Point(94, 14);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(213, 140);
+            this.pictureBox1.Size = new System.Drawing.Size(142, 91);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(196)))), ((int)(((byte)(196)))), ((int)(((byte)(196)))));
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(157)))), ((int)(((byte)(209)))), ((int)(((byte)(255)))));
             this.panel1.Controls.Add(this.logOut);
             this.panel1.Controls.Add(this.closeApplication);
             this.panel1.Controls.Add(this.pictureBox1);
@@ -157,8 +164,9 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.ForeColor = System.Drawing.Color.White;
             this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1504, 191);
+            this.panel1.Size = new System.Drawing.Size(1003, 124);
             this.panel1.TabIndex = 0;
             // 
             // logOut
@@ -168,9 +176,10 @@
             this.logOut.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.logOut.Font = new System.Drawing.Font("OCR A Extended", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.logOut.Image = ((System.Drawing.Image)(resources.GetObject("logOut.Image")));
-            this.logOut.Location = new System.Drawing.Point(16, 22);
+            this.logOut.Location = new System.Drawing.Point(11, 14);
+            this.logOut.Margin = new System.Windows.Forms.Padding(2);
             this.logOut.Name = "logOut";
-            this.logOut.Size = new System.Drawing.Size(68, 57);
+            this.logOut.Size = new System.Drawing.Size(45, 37);
             this.logOut.TabIndex = 7;
             this.logOut.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.logOut.UseVisualStyleBackColor = true;
@@ -182,9 +191,10 @@
             this.closeApplication.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.closeApplication.Font = new System.Drawing.Font("OCR A Extended", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.closeApplication.Image = ((System.Drawing.Image)(resources.GetObject("closeApplication.Image")));
-            this.closeApplication.Location = new System.Drawing.Point(1434, 3);
+            this.closeApplication.Location = new System.Drawing.Point(956, 2);
+            this.closeApplication.Margin = new System.Windows.Forms.Padding(2);
             this.closeApplication.Name = "closeApplication";
-            this.closeApplication.Size = new System.Drawing.Size(68, 57);
+            this.closeApplication.Size = new System.Drawing.Size(45, 37);
             this.closeApplication.TabIndex = 6;
             this.closeApplication.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.closeApplication.UseVisualStyleBackColor = true;
@@ -192,17 +202,19 @@
             // 
             // PatientMainForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.DarkGray;
-            this.ClientSize = new System.Drawing.Size(1504, 902);
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(241)))), ((int)(((byte)(255)))));
+            this.ClientSize = new System.Drawing.Size(1003, 586);
             this.Controls.Add(this.rateSession);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.billsAndPayment);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.updatInfo);
             this.Controls.Add(this.panel1);
+            this.ForeColor = System.Drawing.Color.Black;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "PatientMainForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Patient Main Form";
