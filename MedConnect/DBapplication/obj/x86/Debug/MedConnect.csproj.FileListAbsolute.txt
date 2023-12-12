@@ -24,3 +24,20 @@ C:\Users\Ali\Desktop\MedConnect\MedConnect\DBapplication\bin\Debug\ComponentFact
 C:\Users\Ali\Desktop\MedConnect\MedConnect\DBapplication\obj\x86\Debug\MedConnect.Patient.PatientMainForm.resources
 C:\Users\Ali\Desktop\MedConnect\MedConnect\DBapplication\obj\x86\Debug\MedConnect.csproj.CopyComplete
 C:\Users\Ali\Desktop\MedConnect\MedConnect\DBapplication\obj\x86\Debug\MedConnect.Patient.Patient_Info.resources
+C:\Users\p c\OneDrive\Desktop\Pro\MedConnect\MedConnect\DBapplication\bin\Debug\MedConnect.exe.config
+C:\Users\p c\OneDrive\Desktop\Pro\MedConnect\MedConnect\DBapplication\bin\Debug\MedConnect.exe
+C:\Users\p c\OneDrive\Desktop\Pro\MedConnect\MedConnect\DBapplication\bin\Debug\MedConnect.pdb
+C:\Users\p c\OneDrive\Desktop\Pro\MedConnect\MedConnect\DBapplication\bin\Debug\ComponentFactory.Krypton.Ribbon.pdb
+C:\Users\p c\OneDrive\Desktop\Pro\MedConnect\MedConnect\DBapplication\bin\Debug\ComponentFactory.Krypton.Toolkit.pdb
+C:\Users\p c\OneDrive\Desktop\Pro\MedConnect\MedConnect\DBapplication\obj\x86\Debug\MedConnect.csproj.AssemblyReference.cache
+C:\Users\p c\OneDrive\Desktop\Pro\MedConnect\MedConnect\DBapplication\obj\x86\Debug\MedConnect.csproj.SuggestedBindingRedirects.cache
+C:\Users\p c\OneDrive\Desktop\Pro\MedConnect\MedConnect\DBapplication\obj\x86\Debug\MedConnect.Patient.PatientMainForm.resources
+C:\Users\p c\OneDrive\Desktop\Pro\MedConnect\MedConnect\DBapplication\obj\x86\Debug\MedConnect.Patient.Patient_Info.resources
+C:\Users\p c\OneDrive\Desktop\Pro\MedConnect\MedConnect\DBapplication\obj\x86\Debug\MedConnect.Properties.Resources.resources
+C:\Users\p c\OneDrive\Desktop\Pro\MedConnect\MedConnect\DBapplication\obj\x86\Debug\MedConnect.Trigger.resources
+C:\Users\p c\OneDrive\Desktop\Pro\MedConnect\MedConnect\DBapplication\obj\x86\Debug\MedConnect.csproj.GenerateResource.cache
+C:\Users\p c\OneDrive\Desktop\Pro\MedConnect\MedConnect\DBapplication\obj\x86\Debug\MedConnect.csproj.CoreCompileInputs.cache
+C:\Users\p c\OneDrive\Desktop\Pro\MedConnect\MedConnect\DBapplication\obj\x86\Debug\MedConnect.csproj.CopyComplete
+C:\Users\p c\OneDrive\Desktop\Pro\MedConnect\MedConnect\DBapplication\obj\x86\Debug\MedConnect.exe
+C:\Users\p c\OneDrive\Desktop\Pro\MedConnect\MedConnect\DBapplication\obj\x86\Debug\MedConnect.pdb
+C:\Users\p c\OneDrive\Desktop\Pro\MedConnect\MedConnect\DBapplication\obj\x86\Debug\MedConnect.Secretary.Secretary.resources

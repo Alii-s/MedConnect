@@ -74,6 +74,12 @@
       <DependentUpon>Patient_Info.cs</DependentUpon>
     </Compile>
     <Compile Include="Pharmacist\PharmacistController.cs" />
+    <Compile Include="Secretary\Secretary.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Secretary\Secretary.Designer.cs">
+      <DependentUpon>Secretary.cs</DependentUpon>
+    </Compile>
     <Compile Include="Secretary\SecretaryController.cs" />
     <Compile Include="Trigger.cs">
       <SubType>Form</SubType>
@@ -99,6 +105,9 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="Secretary\Secretary.resx">
+      <DependentUpon>Secretary.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Trigger.resx">
       <DependentUpon>Trigger.cs</DependentUpon>
     </EmbeddedResource>
@@ -115,6 +124,30 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Icons\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\patient.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\patient1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bill.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\booking.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\review.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
