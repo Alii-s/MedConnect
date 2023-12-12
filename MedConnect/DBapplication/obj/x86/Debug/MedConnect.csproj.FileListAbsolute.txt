@@ -41,3 +41,4 @@ C:\Users\p c\OneDrive\Desktop\Pro\MedConnect\MedConnect\DBapplication\obj\x86\De
 C:\Users\p c\OneDrive\Desktop\Pro\MedConnect\MedConnect\DBapplication\obj\x86\Debug\MedConnect.exe
 C:\Users\p c\OneDrive\Desktop\Pro\MedConnect\MedConnect\DBapplication\obj\x86\Debug\MedConnect.pdb
 C:\Users\p c\OneDrive\Desktop\Pro\MedConnect\MedConnect\DBapplication\obj\x86\Debug\MedConnect.Secretary.Secretary.resources
+C:\Users\Ali\Desktop\MedConnect\MedConnect\DBapplication\obj\x86\Debug\MedConnect.Secretary.Secretary.resources
