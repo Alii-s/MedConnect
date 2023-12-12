@@ -42,3 +42,20 @@ C:\Users\p c\OneDrive\Desktop\Pro\MedConnect\MedConnect\DBapplication\obj\x86\De
 C:\Users\p c\OneDrive\Desktop\Pro\MedConnect\MedConnect\DBapplication\obj\x86\Debug\MedConnect.pdb
 C:\Users\p c\OneDrive\Desktop\Pro\MedConnect\MedConnect\DBapplication\obj\x86\Debug\MedConnect.Secretary.Secretary.resources
 C:\Users\Ali\Desktop\MedConnect\MedConnect\DBapplication\obj\x86\Debug\MedConnect.Secretary.Secretary.resources
+E:\KID\1.WORK\GitHubProjects\MedConnect\DBapplication\bin\Debug\MedConnect.exe.config
+E:\KID\1.WORK\GitHubProjects\MedConnect\DBapplication\bin\Debug\MedConnect.exe
+E:\KID\1.WORK\GitHubProjects\MedConnect\DBapplication\bin\Debug\MedConnect.pdb
+E:\KID\1.WORK\GitHubProjects\MedConnect\DBapplication\bin\Debug\ComponentFactory.Krypton.Ribbon.pdb
+E:\KID\1.WORK\GitHubProjects\MedConnect\DBapplication\bin\Debug\ComponentFactory.Krypton.Toolkit.pdb
+E:\KID\1.WORK\GitHubProjects\MedConnect\DBapplication\obj\x86\Debug\MedConnect.csproj.AssemblyReference.cache
+E:\KID\1.WORK\GitHubProjects\MedConnect\DBapplication\obj\x86\Debug\MedConnect.Doctor.DoctorMainForm.resources
+E:\KID\1.WORK\GitHubProjects\MedConnect\DBapplication\obj\x86\Debug\MedConnect.Patient.PatientMainForm.resources
+E:\KID\1.WORK\GitHubProjects\MedConnect\DBapplication\obj\x86\Debug\MedConnect.Patient.Patient_Info.resources
+E:\KID\1.WORK\GitHubProjects\MedConnect\DBapplication\obj\x86\Debug\MedConnect.Properties.Resources.resources
+E:\KID\1.WORK\GitHubProjects\MedConnect\DBapplication\obj\x86\Debug\MedConnect.Secretary.Secretary.resources
+E:\KID\1.WORK\GitHubProjects\MedConnect\DBapplication\obj\x86\Debug\MedConnect.Trigger.resources
+E:\KID\1.WORK\GitHubProjects\MedConnect\DBapplication\obj\x86\Debug\MedConnect.csproj.GenerateResource.cache
+E:\KID\1.WORK\GitHubProjects\MedConnect\DBapplication\obj\x86\Debug\MedConnect.csproj.CoreCompileInputs.cache
+E:\KID\1.WORK\GitHubProjects\MedConnect\DBapplication\obj\x86\Debug\MedConnect.csproj.CopyComplete
+E:\KID\1.WORK\GitHubProjects\MedConnect\DBapplication\obj\x86\Debug\MedConnect.exe
+E:\KID\1.WORK\GitHubProjects\MedConnect\DBapplication\obj\x86\Debug\MedConnect.pdb

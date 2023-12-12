@@ -15,7 +15,7 @@ namespace MedConnect
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Patient.PatientMainForm());
+            Application.Run(new Doctor.DoctorMainForm());
         }
     }
 }
