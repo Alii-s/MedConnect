@@ -1,5 +1,4 @@
-﻿using MedConnect.Doctor.PatientsInfo;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -9,11 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace MedConnect.Doctor
+namespace MedConnect.Doctor.PatientsInfo
 {
-    public partial class DoctorMainForm : Form
+    public partial class DoctorPatientsInfo : Form
     {
-        public DoctorMainForm()
+        public DoctorPatientsInfo()
         {
             InitializeComponent();
         }
@@ -23,11 +22,16 @@ namespace MedConnect.Doctor
             Application.Exit();
         }
 
-        private void updatInfo_Click(object sender, EventArgs e)
+        private void logOut_Click(object sender, EventArgs e)
         {
-            DoctorPatientsInfo updateInfoForm = new DoctorPatientsInfo();
-            updateInfoForm.Show();
-            this.Hide();
+       
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            DoctorMainForm doctormainform = new DoctorMainForm();
+            doctormainform.Show();
+            this.Close();
             
         }
     }
