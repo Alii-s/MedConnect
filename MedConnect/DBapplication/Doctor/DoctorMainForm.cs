@@ -32,5 +32,12 @@ namespace MedConnect.Doctor
             this.Hide();
             
         }
+
+        private void kryptonButton4_Click(object sender, EventArgs e)
+        {
+            DoctorScheuale doctorScheuale = new DoctorScheuale(UserId);
+            doctorScheuale.Show();
+            this.Hide();
+        }
     }
 }

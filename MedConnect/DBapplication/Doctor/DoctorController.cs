@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Data;
 using System.Data.SqlClient;
+using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -13,19 +14,22 @@ namespace MedConnect.Doctor
     {
         DBManager dbMan;
 
+        #region Constructor
         public DoctorController()
         {
             dbMan = new DBManager();
         }
+        #endregion
 
-
-
+        #region Select All Patients
         public DataTable SelectAllPatients()
         {
             string StoredProcedureName = DoctorStoredProcedures.GetDoctorPatients;
-            return dbMan.ExecuteReader(StoredProcedureName,null);
+            return dbMan.ExecuteReader(StoredProcedureName, null);
         }
-   
+        #endregion
+
+        #region Select All Patients With Filter
         public DataTable SelectAllPatientsWithFilter(string Fname, string Lname, string PhoneNumber)
         {
             string StoredProcedureName = DoctorStoredProcedures.GetDoctorPatientsWithFilter;
@@ -34,12 +38,22 @@ namespace MedConnect.Doctor
             Parameters.Add("@Fname", Fname);
             Parameters.Add("@Lname", Lname);
             Parameters.Add("@PhoneNumber", PhoneNumber);
-         
+
 
             // Pass the parameters to the ExecuteReader method
             return dbMan.ExecuteReader(StoredProcedureName, Parameters);
         }
+        #endregion
 
+        #region Get All ClinicData
+        public DataTable SelectAllClinicData()
+            {
+                string StoredProcedureName = DoctorStoredProcedures.GetAllClinicData;
+                return dbMan.ExecuteReader(StoredProcedureName, null);
+            }
+        #endregion
+
+        #region SomeHelperFunctions
         //public int InsertStudent(string fName, string lName, int SSN, string Address, int dNum)
         //{
         //    string query = "INSERT INTO Student (Fname, Lname, SSN, Address,Dnum) " +
@@ -71,10 +85,15 @@ namespace MedConnect.Doctor
         //    return (int)dbMan.ExecuteScalar(query);
         //}
 
-        public void TerminateConnection()
-        {
-            dbMan.CloseConnection();
-        }
-    
+        #endregion
+
+        #region TerminationOfConnection
+            public void TerminateConnection()
+            {
+                dbMan.CloseConnection();
+            }
+        #endregion
+
+
     }
 }
