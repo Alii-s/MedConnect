@@ -79,6 +79,13 @@
     <Compile Include="Doctor\DoctorViewPatients.Designer.cs">
       <DependentUpon>DoctorViewPatients.cs</DependentUpon>
     </Compile>
+    <Compile Include="GeneralStoredProcedures.cs" />
+    <Compile Include="Register.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Register.Designer.cs">
+      <DependentUpon>Register.cs</DependentUpon>
+    </Compile>
     <Compile Include="Patient\PatientMainForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -133,6 +140,9 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="Register.resx">
+      <DependentUpon>Register.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Secretary\Secretary.resx">
       <DependentUpon>Secretary.cs</DependentUpon>
     </EmbeddedResource>
@@ -183,6 +193,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Doctor\DoctorResources\drScheaule.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\login.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

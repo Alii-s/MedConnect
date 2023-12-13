@@ -12,15 +12,17 @@ namespace MedConnect.Patient
 {
     public partial class PatientMainForm : Form
     {
-        public PatientMainForm()
+        int UserID;
+        public PatientMainForm(int UserID)
         {
             InitializeComponent();
+            this.UserID = UserID;
         }
 
         private void updatInfo_Click(object sender, EventArgs e)
         {
             this.Hide();
-            Patient_Info patient_Info = new Patient_Info();
+            Patient_Info patient_Info = new Patient_Info(UserID);
             patient_Info.Show();
         }
 

@@ -13,9 +13,11 @@ namespace MedConnect.Patient
 {
     public partial class Patient_Info : Form
     {
-        public Patient_Info()
+        int UserID;
+        public Patient_Info(int userID)
         {
             InitializeComponent();
+            UserID = userID;
         }
         bool Validation = true;
         private bool isFirstName()
@@ -81,7 +83,7 @@ namespace MedConnect.Patient
         private void button1_Click(object sender, EventArgs e)
         {
             this.Close();
-            PatientMainForm frm = new PatientMainForm();
+            PatientMainForm frm = new PatientMainForm(UserID);
             frm.Show();
         }
 

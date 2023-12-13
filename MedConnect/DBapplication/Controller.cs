@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Data;
 using System.Windows.Forms;
+using MedConnect.Doctor;
 
 namespace MedConnect
 {
@@ -15,7 +16,18 @@ namespace MedConnect
         {
             dbMan = new DBManager();
         }
+        public DataTable Login(string Email, string Password)
+        {
+            string StoredProcedureName = GeneralStoredProcedures.GetEmailPassword;
 
+            Dictionary<string, object> Parameters = new Dictionary<string, object>();
+            Parameters.Add("@Email", Email);
+            Parameters.Add("@Password", Password);
+
+
+            // Pass the parameters to the ExecuteReader method
+            return dbMan.ExecuteReader(StoredProcedureName, Parameters);
+        }
         //public int InsertStudent(string fName, string lName, int SSN, string Address, int dNum)
         //{
         //    string query = "INSERT INTO Student (Fname, Lname, SSN, Address,Dnum) " +
