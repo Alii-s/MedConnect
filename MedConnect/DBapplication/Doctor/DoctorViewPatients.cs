@@ -13,9 +13,16 @@ namespace MedConnect.Doctor
 {
     public partial class DoctorViewPatients : Form
     {
+        DoctorController doctorController = new DoctorController();
         public DoctorViewPatients()
         {
             InitializeComponent();
+            DataTable dataTable = doctorController.SelectAllPatients();
+
+
+
+            kryptonDataGridView1.DataSource = dataTable;
+            kryptonDataGridView1.Refresh();
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -32,6 +39,13 @@ namespace MedConnect.Doctor
 
         private void kryptonDataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
+       
+
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+          
 
         }
     }

@@ -130,9 +130,9 @@
             // kryptonDataGridView1
             // 
             this.kryptonDataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.kryptonDataGridView1.Location = new System.Drawing.Point(328, 148);
+            this.kryptonDataGridView1.Location = new System.Drawing.Point(12, 138);
             this.kryptonDataGridView1.Name = "kryptonDataGridView1";
-            this.kryptonDataGridView1.Size = new System.Drawing.Size(635, 360);
+            this.kryptonDataGridView1.Size = new System.Drawing.Size(956, 387);
             this.kryptonDataGridView1.TabIndex = 25;
             this.kryptonDataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.kryptonDataGridView1_CellContentClick);
             // 
