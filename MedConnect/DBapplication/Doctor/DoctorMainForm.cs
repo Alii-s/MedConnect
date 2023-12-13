@@ -13,8 +13,10 @@ namespace MedConnect.Doctor
 {
     public partial class DoctorMainForm : Form
     {
-        public DoctorMainForm()
+        int UserId;
+        public DoctorMainForm(int UserId)
         {
+            this.UserId = UserId;
             InitializeComponent();
         }
 
@@ -25,7 +27,7 @@ namespace MedConnect.Doctor
 
         private void updatInfo_Click(object sender, EventArgs e)
         {
-            DoctorPatientsInfo updateInfoForm = new DoctorPatientsInfo();
+            DoctorPatientsInfo updateInfoForm = new DoctorPatientsInfo(UserId);
             updateInfoForm.Show();
             this.Hide();
             

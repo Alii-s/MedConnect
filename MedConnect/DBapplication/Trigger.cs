@@ -77,7 +77,7 @@ namespace MedConnect
             }else if(UserType == 'D')
             {
                 this.Hide();
-                DoctorMainForm form = new DoctorMainForm();
+                DoctorMainForm form = new DoctorMainForm(UserID);
                 form.Show();
                 return;
             }

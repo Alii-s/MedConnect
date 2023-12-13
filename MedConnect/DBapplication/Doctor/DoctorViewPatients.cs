@@ -11,8 +11,10 @@ using System.Windows.Forms;
 
 namespace MedConnect.Doctor
 {
+    
     public partial class DoctorViewPatients : Form
     {
+        int UserId;
         DoctorController doctorController = new DoctorController();
         public void ResetPatientsTable()
         {
@@ -22,8 +24,9 @@ namespace MedConnect.Doctor
             kryptonDataGridView1.Refresh();
 
         }
-        public DoctorViewPatients()
+        public DoctorViewPatients(int userid)
         {
+            UserId = userid;
             InitializeComponent();
             ResetPatientsTable();
             DataTable dataTable = doctorController.SelectAllPatients();
@@ -33,7 +36,7 @@ namespace MedConnect.Doctor
        
         private void button1_Click(object sender, EventArgs e)
         {
-            DoctorPatientsInfo DoctorPatientsinfo = new DoctorPatientsInfo();
+            DoctorPatientsInfo DoctorPatientsinfo = new DoctorPatientsInfo(UserId);
             DoctorPatientsinfo.Show();
             this.Close();
         }

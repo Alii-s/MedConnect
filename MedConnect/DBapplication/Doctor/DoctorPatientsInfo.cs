@@ -12,9 +12,11 @@ namespace MedConnect.Doctor.PatientsInfo
 {
     public partial class DoctorPatientsInfo : Form
     {
-        public DoctorPatientsInfo()
+        int UserId;
+        public DoctorPatientsInfo(int userId)
         {
             InitializeComponent();
+            UserId = userId;
         }
 
         private void closeApplication_Click(object sender, EventArgs e)
@@ -29,7 +31,7 @@ namespace MedConnect.Doctor.PatientsInfo
 
         private void button1_Click(object sender, EventArgs e)
         {
-            DoctorMainForm doctormainform = new DoctorMainForm();
+            DoctorMainForm doctormainform = new DoctorMainForm(UserId);
             doctormainform.Show();
             this.Close();
             
@@ -72,7 +74,7 @@ namespace MedConnect.Doctor.PatientsInfo
 
         private void updatInfo_Click(object sender, EventArgs e)
         {
-            DoctorViewPatients doctorViewPatients = new DoctorViewPatients();
+            DoctorViewPatients doctorViewPatients = new DoctorViewPatients(UserId);
             doctorViewPatients.Show();
             this.Close();
         }
