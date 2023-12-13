@@ -21,9 +21,9 @@ exec GetDoctorPatients
 go
 
 CREATE PROCEDURE GetDoctorPatientsWithFilter
-    @Fname nvarchar(50),
-    @Lname nvarchar(50),
-    @PhoneNumber nvarchar(50)
+    @Fname nchar(20),
+    @Lname nchar(20),
+    @PhoneNumber nchar(30)
 AS
 BEGIN
     SELECT 

@@ -31,9 +31,9 @@ namespace MedConnect.Doctor
             string StoredProcedureName = DoctorStoredProcedures.GetDoctorPatientsWithFilter;
 
             Dictionary<string, object> Parameters = new Dictionary<string, object>();
-            Parameters.Add("@@Fname", Fname);
-            Parameters.Add("@@Lname", Lname);
-            Parameters.Add("@@PhoneNumber", PhoneNumber);
+            Parameters.Add("@Fname", Fname);
+            Parameters.Add("@Lname", Lname);
+            Parameters.Add("@PhoneNumber", PhoneNumber);
          
 
             // Pass the parameters to the ExecuteReader method
