@@ -12,6 +12,9 @@ namespace MedConnect.Doctor
             public static string GetDoctorPatients = "GetDoctorPatients";
         public static string GetDoctorPatientsWithFilter = "GetDoctorPatientsWithFilter";
         public static string GetAllClinicData = "GetAllClinicData";
+        public static string AddDoctorSchedule = "AddDoctorSchedule";
+        public static string GetDoctorSchedule = "GetDoctorScheuale";
+        public static string DeleteDoctorSchedule = "DeleteDoctorSchedule";
 
 
 

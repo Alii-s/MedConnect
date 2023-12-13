@@ -20,6 +20,7 @@ namespace MedConnect.Doctor
             UserId = userid;
             InitializeComponent();
             HandlingComboxesValues();
+            kryptonDataGridView1.DataSource = controllerObj.GetDoctorSchedule(UserId);
         }
 
         #region HandlingComboxesValues
@@ -116,6 +117,47 @@ namespace MedConnect.Doctor
             kryptonComboBox4.DataSource = new List<string>(hours);
             kryptonComboBox4.DisplayMember = "Time";
 
+        }
+
+        private void doneButton_Click(object sender, EventArgs e)
+        {
+            controllerObj.AddDoctorSchedule(UserId, int.Parse(kryptonComboBox1.SelectedValue.ToString()), kryptonComboBox2.Text,int.Parse( kryptonComboBox3.Text), int.Parse(kryptonComboBox4.Text));
+            DataTable dataTable = controllerObj.GetDoctorSchedule(UserId);   
+            kryptonDataGridView1.DataSource = dataTable;
+            kryptonDataGridView1.Refresh();
+        }
+
+        private void kryptonDataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+           
+        }
+
+        private void kryptonButton1_Click(object sender, EventArgs e)
+        {
+            controllerObj.DeleteDoctorSchedule(UserId, int.Parse(kryptonComboBox1.SelectedValue.ToString()), kryptonComboBox2.Text);
+
+            DataTable dataTable = controllerObj.GetDoctorSchedule(UserId);
+            kryptonDataGridView1.DataSource = dataTable;
+            kryptonDataGridView1.Refresh();
+        }
+
+        private void closeApplication_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            DoctorMainForm doctormainform = new DoctorMainForm(UserId);
+            doctormainform.Show();
+            this.Close();
+        }
+
+        private void logOut_Click(object sender, EventArgs e)
+        {
+            Trigger trigger = new Trigger();
+            trigger.Show();
+            this.Close();
         }
     }
 }

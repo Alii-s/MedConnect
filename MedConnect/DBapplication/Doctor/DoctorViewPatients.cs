@@ -84,5 +84,12 @@ namespace MedConnect.Doctor
         {
 
         }
+
+        private void logOut_Click(object sender, EventArgs e)
+        {
+            Trigger trigger = new Trigger();
+            trigger.Show();
+            this.Close();
+        }
     }
 }

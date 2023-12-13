@@ -98,6 +98,7 @@
             this.logOut.TabIndex = 8;
             this.logOut.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.logOut.UseVisualStyleBackColor = true;
+            this.logOut.Click += new System.EventHandler(this.logOut_Click);
             // 
             // closeApplication
             // 
@@ -113,6 +114,7 @@
             this.closeApplication.TabIndex = 6;
             this.closeApplication.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.closeApplication.UseVisualStyleBackColor = true;
+            this.closeApplication.Click += new System.EventHandler(this.closeApplication_Click);
             // 
             // pictureBox1
             // 
@@ -139,6 +141,7 @@
             this.button1.TabIndex = 10;
             this.button1.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // kryptonComboBox1
             // 
@@ -211,6 +214,7 @@
             this.doneButton.TabIndex = 37;
             this.doneButton.Values.Image = ((System.Drawing.Image)(resources.GetObject("doneButton.Values.Image")));
             this.doneButton.Values.Text = "Add";
+            this.doneButton.Click += new System.EventHandler(this.doneButton_Click);
             // 
             // kryptonWrapLabel1
             // 
@@ -253,8 +257,9 @@
             this.kryptonDataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.kryptonDataGridView1.Location = new System.Drawing.Point(31, 273);
             this.kryptonDataGridView1.Name = "kryptonDataGridView1";
-            this.kryptonDataGridView1.Size = new System.Drawing.Size(924, 262);
+            this.kryptonDataGridView1.Size = new System.Drawing.Size(647, 262);
             this.kryptonDataGridView1.TabIndex = 45;
+            this.kryptonDataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.kryptonDataGridView1_CellContentClick);
             // 
             // kryptonButton1
             // 
@@ -287,6 +292,7 @@
             this.kryptonButton1.TabIndex = 46;
             this.kryptonButton1.Values.Image = ((System.Drawing.Image)(resources.GetObject("kryptonButton1.Values.Image")));
             this.kryptonButton1.Values.Text = "Delete";
+            this.kryptonButton1.Click += new System.EventHandler(this.kryptonButton1_Click);
             // 
             // DoctorScheuale
             // 

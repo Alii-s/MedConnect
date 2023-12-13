@@ -53,6 +53,56 @@ namespace MedConnect.Doctor
             }
         #endregion
 
+
+        #region Add Doctor Schedule
+        public int AddDoctorSchedule(int DoctorID, int ClinicID, string Day, int StartTime, int EndTime)
+        {
+            //assume the start and end time will be integer from 0 to 23 dont forget to tell TA
+     
+            TimeSpan StartTimeSpan = TimeSpan.FromHours(StartTime);
+            TimeSpan EndTimeSpan = TimeSpan.FromHours(EndTime);
+
+
+            string StoredProcedureName = DoctorStoredProcedures.AddDoctorSchedule;
+
+            Dictionary<string, object> Parameters = new Dictionary<string, object>();
+            Parameters.Add("@DoctorID", DoctorID);
+            Parameters.Add("@ClinicID", ClinicID);
+            Parameters.Add("@Day", Day);
+            Parameters.Add("@StartT", StartTimeSpan);
+            Parameters.Add("@EndT", EndTimeSpan);
+
+            return dbMan.ExecuteNonQuery(StoredProcedureName, Parameters);
+        }
+        #endregion
+
+        #region Delete Doctor Schedule
+        public int DeleteDoctorSchedule(int DoctorID, int ClinicID, string Day)
+        {
+
+            string StoredProcedureName = DoctorStoredProcedures.DeleteDoctorSchedule;
+
+            Dictionary<string, object> Parameters = new Dictionary<string, object>();
+            Parameters.Add("@DoctorID", DoctorID);
+            Parameters.Add("@ClinicID", ClinicID);
+            Parameters.Add("@Day", Day);
+
+            return dbMan.ExecuteNonQuery(StoredProcedureName, Parameters);
+
+
+        }
+        #endregion
+        #region Get Doctor Schedule
+        public DataTable GetDoctorSchedule(int DoctorID)
+        {
+            string StoredProcedureName = DoctorStoredProcedures.GetDoctorSchedule;
+
+            Dictionary<string, object> Parameters = new Dictionary<string, object>();
+            Parameters.Add("@DoctorID", DoctorID);
+
+            return dbMan.ExecuteReader(StoredProcedureName, Parameters);
+        }
+        #endregion
         #region SomeHelperFunctions
         //public int InsertStudent(string fName, string lName, int SSN, string Address, int dNum)
         //{
@@ -88,7 +138,7 @@ namespace MedConnect.Doctor
         #endregion
 
         #region TerminationOfConnection
-            public void TerminateConnection()
+        public void TerminateConnection()
             {
                 dbMan.CloseConnection();
             }
