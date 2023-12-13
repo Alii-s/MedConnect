@@ -8,7 +8,7 @@ namespace MedConnect
 {
     internal class GeneralStoredProcedures
     {
-        public static string GetEmailPassword = "GetEmailPassword";
+        public static string GetEmailPassword = "GetUserEmailPassword";
         
     }
 }
