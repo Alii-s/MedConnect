@@ -152,6 +152,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Icons\" />
+    <Folder Include="StoredProcedures\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\add.png" />

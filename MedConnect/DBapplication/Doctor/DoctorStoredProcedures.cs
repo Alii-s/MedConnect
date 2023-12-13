@@ -10,9 +10,9 @@ namespace MedConnect.Doctor
     {
 
             public static string GetDoctorPatients = "GetDoctorPatients";
-        
+        public static string GetDoctorPatientsWithFilter = "GetDoctorPatientsWithFilter";
 
-  
 
-     }
+
+    }
 }

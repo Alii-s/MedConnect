@@ -1,9 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Data;
+using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Xml.Linq;
 
 namespace MedConnect.Doctor
 {
@@ -21,9 +23,23 @@ namespace MedConnect.Doctor
         public DataTable SelectAllPatients()
         {
             string StoredProcedureName = DoctorStoredProcedures.GetDoctorPatients;
-            return dbMan.ExecuteReader(StoredProcedureName);
+            return dbMan.ExecuteReader(StoredProcedureName,null);
         }
-     
+   
+        public DataTable SelectAllPatientsWithFilter(string Fname, string Lname, string PhoneNumber)
+        {
+            string StoredProcedureName = DoctorStoredProcedures.GetDoctorPatientsWithFilter;
+
+            Dictionary<string, object> Parameters = new Dictionary<string, object>();
+            Parameters.Add("@@Fname", Fname);
+            Parameters.Add("@@Lname", Lname);
+            Parameters.Add("@@PhoneNumber", PhoneNumber);
+         
+
+            // Pass the parameters to the ExecuteReader method
+            return dbMan.ExecuteReader(StoredProcedureName, Parameters);
+        }
+
         //public int InsertStudent(string fName, string lName, int SSN, string Address, int dNum)
         //{
         //    string query = "INSERT INTO Student (Fname, Lname, SSN, Address,Dnum) " +
