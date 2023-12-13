@@ -66,11 +66,18 @@
     <Compile Include="Doctor\DoctorMainForm.Designer.cs">
       <DependentUpon>DoctorMainForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Doctor\DoctorPatientsInfo\DoctorPatientsInfo.cs">
+    <Compile Include="Doctor\DoctorPatientsInfo.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Doctor\DoctorPatientsInfo\DoctorPatientsInfo.Designer.cs">
+    <Compile Include="Doctor\DoctorPatientsInfo.Designer.cs">
       <DependentUpon>DoctorPatientsInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Doctor\DoctorStoredProcedures.cs" />
+    <Compile Include="Doctor\DoctorViewPatients.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Doctor\DoctorViewPatients.Designer.cs">
+      <DependentUpon>DoctorViewPatients.cs</DependentUpon>
     </Compile>
     <Compile Include="Patient\PatientMainForm.cs">
       <SubType>Form</SubType>
@@ -104,8 +111,11 @@
     <EmbeddedResource Include="Doctor\DoctorMainForm.resx">
       <DependentUpon>DoctorMainForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Doctor\DoctorPatientsInfo\DoctorPatientsInfo.resx">
+    <EmbeddedResource Include="Doctor\DoctorPatientsInfo.resx">
       <DependentUpon>DoctorPatientsInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Doctor\DoctorViewPatients.resx">
+      <DependentUpon>DoctorViewPatients.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Patient\PatientMainForm.resx">
       <DependentUpon>PatientMainForm.cs</DependentUpon>

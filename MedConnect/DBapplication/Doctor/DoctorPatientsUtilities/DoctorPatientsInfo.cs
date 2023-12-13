@@ -34,5 +34,12 @@ namespace MedConnect.Doctor.PatientsInfo
             this.Close();
             
         }
+
+        private void updatInfo_Click(object sender, EventArgs e)
+        {
+            DoctorMainForm doctormainform = new DoctorMainForm();
+            doctormainform.Show();
+            this.Close();
+        }
     }
 }
