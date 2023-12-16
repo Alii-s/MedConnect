@@ -34,13 +34,11 @@
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
             this.firstNameTextBox = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
             this.lastNameTextBox = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
             this.emailTextBox = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
             this.phoneNumberTextBox = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
             this.occupationTextBox = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
-            this.maritalStateTextBox = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
             this.cityTextBox = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
             this.editButton = new ComponentFactory.Krypton.Toolkit.KryptonButton();
             this.doneButton = new ComponentFactory.Krypton.Toolkit.KryptonButton();
@@ -52,10 +50,8 @@
             this.label2 = new System.Windows.Forms.Label();
             this.emailValidationLabel = new System.Windows.Forms.Label();
             this.phoneNumberValidationLabel = new System.Windows.Forms.Label();
-            this.firstNameLabel = new System.Windows.Forms.Label();
             this.lastNameLabel = new System.Windows.Forms.Label();
             this.occupationLabel = new System.Windows.Forms.Label();
-            this.maritalStateLabel = new System.Windows.Forms.Label();
             this.addressLabel = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.kryptonPanel1 = new ComponentFactory.Krypton.Toolkit.KryptonPanel();
@@ -63,6 +59,10 @@
             this.button1 = new System.Windows.Forms.Button();
             this.closeApplication = new System.Windows.Forms.Button();
             this.logOut = new System.Windows.Forms.Button();
+            this.firstNameLabel = new System.Windows.Forms.Label();
+            this.maritalStateTextBox = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
+            this.maritalSateLabel = new System.Windows.Forms.Label();
+            this.maritalStateLabel = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel1)).BeginInit();
             this.kryptonPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -133,19 +133,6 @@
             this.label7.Text = "Address";
             this.label7.Click += new System.EventHandler(this.label7_Click);
             // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("OCR A Extended", 15.75F);
-            this.label8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(7)))), ((int)(((byte)(73)))));
-            this.label8.Location = new System.Drawing.Point(544, 294);
-            this.label8.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(179, 23);
-            this.label8.TabIndex = 15;
-            this.label8.Text = "Marital State";
-            this.label8.Click += new System.EventHandler(this.label8_Click);
-            // 
             // firstNameTextBox
             // 
             this.firstNameTextBox.Cursor = System.Windows.Forms.Cursors.IBeam;
@@ -173,7 +160,6 @@
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
             this.firstNameTextBox.TabIndex = 16;
-            this.firstNameTextBox.Text = "Ali";
             this.firstNameTextBox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.firstNameTextBox_KeyPress);
             // 
             // lastNameTextBox
@@ -289,35 +275,6 @@
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
             this.occupationTextBox.TabIndex = 20;
             // 
-            // maritalStateTextBox
-            // 
-            this.maritalStateTextBox.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.maritalStateTextBox.Enabled = false;
-            this.maritalStateTextBox.Location = new System.Drawing.Point(548, 320);
-            this.maritalStateTextBox.Name = "maritalStateTextBox";
-            this.maritalStateTextBox.Size = new System.Drawing.Size(208, 36);
-            this.maritalStateTextBox.StateActive.Border.Color1 = System.Drawing.Color.Black;
-            this.maritalStateTextBox.StateActive.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.maritalStateTextBox.StateCommon.Back.Color1 = System.Drawing.Color.White;
-            this.maritalStateTextBox.StateCommon.Border.Color1 = System.Drawing.Color.DarkGray;
-            this.maritalStateTextBox.StateCommon.Border.Color2 = System.Drawing.Color.DarkGray;
-            this.maritalStateTextBox.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.maritalStateTextBox.StateCommon.Border.Rounding = 18;
-            this.maritalStateTextBox.StateCommon.Content.Color1 = System.Drawing.Color.Black;
-            this.maritalStateTextBox.StateCommon.Content.Font = new System.Drawing.Font("OCR A Extended", 12F);
-            this.maritalStateTextBox.StateDisabled.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(241)))), ((int)(((byte)(255)))));
-            this.maritalStateTextBox.StateDisabled.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(241)))), ((int)(((byte)(255)))));
-            this.maritalStateTextBox.StateDisabled.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(241)))), ((int)(((byte)(255)))));
-            this.maritalStateTextBox.StateDisabled.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.maritalStateTextBox.TabIndex = 21;
-            this.maritalStateTextBox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.maritalStateTextBox_KeyPress);
-            // 
             // cityTextBox
             // 
             this.cityTextBox.Enabled = false;
@@ -380,7 +337,7 @@
             // 
             this.doneButton.Cursor = System.Windows.Forms.Cursors.Hand;
             this.doneButton.Enabled = false;
-            this.doneButton.Location = new System.Drawing.Point(671, 507);
+            this.doneButton.Location = new System.Drawing.Point(548, 507);
             this.doneButton.Name = "doneButton";
             this.doneButton.Size = new System.Drawing.Size(97, 42);
             this.doneButton.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(72)))), ((int)(((byte)(170)))), ((int)(((byte)(255)))));
@@ -544,19 +501,6 @@
             this.phoneNumberValidationLabel.Text = "Please enter a valid number";
             this.phoneNumberValidationLabel.Visible = false;
             // 
-            // firstNameLabel
-            // 
-            this.firstNameLabel.AutoSize = true;
-            this.firstNameLabel.Font = new System.Drawing.Font("OCR A Extended", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.firstNameLabel.ForeColor = System.Drawing.Color.IndianRed;
-            this.firstNameLabel.Location = new System.Drawing.Point(53, 268);
-            this.firstNameLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.firstNameLabel.Name = "firstNameLabel";
-            this.firstNameLabel.Size = new System.Drawing.Size(207, 13);
-            this.firstNameLabel.TabIndex = 32;
-            this.firstNameLabel.Text = "First name can\'t be empty";
-            this.firstNameLabel.Visible = false;
-            // 
             // lastNameLabel
             // 
             this.lastNameLabel.AutoSize = true;
@@ -582,19 +526,6 @@
             this.occupationLabel.TabIndex = 34;
             this.occupationLabel.Text = "Occupation  can\'t be empty";
             this.occupationLabel.Visible = false;
-            // 
-            // maritalStateLabel
-            // 
-            this.maritalStateLabel.AutoSize = true;
-            this.maritalStateLabel.Font = new System.Drawing.Font("OCR A Extended", 9.75F);
-            this.maritalStateLabel.ForeColor = System.Drawing.Color.IndianRed;
-            this.maritalStateLabel.Location = new System.Drawing.Point(545, 359);
-            this.maritalStateLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.maritalStateLabel.Name = "maritalStateLabel";
-            this.maritalStateLabel.Size = new System.Drawing.Size(239, 13);
-            this.maritalStateLabel.TabIndex = 35;
-            this.maritalStateLabel.Text = "Marital state  can\'t be empty";
-            this.maritalStateLabel.Visible = false;
             // 
             // addressLabel
             // 
@@ -698,6 +629,71 @@
             this.logOut.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.logOut.UseVisualStyleBackColor = false;
             // 
+            // firstNameLabel
+            // 
+            this.firstNameLabel.AutoSize = true;
+            this.firstNameLabel.Font = new System.Drawing.Font("OCR A Extended", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.firstNameLabel.ForeColor = System.Drawing.Color.IndianRed;
+            this.firstNameLabel.Location = new System.Drawing.Point(53, 268);
+            this.firstNameLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.firstNameLabel.Name = "firstNameLabel";
+            this.firstNameLabel.Size = new System.Drawing.Size(207, 13);
+            this.firstNameLabel.TabIndex = 32;
+            this.firstNameLabel.Text = "First name can\'t be empty";
+            this.firstNameLabel.Visible = false;
+            // 
+            // maritalStateTextBox
+            // 
+            this.maritalStateTextBox.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.maritalStateTextBox.Location = new System.Drawing.Point(548, 320);
+            this.maritalStateTextBox.Name = "maritalStateTextBox";
+            this.maritalStateTextBox.Size = new System.Drawing.Size(208, 36);
+            this.maritalStateTextBox.StateActive.Border.Color1 = System.Drawing.Color.Black;
+            this.maritalStateTextBox.StateActive.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.maritalStateTextBox.StateCommon.Back.Color1 = System.Drawing.Color.White;
+            this.maritalStateTextBox.StateCommon.Border.Color1 = System.Drawing.Color.DarkGray;
+            this.maritalStateTextBox.StateCommon.Border.Color2 = System.Drawing.Color.DarkGray;
+            this.maritalStateTextBox.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.maritalStateTextBox.StateCommon.Border.Rounding = 18;
+            this.maritalStateTextBox.StateCommon.Content.Color1 = System.Drawing.Color.Black;
+            this.maritalStateTextBox.StateCommon.Content.Font = new System.Drawing.Font("OCR A Extended", 12F);
+            this.maritalStateTextBox.StateDisabled.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(241)))), ((int)(((byte)(255)))));
+            this.maritalStateTextBox.StateDisabled.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(241)))), ((int)(((byte)(255)))));
+            this.maritalStateTextBox.StateDisabled.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(241)))), ((int)(((byte)(255)))));
+            this.maritalStateTextBox.StateDisabled.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.maritalStateTextBox.TabIndex = 21;
+            // 
+            // maritalSateLabel
+            // 
+            this.maritalSateLabel.AutoSize = true;
+            this.maritalSateLabel.Font = new System.Drawing.Font("OCR A Extended", 15.75F);
+            this.maritalSateLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(7)))), ((int)(((byte)(73)))));
+            this.maritalSateLabel.Location = new System.Drawing.Point(549, 294);
+            this.maritalSateLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.maritalSateLabel.Name = "maritalSateLabel";
+            this.maritalSateLabel.Size = new System.Drawing.Size(179, 23);
+            this.maritalSateLabel.TabIndex = 15;
+            this.maritalSateLabel.Text = "Marital State";
+            // 
+            // maritalStateLabel
+            // 
+            this.maritalStateLabel.AutoSize = true;
+            this.maritalStateLabel.Font = new System.Drawing.Font("OCR A Extended", 9.75F);
+            this.maritalStateLabel.ForeColor = System.Drawing.Color.IndianRed;
+            this.maritalStateLabel.Location = new System.Drawing.Point(545, 359);
+            this.maritalStateLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.maritalStateLabel.Name = "maritalStateLabel";
+            this.maritalStateLabel.Size = new System.Drawing.Size(239, 13);
+            this.maritalStateLabel.TabIndex = 35;
+            this.maritalStateLabel.Text = "Marital state  can\'t be empty";
+            this.maritalStateLabel.Visible = false;
+            // 
             // Patient_Info
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -706,9 +702,9 @@
             this.ClientSize = new System.Drawing.Size(1003, 586);
             this.Controls.Add(this.kryptonPanel1);
             this.Controls.Add(this.addressLabel);
-            this.Controls.Add(this.maritalStateLabel);
             this.Controls.Add(this.occupationLabel);
             this.Controls.Add(this.lastNameLabel);
+            this.Controls.Add(this.maritalStateLabel);
             this.Controls.Add(this.firstNameLabel);
             this.Controls.Add(this.phoneNumberValidationLabel);
             this.Controls.Add(this.emailValidationLabel);
@@ -720,19 +716,19 @@
             this.Controls.Add(this.doneButton);
             this.Controls.Add(this.editButton);
             this.Controls.Add(this.cityTextBox);
-            this.Controls.Add(this.maritalStateTextBox);
             this.Controls.Add(this.occupationTextBox);
             this.Controls.Add(this.phoneNumberTextBox);
             this.Controls.Add(this.emailTextBox);
             this.Controls.Add(this.lastNameTextBox);
             this.Controls.Add(this.firstNameTextBox);
-            this.Controls.Add(this.label8);
             this.Controls.Add(this.label7);
+            this.Controls.Add(this.maritalStateTextBox);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
+            this.Controls.Add(this.maritalSateLabel);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Patient_Info";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -752,13 +748,11 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label label8;
         private ComponentFactory.Krypton.Toolkit.KryptonTextBox firstNameTextBox;
         private ComponentFactory.Krypton.Toolkit.KryptonTextBox lastNameTextBox;
         private ComponentFactory.Krypton.Toolkit.KryptonTextBox emailTextBox;
         private ComponentFactory.Krypton.Toolkit.KryptonTextBox phoneNumberTextBox;
         private ComponentFactory.Krypton.Toolkit.KryptonTextBox occupationTextBox;
-        private ComponentFactory.Krypton.Toolkit.KryptonTextBox maritalStateTextBox;
         private ComponentFactory.Krypton.Toolkit.KryptonTextBox cityTextBox;
         private ComponentFactory.Krypton.Toolkit.KryptonButton editButton;
         private ComponentFactory.Krypton.Toolkit.KryptonButton doneButton;
@@ -770,10 +764,8 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label emailValidationLabel;
         private System.Windows.Forms.Label phoneNumberValidationLabel;
-        private System.Windows.Forms.Label firstNameLabel;
         private System.Windows.Forms.Label lastNameLabel;
         private System.Windows.Forms.Label occupationLabel;
-        private System.Windows.Forms.Label maritalStateLabel;
         private System.Windows.Forms.Label addressLabel;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox pictureBox1;
@@ -781,5 +773,9 @@
         private System.Windows.Forms.Button logOut;
         private System.Windows.Forms.Button button1;
         private ComponentFactory.Krypton.Toolkit.KryptonPanel kryptonPanel1;
+        private System.Windows.Forms.Label firstNameLabel;
+        private ComponentFactory.Krypton.Toolkit.KryptonTextBox maritalStateTextBox;
+        private System.Windows.Forms.Label maritalSateLabel;
+        private System.Windows.Forms.Label maritalStateLabel;
     }
 }

@@ -9,6 +9,8 @@ namespace MedConnect
     internal class GeneralStoredProcedures
     {
         public static string GetEmailPassword = "GetUserEmailPassword";
+        public static string RegisterPatient = "RegisterPatient";
+        public static string RetrieveID = "RetrieveID";
         
     }
 }

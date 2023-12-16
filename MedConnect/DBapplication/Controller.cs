@@ -16,6 +16,7 @@ namespace MedConnect
         {
             dbMan = new DBManager();
         }
+        #region Login
         public DataTable Login(string Email, string Password)
         {
             string StoredProcedureName = GeneralStoredProcedures.GetEmailPassword;
@@ -28,6 +29,45 @@ namespace MedConnect
             // Pass the parameters to the ExecuteReader method
             return dbMan.ExecuteReader(StoredProcedureName, Parameters);
         }
+        #endregion
+        #region Register
+        public int Register(string Fname, string Lname, string Email, string PhoneNumber, string Gender, string Password, DateTime DateOfBirth, string occupation, string City, int Building_Num, string Street_Name, string Marital_State)
+        {
+            string StoredProcedureName = GeneralStoredProcedures.RegisterPatient;
+
+            Dictionary<string, object> Parameters = new Dictionary<string, object>();
+            Parameters.Add("@Fname", Fname);
+            Parameters.Add("@Lname", Lname);
+            Parameters.Add("@Email", Email);
+            Parameters.Add("@PhoneNumber", PhoneNumber);
+            Parameters.Add("@Gender", Gender);
+            Parameters.Add("@Password", Password);
+            Parameters.Add("@DateOfBirth", DateOfBirth);
+            Parameters.Add("@occupation", occupation);
+            Parameters.Add("@City", City);
+            Parameters.Add("@Building_Num", Building_Num);
+            Parameters.Add("@Street_Name", Street_Name);
+            Parameters.Add("@Marital_State", Marital_State);
+
+
+
+            // Pass the parameters to the ExecuteReader method
+            return dbMan.ExecuteNonQuery(StoredProcedureName, Parameters);
+        }
+        #endregion
+        #region Retrieve ID
+        public object RetrieveID(string Email)
+        {
+            string StoredProcedureName = GeneralStoredProcedures.RetrieveID;
+
+            Dictionary<string, object> Parameters = new Dictionary<string, object>();
+            Parameters.Add("@Email", Email);
+
+
+            // Pass the parameters to the ExecuteReader method
+            return dbMan.ExecuteScalar(StoredProcedureName, Parameters);
+        }
+        #endregion
         //public int InsertStudent(string fName, string lName, int SSN, string Address, int dNum)
         //{
         //    string query = "INSERT INTO Student (Fname, Lname, SSN, Address,Dnum) " +
