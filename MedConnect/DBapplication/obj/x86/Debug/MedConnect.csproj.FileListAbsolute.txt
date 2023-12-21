@@ -7,23 +7,6 @@ C:\Users\Ali\Desktop\DBapplication\DBapplication\obj\x86\Debug\DBapplication.pdb
 C:\Users\Ali\Desktop\DBapplication\DBapplication\bin\Debug\DBapplication.exe.config
 C:\Users\Ali\Desktop\DBapplication\DBapplication\bin\Debug\DBapplication.exe
 C:\Users\Ali\Desktop\DBapplication\DBapplication\bin\Debug\DBapplication.pdb
-C:\Users\Ali\Desktop\MedConnect\MedConnect\DBapplication\bin\Debug\MedConnect.exe.config
-C:\Users\Ali\Desktop\MedConnect\MedConnect\DBapplication\bin\Debug\MedConnect.exe
-C:\Users\Ali\Desktop\MedConnect\MedConnect\DBapplication\bin\Debug\MedConnect.pdb
-C:\Users\Ali\Desktop\MedConnect\MedConnect\DBapplication\obj\x86\Debug\MedConnect.csproj.AssemblyReference.cache
-C:\Users\Ali\Desktop\MedConnect\MedConnect\DBapplication\obj\x86\Debug\MedConnect.Properties.Resources.resources
-C:\Users\Ali\Desktop\MedConnect\MedConnect\DBapplication\obj\x86\Debug\MedConnect.Trigger.resources
-C:\Users\Ali\Desktop\MedConnect\MedConnect\DBapplication\obj\x86\Debug\MedConnect.csproj.GenerateResource.cache
-C:\Users\Ali\Desktop\MedConnect\MedConnect\DBapplication\obj\x86\Debug\MedConnect.csproj.CoreCompileInputs.cache
-C:\Users\Ali\Desktop\MedConnect\MedConnect\DBapplication\obj\x86\Debug\MedConnect.exe
-C:\Users\Ali\Desktop\MedConnect\MedConnect\DBapplication\obj\x86\Debug\MedConnect.pdb
-C:\Users\Ali\Desktop\MedConnect\MedConnect\DBapplication\bin\Debug\ComponentFactory.Krypton.Ribbon.dll
-C:\Users\Ali\Desktop\MedConnect\MedConnect\DBapplication\bin\Debug\ComponentFactory.Krypton.Toolkit.dll
-C:\Users\Ali\Desktop\MedConnect\MedConnect\DBapplication\bin\Debug\ComponentFactory.Krypton.Ribbon.pdb
-C:\Users\Ali\Desktop\MedConnect\MedConnect\DBapplication\bin\Debug\ComponentFactory.Krypton.Toolkit.pdb
-C:\Users\Ali\Desktop\MedConnect\MedConnect\DBapplication\obj\x86\Debug\MedConnect.Patient.PatientMainForm.resources
-C:\Users\Ali\Desktop\MedConnect\MedConnect\DBapplication\obj\x86\Debug\MedConnect.csproj.CopyComplete
-C:\Users\Ali\Desktop\MedConnect\MedConnect\DBapplication\obj\x86\Debug\MedConnect.Patient.Patient_Info.resources
 C:\Users\p c\OneDrive\Desktop\Pro\MedConnect\MedConnect\DBapplication\bin\Debug\MedConnect.exe.config
 C:\Users\p c\OneDrive\Desktop\Pro\MedConnect\MedConnect\DBapplication\bin\Debug\MedConnect.exe
 C:\Users\p c\OneDrive\Desktop\Pro\MedConnect\MedConnect\DBapplication\bin\Debug\MedConnect.pdb
@@ -41,7 +24,6 @@ C:\Users\p c\OneDrive\Desktop\Pro\MedConnect\MedConnect\DBapplication\obj\x86\De
 C:\Users\p c\OneDrive\Desktop\Pro\MedConnect\MedConnect\DBapplication\obj\x86\Debug\MedConnect.exe
 C:\Users\p c\OneDrive\Desktop\Pro\MedConnect\MedConnect\DBapplication\obj\x86\Debug\MedConnect.pdb
 C:\Users\p c\OneDrive\Desktop\Pro\MedConnect\MedConnect\DBapplication\obj\x86\Debug\MedConnect.Secretary.Secretary.resources
-C:\Users\Ali\Desktop\MedConnect\MedConnect\DBapplication\obj\x86\Debug\MedConnect.Secretary.Secretary.resources
 E:\KID\1.WORK\GitHubProjects\MedConnect\DBapplication\bin\Debug\MedConnect.exe.config
 E:\KID\1.WORK\GitHubProjects\MedConnect\DBapplication\bin\Debug\MedConnect.exe
 E:\KID\1.WORK\GitHubProjects\MedConnect\DBapplication\bin\Debug\MedConnect.pdb
@@ -61,10 +43,5 @@ E:\KID\1.WORK\GitHubProjects\MedConnect\DBapplication\obj\x86\Debug\MedConnect.e
 E:\KID\1.WORK\GitHubProjects\MedConnect\DBapplication\obj\x86\Debug\MedConnect.pdb
 E:\KID\1.WORK\GitHubProjects\MedConnect\DBapplication\obj\x86\Debug\MedConnect.Doctor.PatientsInfo.DoctorPatientsInfo.resources
 E:\KID\1.WORK\GitHubProjects\MedConnect\DBapplication\obj\x86\Debug\MedConnect.Doctor.DoctorViewPatients.resources
-C:\Users\Ali\Desktop\MedConnect\MedConnect\DBapplication\obj\x86\Debug\MedConnect.Doctor.DoctorMainForm.resources
-C:\Users\Ali\Desktop\MedConnect\MedConnect\DBapplication\obj\x86\Debug\MedConnect.Doctor.PatientsInfo.DoctorPatientsInfo.resources
-C:\Users\Ali\Desktop\MedConnect\MedConnect\DBapplication\obj\x86\Debug\MedConnect.Doctor.DoctorViewPatients.resources
-C:\Users\Ali\Desktop\MedConnect\MedConnect\DBapplication\obj\x86\Debug\MedConnect.Register.resources
 E:\KID\1.WORK\GitHubProjects\MedConnect\DBapplication\obj\x86\Debug\MedConnect.Register.resources
 E:\KID\1.WORK\GitHubProjects\MedConnect\DBapplication\obj\x86\Debug\MedConnect.Doctor.DoctorScheuale.resources
-C:\Users\Ali\Desktop\MedConnect\MedConnect\DBapplication\obj\x86\Debug\MedConnect.Doctor.DoctorScheuale.resources

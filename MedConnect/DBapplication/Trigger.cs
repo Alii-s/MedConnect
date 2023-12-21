@@ -1,6 +1,7 @@
 ﻿using ComponentFactory.Krypton.Toolkit;
 using MedConnect.Doctor;
 using MedConnect.Patient;
+using MedConnect.Pharmacist;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -78,10 +79,18 @@ namespace MedConnect
                 PatientMainForm form = new PatientMainForm(UserID);
                 form.Show();
                 return;
-            }else if(UserType == 'D')
+            }
+            else if (UserType == 'D')
             {
                 this.Hide();
                 DoctorMainForm form = new DoctorMainForm(UserID);
+                form.Show();
+                return;
+            }
+            else if (UserType == 'F')
+            {
+                this.Hide();
+                PharmacistMainForm form = new PharmacistMainForm(UserID);
                 form.Show();
                 return;
             }
