@@ -12,7 +12,8 @@ namespace MedConnect.Patient
 {
     public partial class PatientMainForm : Form
     {
-        int UserID;
+        readonly int UserID;
+        PatientController controller= new PatientController();
         public PatientMainForm(int UserID)
         {
             InitializeComponent();
@@ -34,6 +35,11 @@ namespace MedConnect.Patient
         private void button2_Click(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+
+        private void PatientMainForm_Load(object sender, EventArgs e)
+        {
+            label1.Text +=" "+ controller.SelectPatientName(UserID).ToString();
         }
     }
 }
