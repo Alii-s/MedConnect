@@ -86,6 +86,7 @@
       <DependentUpon>DoctorViewPatients.cs</DependentUpon>
     </Compile>
     <Compile Include="GeneralStoredProcedures.cs" />
+    <Compile Include="Patient\PatinetStoredProcedures.cs" />
     <Compile Include="Register.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -205,6 +206,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\login.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Doctor\DoctorResources\return.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

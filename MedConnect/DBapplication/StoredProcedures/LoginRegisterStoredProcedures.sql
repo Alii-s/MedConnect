@@ -1,4 +1,4 @@
-
+Drop procedure GetUserEmailPassword
 CREATE PROCEDURE GetUserEmailPassword
     @Email nchar(50),
     @Password nchar(30)
@@ -10,7 +10,7 @@ BEGIN
 	u.Type,
 	u.UserID
 	FROM Users u
-	WHERE u.Email=@Email AND u.Password=@Password
+	WHERE u.Email=@Email AND u.Password=@Password AND u.IsActive=1
 END
 GO
 CREATE PROCEDURE RegisterPatient

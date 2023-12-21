@@ -84,6 +84,7 @@
             this.logOut.TabIndex = 8;
             this.logOut.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.logOut.UseVisualStyleBackColor = true;
+            this.logOut.Click += new System.EventHandler(this.logOut_Click);
             // 
             // closeApplication
             // 

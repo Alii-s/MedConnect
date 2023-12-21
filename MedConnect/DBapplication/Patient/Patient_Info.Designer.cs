@@ -60,12 +60,13 @@
             this.closeApplication = new System.Windows.Forms.Button();
             this.logOut = new System.Windows.Forms.Button();
             this.firstNameLabel = new System.Windows.Forms.Label();
-            this.maritalStateTextBox = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
             this.maritalSateLabel = new System.Windows.Forms.Label();
             this.maritalStateLabel = new System.Windows.Forms.Label();
+            this.maritalStateTextBox = new ComponentFactory.Krypton.Toolkit.KryptonComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel1)).BeginInit();
             this.kryptonPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.maritalStateTextBox)).BeginInit();
             this.SuspendLayout();
             // 
             // label3
@@ -586,7 +587,7 @@
             this.button1.FlatAppearance.BorderSize = 0;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
+            this.button1.Image = global::MedConnect.Properties.Resources._return;
             this.button1.Location = new System.Drawing.Point(11, 65);
             this.button1.Margin = new System.Windows.Forms.Padding(2);
             this.button1.Name = "button1";
@@ -628,6 +629,7 @@
             this.logOut.TabIndex = 7;
             this.logOut.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.logOut.UseVisualStyleBackColor = false;
+            this.logOut.Click += new System.EventHandler(this.logOut_Click);
             // 
             // firstNameLabel
             // 
@@ -641,33 +643,6 @@
             this.firstNameLabel.TabIndex = 32;
             this.firstNameLabel.Text = "First name can\'t be empty";
             this.firstNameLabel.Visible = false;
-            // 
-            // maritalStateTextBox
-            // 
-            this.maritalStateTextBox.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.maritalStateTextBox.Location = new System.Drawing.Point(548, 320);
-            this.maritalStateTextBox.Name = "maritalStateTextBox";
-            this.maritalStateTextBox.Size = new System.Drawing.Size(208, 36);
-            this.maritalStateTextBox.StateActive.Border.Color1 = System.Drawing.Color.Black;
-            this.maritalStateTextBox.StateActive.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.maritalStateTextBox.StateCommon.Back.Color1 = System.Drawing.Color.White;
-            this.maritalStateTextBox.StateCommon.Border.Color1 = System.Drawing.Color.DarkGray;
-            this.maritalStateTextBox.StateCommon.Border.Color2 = System.Drawing.Color.DarkGray;
-            this.maritalStateTextBox.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.maritalStateTextBox.StateCommon.Border.Rounding = 18;
-            this.maritalStateTextBox.StateCommon.Content.Color1 = System.Drawing.Color.Black;
-            this.maritalStateTextBox.StateCommon.Content.Font = new System.Drawing.Font("OCR A Extended", 12F);
-            this.maritalStateTextBox.StateDisabled.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(241)))), ((int)(((byte)(255)))));
-            this.maritalStateTextBox.StateDisabled.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(241)))), ((int)(((byte)(255)))));
-            this.maritalStateTextBox.StateDisabled.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(241)))), ((int)(((byte)(255)))));
-            this.maritalStateTextBox.StateDisabled.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.maritalStateTextBox.TabIndex = 21;
             // 
             // maritalSateLabel
             // 
@@ -694,12 +669,47 @@
             this.maritalStateLabel.Text = "Marital state  can\'t be empty";
             this.maritalStateLabel.Visible = false;
             // 
+            // maritalStateTextBox
+            // 
+            this.maritalStateTextBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.maritalStateTextBox.DropDownWidth = 196;
+            this.maritalStateTextBox.Enabled = false;
+            this.maritalStateTextBox.Items.AddRange(new object[] {
+            "Single",
+            "Married",
+            "Widowed",
+            "Divorced",
+            "Separated"});
+            this.maritalStateTextBox.Location = new System.Drawing.Point(548, 322);
+            this.maritalStateTextBox.Name = "maritalStateTextBox";
+            this.maritalStateTextBox.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.Office2010Blue;
+            this.maritalStateTextBox.Size = new System.Drawing.Size(208, 34);
+            this.maritalStateTextBox.StateCommon.ComboBox.Border.Color1 = System.Drawing.Color.Black;
+            this.maritalStateTextBox.StateCommon.ComboBox.Border.Color2 = System.Drawing.Color.Black;
+            this.maritalStateTextBox.StateCommon.ComboBox.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.maritalStateTextBox.StateCommon.ComboBox.Border.Rounding = 18;
+            this.maritalStateTextBox.StateCommon.ComboBox.Content.Font = new System.Drawing.Font("OCR A Extended", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.maritalStateTextBox.StateCommon.ComboBox.Content.Padding = new System.Windows.Forms.Padding(1);
+            this.maritalStateTextBox.StateCommon.Item.Content.ShortText.Font = new System.Drawing.Font("OCR A Extended", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.maritalStateTextBox.StateDisabled.ComboBox.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(241)))), ((int)(((byte)(255)))));
+            this.maritalStateTextBox.StateDisabled.ComboBox.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(241)))), ((int)(((byte)(255)))));
+            this.maritalStateTextBox.StateDisabled.ComboBox.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(241)))), ((int)(((byte)(255)))));
+            this.maritalStateTextBox.StateDisabled.ComboBox.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.maritalStateTextBox.StateDisabled.Item.Content.ShortText.Color1 = System.Drawing.Color.Black;
+            this.maritalStateTextBox.StateDisabled.Item.Content.ShortText.Color2 = System.Drawing.Color.Black;
+            this.maritalStateTextBox.TabIndex = 75;
+            // 
             // Patient_Info
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(241)))), ((int)(((byte)(255)))));
             this.ClientSize = new System.Drawing.Size(1003, 586);
+            this.Controls.Add(this.maritalStateTextBox);
             this.Controls.Add(this.kryptonPanel1);
             this.Controls.Add(this.addressLabel);
             this.Controls.Add(this.occupationLabel);
@@ -722,7 +732,6 @@
             this.Controls.Add(this.lastNameTextBox);
             this.Controls.Add(this.firstNameTextBox);
             this.Controls.Add(this.label7);
-            this.Controls.Add(this.maritalStateTextBox);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
@@ -733,10 +742,12 @@
             this.Name = "Patient_Info";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Patient_Info";
+            this.Load += new System.EventHandler(this.Patient_Info_Load);
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel1)).EndInit();
             this.kryptonPanel1.ResumeLayout(false);
             this.kryptonPanel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.maritalStateTextBox)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -774,8 +785,8 @@
         private System.Windows.Forms.Button button1;
         private ComponentFactory.Krypton.Toolkit.KryptonPanel kryptonPanel1;
         private System.Windows.Forms.Label firstNameLabel;
-        private ComponentFactory.Krypton.Toolkit.KryptonTextBox maritalStateTextBox;
         private System.Windows.Forms.Label maritalSateLabel;
         private System.Windows.Forms.Label maritalStateLabel;
+        private ComponentFactory.Krypton.Toolkit.KryptonComboBox maritalStateTextBox;
     }
 }
