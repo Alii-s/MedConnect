@@ -31,6 +31,14 @@ namespace MedConnect.Pharmacist
             return dbMan.ExecuteReader(StoredProcedureName, null);
         }
 
+        public DataTable getMedicineByID (int ID)
+        {
+            string StoredProcedureName = PharmacistStoredProcedures.GetMedicineByID;
+            Dictionary<string, object> Parameters = new Dictionary<string, object>();
+            Parameters.Add("@ID", ID);
+            return dbMan.ExecuteReader(StoredProcedureName, Parameters);
+        }
+
         public DataTable getExpiredMedicine(DateTime today_date)
         {
             string StoredProcedureName = PharmacistStoredProcedures.GetExpiredMedicine;
@@ -55,6 +63,24 @@ namespace MedConnect.Pharmacist
             Parameters.Add("@price", price);
             Parameters.Add("@quantity", quantity);
             Parameters.Add("@expiration_date", expiration_date);
+            return dbMan.ExecuteNonQuery(StoredProcedureName, Parameters);
+        }
+
+        public int setMedicineQuantity(int ID, int quantity)
+        {
+            string StoredProcedureName = PharmacistStoredProcedures.SetMedicineQuantity;
+            Dictionary<string, object> Parameters = new Dictionary<string, object>();
+            Parameters.Add("@ID", ID);
+            Parameters.Add("@quantity", quantity);
+            return dbMan.ExecuteNonQuery(StoredProcedureName, Parameters);
+        }
+
+        public int incrementMedicineQuantity(int ID, int amount)
+        {
+            string StoredProcedureName = PharmacistStoredProcedures.IncrementMedicineQuantity;
+            Dictionary<string, object> Parameters = new Dictionary<string, object>();
+            Parameters.Add("@ID", ID);
+            Parameters.Add("@amount", amount);
             return dbMan.ExecuteNonQuery(StoredProcedureName, Parameters);
         }
     }
