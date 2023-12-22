@@ -31,6 +31,16 @@ namespace MedConnect.Patient
             string query = "SELECT Fname FROM Patients,Users WHERE PatientID=" + ID + " AND PatientID=UserID;";
             return dbMan.ExecuteScalar(query);
         }
+        public DataTable SelectSessionDates(int ID)
+        {
+            string query = "SELECT Session_ID,Date,CONCAT(Fname,' ',Lname) AS 'Doctor',DoctorID FROM Diagnosis_Sessions,Users WHERE IsRated=0 AND Diagnosis_Sessions.IsActive=1 AND PatientID="+ID+" AND DoctorID = UserID";
+            return dbMan.ExecuteReader(query);
+        }
+        public DataTable SelectDoctorRatings()
+        {
+            string query = "SELECT CONCAT(Fname,' ', Lname) AS 'Doctor Name', Avg_Rating as 'Average Rating' FROM Doctors,Users WHERE DoctorID=UserID";
+            return dbMan.ExecuteReader(query);
+        }
         public int UpdatePatientInfo(int UserID, string Fname, string Lname, string PhoneNumber, string occupation, string City, int Building_Num, string Street_Name, string Marital_State)
         {
             string StoredProcedureName = PatientStoredProcedures.UpdatePatient;
@@ -45,6 +55,20 @@ namespace MedConnect.Patient
             Parameters.Add("@Building_Num", Building_Num);
             Parameters.Add("@Street_Name", Street_Name);
             Parameters.Add("@Marital_State", Marital_State);
+            return dbMan.ExecuteNonQuery(StoredProcedureName, Parameters);
+        }
+        public int InsertRating(int Session_ID,string Comments,int Rating,int DoctorID,int PatientID)
+        {
+            string StoredProcedureName = PatientStoredProcedures.InsertRating;
+
+
+            Dictionary<string, object> Parameters = new Dictionary<string, object>();
+            Parameters.Add("@D_SessionID", Session_ID);
+            Parameters.Add("@Comments", Comments);
+            Parameters.Add("@Rating", Rating);
+            Parameters.Add("@DoctorID", DoctorID);
+            Parameters.Add("@PatientID", PatientID);
+
             return dbMan.ExecuteNonQuery(StoredProcedureName, Parameters);
         }
         public DataTable GetSessionInfo(int UserID,DateTime StartDate, DateTime EndDate)
