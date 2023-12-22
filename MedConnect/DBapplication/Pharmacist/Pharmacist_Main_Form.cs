@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MedConnect.Patient;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -10,11 +11,11 @@ using System.Windows.Forms;
 
 namespace MedConnect.Pharmacist
 {
-    public partial class PharmacistMainForm : Form
+    public partial class Pharmacist_Main_Form : Form
     {
         readonly int UserID;
         PharmacistController controller;
-        public PharmacistMainForm(int UserID)
+        public Pharmacist_Main_Form(int UserID)
         {
             InitializeComponent();
             controller = new PharmacistController();
@@ -36,6 +37,13 @@ namespace MedConnect.Pharmacist
         private void closeApplication_Click(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+
+        private void updatInfo_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Medical_Inventory_Form form = new Medical_Inventory_Form(UserID);
+            form.Show();
         }
     }
 }

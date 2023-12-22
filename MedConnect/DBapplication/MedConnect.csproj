@@ -96,11 +96,42 @@
     </Compile>
     <Compile Include="GeneralStoredProcedures.cs" />
     <Compile Include="Patient\PatinetStoredProcedures.cs" />
-    <Compile Include="Pharmacist\PharmacistMainForm.cs">
+    <Compile Include="Pharmacist\Add_Medicine_Form.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Pharmacist\PharmacistMainForm.Designer.cs">
-      <DependentUpon>PharmacistMainForm.cs</DependentUpon>
+    <Compile Include="Pharmacist\Add_Medicine_Form.Designer.cs">
+      <DependentUpon>Add_Medicine_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pharmacist\Delete_Medicine_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pharmacist\Delete_Medicine_Form.Designer.cs">
+      <DependentUpon>Delete_Medicine_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pharmacist\Medical_Inventory_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pharmacist\Medical_Inventory_Form.Designer.cs">
+      <DependentUpon>Medical_Inventory_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pharmacist\PharmacistStoredProcedures.cs" />
+    <Compile Include="Pharmacist\Pharmacist_Main_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pharmacist\Pharmacist_Main_Form.Designer.cs">
+      <DependentUpon>Pharmacist_Main_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pharmacist\Update_Stock_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pharmacist\Update_Stock_Form.Designer.cs">
+      <DependentUpon>Update_Stock_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pharmacist\View_Inventory_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pharmacist\View_Inventory_Form.Designer.cs">
+      <DependentUpon>View_Inventory_Form.cs</DependentUpon>
     </Compile>
     <Compile Include="Register.cs">
       <SubType>Form</SubType>
@@ -155,8 +186,23 @@
     <EmbeddedResource Include="Patient\Patient_Info.resx">
       <DependentUpon>Patient_Info.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Pharmacist\PharmacistMainForm.resx">
-      <DependentUpon>PharmacistMainForm.cs</DependentUpon>
+    <EmbeddedResource Include="Pharmacist\Add_Medicine_Form.resx">
+      <DependentUpon>Add_Medicine_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pharmacist\Delete_Medicine_Form.resx">
+      <DependentUpon>Delete_Medicine_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pharmacist\Medical_Inventory_Form.resx">
+      <DependentUpon>Medical_Inventory_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pharmacist\Pharmacist_Main_Form.resx">
+      <DependentUpon>Pharmacist_Main_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pharmacist\Update_Stock_Form.resx">
+      <DependentUpon>Update_Stock_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pharmacist\View_Inventory_Form.resx">
+      <DependentUpon>View_Inventory_Form.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

@@ -90,7 +90,7 @@ namespace MedConnect
             else if (UserType == 'F')
             {
                 this.Hide();
-                PharmacistMainForm form = new PharmacistMainForm(UserID);
+                Pharmacist_Main_Form form = new Pharmacist_Main_Form(UserID);
                 form.Show();
                 return;
             }
