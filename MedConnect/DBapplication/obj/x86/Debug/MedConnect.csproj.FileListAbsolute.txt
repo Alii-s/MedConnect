@@ -48,11 +48,6 @@ E:\KID\1.WORK\GitHubProjects\MedConnect\DBapplication\obj\x86\Debug\MedConnect.D
 C:\Users\Ali\Desktop\MedConnect\MedConnect\DBapplication\bin\Debug\MedConnect.exe.config
 C:\Users\Ali\Desktop\MedConnect\MedConnect\DBapplication\bin\Debug\MedConnect.exe
 C:\Users\Ali\Desktop\MedConnect\MedConnect\DBapplication\bin\Debug\MedConnect.pdb
-C:\Users\Ali\Desktop\MedConnect\MedConnect\DBapplication\bin\Debug\ComponentFactory.Krypton.Docking.dll
-C:\Users\Ali\Desktop\MedConnect\MedConnect\DBapplication\bin\Debug\ComponentFactory.Krypton.Navigator.dll
-C:\Users\Ali\Desktop\MedConnect\MedConnect\DBapplication\bin\Debug\ComponentFactory.Krypton.Ribbon.dll
-C:\Users\Ali\Desktop\MedConnect\MedConnect\DBapplication\bin\Debug\ComponentFactory.Krypton.Toolkit.dll
-C:\Users\Ali\Desktop\MedConnect\MedConnect\DBapplication\bin\Debug\ComponentFactory.Krypton.Workspace.dll
 C:\Users\Ali\Desktop\MedConnect\MedConnect\DBapplication\bin\Debug\ComponentFactory.Krypton.Docking.pdb
 C:\Users\Ali\Desktop\MedConnect\MedConnect\DBapplication\bin\Debug\ComponentFactory.Krypton.Navigator.pdb
 C:\Users\Ali\Desktop\MedConnect\MedConnect\DBapplication\bin\Debug\ComponentFactory.Krypton.Ribbon.pdb
@@ -80,3 +75,4 @@ C:\Users\Ali\Desktop\MedConnect\MedConnect\DBapplication\obj\x86\Debug\MedConnec
 C:\Users\Ali\Desktop\MedConnect\MedConnect\DBapplication\obj\x86\Debug\MedConnect.Pharmacist.View_Inventory_Form.resources
 C:\Users\Ali\Desktop\MedConnect\MedConnect\DBapplication\obj\x86\Debug\MedConnect.Pharmacist.Delete_Medicine_Form.resources
 C:\Users\Ali\Desktop\MedConnect\MedConnect\DBapplication\obj\x86\Debug\MedConnect.Pharmacist.Update_Stock_Form.resources
+C:\Users\Ali\Desktop\MedConnect\MedConnect\DBapplication\obj\x86\Debug\MedConnect.Patient.ViewMedicalHistory.resources

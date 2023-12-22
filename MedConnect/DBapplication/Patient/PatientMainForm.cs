@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
+using ComponentFactory.Krypton.Toolkit;
 namespace MedConnect.Patient
 {
     public partial class PatientMainForm : Form
@@ -22,7 +22,7 @@ namespace MedConnect.Patient
 
         private void updatInfo_Click(object sender, EventArgs e)
         {
-            this.Hide();
+            this.Close();
             Patient_Info patient_Info = new Patient_Info(UserID);
             patient_Info.Show();
         }
@@ -47,6 +47,13 @@ namespace MedConnect.Patient
             Trigger trigger = new Trigger();
             trigger.Show();
             this.Close();
+        }
+
+        private void kryptonButton4_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            ViewMedicalHistory medHistory = new ViewMedicalHistory(UserID);
+            medHistory.Show();
         }
     }
 }
