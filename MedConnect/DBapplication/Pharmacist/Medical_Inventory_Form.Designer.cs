@@ -30,15 +30,15 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Medical_Inventory_Form));
             this.kryptonPanel1 = new ComponentFactory.Krypton.Toolkit.KryptonPanel();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.closeApplication = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
-            this.logOut = new System.Windows.Forms.Button();
             this.addMedicine = new ComponentFactory.Krypton.Toolkit.KryptonButton();
             this.deleteMedicine = new ComponentFactory.Krypton.Toolkit.KryptonButton();
             this.viewInventory = new ComponentFactory.Krypton.Toolkit.KryptonButton();
             this.updateStock = new ComponentFactory.Krypton.Toolkit.KryptonButton();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.button1 = new System.Windows.Forms.Button();
+            this.closeApplication = new System.Windows.Forms.Button();
+            this.logOut = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel1)).BeginInit();
             this.kryptonPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -58,10 +58,131 @@
             this.kryptonPanel1.StateCommon.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(157)))), ((int)(((byte)(205)))), ((int)(((byte)(255)))));
             this.kryptonPanel1.TabIndex = 38;
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(157)))), ((int)(((byte)(205)))), ((int)(((byte)(255)))));
+            this.label1.Font = new System.Drawing.Font("OCR A Extended", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(7)))), ((int)(((byte)(73)))));
+            this.label1.Location = new System.Drawing.Point(218, 39);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(391, 39);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Medical Inventory";
+            // 
+            // addMedicine
+            // 
+            this.addMedicine.Location = new System.Drawing.Point(123, 129);
+            this.addMedicine.Margin = new System.Windows.Forms.Padding(2);
+            this.addMedicine.Name = "addMedicine";
+            this.addMedicine.Size = new System.Drawing.Size(261, 202);
+            this.addMedicine.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(241)))), ((int)(((byte)(255)))));
+            this.addMedicine.StateCommon.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(241)))), ((int)(((byte)(255)))));
+            this.addMedicine.StateCommon.Back.ImageStyle = ComponentFactory.Krypton.Toolkit.PaletteImageStyle.CenterMiddle;
+            this.addMedicine.StateCommon.Border.DrawBorders = ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.None;
+            this.addMedicine.StateCommon.Content.LongText.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.addMedicine.StateCommon.Content.ShortText.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(7)))), ((int)(((byte)(73)))));
+            this.addMedicine.StateCommon.Content.ShortText.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(7)))), ((int)(((byte)(73)))));
+            this.addMedicine.StateCommon.Content.ShortText.Font = new System.Drawing.Font("OCR A Extended", 17.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.addMedicine.StateCommon.Content.ShortText.TextH = ComponentFactory.Krypton.Toolkit.PaletteRelativeAlign.Center;
+            this.addMedicine.StateCommon.Content.ShortText.TextV = ComponentFactory.Krypton.Toolkit.PaletteRelativeAlign.Far;
+            this.addMedicine.StatePressed.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(157)))), ((int)(((byte)(209)))), ((int)(((byte)(255)))));
+            this.addMedicine.StatePressed.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(157)))), ((int)(((byte)(209)))), ((int)(((byte)(255)))));
+            this.addMedicine.StateTracking.Back.Color1 = System.Drawing.Color.AliceBlue;
+            this.addMedicine.StateTracking.Back.Color2 = System.Drawing.Color.AliceBlue;
+            this.addMedicine.TabIndex = 39;
+            this.addMedicine.Tag = "";
+            this.addMedicine.Values.Image = global::MedConnect.Properties.Resources.add1;
+            this.addMedicine.Values.ImageTransparentColor = System.Drawing.Color.Transparent;
+            this.addMedicine.Values.Text = "Add Medicine";
+            this.addMedicine.Click += new System.EventHandler(this.updatInfo_Click);
+            // 
+            // deleteMedicine
+            // 
+            this.deleteMedicine.Location = new System.Drawing.Point(544, 129);
+            this.deleteMedicine.Margin = new System.Windows.Forms.Padding(2);
+            this.deleteMedicine.Name = "deleteMedicine";
+            this.deleteMedicine.Size = new System.Drawing.Size(261, 202);
+            this.deleteMedicine.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(241)))), ((int)(((byte)(255)))));
+            this.deleteMedicine.StateCommon.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(241)))), ((int)(((byte)(255)))));
+            this.deleteMedicine.StateCommon.Back.ImageStyle = ComponentFactory.Krypton.Toolkit.PaletteImageStyle.CenterMiddle;
+            this.deleteMedicine.StateCommon.Border.DrawBorders = ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.None;
+            this.deleteMedicine.StateCommon.Content.LongText.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.deleteMedicine.StateCommon.Content.ShortText.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(7)))), ((int)(((byte)(73)))));
+            this.deleteMedicine.StateCommon.Content.ShortText.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(7)))), ((int)(((byte)(73)))));
+            this.deleteMedicine.StateCommon.Content.ShortText.Font = new System.Drawing.Font("OCR A Extended", 17.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.deleteMedicine.StateCommon.Content.ShortText.TextH = ComponentFactory.Krypton.Toolkit.PaletteRelativeAlign.Center;
+            this.deleteMedicine.StateCommon.Content.ShortText.TextV = ComponentFactory.Krypton.Toolkit.PaletteRelativeAlign.Far;
+            this.deleteMedicine.StatePressed.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(157)))), ((int)(((byte)(209)))), ((int)(((byte)(255)))));
+            this.deleteMedicine.StatePressed.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(157)))), ((int)(((byte)(209)))), ((int)(((byte)(255)))));
+            this.deleteMedicine.StateTracking.Back.Color1 = System.Drawing.Color.AliceBlue;
+            this.deleteMedicine.StateTracking.Back.Color2 = System.Drawing.Color.AliceBlue;
+            this.deleteMedicine.TabIndex = 40;
+            this.deleteMedicine.Tag = "";
+            this.deleteMedicine.Values.Image = global::MedConnect.Properties.Resources.delete__1_;
+            this.deleteMedicine.Values.ImageTransparentColor = System.Drawing.Color.Transparent;
+            this.deleteMedicine.Values.Text = "Delete Medicine";
+            this.deleteMedicine.Click += new System.EventHandler(this.deleteMedicine_Click);
+            // 
+            // viewInventory
+            // 
+            this.viewInventory.Location = new System.Drawing.Point(544, 362);
+            this.viewInventory.Margin = new System.Windows.Forms.Padding(2);
+            this.viewInventory.Name = "viewInventory";
+            this.viewInventory.Size = new System.Drawing.Size(261, 202);
+            this.viewInventory.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(241)))), ((int)(((byte)(255)))));
+            this.viewInventory.StateCommon.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(241)))), ((int)(((byte)(255)))));
+            this.viewInventory.StateCommon.Back.ImageStyle = ComponentFactory.Krypton.Toolkit.PaletteImageStyle.CenterMiddle;
+            this.viewInventory.StateCommon.Border.DrawBorders = ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.None;
+            this.viewInventory.StateCommon.Content.LongText.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.viewInventory.StateCommon.Content.ShortText.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(7)))), ((int)(((byte)(73)))));
+            this.viewInventory.StateCommon.Content.ShortText.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(7)))), ((int)(((byte)(73)))));
+            this.viewInventory.StateCommon.Content.ShortText.Font = new System.Drawing.Font("OCR A Extended", 17.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.viewInventory.StateCommon.Content.ShortText.TextH = ComponentFactory.Krypton.Toolkit.PaletteRelativeAlign.Center;
+            this.viewInventory.StateCommon.Content.ShortText.TextV = ComponentFactory.Krypton.Toolkit.PaletteRelativeAlign.Far;
+            this.viewInventory.StatePressed.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(157)))), ((int)(((byte)(209)))), ((int)(((byte)(255)))));
+            this.viewInventory.StatePressed.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(157)))), ((int)(((byte)(209)))), ((int)(((byte)(255)))));
+            this.viewInventory.StateTracking.Back.Color1 = System.Drawing.Color.AliceBlue;
+            this.viewInventory.StateTracking.Back.Color2 = System.Drawing.Color.AliceBlue;
+            this.viewInventory.TabIndex = 41;
+            this.viewInventory.Tag = "";
+            this.viewInventory.Values.Image = global::MedConnect.Properties.Resources.delivery_box;
+            this.viewInventory.Values.ImageTransparentColor = System.Drawing.Color.Transparent;
+            this.viewInventory.Values.Text = "View Inventory";
+            this.viewInventory.Click += new System.EventHandler(this.kryptonButton2_Click);
+            // 
+            // updateStock
+            // 
+            this.updateStock.Location = new System.Drawing.Point(123, 362);
+            this.updateStock.Margin = new System.Windows.Forms.Padding(2);
+            this.updateStock.Name = "updateStock";
+            this.updateStock.Size = new System.Drawing.Size(261, 202);
+            this.updateStock.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(241)))), ((int)(((byte)(255)))));
+            this.updateStock.StateCommon.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(241)))), ((int)(((byte)(255)))));
+            this.updateStock.StateCommon.Back.ImageStyle = ComponentFactory.Krypton.Toolkit.PaletteImageStyle.CenterMiddle;
+            this.updateStock.StateCommon.Border.DrawBorders = ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.None;
+            this.updateStock.StateCommon.Content.LongText.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.updateStock.StateCommon.Content.ShortText.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(7)))), ((int)(((byte)(73)))));
+            this.updateStock.StateCommon.Content.ShortText.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(7)))), ((int)(((byte)(73)))));
+            this.updateStock.StateCommon.Content.ShortText.Font = new System.Drawing.Font("OCR A Extended", 17.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.updateStock.StateCommon.Content.ShortText.TextH = ComponentFactory.Krypton.Toolkit.PaletteRelativeAlign.Center;
+            this.updateStock.StateCommon.Content.ShortText.TextV = ComponentFactory.Krypton.Toolkit.PaletteRelativeAlign.Far;
+            this.updateStock.StatePressed.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(157)))), ((int)(((byte)(209)))), ((int)(((byte)(255)))));
+            this.updateStock.StatePressed.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(157)))), ((int)(((byte)(209)))), ((int)(((byte)(255)))));
+            this.updateStock.StateTracking.Back.Color1 = System.Drawing.Color.AliceBlue;
+            this.updateStock.StateTracking.Back.Color2 = System.Drawing.Color.AliceBlue;
+            this.updateStock.TabIndex = 42;
+            this.updateStock.Tag = "";
+            this.updateStock.Values.Image = global::MedConnect.Properties.Resources.refresh;
+            this.updateStock.Values.ImageTransparentColor = System.Drawing.Color.Transparent;
+            this.updateStock.Values.Text = "Update Stock";
+            this.updateStock.Click += new System.EventHandler(this.updateStock_Click);
+            // 
             // pictureBox1
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(157)))), ((int)(((byte)(205)))), ((int)(((byte)(255)))));
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Image = global::MedConnect.Properties.Resources.medicine;
             this.pictureBox1.Location = new System.Drawing.Point(72, 11);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox1.Name = "pictureBox1";
@@ -104,19 +225,6 @@
             this.closeApplication.UseVisualStyleBackColor = false;
             this.closeApplication.Click += new System.EventHandler(this.closeApplication_Click);
             // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(157)))), ((int)(((byte)(205)))), ((int)(((byte)(255)))));
-            this.label1.Font = new System.Drawing.Font("OCR A Extended", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(7)))), ((int)(((byte)(73)))));
-            this.label1.Location = new System.Drawing.Point(218, 39);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(391, 39);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Medical Inventory";
-            // 
             // logOut
             // 
             this.logOut.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(157)))), ((int)(((byte)(205)))), ((int)(((byte)(255)))));
@@ -133,114 +241,6 @@
             this.logOut.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.logOut.UseVisualStyleBackColor = false;
             this.logOut.Click += new System.EventHandler(this.logOut_Click);
-            // 
-            // addMedicine
-            // 
-            this.addMedicine.Location = new System.Drawing.Point(123, 129);
-            this.addMedicine.Margin = new System.Windows.Forms.Padding(2);
-            this.addMedicine.Name = "addMedicine";
-            this.addMedicine.Size = new System.Drawing.Size(261, 202);
-            this.addMedicine.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(241)))), ((int)(((byte)(255)))));
-            this.addMedicine.StateCommon.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(241)))), ((int)(((byte)(255)))));
-            this.addMedicine.StateCommon.Back.ImageStyle = ComponentFactory.Krypton.Toolkit.PaletteImageStyle.CenterMiddle;
-            this.addMedicine.StateCommon.Border.DrawBorders = ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.None;
-            this.addMedicine.StateCommon.Content.LongText.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.addMedicine.StateCommon.Content.ShortText.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(7)))), ((int)(((byte)(73)))));
-            this.addMedicine.StateCommon.Content.ShortText.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(7)))), ((int)(((byte)(73)))));
-            this.addMedicine.StateCommon.Content.ShortText.Font = new System.Drawing.Font("OCR A Extended", 17.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.addMedicine.StateCommon.Content.ShortText.TextH = ComponentFactory.Krypton.Toolkit.PaletteRelativeAlign.Center;
-            this.addMedicine.StateCommon.Content.ShortText.TextV = ComponentFactory.Krypton.Toolkit.PaletteRelativeAlign.Far;
-            this.addMedicine.StatePressed.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(157)))), ((int)(((byte)(209)))), ((int)(((byte)(255)))));
-            this.addMedicine.StatePressed.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(157)))), ((int)(((byte)(209)))), ((int)(((byte)(255)))));
-            this.addMedicine.StateTracking.Back.Color1 = System.Drawing.Color.AliceBlue;
-            this.addMedicine.StateTracking.Back.Color2 = System.Drawing.Color.AliceBlue;
-            this.addMedicine.TabIndex = 39;
-            this.addMedicine.Tag = "";
-            this.addMedicine.Values.Image = ((System.Drawing.Image)(resources.GetObject("addMedicine.Values.Image")));
-            this.addMedicine.Values.ImageTransparentColor = System.Drawing.Color.Transparent;
-            this.addMedicine.Values.Text = "Add Medicine";
-            this.addMedicine.Click += new System.EventHandler(this.updatInfo_Click);
-            // 
-            // deleteMedicine
-            // 
-            this.deleteMedicine.Location = new System.Drawing.Point(544, 129);
-            this.deleteMedicine.Margin = new System.Windows.Forms.Padding(2);
-            this.deleteMedicine.Name = "deleteMedicine";
-            this.deleteMedicine.Size = new System.Drawing.Size(261, 202);
-            this.deleteMedicine.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(241)))), ((int)(((byte)(255)))));
-            this.deleteMedicine.StateCommon.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(241)))), ((int)(((byte)(255)))));
-            this.deleteMedicine.StateCommon.Back.ImageStyle = ComponentFactory.Krypton.Toolkit.PaletteImageStyle.CenterMiddle;
-            this.deleteMedicine.StateCommon.Border.DrawBorders = ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.None;
-            this.deleteMedicine.StateCommon.Content.LongText.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.deleteMedicine.StateCommon.Content.ShortText.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(7)))), ((int)(((byte)(73)))));
-            this.deleteMedicine.StateCommon.Content.ShortText.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(7)))), ((int)(((byte)(73)))));
-            this.deleteMedicine.StateCommon.Content.ShortText.Font = new System.Drawing.Font("OCR A Extended", 17.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.deleteMedicine.StateCommon.Content.ShortText.TextH = ComponentFactory.Krypton.Toolkit.PaletteRelativeAlign.Center;
-            this.deleteMedicine.StateCommon.Content.ShortText.TextV = ComponentFactory.Krypton.Toolkit.PaletteRelativeAlign.Far;
-            this.deleteMedicine.StatePressed.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(157)))), ((int)(((byte)(209)))), ((int)(((byte)(255)))));
-            this.deleteMedicine.StatePressed.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(157)))), ((int)(((byte)(209)))), ((int)(((byte)(255)))));
-            this.deleteMedicine.StateTracking.Back.Color1 = System.Drawing.Color.AliceBlue;
-            this.deleteMedicine.StateTracking.Back.Color2 = System.Drawing.Color.AliceBlue;
-            this.deleteMedicine.TabIndex = 40;
-            this.deleteMedicine.Tag = "";
-            this.deleteMedicine.Values.Image = ((System.Drawing.Image)(resources.GetObject("deleteMedicine.Values.Image")));
-            this.deleteMedicine.Values.ImageTransparentColor = System.Drawing.Color.Transparent;
-            this.deleteMedicine.Values.Text = "Delete Medicine";
-            this.deleteMedicine.Click += new System.EventHandler(this.deleteMedicine_Click);
-            // 
-            // viewInventory
-            // 
-            this.viewInventory.Location = new System.Drawing.Point(544, 362);
-            this.viewInventory.Margin = new System.Windows.Forms.Padding(2);
-            this.viewInventory.Name = "viewInventory";
-            this.viewInventory.Size = new System.Drawing.Size(261, 202);
-            this.viewInventory.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(241)))), ((int)(((byte)(255)))));
-            this.viewInventory.StateCommon.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(241)))), ((int)(((byte)(255)))));
-            this.viewInventory.StateCommon.Back.ImageStyle = ComponentFactory.Krypton.Toolkit.PaletteImageStyle.CenterMiddle;
-            this.viewInventory.StateCommon.Border.DrawBorders = ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.None;
-            this.viewInventory.StateCommon.Content.LongText.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.viewInventory.StateCommon.Content.ShortText.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(7)))), ((int)(((byte)(73)))));
-            this.viewInventory.StateCommon.Content.ShortText.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(7)))), ((int)(((byte)(73)))));
-            this.viewInventory.StateCommon.Content.ShortText.Font = new System.Drawing.Font("OCR A Extended", 17.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.viewInventory.StateCommon.Content.ShortText.TextH = ComponentFactory.Krypton.Toolkit.PaletteRelativeAlign.Center;
-            this.viewInventory.StateCommon.Content.ShortText.TextV = ComponentFactory.Krypton.Toolkit.PaletteRelativeAlign.Far;
-            this.viewInventory.StatePressed.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(157)))), ((int)(((byte)(209)))), ((int)(((byte)(255)))));
-            this.viewInventory.StatePressed.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(157)))), ((int)(((byte)(209)))), ((int)(((byte)(255)))));
-            this.viewInventory.StateTracking.Back.Color1 = System.Drawing.Color.AliceBlue;
-            this.viewInventory.StateTracking.Back.Color2 = System.Drawing.Color.AliceBlue;
-            this.viewInventory.TabIndex = 41;
-            this.viewInventory.Tag = "";
-            this.viewInventory.Values.Image = ((System.Drawing.Image)(resources.GetObject("viewInventory.Values.Image")));
-            this.viewInventory.Values.ImageTransparentColor = System.Drawing.Color.Transparent;
-            this.viewInventory.Values.Text = "View Inventory";
-            this.viewInventory.Click += new System.EventHandler(this.kryptonButton2_Click);
-            // 
-            // updateStock
-            // 
-            this.updateStock.Location = new System.Drawing.Point(123, 362);
-            this.updateStock.Margin = new System.Windows.Forms.Padding(2);
-            this.updateStock.Name = "updateStock";
-            this.updateStock.Size = new System.Drawing.Size(261, 202);
-            this.updateStock.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(241)))), ((int)(((byte)(255)))));
-            this.updateStock.StateCommon.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(241)))), ((int)(((byte)(255)))));
-            this.updateStock.StateCommon.Back.ImageStyle = ComponentFactory.Krypton.Toolkit.PaletteImageStyle.CenterMiddle;
-            this.updateStock.StateCommon.Border.DrawBorders = ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.None;
-            this.updateStock.StateCommon.Content.LongText.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.updateStock.StateCommon.Content.ShortText.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(7)))), ((int)(((byte)(73)))));
-            this.updateStock.StateCommon.Content.ShortText.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(7)))), ((int)(((byte)(73)))));
-            this.updateStock.StateCommon.Content.ShortText.Font = new System.Drawing.Font("OCR A Extended", 17.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.updateStock.StateCommon.Content.ShortText.TextH = ComponentFactory.Krypton.Toolkit.PaletteRelativeAlign.Center;
-            this.updateStock.StateCommon.Content.ShortText.TextV = ComponentFactory.Krypton.Toolkit.PaletteRelativeAlign.Far;
-            this.updateStock.StatePressed.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(157)))), ((int)(((byte)(209)))), ((int)(((byte)(255)))));
-            this.updateStock.StatePressed.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(157)))), ((int)(((byte)(209)))), ((int)(((byte)(255)))));
-            this.updateStock.StateTracking.Back.Color1 = System.Drawing.Color.AliceBlue;
-            this.updateStock.StateTracking.Back.Color2 = System.Drawing.Color.AliceBlue;
-            this.updateStock.TabIndex = 42;
-            this.updateStock.Tag = "";
-            this.updateStock.Values.Image = ((System.Drawing.Image)(resources.GetObject("updateStock.Values.Image")));
-            this.updateStock.Values.ImageTransparentColor = System.Drawing.Color.Transparent;
-            this.updateStock.Values.Text = "Update Stock";
-            this.updateStock.Click += new System.EventHandler(this.updateStock_Click);
             // 
             // Medical_Inventory_Form
             // 

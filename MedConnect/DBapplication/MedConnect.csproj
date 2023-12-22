@@ -96,6 +96,12 @@
     </Compile>
     <Compile Include="GeneralStoredProcedures.cs" />
     <Compile Include="Patient\PatinetStoredProcedures.cs" />
+    <Compile Include="Patient\ViewMedicalHistory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Patient\ViewMedicalHistory.Designer.cs">
+      <DependentUpon>ViewMedicalHistory.cs</DependentUpon>
+    </Compile>
     <Compile Include="Pharmacist\Add_Medicine_Form.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -186,6 +192,9 @@
     <EmbeddedResource Include="Patient\Patient_Info.resx">
       <DependentUpon>Patient_Info.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Patient\ViewMedicalHistory.resx">
+      <DependentUpon>ViewMedicalHistory.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Pharmacist\Add_Medicine_Form.resx">
       <DependentUpon>Add_Medicine_Form.cs</DependentUpon>
     </EmbeddedResource>
@@ -273,6 +282,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Doctor\DoctorResources\return.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\medical-report.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
