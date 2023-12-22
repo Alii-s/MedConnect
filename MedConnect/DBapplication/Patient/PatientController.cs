@@ -18,7 +18,12 @@ namespace MedConnect.Patient
         }
         public DataTable SelectPatientInfo(int ID)
         {
-            string query = "SELECT Fname,Lname,Email,PhoneNumber,Gender,DateOfBirth,Occupation,Building_num,Street_Name,City,Marital_State FROM Patients,Users WHERE PatientID=" + ID + " AND PatientID=UserID;";
+            string query = "SELECT Fname,Lname,Email,PhoneNumber,Gender,DateOfBirth,Occupation,Building_num,Street_Name,City,Marital_State FROM Patients,Users WHERE PatientID=" + ID + " AND PatientID=UserID AND Users.IsActive=1;";
+            return dbMan.ExecuteReader(query);
+        }
+        public DataTable SelectPatientRecords(int ID)
+        {
+            string query = "SELECT Previous_illness AS 'Previous Illnesses', Ongoing_medication as 'Ongoing Medication',Previous_Surgeries as 'Previous Surgeries' FROM Users,Patients,MedicalRecords WHERE MedicalRecords.PatientID=" + ID + " AND MedicalRecords.PatientID=UserID AND Patients.PatientID=MedicalRecords.PatientID AND Users.IsActive=1;";
             return dbMan.ExecuteReader(query);
         }
         public object SelectPatientName(int ID)
@@ -41,6 +46,15 @@ namespace MedConnect.Patient
             Parameters.Add("@Street_Name", Street_Name);
             Parameters.Add("@Marital_State", Marital_State);
             return dbMan.ExecuteNonQuery(StoredProcedureName, Parameters);
+        }
+        public DataTable GetSessionInfo(int UserID,DateTime StartDate, DateTime EndDate)
+        {
+            string StoredProcedureName = PatientStoredProcedures.GetSessionInfo;
+            Dictionary<string, object> Parameters = new Dictionary<string, object>();
+            Parameters.Add("@UserID", UserID);
+            Parameters.Add("@StartDate", StartDate);
+            Parameters.Add("@EndDate", EndDate);
+            return dbMan.ExecuteReader(StoredProcedureName, Parameters);
         }
     }
 }
