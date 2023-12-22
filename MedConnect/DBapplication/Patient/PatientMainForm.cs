@@ -62,5 +62,12 @@ namespace MedConnect.Patient
             rating.Show();
             this.Close();
         }
+
+        private void kryptonButton3_Click(object sender, EventArgs e)
+        {
+            Bills bills = new Bills(UserID);
+            bills.Show();
+            this.Close();
+        }
     }
 }

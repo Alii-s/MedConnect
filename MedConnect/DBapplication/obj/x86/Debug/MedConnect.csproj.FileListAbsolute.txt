@@ -77,3 +77,4 @@ C:\Users\Ali\Desktop\MedConnect\MedConnect\DBapplication\obj\x86\Debug\MedConnec
 C:\Users\Ali\Desktop\MedConnect\MedConnect\DBapplication\obj\x86\Debug\MedConnect.Pharmacist.Update_Stock_Form.resources
 C:\Users\Ali\Desktop\MedConnect\MedConnect\DBapplication\obj\x86\Debug\MedConnect.Patient.ViewMedicalHistory.resources
 C:\Users\Ali\Desktop\MedConnect\MedConnect\DBapplication\obj\x86\Debug\MedConnect.Patient.Rating.resources
+C:\Users\Ali\Desktop\MedConnect\MedConnect\DBapplication\obj\x86\Debug\MedConnect.Patient.Bills.resources

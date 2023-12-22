@@ -95,6 +95,12 @@
       <DependentUpon>DoctorViewPatients.cs</DependentUpon>
     </Compile>
     <Compile Include="GeneralStoredProcedures.cs" />
+    <Compile Include="Patient\Bills.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Patient\Bills.Designer.cs">
+      <DependentUpon>Bills.cs</DependentUpon>
+    </Compile>
     <Compile Include="Patient\PatinetStoredProcedures.cs" />
     <Compile Include="Patient\Rating.cs">
       <SubType>Form</SubType>
@@ -191,6 +197,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Doctor\DoctorViewPatients.resx">
       <DependentUpon>DoctorViewPatients.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Patient\Bills.resx">
+      <DependentUpon>Bills.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Patient\PatientMainForm.resx">
       <DependentUpon>PatientMainForm.cs</DependentUpon>

@@ -69,7 +69,7 @@
             this.pictureBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(157)))), ((int)(((byte)(205)))), ((int)(((byte)(255)))));
             this.pictureBox1.Image = global::MedConnect.Properties.Resources.medical_report;
             this.pictureBox1.Location = new System.Drawing.Point(72, 11);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(142, 91);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -85,7 +85,7 @@
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.Image = global::MedConnect.Properties.Resources._return;
             this.button1.Location = new System.Drawing.Point(11, 65);
-            this.button1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button1.Margin = new System.Windows.Forms.Padding(2);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(45, 37);
             this.button1.TabIndex = 8;
@@ -102,7 +102,7 @@
             this.closeApplication.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(153)))), ((int)(((byte)(255)))));
             this.closeApplication.Image = ((System.Drawing.Image)(resources.GetObject("closeApplication.Image")));
             this.closeApplication.Location = new System.Drawing.Point(947, 11);
-            this.closeApplication.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.closeApplication.Margin = new System.Windows.Forms.Padding(2);
             this.closeApplication.Name = "closeApplication";
             this.closeApplication.Size = new System.Drawing.Size(45, 37);
             this.closeApplication.TabIndex = 6;
@@ -132,7 +132,7 @@
             this.logOut.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.logOut.Image = ((System.Drawing.Image)(resources.GetObject("logOut.Image")));
             this.logOut.Location = new System.Drawing.Point(11, 11);
-            this.logOut.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.logOut.Margin = new System.Windows.Forms.Padding(2);
             this.logOut.Name = "logOut";
             this.logOut.Size = new System.Drawing.Size(45, 37);
             this.logOut.TabIndex = 7;
@@ -142,6 +142,7 @@
             // 
             // kryptonDataGridView1
             // 
+            this.kryptonDataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.kryptonDataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.kryptonDataGridView1.Location = new System.Drawing.Point(90, 409);
             this.kryptonDataGridView1.Name = "kryptonDataGridView1";

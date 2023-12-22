@@ -41,6 +41,12 @@ namespace MedConnect.Patient
             string query = "SELECT CONCAT(Fname,' ', Lname) AS 'Doctor Name', Avg_Rating as 'Average Rating' FROM Doctors,Users WHERE DoctorID=UserID";
             return dbMan.ExecuteReader(query);
         }
+        public DataTable SelectDiagnosisBills(int ID)
+        {
+            string query = "SELECT Bill_ID, Method_of_payment, Total_Payment, SecretaryID,Bills.Session_ID,Date FROM Bills,Diagnosis_Sessions WHERE Bills.Session_ID=Diagnosis_Sessions.Session_ID AND PatientID="+ID;
+            return dbMan.ExecuteReader(query);
+        }
+
         public int UpdatePatientInfo(int UserID, string Fname, string Lname, string PhoneNumber, string occupation, string City, int Building_Num, string Street_Name, string Marital_State)
         {
             string StoredProcedureName = PatientStoredProcedures.UpdatePatient;
@@ -78,6 +84,13 @@ namespace MedConnect.Patient
             Parameters.Add("@UserID", UserID);
             Parameters.Add("@StartDate", StartDate);
             Parameters.Add("@EndDate", EndDate);
+            return dbMan.ExecuteReader(StoredProcedureName, Parameters);
+        }
+        public DataTable GetDeliveryBills(int UserID)
+        {
+            string StoredProcedureName = PatientStoredProcedures.GetDeliveryBills;
+            Dictionary<string, object> Parameters = new Dictionary<string, object>();
+            Parameters.Add("@UserID", UserID);
             return dbMan.ExecuteReader(StoredProcedureName, Parameters);
         }
     }

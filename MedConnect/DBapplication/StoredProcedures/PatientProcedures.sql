@@ -57,3 +57,30 @@ WHERE DoctorID = @DoctorID
 END
 GO
 
+
+
+CREATE PROCEDURE GetDeliveryBills
+ @UserID int
+AS
+BEGIN
+SELECT 
+    D.Delivery_ID,
+    CONCAT(U.Fname,' ', U.Lname) AS 'Pharmacist',
+    M.Medicine_Name,
+    M.Price AS 'Price per Medicine',
+    D.Delivered_Quantity AS 'Quantity',
+    D.Delivered_Quantity * M.Price AS 'Total Price',
+    D.Date
+FROM 
+    Delivered D
+JOIN 
+    Users U ON D.PharmacistID = U.UserID
+JOIN 
+    Prescribed P ON D.PrescriptionID = P.SessionID
+JOIN 
+    Medicines M ON P.MedicineID = M.MedicineID
+WHERE 
+    PatientID = @UserID;
+END
+GO
+

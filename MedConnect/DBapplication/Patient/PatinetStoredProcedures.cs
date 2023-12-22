@@ -12,6 +12,7 @@ namespace MedConnect.Patient
         public static string UpdatePatient = "UpdatePatient";
         public static string GetSessionInfo = "GetSessionInfo";
         public static string InsertRating = "InsertRating";
+        public static string GetDeliveryBills = "GetDeliveryBills";
 
 
     }
