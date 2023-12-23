@@ -9,7 +9,7 @@ using System.Text;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
+using ComponentFactory.Krypton.Toolkit;
 namespace MedConnect
 {
     public partial class Register : Form
@@ -249,6 +249,7 @@ namespace MedConnect
             {
                 userID = int.Parse(controller.RetrieveID(emailTextBox.Text).ToString());
                 PatientMainForm f = new Patient.PatientMainForm(userID);
+                KryptonMessageBox.Show("Registered Successfully, You will be now logged in");
                 this.Close();
                 f.Show();
             }

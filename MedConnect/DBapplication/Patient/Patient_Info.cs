@@ -9,6 +9,7 @@ using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement;
+using ComponentFactory.Krypton.Toolkit;
 
 namespace MedConnect.Patient
 {
@@ -180,6 +181,7 @@ namespace MedConnect.Patient
             doneButton.Enabled = false;
             //updating database
             PatientController.UpdatePatientInfo(UserID, firstNameTextBox.Text, lastNameTextBox.Text, phoneNumberTextBox.Text, occupationTextBox.Text, cityTextBox.Text, int.Parse(buildingNoTextBox.Text), streetNameTextBox.Text, maritalStateTextBox.Text);
+            KryptonMessageBox.Show("Info Editted Successfully");
         }
 
         private void label2_Click(object sender, EventArgs e)
