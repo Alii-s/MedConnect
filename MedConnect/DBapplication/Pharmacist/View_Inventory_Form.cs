@@ -52,7 +52,7 @@ namespace MedConnect.Pharmacist
             DataGridUpdate();
         }
 
-        private void DataGridUpdate()
+        public void DataGridUpdate()
         {
             DataTable dt = null;
 
