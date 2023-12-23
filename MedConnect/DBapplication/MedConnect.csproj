@@ -95,7 +95,19 @@
       <DependentUpon>DoctorViewPatients.cs</DependentUpon>
     </Compile>
     <Compile Include="GeneralStoredProcedures.cs" />
+    <Compile Include="Patient\Bills.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Patient\Bills.Designer.cs">
+      <DependentUpon>Bills.cs</DependentUpon>
+    </Compile>
     <Compile Include="Patient\PatinetStoredProcedures.cs" />
+    <Compile Include="Patient\Rating.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Patient\Rating.Designer.cs">
+      <DependentUpon>Rating.cs</DependentUpon>
+    </Compile>
     <Compile Include="Patient\ViewMedicalHistory.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -113,6 +125,12 @@
     </Compile>
     <Compile Include="Pharmacist\Delete_Medicine_Form.Designer.cs">
       <DependentUpon>Delete_Medicine_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pharmacist\Deliver_Medicine_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pharmacist\Deliver_Medicine_Form.Designer.cs">
+      <DependentUpon>Deliver_Medicine_Form.cs</DependentUpon>
     </Compile>
     <Compile Include="Pharmacist\Medical_Inventory_Form.cs">
       <SubType>Form</SubType>
@@ -198,11 +216,17 @@
     <EmbeddedResource Include="Doctor\DoctorViewPatients.resx">
       <DependentUpon>DoctorViewPatients.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Patient\Bills.resx">
+      <DependentUpon>Bills.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Patient\PatientMainForm.resx">
       <DependentUpon>PatientMainForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Patient\Patient_Info.resx">
       <DependentUpon>Patient_Info.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Patient\Rating.resx">
+      <DependentUpon>Rating.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Patient\ViewMedicalHistory.resx">
       <DependentUpon>ViewMedicalHistory.cs</DependentUpon>
@@ -212,6 +236,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Pharmacist\Delete_Medicine_Form.resx">
       <DependentUpon>Delete_Medicine_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pharmacist\Deliver_Medicine_Form.resx">
+      <DependentUpon>Deliver_Medicine_Form.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Pharmacist\Medical_Inventory_Form.resx">
       <DependentUpon>Medical_Inventory_Form.cs</DependentUpon>
@@ -305,25 +332,19 @@
     <None Include="Resources\medical-report.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\medical-chechup.png" />
+    <None Include="Resources\filter.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\medical-chechup %281%29.png" />
+    <None Include="Resources\filter %281%29.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\medical-chechup %281%291.png" />
+    <None Include="Resources\filter %282%29.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\medical-chechup %282%29.png" />
+    <None Include="Resources\filter %283%29.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\medical-chechup %283%29.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\booking %281%29.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\offer.png" />
+    <None Include="Resources\trolley.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

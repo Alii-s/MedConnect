@@ -42,3 +42,5 @@ AS
 BEGIN
 SELECT UserID FROM Users WHERE Email=@Email
 END
+
+SELECT Session_ID,Date,CONCAT(Fname,' ',Lname) AS 'Doctor' FROM Diagnosis_Sessions,Users WHERE IsRated=0 AND Diagnosis_Sessions.IsActive=1 AND PatientID=38 AND DoctorID = UserID

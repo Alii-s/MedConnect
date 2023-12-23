@@ -122,6 +122,7 @@
             this.kryptonButton1.Values.Image = global::MedConnect.Properties.Resources.review;
             this.kryptonButton1.Values.ImageTransparentColor = System.Drawing.Color.Transparent;
             this.kryptonButton1.Values.Text = "Rate Session";
+            this.kryptonButton1.Click += new System.EventHandler(this.kryptonButton1_Click);
             // 
             // kryptonButton2
             // 
@@ -174,6 +175,7 @@
             this.kryptonButton3.Values.Image = global::MedConnect.Properties.Resources.bill;
             this.kryptonButton3.Values.ImageTransparentColor = System.Drawing.Color.Transparent;
             this.kryptonButton3.Values.Text = "Bills and Payments";
+            this.kryptonButton3.Click += new System.EventHandler(this.kryptonButton3_Click);
             // 
             // kryptonButton4
             // 
@@ -197,7 +199,7 @@
             this.kryptonButton4.StateTracking.Back.Color2 = System.Drawing.Color.AliceBlue;
             this.kryptonButton4.TabIndex = 11;
             this.kryptonButton4.Tag = "";
-            this.kryptonButton4.Values.Image = global::MedConnect.Properties.Resources.patient1;
+            this.kryptonButton4.Values.Image = global::MedConnect.Properties.Resources.medical_report;
             this.kryptonButton4.Values.ImageTransparentColor = System.Drawing.Color.Transparent;
             this.kryptonButton4.Values.Text = "View Medical Records";
             this.kryptonButton4.Click += new System.EventHandler(this.kryptonButton4_Click);

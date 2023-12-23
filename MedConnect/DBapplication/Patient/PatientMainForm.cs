@@ -55,5 +55,19 @@ namespace MedConnect.Patient
             ViewMedicalHistory medHistory = new ViewMedicalHistory(UserID);
             medHistory.Show();
         }
+
+        private void kryptonButton1_Click(object sender, EventArgs e)
+        {
+            Rating rating = new Rating(UserID);
+            rating.Show();
+            this.Close();
+        }
+
+        private void kryptonButton3_Click(object sender, EventArgs e)
+        {
+            Bills bills = new Bills(UserID);
+            bills.Show();
+            this.Close();
+        }
     }
 }

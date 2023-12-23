@@ -1,4 +1,4 @@
-﻿namespace MedConnect.Pharmacist
+namespace MedConnect.Pharmacist
 {
     partial class Add_Medicine_Form
     {
@@ -303,9 +303,9 @@
             // doneButton
             // 
             this.doneButton.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.doneButton.Location = new System.Drawing.Point(482, 390);
+            this.doneButton.Location = new System.Drawing.Point(519, 377);
             this.doneButton.Name = "doneButton";
-            this.doneButton.Size = new System.Drawing.Size(146, 42);
+            this.doneButton.Size = new System.Drawing.Size(208, 42);
             this.doneButton.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(72)))), ((int)(((byte)(170)))), ((int)(((byte)(255)))));
             this.doneButton.StateCommon.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(72)))), ((int)(((byte)(170)))), ((int)(((byte)(255)))));
             this.doneButton.StateCommon.Border.Color1 = System.Drawing.Color.Black;
@@ -338,7 +338,7 @@
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("OCR A Extended", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(7)))), ((int)(((byte)(73)))));
-            this.label5.Location = new System.Drawing.Point(28, 325);
+            this.label5.Location = new System.Drawing.Point(28, 307);
             this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(205, 23);
@@ -347,7 +347,7 @@
             // 
             // kryptonMonthCalendar1
             // 
-            this.kryptonMonthCalendar1.Location = new System.Drawing.Point(32, 351);
+            this.kryptonMonthCalendar1.Location = new System.Drawing.Point(32, 333);
             this.kryptonMonthCalendar1.MaxSelectionCount = 1;
             this.kryptonMonthCalendar1.Name = "kryptonMonthCalendar1";
             this.kryptonMonthCalendar1.Size = new System.Drawing.Size(230, 184);
