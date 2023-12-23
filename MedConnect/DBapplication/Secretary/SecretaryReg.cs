@@ -7,23 +7,29 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using MedConnect.Patient;
 
 namespace MedConnect.Secretary
 {
-    public partial class Secretary : Form
+    public partial class SecretaryReg : Form
     {
-        int UserID;
-        public Secretary(int userID)
+        public SecretaryReg()
         {
             InitializeComponent();
         }
 
-        private void MUbill_Click(object sender, EventArgs e)
+        private void closeApplication_Click(object sender, EventArgs e)
         {
-            this.Close();
-            MUbills frm = new MUbills(UserID);
-            frm.Show();
+
+        }
+
+        private void SecretaryReg_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label16_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
