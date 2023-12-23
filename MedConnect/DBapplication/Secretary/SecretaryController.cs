@@ -62,6 +62,47 @@ namespace MedConnect.Secertary
             Parameters.Add("@Marital_State", Marital_State);
             return dbMan.ExecuteNonQuery(StoredProcedureName, Parameters);
         }
+        public DataTable SelectDoctorName()
+        {
+            string query = "SELECT Lname , UserID FROM Users WHERE Type = 'D';";
+            return dbMan.ExecuteReader(query);
+        }
+        public DataTable SelectClinicLoc()
+        {
+            string query = "SELECT ClinicID, City FROM Clinics ;";
+            return dbMan.ExecuteReader(query);
+        }
+        public int UpdateBill(int PatientID, int SecretaryID, int DoctorID, DateTime daate, int ClinicID, string Type)
+        {
+            int totalPay;
+            int offer=Convert.ToInt32( GetOffer(PatientID));
+            if(Type == "Follow-Up")
+            {
+                totalPay = 300 - ((offer / 100) * 300);
+            }
+            else
+            {
+                totalPay = 500 - ((offer / 100) * 500);
+            }
+            string StoredProcedureName = SecretaryProcdures.UpdateBill;
+
+            Dictionary<string, object> Parameters = new Dictionary<string, object>();
+            Parameters.Add("@PatientID", PatientID);
+            Parameters.Add("@SecretaryID", SecretaryID);
+            Parameters.Add("@DoctorID", DoctorID);
+            Parameters.Add("@daate", daate);
+            Parameters.Add("@ClinicID", ClinicID);
+             
+            return dbMan.ExecuteNonQuery(StoredProcedureName, Parameters);
+        }
+        public object GetOffer(int UserId)
+        {
+
+            string query = "SELECT Percentage FROM offers WHERE PatientID =" + UserId + ";";
+            return dbMan.ExecuteScalar(query);
+
+        }
+
     }
 
 }

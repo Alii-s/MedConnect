@@ -52,6 +52,13 @@ namespace MedConnect.Secretary
             UpdatePatientSec form = new UpdatePatientSec(UserID);
             form.Show();
         }
+
+        private void logOut_Click(object sender, EventArgs e)
+        {
+            Trigger trigger = new Trigger();
+            trigger.Show();
+            this.Close();
+        }
     }
 }
  
