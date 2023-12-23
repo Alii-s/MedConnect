@@ -27,6 +27,8 @@ namespace MedConnect.Patient
             sessionDate.DataSource = SessionInfo;
             sessionDate.SelectedIndex = 0;
             kryptonDataGridView1.DataSource = controller.SelectDoctorRatings();
+            ratingValue.DisplayMember= "Value";
+            ratingValue.SelectedIndex = 0;
         }
 
         private void logOut_Click(object sender, EventArgs e)
