@@ -94,6 +94,13 @@ namespace MedConnect
                 form.Show();
                 return;
             }
+            else if(UserType == 'S')
+            {
+                this.Hide();
+                Secretary.Secretary form = new Secretary.Secretary(UserID);
+                form.Show();
+                return;
+            }
             else
             {
                 //this.Hide();
