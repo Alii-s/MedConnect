@@ -341,7 +341,7 @@
             // 
             this.doneButton.Cursor = System.Windows.Forms.Cursors.Hand;
             this.doneButton.Enabled = false;
-            this.doneButton.Location = new System.Drawing.Point(731, 624);
+            this.doneButton.Location = new System.Drawing.Point(730, 624);
             this.doneButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.doneButton.Name = "doneButton";
             this.doneButton.Size = new System.Drawing.Size(129, 52);

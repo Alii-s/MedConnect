@@ -12,33 +12,28 @@ using ComponentFactory.Krypton.Toolkit;
 using System.Xml.Linq;
 using MedConnect.Patient;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement.ListView;
+using MedConnect.Secertary;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace MedConnect.Secretary
 {
     
     public partial class UpdatePatientSec : Form
     {
-        readonly int UserID, BuildingNum;
-        readonly string Fname, Lname, Email, PhoneNumber, Gender, Occupation, Street_Name, City, Marital_State;
-        readonly DateTime DateOfBirth;
         PatientController PatientController = new PatientController();
-        readonly DataTable userData;
+        SecretaryController SecretaryController = new SecretaryController();
+        int UserID;  //Secretary
+        int PatientID;
         public UpdatePatientSec(int userID)
         {
             InitializeComponent();
             UserID = userID;
-            userData = PatientController.SelectPatientInfo(userID);
-            Fname = userData.Rows[0][0].ToString();
-            Lname = userData.Rows[0][1].ToString();
-            Email = userData.Rows[0][2].ToString();
-            PhoneNumber = userData.Rows[0][3].ToString();
-            Gender = userData.Rows[0][4].ToString();
-            DateOfBirth = DateTime.Parse(userData.Rows[0][5].ToString());
-            Occupation = userData.Rows[0][6].ToString();
-            BuildingNum = int.Parse(userData.Rows[0][7].ToString());
-            Street_Name = userData.Rows[0][8].ToString();
-            City = userData.Rows[0][9].ToString();
-            Marital_State = userData.Rows[0][10].ToString();
+           
+            DataTable dt = SecretaryController.SelectPatientsName();
+            PatientNameComboBox.DataSource = dt;
+            PatientNameComboBox.ValueMember = "UserID";
+            PatientNameComboBox.DisplayMember = "Lname";
+             
 
         }
 
@@ -99,11 +94,11 @@ namespace MedConnect.Secretary
         private void button1_Click(object sender, EventArgs e)
         {
             this.Close();
-            PatientMainForm frm = new PatientMainForm(UserID);
+            Secretary frm = new Secretary(UserID);
             frm.Show();
         }
 
-        private void kryptonButton1_Click(object sender, EventArgs e)
+        private void edit_Click(object sender, EventArgs e)
         {
             firstNameTextBox.Enabled = true;
             lastNameTextBox.Enabled = true;
@@ -117,6 +112,7 @@ namespace MedConnect.Secretary
             editButton.Visible = false;
             doneButton.Visible = true;
             doneButton.Enabled = true;
+            emailTextBox.Enabled = true;    
         }
 
         private void doneButton_Click(object sender, EventArgs e)
@@ -184,7 +180,7 @@ namespace MedConnect.Secretary
             doneButton.Visible = false;
             doneButton.Enabled = false;
             //updating database
-            PatientController.UpdatePatientInfo(UserID, firstNameTextBox.Text, lastNameTextBox.Text, phoneNumberTextBox.Text, occupationTextBox.Text, cityTextBox.Text, int.Parse(buildingNoTextBox.Text), streetNameTextBox.Text, maritalStateTextBox.Text);
+            SecretaryController.UpdatePatientInfo(UserID, Convert.ToInt32(PatientNameComboBox.SelectedValue),firstNameTextBox.Text, lastNameTextBox.Text, phoneNumberTextBox.Text, occupationTextBox.Text, cityTextBox.Text, int.Parse(buildingNoTextBox.Text), streetNameTextBox.Text, maritalStateTextBox.Text);
             KryptonMessageBox.Show("Info Editted Successfully");
         }
 
@@ -268,6 +264,55 @@ namespace MedConnect.Secretary
             }
             else
                 StN.Visible = false;
+        }
+
+        private void label8_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void UpdatePatientSec_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void kryptonButton1_Click_1(object sender, EventArgs e) //go button after select patient name
+        {
+              int BuildingNum;
+             string Fname, Lname, Email, PhoneNumber, Gender, Occupation, Street_Name, City, Marital_State;
+              DateTime DateOfBirth;
+           
+              DataTable userData;
+            userData = PatientController.SelectPatientInfo(Convert.ToInt32(PatientNameComboBox.SelectedValue));
+            Fname = userData.Rows[0][0].ToString();
+            Lname = userData.Rows[0][1].ToString();
+            Email = userData.Rows[0][2].ToString();
+            PhoneNumber = userData.Rows[0][3].ToString();
+            Gender = userData.Rows[0][4].ToString();
+            DateOfBirth = DateTime.Parse(userData.Rows[0][5].ToString());
+            Occupation = userData.Rows[0][6].ToString();
+            BuildingNum = int.Parse(userData.Rows[0][7].ToString());
+            Street_Name = userData.Rows[0][8].ToString();
+            City = userData.Rows[0][9].ToString();
+            Marital_State = userData.Rows[0][10].ToString();
+
+            firstNameTextBox.Text = Fname;
+            lastNameTextBox.Text = Lname;
+            emailTextBox.Text = Email;
+            phoneNumberTextBox.Text = PhoneNumber;
+            occupationTextBox.Text = Occupation;
+            for (int i = 0; i < maritalStateTextBox.Items.Count; i++)
+            {
+                if (maritalStateTextBox.Items[i].ToString() == Marital_State)
+                {
+                    maritalStateTextBox.SelectedIndex = i;
+                    break;
+                }
+            }
+            cityTextBox.Text = City;
+            buildingNoTextBox.Text = BuildingNum.ToString();
+            streetNameTextBox.Text = Street_Name;
+            panel1.Visible = true;
         }
 
         private void buildingNoLabel_Click(object sender, EventArgs e)
@@ -380,24 +425,14 @@ namespace MedConnect.Secretary
 
         private void Patient_Info_Load(object sender, EventArgs e)
         {
-            firstNameTextBox.Text = Fname;
-            lastNameTextBox.Text = Lname;
-            emailTextBox.Text = Email;
-            phoneNumberTextBox.Text = PhoneNumber;
-            occupationTextBox.Text = Occupation;
-            for (int i = 0; i < maritalStateTextBox.Items.Count; i++)
-            {
-                if (maritalStateTextBox.Items[i].ToString() == Marital_State)
-                {
-                    maritalStateTextBox.SelectedIndex = i;
-                    break;
-                }
-            }
-            cityTextBox.Text = City;
-            buildingNoTextBox.Text = BuildingNum.ToString();
-            streetNameTextBox.Text = Street_Name;
+           
         }
 
-
+        private void return_button_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            Secretary form = new Secretary();
+            form.Show();
+        }
     }
 }

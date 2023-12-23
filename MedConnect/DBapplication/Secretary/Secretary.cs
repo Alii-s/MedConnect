@@ -48,7 +48,9 @@ namespace MedConnect.Secretary
 
         private void UPatientInfo_Click(object sender, EventArgs e)
         {
-
+            this.Close();
+            UpdatePatientSec form = new UpdatePatientSec(UserID);
+            form.Show();
         }
     }
 }

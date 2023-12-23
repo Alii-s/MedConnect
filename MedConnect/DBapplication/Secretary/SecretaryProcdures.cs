@@ -9,5 +9,6 @@ namespace MedConnect.Secretary
     internal class SecretaryProcdures
     {
         public static string UpdateSecretary = "Updatesecretary";
+        public static string UpdatePatient = "UpdatePatientSec";
     }
 }
