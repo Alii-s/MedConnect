@@ -1,6 +1,7 @@
 ﻿using ComponentFactory.Krypton.Toolkit;
 using MedConnect.Doctor;
 using MedConnect.Patient;
+using MedConnect.Pharmacist;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -44,16 +45,20 @@ namespace MedConnect
         private void label2_MouseEnter(object sender, EventArgs e)
         {
             label2.Font = new Font(label2.Font, label2.Font.Style | FontStyle.Underline);
+            this.Cursor = Cursors.Hand;
         }
 
         private void label2_MouseLeave(object sender, EventArgs e)
         {
             label2.Font = new Font(label2.Font, label2.Font.Style & ~FontStyle.Underline);
+            this.Cursor= Cursors.Default;
         }
 
         private void label2_Click(object sender, EventArgs e)
         {
-
+            Register register = new Register(0);
+            register.Show();
+            this.Hide();
         }
 
         private void loginButton_Click(object sender, EventArgs e)
@@ -74,10 +79,25 @@ namespace MedConnect
                 PatientMainForm form = new PatientMainForm(UserID);
                 form.Show();
                 return;
-            }else if(UserType == 'D')
+            }
+            else if (UserType == 'D')
             {
                 this.Hide();
                 DoctorMainForm form = new DoctorMainForm(UserID);
+                form.Show();
+                return;
+            }
+            else if (UserType == 'F')
+            {
+                this.Hide();
+                Pharmacist_Main_Form form = new Pharmacist_Main_Form(UserID);
+                form.Show();
+                return;
+            }
+            else if(UserType == 'S')
+            {
+                this.Hide();
+                Secretary.Secretary form = new Secretary.Secretary(UserID);
                 form.Show();
                 return;
             }

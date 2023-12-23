@@ -10,7 +10,7 @@ namespace MedConnect
 {
     public class DBManager
     {
-        static string DB_Connection_String = @"Data Source=RHG\SQLEXPRESS;Initial Catalog=Clinic;Integrated Security=True";
+        static string DB_Connection_String = @"Data Source=NOURAN\SQLEXPRESS;Initial Catalog=Clinic;Integrated Security=True";
         SqlConnection myConnection;
 
         public DBManager()
@@ -124,6 +124,62 @@ namespace MedConnect
             catch (Exception e)
             {
                 Console.WriteLine(e.Message);
+            }
+        }
+        public int ExecuteNonQuery(string query)
+        {
+            try
+            {
+                SqlCommand myCommand = new SqlCommand(query, myConnection);
+                return myCommand.ExecuteNonQuery();
+            }
+            catch (Exception ex)
+            {
+                // this message should not appear to user in the final application
+                MessageBox.Show(ex.Message);
+                return 0;
+            }
+        }
+
+        public DataTable ExecuteReader(string query)
+        {
+            try
+            {
+                SqlCommand myCommand = new SqlCommand(query, myConnection);
+                SqlDataReader reader = myCommand.ExecuteReader();
+                if (reader.HasRows)
+                {
+                    DataTable dt = new DataTable();
+                    dt.Load(reader);
+                    reader.Close();
+                    return dt;
+                }
+                else
+                {
+                    reader.Close();
+                    return null;
+                }
+            }
+            catch (Exception ex)
+            {
+                // this message should not appear to user in the final application
+                MessageBox.Show(ex.Message);
+                return null;
+            }
+        }
+
+        public object ExecuteScalar(string query)
+        {
+            try
+            {
+                SqlCommand myCommand = new SqlCommand(query, myConnection);
+                return myCommand.ExecuteScalar();
+            }
+            catch (Exception ex)
+            {
+                // this message should not appear to user in the final application
+                MessageBox.Show(ex.Message);
+                return 0;
             }
         }
     }

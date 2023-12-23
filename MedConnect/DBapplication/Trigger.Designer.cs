@@ -30,6 +30,8 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Trigger));
             this.kryptonPanel1 = new ComponentFactory.Krypton.Toolkit.KryptonPanel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.closeApplication = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.emailTextBox = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
@@ -38,8 +40,6 @@
             this.label5 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.loginButton = new ComponentFactory.Krypton.Toolkit.KryptonButton();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.closeApplication = new System.Windows.Forms.Button();
             this.errorMsg = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel1)).BeginInit();
             this.kryptonPanel1.SuspendLayout();
@@ -57,6 +57,35 @@
             this.kryptonPanel1.Size = new System.Drawing.Size(1003, 124);
             this.kryptonPanel1.StateCommon.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(157)))), ((int)(((byte)(205)))), ((int)(((byte)(255)))));
             this.kryptonPanel1.TabIndex = 38;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(157)))), ((int)(((byte)(205)))), ((int)(((byte)(255)))));
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(72, 11);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(142, 91);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 1;
+            this.pictureBox1.TabStop = false;
+            // 
+            // closeApplication
+            // 
+            this.closeApplication.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(157)))), ((int)(((byte)(205)))), ((int)(((byte)(255)))));
+            this.closeApplication.FlatAppearance.BorderSize = 0;
+            this.closeApplication.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.closeApplication.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.closeApplication.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(153)))), ((int)(((byte)(255)))));
+            this.closeApplication.Image = ((System.Drawing.Image)(resources.GetObject("closeApplication.Image")));
+            this.closeApplication.Location = new System.Drawing.Point(947, 11);
+            this.closeApplication.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.closeApplication.Name = "closeApplication";
+            this.closeApplication.Size = new System.Drawing.Size(45, 37);
+            this.closeApplication.TabIndex = 6;
+            this.closeApplication.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.closeApplication.UseVisualStyleBackColor = false;
+            this.closeApplication.Click += new System.EventHandler(this.closeApplication_Click_1);
             // 
             // label1
             // 
@@ -170,7 +199,7 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("OCR A Extended", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(7)))), ((int)(((byte)(73)))));
-            this.label2.Location = new System.Drawing.Point(303, 491);
+            this.label2.Location = new System.Drawing.Point(292, 489);
             this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(341, 17);
@@ -215,35 +244,6 @@
             this.loginButton.Values.Text = "Login";
             this.loginButton.Click += new System.EventHandler(this.loginButton_Click);
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(157)))), ((int)(((byte)(205)))), ((int)(((byte)(255)))));
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(72, 11);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(142, 91);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 1;
-            this.pictureBox1.TabStop = false;
-            // 
-            // closeApplication
-            // 
-            this.closeApplication.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(157)))), ((int)(((byte)(205)))), ((int)(((byte)(255)))));
-            this.closeApplication.FlatAppearance.BorderSize = 0;
-            this.closeApplication.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.closeApplication.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.closeApplication.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(153)))), ((int)(((byte)(255)))));
-            this.closeApplication.Image = ((System.Drawing.Image)(resources.GetObject("closeApplication.Image")));
-            this.closeApplication.Location = new System.Drawing.Point(947, 11);
-            this.closeApplication.Margin = new System.Windows.Forms.Padding(2);
-            this.closeApplication.Name = "closeApplication";
-            this.closeApplication.Size = new System.Drawing.Size(45, 37);
-            this.closeApplication.TabIndex = 6;
-            this.closeApplication.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.closeApplication.UseVisualStyleBackColor = false;
-            this.closeApplication.Click += new System.EventHandler(this.closeApplication_Click_1);
-            // 
             // errorMsg
             // 
             this.errorMsg.AutoSize = true;
@@ -275,6 +275,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "Trigger";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Start Up";
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel1)).EndInit();
             this.kryptonPanel1.ResumeLayout(false);

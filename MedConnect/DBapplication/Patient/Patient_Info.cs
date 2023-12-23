@@ -8,17 +8,37 @@ using System.Text;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
+using ComponentFactory.Krypton.Toolkit;
 
 namespace MedConnect.Patient
 {
     public partial class Patient_Info : Form
     {
-        int UserID;
+        readonly int UserID,BuildingNum;
+        readonly string Fname, Lname, Email, PhoneNumber, Gender, Occupation, Street_Name, City, Marital_State;
+        readonly DateTime DateOfBirth;
+        PatientController PatientController = new PatientController();
+        readonly DataTable userData;
         public Patient_Info(int userID)
         {
             InitializeComponent();
             UserID = userID;
+            userData = PatientController.SelectPatientInfo(userID);
+            Fname = userData.Rows[0][0].ToString();
+            Lname = userData.Rows[0][1].ToString();
+            Email = userData.Rows[0][2].ToString();
+            PhoneNumber = userData.Rows[0][3].ToString();
+            Gender = userData.Rows[0][4].ToString();
+            DateOfBirth = DateTime.Parse(userData.Rows[0][5].ToString());
+            Occupation = userData.Rows[0][6].ToString();
+            BuildingNum = int.Parse(userData.Rows[0][7].ToString());
+            Street_Name = userData.Rows[0][8].ToString();
+            City = userData.Rows[0][9].ToString();
+            Marital_State = userData.Rows[0][10].ToString();
+
         }
+ 
         bool Validation = true;
         private bool isFirstName()
         {
@@ -39,14 +59,6 @@ namespace MedConnect.Patient
         private bool isOccupation()
         {
             if (occupationTextBox.Text != "")
-            {
-                return true;
-            }
-            return false;
-        }
-        private bool isMaritalStatus()
-        {
-            if (maritalStateTextBox.Text != "")
             {
                 return true;
             }
@@ -91,10 +103,9 @@ namespace MedConnect.Patient
         {
             firstNameTextBox.Enabled = true;
             lastNameTextBox.Enabled = true;
-            emailTextBox.Enabled = true;
             phoneNumberTextBox.Enabled = true;
-            occupationTextBox.Enabled = true;
             maritalStateTextBox.Enabled = true;
+            occupationTextBox.Enabled = true;
             cityTextBox.Enabled = true;
             buildingNoTextBox.Enabled = true;
             streetNameTextBox.Enabled = true;
@@ -106,16 +117,6 @@ namespace MedConnect.Patient
 
         private void doneButton_Click(object sender, EventArgs e)
         {
-            if (!isValidEmail())
-            {
-                emailValidationLabel.Visible = true;
-                Validation = false;
-            }
-            else
-            {
-                emailValidationLabel.Visible = false;
-            }
-
             if (!isValidPhone())
             {
                 phoneNumberValidationLabel.Visible = true;
@@ -152,15 +153,6 @@ namespace MedConnect.Patient
             {
                 occupationLabel.Visible = false;
             }
-            if (!isMaritalStatus())
-            {
-                maritalStateLabel.Visible = true;
-                Validation = false;
-            }
-            else
-            {
-                maritalStateLabel.Visible = false;
-            }
             if (!isAdress())
             {
                 addressLabel.Visible = true;
@@ -170,17 +162,16 @@ namespace MedConnect.Patient
             {
                 addressLabel.Visible = false;
             }
-            if (!(isFirstName()&&isLastName()&&isMaritalStatus()&&isValidEmail()&&isValidPhone()&&isOccupation()&&isAdress()))
+            if (!(isFirstName()&&isLastName()&&isValidEmail()&&isValidPhone()&&isOccupation()&&isAdress()))
             {
                 return;
             }
-            
+            //Don't Allow Edits after validating
             firstNameTextBox.Enabled = false;
             lastNameTextBox.Enabled = false;
-            emailTextBox.Enabled = false;
+            maritalStateTextBox.Enabled = false;
             phoneNumberTextBox.Enabled = false;
             occupationTextBox.Enabled = false;
-            maritalStateTextBox.Enabled = false;
             cityTextBox.Enabled = false;
             buildingNoTextBox.Enabled = false;
             streetNameTextBox.Enabled = false;
@@ -188,6 +179,9 @@ namespace MedConnect.Patient
             editButton.Visible = true;
             doneButton.Visible = false;
             doneButton.Enabled = false;
+            //updating database
+            PatientController.UpdatePatientInfo(UserID, firstNameTextBox.Text, lastNameTextBox.Text, phoneNumberTextBox.Text, occupationTextBox.Text, cityTextBox.Text, int.Parse(buildingNoTextBox.Text), streetNameTextBox.Text, maritalStateTextBox.Text);
+            KryptonMessageBox.Show("Info Editted Successfully");
         }
 
         private void label2_Click(object sender, EventArgs e)
@@ -329,6 +323,33 @@ namespace MedConnect.Patient
                 // Suppress the key press
                 e.Handled = true;
             }
+        }
+
+        private void logOut_Click(object sender, EventArgs e)
+        {
+            Trigger trigger = new Trigger();
+            trigger.Show();
+            this.Close();
+        }
+
+        private void Patient_Info_Load(object sender, EventArgs e)
+        {
+            firstNameTextBox.Text = Fname;
+            lastNameTextBox.Text = Lname;
+            emailTextBox.Text = Email;
+            phoneNumberTextBox.Text = PhoneNumber;
+            occupationTextBox.Text = Occupation;
+            for (int i = 0; i < maritalStateTextBox.Items.Count; i++)
+            {
+                if (maritalStateTextBox.Items[i].ToString() == Marital_State)
+                {
+                    maritalStateTextBox.SelectedIndex = i;
+                    break;
+                }
+            }
+            cityTextBox.Text = City;
+            buildingNoTextBox.Text = BuildingNum.ToString();
+            streetNameTextBox.Text = Street_Name;
         }
     }
 }

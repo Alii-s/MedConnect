@@ -39,5 +39,10 @@ namespace MedConnect.Doctor
             doctorScheuale.Show();
             this.Hide();
         }
+
+        private void logOut_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -37,11 +37,20 @@
     <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="ComponentFactory.Krypton.Docking">
+      <HintPath>..\..\..\..\..\..\Downloads\Krypton-master\Krypton-master\Bin\ComponentFactory.Krypton.Docking.dll</HintPath>
+    </Reference>
+    <Reference Include="ComponentFactory.Krypton.Navigator">
+      <HintPath>..\..\..\..\..\..\Downloads\Krypton-master\Krypton-master\Bin\ComponentFactory.Krypton.Navigator.dll</HintPath>
+    </Reference>
     <Reference Include="ComponentFactory.Krypton.Ribbon">
-      <HintPath>..\..\..\..\..\..\STUDY\FALL 2023\Database\Krypton-master\Krypton-master\Bin\ComponentFactory.Krypton.Ribbon.dll</HintPath>
+      <HintPath>..\..\..\..\..\..\Downloads\Krypton-master\Krypton-master\Bin\ComponentFactory.Krypton.Ribbon.dll</HintPath>
     </Reference>
     <Reference Include="ComponentFactory.Krypton.Toolkit">
-      <HintPath>..\..\..\..\..\..\STUDY\FALL 2023\Database\Krypton-master\Krypton-master\Bin\ComponentFactory.Krypton.Toolkit.dll</HintPath>
+      <HintPath>..\..\..\..\..\..\Downloads\Krypton-master\Krypton-master\Bin\ComponentFactory.Krypton.Toolkit.dll</HintPath>
+    </Reference>
+    <Reference Include="ComponentFactory.Krypton.Workspace">
+      <HintPath>..\..\..\..\..\..\Downloads\Krypton-master\Krypton-master\Bin\ComponentFactory.Krypton.Workspace.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -86,6 +95,68 @@
       <DependentUpon>DoctorViewPatients.cs</DependentUpon>
     </Compile>
     <Compile Include="GeneralStoredProcedures.cs" />
+    <Compile Include="Patient\Bills.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Patient\Bills.Designer.cs">
+      <DependentUpon>Bills.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Patient\PatinetStoredProcedures.cs" />
+    <Compile Include="Patient\Rating.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Patient\Rating.Designer.cs">
+      <DependentUpon>Rating.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Patient\ViewMedicalHistory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Patient\ViewMedicalHistory.Designer.cs">
+      <DependentUpon>ViewMedicalHistory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pharmacist\Add_Medicine_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pharmacist\Add_Medicine_Form.Designer.cs">
+      <DependentUpon>Add_Medicine_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pharmacist\Delete_Medicine_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pharmacist\Delete_Medicine_Form.Designer.cs">
+      <DependentUpon>Delete_Medicine_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pharmacist\Deliver_Medicine_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pharmacist\Deliver_Medicine_Form.Designer.cs">
+      <DependentUpon>Deliver_Medicine_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pharmacist\Medical_Inventory_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pharmacist\Medical_Inventory_Form.Designer.cs">
+      <DependentUpon>Medical_Inventory_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pharmacist\PharmacistStoredProcedures.cs" />
+    <Compile Include="Pharmacist\Pharmacist_Main_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pharmacist\Pharmacist_Main_Form.Designer.cs">
+      <DependentUpon>Pharmacist_Main_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pharmacist\Update_Stock_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pharmacist\Update_Stock_Form.Designer.cs">
+      <DependentUpon>Update_Stock_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pharmacist\View_Inventory_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pharmacist\View_Inventory_Form.Designer.cs">
+      <DependentUpon>View_Inventory_Form.cs</DependentUpon>
+    </Compile>
     <Compile Include="Register.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -113,6 +184,19 @@
       <DependentUpon>Secretary.cs</DependentUpon>
     </Compile>
     <Compile Include="Secretary\SecretaryController.cs" />
+    <Compile Include="Secretary\SecretaryProcdures.cs" />
+    <Compile Include="Secretary\UpdatePatientSec.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Secretary\UpdatePatientSec.Designer.cs">
+      <DependentUpon>UpdatePatientSec.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Secretary\UpdateSecretaryInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Secretary\UpdateSecretaryInfo.Designer.cs">
+      <DependentUpon>UpdateSecretaryInfo.cs</DependentUpon>
+    </Compile>
     <Compile Include="Trigger.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -133,11 +217,41 @@
     <EmbeddedResource Include="Doctor\DoctorViewPatients.resx">
       <DependentUpon>DoctorViewPatients.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Patient\Bills.resx">
+      <DependentUpon>Bills.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Patient\PatientMainForm.resx">
       <DependentUpon>PatientMainForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Patient\Patient_Info.resx">
       <DependentUpon>Patient_Info.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Patient\Rating.resx">
+      <DependentUpon>Rating.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Patient\ViewMedicalHistory.resx">
+      <DependentUpon>ViewMedicalHistory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pharmacist\Add_Medicine_Form.resx">
+      <DependentUpon>Add_Medicine_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pharmacist\Delete_Medicine_Form.resx">
+      <DependentUpon>Delete_Medicine_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pharmacist\Deliver_Medicine_Form.resx">
+      <DependentUpon>Deliver_Medicine_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pharmacist\Medical_Inventory_Form.resx">
+      <DependentUpon>Medical_Inventory_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pharmacist\Pharmacist_Main_Form.resx">
+      <DependentUpon>Pharmacist_Main_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pharmacist\Update_Stock_Form.resx">
+      <DependentUpon>Update_Stock_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pharmacist\View_Inventory_Form.resx">
+      <DependentUpon>View_Inventory_Form.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -154,6 +268,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Secretary\Secretary.resx">
       <DependentUpon>Secretary.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Secretary\UpdatePatientSec.resx">
+      <DependentUpon>UpdatePatientSec.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Secretary\UpdateSecretaryInfo.resx">
+      <DependentUpon>UpdateSecretaryInfo.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Trigger.resx">
       <DependentUpon>Trigger.cs</DependentUpon>
@@ -205,6 +325,36 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\login.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Doctor\DoctorResources\return.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\medical-report.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\filter.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\filter %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\filter %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\filter %283%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\trolley.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\medical-chechup %283%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\booking %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\offer.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
