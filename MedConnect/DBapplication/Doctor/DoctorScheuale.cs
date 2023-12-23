@@ -121,10 +121,54 @@ namespace MedConnect.Doctor
 
         private void doneButton_Click(object sender, EventArgs e)
         {
-            controllerObj.AddDoctorSchedule(UserId, int.Parse(kryptonComboBox1.SelectedValue.ToString()), kryptonComboBox2.Text,int.Parse( kryptonComboBox3.Text), int.Parse(kryptonComboBox4.Text));
-            DataTable dataTable = controllerObj.GetDoctorSchedule(UserId);   
-            kryptonDataGridView1.DataSource = dataTable;
-            kryptonDataGridView1.Refresh();
+            if (CheckThatnoParallelScheualding())
+            {
+                controllerObj.AddDoctorSchedule(UserId, int.Parse(kryptonComboBox1.SelectedValue.ToString()), kryptonComboBox2.Text, int.Parse(kryptonComboBox3.Text), int.Parse(kryptonComboBox4.Text));
+                DataTable dataTable = controllerObj.GetDoctorSchedule(UserId);
+                kryptonDataGridView1.DataSource = dataTable;
+                kryptonDataGridView1.Refresh();
+            }
+          
+              
+            
+        }
+
+        private bool CheckThatnoParallelScheualding()
+        {
+            DataTable dataTableOfScheualesAtthatday = controllerObj.GetDayAtSchedule(UserId, kryptonComboBox2.Text);
+            if(dataTableOfScheualesAtthatday == null)
+            {
+                return true;
+            }
+            if ( dataTableOfScheualesAtthatday.Rows.Count > 0)
+            {
+                for (int i = 0; i < dataTableOfScheualesAtthatday.Rows.Count; i++)
+                {
+                    TimeSpan StarttimeSpanAlready = (TimeSpan)dataTableOfScheualesAtthatday.Rows[i].ItemArray.ElementAt(0);
+                    TimeSpan endtimeSpanAlready = (TimeSpan)dataTableOfScheualesAtthatday.Rows[i].ItemArray.ElementAt(1);
+                    int StarttimeSpanAlreadyRegistered = (int)StarttimeSpanAlready.TotalHours;
+                    int endtimeSpanAlreadyRegistered = (int)endtimeSpanAlready.TotalHours;
+              
+          
+                    if (int.Parse(kryptonComboBox3.Text) >= StarttimeSpanAlreadyRegistered && int.Parse(kryptonComboBox3.Text) <= endtimeSpanAlreadyRegistered)
+                    {
+                        MessageBox.Show("You have a scheuale at that time");
+                        return false;
+                    }
+                    else if (int.Parse(kryptonComboBox4.Text) >= StarttimeSpanAlreadyRegistered && int.Parse(kryptonComboBox4.Text) <= endtimeSpanAlreadyRegistered)
+                    {
+                        MessageBox.Show("You have a scheuale at that time");
+                        return false;
+                    }
+                    else if (int.Parse(kryptonComboBox3.Text) <= StarttimeSpanAlreadyRegistered && int.Parse(kryptonComboBox4.Text) >= endtimeSpanAlreadyRegistered)
+                    {
+                        MessageBox.Show("You have a scheuale at that time");
+                        return false;
+                    }
+                }
+            }
+                return true;
+            
         }
 
         private void kryptonDataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)

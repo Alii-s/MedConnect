@@ -10,7 +10,7 @@ namespace MedConnect
 {
     public class DBManager
     {
-        static string DB_Connection_String = @"Data Source=NOURAN\SQLEXPRESS;Initial Catalog=Clinic;Integrated Security=True";
+        static string DB_Connection_String = @"Data Source=RHG\SQLEXPRESS;Initial Catalog=Clinic;Integrated Security=True";
         SqlConnection myConnection;
 
         public DBManager()

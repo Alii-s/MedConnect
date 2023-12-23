@@ -17,7 +17,7 @@ namespace MedConnect
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new UpdatePatientSec(0));
+            Application.Run(new Trigger());
         }
     }
 }

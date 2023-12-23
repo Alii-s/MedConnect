@@ -21,6 +21,31 @@ namespace MedConnect.Doctor
         }
         #endregion
 
+        #region Get Doctor Name
+        //public string GetDoctorName(int DoctorID)
+        //{
+        //    string StoredProcedureName = DoctorStoredProcedures.GetDoctorName;
+
+        //    Dictionary<string, object> Parameters = new Dictionary<string, object>();
+        //    Parameters.Add("@DoctorID", DoctorID);
+
+        //    return dbMan.ExecuteScalar(StoredProcedureName, Parameters).ToString();
+        //}
+        #endregion
+
+        #region GetSchedule
+        public DataTable GetDayAtSchedule(int DoctorID,  string Day)
+        {
+            string StoredProcedureName = DoctorStoredProcedures.GetDayAtSchedule;
+
+            Dictionary<string, object> Parameters = new Dictionary<string, object>();
+            Parameters.Add("@Day", Day);
+            Parameters.Add("@DoctorID", DoctorID);
+
+            return dbMan.ExecuteReader(StoredProcedureName, Parameters);
+        }
+        #endregion
+
         #region Select All Patients
         public DataTable SelectAllPatients()
         {
@@ -92,6 +117,7 @@ namespace MedConnect.Doctor
 
         }
         #endregion
+
         #region Get Doctor Schedule
         public DataTable GetDoctorSchedule(int DoctorID)
         {
@@ -103,6 +129,7 @@ namespace MedConnect.Doctor
             return dbMan.ExecuteReader(StoredProcedureName, Parameters);
         }
         #endregion
+
         #region SomeHelperFunctions
         //public int InsertStudent(string fName, string lName, int SSN, string Address, int dNum)
         //{

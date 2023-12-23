@@ -104,3 +104,23 @@ C:\Users\p c\OneDrive\Desktop\Pro\MedConnect\MedConnect\DBapplication\obj\x86\De
 C:\Users\p c\OneDrive\Desktop\Pro\MedConnect\MedConnect\DBapplication\obj\x86\Debug\MedConnect.Register.resources
 C:\Users\p c\OneDrive\Desktop\Pro\MedConnect\MedConnect\DBapplication\obj\x86\Debug\MedConnect.Secretary.UpdateSecretaryInfo.resources
 C:\Users\p c\OneDrive\Desktop\Pro\MedConnect\MedConnect\DBapplication\obj\x86\Debug\MedConnect.Secretary.UpdatePatientSec.resources
+E:\KID\1.WORK\GitHubProjects\MedConnect\DBapplication\obj\x86\Debug\MedConnect.Patient.Bills.resources
+E:\KID\1.WORK\GitHubProjects\MedConnect\DBapplication\obj\x86\Debug\MedConnect.Patient.Rating.resources
+E:\KID\1.WORK\GitHubProjects\MedConnect\DBapplication\obj\x86\Debug\MedConnect.Patient.ViewMedicalHistory.resources
+E:\KID\1.WORK\GitHubProjects\MedConnect\DBapplication\obj\x86\Debug\MedConnect.Pharmacist.Add_Medicine_Form.resources
+E:\KID\1.WORK\GitHubProjects\MedConnect\DBapplication\obj\x86\Debug\MedConnect.Pharmacist.Delete_Medicine_Form.resources
+E:\KID\1.WORK\GitHubProjects\MedConnect\DBapplication\obj\x86\Debug\MedConnect.Pharmacist.Deliver_Medicine_Form.resources
+E:\KID\1.WORK\GitHubProjects\MedConnect\DBapplication\obj\x86\Debug\MedConnect.Pharmacist.Medical_Inventory_Form.resources
+E:\KID\1.WORK\GitHubProjects\MedConnect\DBapplication\obj\x86\Debug\MedConnect.Pharmacist.Pharmacist_Main_Form.resources
+E:\KID\1.WORK\GitHubProjects\MedConnect\DBapplication\obj\x86\Debug\MedConnect.Pharmacist.Update_Stock_Form.resources
+E:\KID\1.WORK\GitHubProjects\MedConnect\DBapplication\obj\x86\Debug\MedConnect.Pharmacist.View_Inventory_Form.resources
+E:\KID\1.WORK\GitHubProjects\MedConnect\DBapplication\obj\x86\Debug\MedConnect.Secretary.UpdatePatientSec.resources
+E:\KID\1.WORK\GitHubProjects\MedConnect\DBapplication\obj\x86\Debug\MedConnect.Secretary.UpdateSecretaryInfo.resources
+E:\KID\1.WORK\GitHubProjects\MedConnect\DBapplication\bin\Debug\ComponentFactory.Krypton.Docking.dll
+E:\KID\1.WORK\GitHubProjects\MedConnect\DBapplication\bin\Debug\ComponentFactory.Krypton.Navigator.dll
+E:\KID\1.WORK\GitHubProjects\MedConnect\DBapplication\bin\Debug\ComponentFactory.Krypton.Ribbon.dll
+E:\KID\1.WORK\GitHubProjects\MedConnect\DBapplication\bin\Debug\ComponentFactory.Krypton.Toolkit.dll
+E:\KID\1.WORK\GitHubProjects\MedConnect\DBapplication\bin\Debug\ComponentFactory.Krypton.Workspace.dll
+E:\KID\1.WORK\GitHubProjects\MedConnect\DBapplication\bin\Debug\ComponentFactory.Krypton.Docking.pdb
+E:\KID\1.WORK\GitHubProjects\MedConnect\DBapplication\bin\Debug\ComponentFactory.Krypton.Navigator.pdb
+E:\KID\1.WORK\GitHubProjects\MedConnect\DBapplication\bin\Debug\ComponentFactory.Krypton.Workspace.pdb
