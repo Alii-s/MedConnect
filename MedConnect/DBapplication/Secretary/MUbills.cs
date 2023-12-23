@@ -7,23 +7,21 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using MedConnect.Patient;
 
 namespace MedConnect.Secretary
 {
-    public partial class Secretary : Form
+    public partial class MUbills : Form
     {
         int UserID;
-        public Secretary(int userID)
+        public MUbills(int userID)
         {
             InitializeComponent();
+           UserID = userID;
         }
 
-        private void MUbill_Click(object sender, EventArgs e)
+        private void logOut_Click(object sender, EventArgs e)
         {
-            this.Close();
-            MUbills frm = new MUbills(UserID);
-            frm.Show();
+
         }
     }
 }

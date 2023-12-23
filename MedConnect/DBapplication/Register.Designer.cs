@@ -56,23 +56,23 @@
             this.lastNameLabel = new System.Windows.Forms.Label();
             this.emailValidationLabel = new System.Windows.Forms.Label();
             this.phoneNumberValidationLabel = new System.Windows.Forms.Label();
-            this.addressLabel = new System.Windows.Forms.Label();
-            this.streetNameLabel = new System.Windows.Forms.Label();
-            this.buildingNoLabel = new System.Windows.Forms.Label();
-            this.cityNameLabel = new System.Windows.Forms.Label();
-            this.streetNameTextBox = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
-            this.buildingNoTextBox = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
-            this.cityTextBox = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
             this.occupationTextBox = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
             this.label15 = new System.Windows.Forms.Label();
             this.occupationLabel = new System.Windows.Forms.Label();
             this.passwordConfirmationLabel = new System.Windows.Forms.Label();
-            this.label14 = new System.Windows.Forms.Label();
-            this.maritalStateLabel = new System.Windows.Forms.Label();
-            this.maritalSateLabel = new System.Windows.Forms.Label();
             this.passwordLabel = new System.Windows.Forms.Label();
-            this.maritalStateTextBox = new ComponentFactory.Krypton.Toolkit.KryptonComboBox();
             this.label11 = new System.Windows.Forms.Label();
+            this.maritalSateLabel = new System.Windows.Forms.Label();
+            this.maritalStateLabel = new System.Windows.Forms.Label();
+            this.maritalStateTextBox = new ComponentFactory.Krypton.Toolkit.KryptonComboBox();
+            this.streetNameTextBox = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
+            this.streetNameLabel = new System.Windows.Forms.Label();
+            this.buildingNoTextBox = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
+            this.buildingNoLabel = new System.Windows.Forms.Label();
+            this.cityTextBox = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
+            this.cityNameLabel = new System.Windows.Forms.Label();
+            this.addressLabel = new System.Windows.Forms.Label();
+            this.label14 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel1)).BeginInit();
             this.kryptonPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -564,134 +564,6 @@
             this.phoneNumberValidationLabel.Text = "Please enter a valid number";
             this.phoneNumberValidationLabel.Visible = false;
             // 
-            // addressLabel
-            // 
-            this.addressLabel.AutoSize = true;
-            this.addressLabel.Font = new System.Drawing.Font("OCR A Extended", 9.75F);
-            this.addressLabel.ForeColor = System.Drawing.Color.IndianRed;
-            this.addressLabel.Location = new System.Drawing.Point(470, 459);
-            this.addressLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.addressLabel.Name = "addressLabel";
-            this.addressLabel.Size = new System.Drawing.Size(183, 13);
-            this.addressLabel.TabIndex = 69;
-            this.addressLabel.Text = "Address can\'t be empty";
-            this.addressLabel.Visible = false;
-            // 
-            // streetNameLabel
-            // 
-            this.streetNameLabel.AutoSize = true;
-            this.streetNameLabel.Font = new System.Drawing.Font("OCR A Extended", 14.25F);
-            this.streetNameLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(7)))), ((int)(((byte)(73)))));
-            this.streetNameLabel.Location = new System.Drawing.Point(776, 473);
-            this.streetNameLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.streetNameLabel.Name = "streetNameLabel";
-            this.streetNameLabel.Size = new System.Drawing.Size(130, 20);
-            this.streetNameLabel.TabIndex = 68;
-            this.streetNameLabel.Text = "Street Name";
-            // 
-            // buildingNoLabel
-            // 
-            this.buildingNoLabel.AutoSize = true;
-            this.buildingNoLabel.Font = new System.Drawing.Font("OCR A Extended", 14.25F);
-            this.buildingNoLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(7)))), ((int)(((byte)(73)))));
-            this.buildingNoLabel.Location = new System.Drawing.Point(610, 473);
-            this.buildingNoLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.buildingNoLabel.Name = "buildingNoLabel";
-            this.buildingNoLabel.Size = new System.Drawing.Size(141, 20);
-            this.buildingNoLabel.TabIndex = 67;
-            this.buildingNoLabel.Text = "Building No.";
-            // 
-            // cityNameLabel
-            // 
-            this.cityNameLabel.AutoSize = true;
-            this.cityNameLabel.Font = new System.Drawing.Font("OCR A Extended", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cityNameLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(7)))), ((int)(((byte)(73)))));
-            this.cityNameLabel.Location = new System.Drawing.Point(469, 473);
-            this.cityNameLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.cityNameLabel.Name = "cityNameLabel";
-            this.cityNameLabel.Size = new System.Drawing.Size(53, 20);
-            this.cityNameLabel.TabIndex = 66;
-            this.cityNameLabel.Text = "City";
-            // 
-            // streetNameTextBox
-            // 
-            this.streetNameTextBox.Location = new System.Drawing.Point(780, 499);
-            this.streetNameTextBox.Name = "streetNameTextBox";
-            this.streetNameTextBox.Size = new System.Drawing.Size(136, 36);
-            this.streetNameTextBox.StateActive.Border.Color1 = System.Drawing.Color.Black;
-            this.streetNameTextBox.StateActive.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.streetNameTextBox.StateCommon.Back.Color1 = System.Drawing.Color.White;
-            this.streetNameTextBox.StateCommon.Border.Color1 = System.Drawing.Color.DarkGray;
-            this.streetNameTextBox.StateCommon.Border.Color2 = System.Drawing.Color.DarkGray;
-            this.streetNameTextBox.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.streetNameTextBox.StateCommon.Border.Rounding = 18;
-            this.streetNameTextBox.StateCommon.Content.Color1 = System.Drawing.Color.Black;
-            this.streetNameTextBox.StateCommon.Content.Font = new System.Drawing.Font("OCR A Extended", 12F);
-            this.streetNameTextBox.StateDisabled.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(241)))), ((int)(((byte)(255)))));
-            this.streetNameTextBox.StateDisabled.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(241)))), ((int)(((byte)(255)))));
-            this.streetNameTextBox.StateDisabled.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(241)))), ((int)(((byte)(255)))));
-            this.streetNameTextBox.StateDisabled.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.streetNameTextBox.TabIndex = 65;
-            // 
-            // buildingNoTextBox
-            // 
-            this.buildingNoTextBox.Location = new System.Drawing.Point(627, 499);
-            this.buildingNoTextBox.Name = "buildingNoTextBox";
-            this.buildingNoTextBox.Size = new System.Drawing.Size(136, 36);
-            this.buildingNoTextBox.StateActive.Border.Color1 = System.Drawing.Color.Black;
-            this.buildingNoTextBox.StateActive.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.buildingNoTextBox.StateCommon.Back.Color1 = System.Drawing.Color.White;
-            this.buildingNoTextBox.StateCommon.Border.Color1 = System.Drawing.Color.DarkGray;
-            this.buildingNoTextBox.StateCommon.Border.Color2 = System.Drawing.Color.DarkGray;
-            this.buildingNoTextBox.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.buildingNoTextBox.StateCommon.Border.Rounding = 18;
-            this.buildingNoTextBox.StateCommon.Content.Color1 = System.Drawing.Color.Black;
-            this.buildingNoTextBox.StateCommon.Content.Font = new System.Drawing.Font("OCR A Extended", 12F);
-            this.buildingNoTextBox.StateDisabled.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(241)))), ((int)(((byte)(255)))));
-            this.buildingNoTextBox.StateDisabled.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(241)))), ((int)(((byte)(255)))));
-            this.buildingNoTextBox.StateDisabled.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(241)))), ((int)(((byte)(255)))));
-            this.buildingNoTextBox.StateDisabled.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.buildingNoTextBox.TabIndex = 64;
-            this.buildingNoTextBox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.buildingNoTextBox_KeyPress);
-            // 
-            // cityTextBox
-            // 
-            this.cityTextBox.Location = new System.Drawing.Point(473, 499);
-            this.cityTextBox.Name = "cityTextBox";
-            this.cityTextBox.Size = new System.Drawing.Size(136, 36);
-            this.cityTextBox.StateActive.Border.Color1 = System.Drawing.Color.Black;
-            this.cityTextBox.StateActive.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.cityTextBox.StateCommon.Back.Color1 = System.Drawing.Color.White;
-            this.cityTextBox.StateCommon.Border.Color1 = System.Drawing.Color.DarkGray;
-            this.cityTextBox.StateCommon.Border.Color2 = System.Drawing.Color.DarkGray;
-            this.cityTextBox.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.cityTextBox.StateCommon.Border.Rounding = 18;
-            this.cityTextBox.StateCommon.Content.Color1 = System.Drawing.Color.Black;
-            this.cityTextBox.StateCommon.Content.Font = new System.Drawing.Font("OCR A Extended", 12F);
-            this.cityTextBox.StateDisabled.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(241)))), ((int)(((byte)(255)))));
-            this.cityTextBox.StateDisabled.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(241)))), ((int)(((byte)(255)))));
-            this.cityTextBox.StateDisabled.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(241)))), ((int)(((byte)(255)))));
-            this.cityTextBox.StateDisabled.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.cityTextBox.TabIndex = 63;
-            // 
             // occupationTextBox
             // 
             this.occupationTextBox.Cursor = System.Windows.Forms.Cursors.IBeam;
@@ -757,30 +629,31 @@
             this.passwordConfirmationLabel.Text = "Please confirm your password";
             this.passwordConfirmationLabel.Visible = false;
             // 
-            // label14
+            // passwordLabel
             // 
-            this.label14.AutoSize = true;
-            this.label14.Font = new System.Drawing.Font("OCR A Extended", 15.75F);
-            this.label14.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(7)))), ((int)(((byte)(73)))));
-            this.label14.Location = new System.Drawing.Point(469, 435);
-            this.label14.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(101, 23);
-            this.label14.TabIndex = 38;
-            this.label14.Text = "Address";
+            this.passwordLabel.AutoSize = true;
+            this.passwordLabel.Font = new System.Drawing.Font("OCR A Extended", 9.75F);
+            this.passwordLabel.ForeColor = System.Drawing.Color.IndianRed;
+            this.passwordLabel.Location = new System.Drawing.Point(695, 247);
+            this.passwordLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.passwordLabel.Name = "passwordLabel";
+            this.passwordLabel.Size = new System.Drawing.Size(191, 13);
+            this.passwordLabel.TabIndex = 73;
+            this.passwordLabel.Text = "Password can\'t be empty";
+            this.passwordLabel.Visible = false;
             // 
-            // maritalStateLabel
+            // label11
             // 
-            this.maritalStateLabel.AutoSize = true;
-            this.maritalStateLabel.Font = new System.Drawing.Font("OCR A Extended", 9.75F);
-            this.maritalStateLabel.ForeColor = System.Drawing.Color.IndianRed;
-            this.maritalStateLabel.Location = new System.Drawing.Point(695, 433);
-            this.maritalStateLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.maritalStateLabel.Name = "maritalStateLabel";
-            this.maritalStateLabel.Size = new System.Drawing.Size(239, 13);
-            this.maritalStateLabel.TabIndex = 35;
-            this.maritalStateLabel.Text = "Marital state  can\'t be empty";
-            this.maritalStateLabel.Visible = false;
+            this.label11.AutoSize = true;
+            this.label11.Font = new System.Drawing.Font("OCR A Extended", 9.75F);
+            this.label11.ForeColor = System.Drawing.Color.IndianRed;
+            this.label11.Location = new System.Drawing.Point(82, 522);
+            this.label11.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(167, 13);
+            this.label11.TabIndex = 75;
+            this.label11.Text = "Email already in use";
+            this.label11.Visible = false;
             // 
             // maritalSateLabel
             // 
@@ -794,18 +667,18 @@
             this.maritalSateLabel.TabIndex = 71;
             this.maritalSateLabel.Text = "Marital State";
             // 
-            // passwordLabel
+            // maritalStateLabel
             // 
-            this.passwordLabel.AutoSize = true;
-            this.passwordLabel.Font = new System.Drawing.Font("OCR A Extended", 9.75F);
-            this.passwordLabel.ForeColor = System.Drawing.Color.IndianRed;
-            this.passwordLabel.Location = new System.Drawing.Point(695, 247);
-            this.passwordLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.passwordLabel.Name = "passwordLabel";
-            this.passwordLabel.Size = new System.Drawing.Size(191, 13);
-            this.passwordLabel.TabIndex = 73;
-            this.passwordLabel.Text = "Password can\'t be empty";
-            this.passwordLabel.Visible = false;
+            this.maritalStateLabel.AutoSize = true;
+            this.maritalStateLabel.Font = new System.Drawing.Font("OCR A Extended", 9.75F);
+            this.maritalStateLabel.ForeColor = System.Drawing.Color.IndianRed;
+            this.maritalStateLabel.Location = new System.Drawing.Point(695, 433);
+            this.maritalStateLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.maritalStateLabel.Name = "maritalStateLabel";
+            this.maritalStateLabel.Size = new System.Drawing.Size(239, 13);
+            this.maritalStateLabel.TabIndex = 35;
+            this.maritalStateLabel.Text = "Marital state  can\'t be empty";
+            this.maritalStateLabel.Visible = false;
             // 
             // maritalStateTextBox
             // 
@@ -832,18 +705,145 @@
             this.maritalStateTextBox.StateCommon.Item.Content.ShortText.Font = new System.Drawing.Font("OCR A Extended", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.maritalStateTextBox.TabIndex = 74;
             // 
-            // label11
+            // streetNameTextBox
             // 
-            this.label11.AutoSize = true;
-            this.label11.Font = new System.Drawing.Font("OCR A Extended", 9.75F);
-            this.label11.ForeColor = System.Drawing.Color.IndianRed;
-            this.label11.Location = new System.Drawing.Point(82, 522);
-            this.label11.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(167, 13);
-            this.label11.TabIndex = 75;
-            this.label11.Text = "Email already in use";
-            this.label11.Visible = false;
+            this.streetNameTextBox.Location = new System.Drawing.Point(780, 499);
+            this.streetNameTextBox.Name = "streetNameTextBox";
+            this.streetNameTextBox.Size = new System.Drawing.Size(136, 36);
+            this.streetNameTextBox.StateActive.Border.Color1 = System.Drawing.Color.Black;
+            this.streetNameTextBox.StateActive.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.streetNameTextBox.StateCommon.Back.Color1 = System.Drawing.Color.White;
+            this.streetNameTextBox.StateCommon.Border.Color1 = System.Drawing.Color.DarkGray;
+            this.streetNameTextBox.StateCommon.Border.Color2 = System.Drawing.Color.DarkGray;
+            this.streetNameTextBox.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.streetNameTextBox.StateCommon.Border.Rounding = 18;
+            this.streetNameTextBox.StateCommon.Content.Color1 = System.Drawing.Color.Black;
+            this.streetNameTextBox.StateCommon.Content.Font = new System.Drawing.Font("OCR A Extended", 12F);
+            this.streetNameTextBox.StateDisabled.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(241)))), ((int)(((byte)(255)))));
+            this.streetNameTextBox.StateDisabled.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(241)))), ((int)(((byte)(255)))));
+            this.streetNameTextBox.StateDisabled.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(241)))), ((int)(((byte)(255)))));
+            this.streetNameTextBox.StateDisabled.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.streetNameTextBox.TabIndex = 65;
+            // 
+            // streetNameLabel
+            // 
+            this.streetNameLabel.AutoSize = true;
+            this.streetNameLabel.Font = new System.Drawing.Font("OCR A Extended", 14.25F);
+            this.streetNameLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(7)))), ((int)(((byte)(73)))));
+            this.streetNameLabel.Location = new System.Drawing.Point(776, 473);
+            this.streetNameLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.streetNameLabel.Name = "streetNameLabel";
+            this.streetNameLabel.Size = new System.Drawing.Size(130, 20);
+            this.streetNameLabel.TabIndex = 68;
+            this.streetNameLabel.Text = "Street Name";
+            // 
+            // buildingNoTextBox
+            // 
+            this.buildingNoTextBox.Location = new System.Drawing.Point(627, 499);
+            this.buildingNoTextBox.Name = "buildingNoTextBox";
+            this.buildingNoTextBox.Size = new System.Drawing.Size(136, 36);
+            this.buildingNoTextBox.StateActive.Border.Color1 = System.Drawing.Color.Black;
+            this.buildingNoTextBox.StateActive.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.buildingNoTextBox.StateCommon.Back.Color1 = System.Drawing.Color.White;
+            this.buildingNoTextBox.StateCommon.Border.Color1 = System.Drawing.Color.DarkGray;
+            this.buildingNoTextBox.StateCommon.Border.Color2 = System.Drawing.Color.DarkGray;
+            this.buildingNoTextBox.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.buildingNoTextBox.StateCommon.Border.Rounding = 18;
+            this.buildingNoTextBox.StateCommon.Content.Color1 = System.Drawing.Color.Black;
+            this.buildingNoTextBox.StateCommon.Content.Font = new System.Drawing.Font("OCR A Extended", 12F);
+            this.buildingNoTextBox.StateDisabled.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(241)))), ((int)(((byte)(255)))));
+            this.buildingNoTextBox.StateDisabled.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(241)))), ((int)(((byte)(255)))));
+            this.buildingNoTextBox.StateDisabled.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(241)))), ((int)(((byte)(255)))));
+            this.buildingNoTextBox.StateDisabled.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.buildingNoTextBox.TabIndex = 64;
+            this.buildingNoTextBox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.buildingNoTextBox_KeyPress);
+            // 
+            // buildingNoLabel
+            // 
+            this.buildingNoLabel.AutoSize = true;
+            this.buildingNoLabel.Font = new System.Drawing.Font("OCR A Extended", 14.25F);
+            this.buildingNoLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(7)))), ((int)(((byte)(73)))));
+            this.buildingNoLabel.Location = new System.Drawing.Point(610, 473);
+            this.buildingNoLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.buildingNoLabel.Name = "buildingNoLabel";
+            this.buildingNoLabel.Size = new System.Drawing.Size(141, 20);
+            this.buildingNoLabel.TabIndex = 67;
+            this.buildingNoLabel.Text = "Building No.";
+            // 
+            // cityTextBox
+            // 
+            this.cityTextBox.Location = new System.Drawing.Point(473, 499);
+            this.cityTextBox.Name = "cityTextBox";
+            this.cityTextBox.Size = new System.Drawing.Size(136, 36);
+            this.cityTextBox.StateActive.Border.Color1 = System.Drawing.Color.Black;
+            this.cityTextBox.StateActive.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.cityTextBox.StateCommon.Back.Color1 = System.Drawing.Color.White;
+            this.cityTextBox.StateCommon.Border.Color1 = System.Drawing.Color.DarkGray;
+            this.cityTextBox.StateCommon.Border.Color2 = System.Drawing.Color.DarkGray;
+            this.cityTextBox.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.cityTextBox.StateCommon.Border.Rounding = 18;
+            this.cityTextBox.StateCommon.Content.Color1 = System.Drawing.Color.Black;
+            this.cityTextBox.StateCommon.Content.Font = new System.Drawing.Font("OCR A Extended", 12F);
+            this.cityTextBox.StateDisabled.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(241)))), ((int)(((byte)(255)))));
+            this.cityTextBox.StateDisabled.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(241)))), ((int)(((byte)(255)))));
+            this.cityTextBox.StateDisabled.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(241)))), ((int)(((byte)(255)))));
+            this.cityTextBox.StateDisabled.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.cityTextBox.TabIndex = 63;
+            // 
+            // cityNameLabel
+            // 
+            this.cityNameLabel.AutoSize = true;
+            this.cityNameLabel.Font = new System.Drawing.Font("OCR A Extended", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cityNameLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(7)))), ((int)(((byte)(73)))));
+            this.cityNameLabel.Location = new System.Drawing.Point(469, 473);
+            this.cityNameLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.cityNameLabel.Name = "cityNameLabel";
+            this.cityNameLabel.Size = new System.Drawing.Size(53, 20);
+            this.cityNameLabel.TabIndex = 66;
+            this.cityNameLabel.Text = "City";
+            // 
+            // addressLabel
+            // 
+            this.addressLabel.AutoSize = true;
+            this.addressLabel.Font = new System.Drawing.Font("OCR A Extended", 9.75F);
+            this.addressLabel.ForeColor = System.Drawing.Color.IndianRed;
+            this.addressLabel.Location = new System.Drawing.Point(470, 459);
+            this.addressLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.addressLabel.Name = "addressLabel";
+            this.addressLabel.Size = new System.Drawing.Size(183, 13);
+            this.addressLabel.TabIndex = 69;
+            this.addressLabel.Text = "Address can\'t be empty";
+            this.addressLabel.Visible = false;
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Font = new System.Drawing.Font("OCR A Extended", 15.75F);
+            this.label14.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(7)))), ((int)(((byte)(73)))));
+            this.label14.Location = new System.Drawing.Point(469, 435);
+            this.label14.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(101, 23);
+            this.label14.TabIndex = 38;
+            this.label14.Text = "Address";
             // 
             // Register
             // 
@@ -934,22 +934,22 @@
         private System.Windows.Forms.Label emailValidationLabel;
         private System.Windows.Forms.Label phoneNumberValidationLabel;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label addressLabel;
-        private System.Windows.Forms.Label streetNameLabel;
-        private System.Windows.Forms.Label buildingNoLabel;
-        private System.Windows.Forms.Label cityNameLabel;
-        private ComponentFactory.Krypton.Toolkit.KryptonTextBox streetNameTextBox;
-        private ComponentFactory.Krypton.Toolkit.KryptonTextBox buildingNoTextBox;
-        private ComponentFactory.Krypton.Toolkit.KryptonTextBox cityTextBox;
         private ComponentFactory.Krypton.Toolkit.KryptonTextBox occupationTextBox;
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.Label occupationLabel;
         private System.Windows.Forms.Label passwordConfirmationLabel;
-        private System.Windows.Forms.Label label14;
-        private System.Windows.Forms.Label maritalStateLabel;
-        private System.Windows.Forms.Label maritalSateLabel;
         private System.Windows.Forms.Label passwordLabel;
-        private ComponentFactory.Krypton.Toolkit.KryptonComboBox maritalStateTextBox;
         private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Label maritalSateLabel;
+        private System.Windows.Forms.Label maritalStateLabel;
+        private ComponentFactory.Krypton.Toolkit.KryptonComboBox maritalStateTextBox;
+        private ComponentFactory.Krypton.Toolkit.KryptonTextBox streetNameTextBox;
+        private System.Windows.Forms.Label streetNameLabel;
+        private ComponentFactory.Krypton.Toolkit.KryptonTextBox buildingNoTextBox;
+        private System.Windows.Forms.Label buildingNoLabel;
+        private ComponentFactory.Krypton.Toolkit.KryptonTextBox cityTextBox;
+        private System.Windows.Forms.Label cityNameLabel;
+        private System.Windows.Forms.Label addressLabel;
+        private System.Windows.Forms.Label label14;
     }
 }

@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Windows.Forms;
+using MedConnect.Secretary;
 
 namespace MedConnect
 {
@@ -15,7 +16,7 @@ namespace MedConnect
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Trigger());
+            Application.Run(new Secretary.Secretary(11));
         }
     }
 }
