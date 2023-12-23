@@ -431,7 +431,7 @@ namespace MedConnect.Secretary
         private void return_button_Click(object sender, EventArgs e)
         {
             this.Close();
-            Secretary form = new Secretary();
+            Secretary form = new Secretary(UserID);
             form.Show();
         }
     }

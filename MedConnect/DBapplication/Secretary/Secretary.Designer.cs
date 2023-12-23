@@ -30,6 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Secretary));
             this.panel1 = new System.Windows.Forms.Panel();
+            this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.MUbill = new ComponentFactory.Krypton.Toolkit.KryptonButton();
             this.kryptonButton3 = new ComponentFactory.Krypton.Toolkit.KryptonButton();
@@ -37,7 +38,6 @@
             this.updatInfo = new ComponentFactory.Krypton.Toolkit.KryptonButton();
             this.UPatientInfo = new ComponentFactory.Krypton.Toolkit.KryptonButton();
             this.NewPatient = new ComponentFactory.Krypton.Toolkit.KryptonButton();
-            this.label2 = new System.Windows.Forms.Label();
             this.logOut = new System.Windows.Forms.Button();
             this.closeApplication = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
@@ -60,6 +60,17 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1337, 153);
             this.panel1.TabIndex = 8;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("OCR A Extended", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(7)))), ((int)(((byte)(73)))));
+            this.label2.Location = new System.Drawing.Point(533, 47);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(315, 63);
+            this.label2.TabIndex = 9;
+            this.label2.Text = "UserName";
             // 
             // label1
             // 
@@ -231,17 +242,6 @@
             this.NewPatient.Values.Text = "Add New Patient";
             this.NewPatient.Click += new System.EventHandler(this.NewPatient_Click);
             // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("OCR A Extended", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(7)))), ((int)(((byte)(73)))));
-            this.label2.Location = new System.Drawing.Point(533, 47);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(315, 63);
-            this.label2.TabIndex = 9;
-            this.label2.Text = "UserName";
-            // 
             // logOut
             // 
             this.logOut.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -256,6 +256,7 @@
             this.logOut.TabIndex = 8;
             this.logOut.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.logOut.UseVisualStyleBackColor = true;
+            this.logOut.Click += new System.EventHandler(this.logOut_Click);
             // 
             // closeApplication
             // 
