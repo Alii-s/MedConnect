@@ -16,5 +16,8 @@ namespace MedConnect.Pharmacist
         public static string IncrementMedicineQuantity = "incrementMedicineQuantity";
         public static string DeleteMedicine = "deleteMedicine";
         public static string AddMedicine = "insertMedicine";
+        public static string GetNotDeliveredPrescriptions = "getNotDeliveredPrescriptions";
+        public static string GetMedicineQuantityByPrescriptionID = "getMedicineQuantityByPrescriptionID";
+        public static string DeliverMedicine = "deliverMedicine";
     }
 }

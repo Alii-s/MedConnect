@@ -45,5 +45,12 @@ namespace MedConnect.Pharmacist
             Medical_Inventory_Form form = new Medical_Inventory_Form(UserID);
             form.Show();
         }
+
+        private void kryptonButton1_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Deliver_Medicine_Form form = new Deliver_Medicine_Form(UserID);
+            form.Show();
+        }
     }
 }

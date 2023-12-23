@@ -31,6 +31,12 @@ namespace MedConnect.Pharmacist
             return dbMan.ExecuteReader(StoredProcedureName, null);
         }
 
+        public DataTable getNotDeliveredPrescriptions()
+        {
+            string StoredProcedureName = PharmacistStoredProcedures.GetNotDeliveredPrescriptions;
+            return dbMan.ExecuteReader(StoredProcedureName, null);
+        }
+
         public DataTable getMedicineByID (int ID)
         {
             string StoredProcedureName = PharmacistStoredProcedures.GetMedicineByID;
@@ -52,6 +58,23 @@ namespace MedConnect.Pharmacist
             string StoredProcedureName = PharmacistStoredProcedures.DeleteMedicine;
             Dictionary<string, object> Parameters = new Dictionary<string, object>();
             Parameters.Add("@ID", ID);
+            return dbMan.ExecuteNonQuery(StoredProcedureName, Parameters);
+        }
+
+        public object getMedicineQuantityByPrescriptionID(int ID)
+        {
+            string StoredProcedureName = PharmacistStoredProcedures.GetMedicineQuantityByPrescriptionID;
+            Dictionary<string, object> Parameters = new Dictionary<string, object>();
+            Parameters.Add("@ID", ID);
+            return dbMan.ExecuteScalar(StoredProcedureName, Parameters);
+        }
+
+        public int deliverMedicine(int quantity, int prescription_ID)
+        {
+            string StoredProcedureName = PharmacistStoredProcedures.DeliverMedicine;
+            Dictionary<string, object> Parameters = new Dictionary<string, object>();
+            Parameters.Add("@quantity", quantity);
+            Parameters.Add("@prescription_ID", prescription_ID);
             return dbMan.ExecuteNonQuery(StoredProcedureName, Parameters);
         }
 

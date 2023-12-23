@@ -126,6 +126,12 @@
     <Compile Include="Pharmacist\Delete_Medicine_Form.Designer.cs">
       <DependentUpon>Delete_Medicine_Form.cs</DependentUpon>
     </Compile>
+    <Compile Include="Pharmacist\Deliver_Medicine_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pharmacist\Deliver_Medicine_Form.Designer.cs">
+      <DependentUpon>Deliver_Medicine_Form.cs</DependentUpon>
+    </Compile>
     <Compile Include="Pharmacist\Medical_Inventory_Form.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -218,6 +224,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Pharmacist\Delete_Medicine_Form.resx">
       <DependentUpon>Delete_Medicine_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pharmacist\Deliver_Medicine_Form.resx">
+      <DependentUpon>Deliver_Medicine_Form.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Pharmacist\Medical_Inventory_Form.resx">
       <DependentUpon>Medical_Inventory_Form.cs</DependentUpon>
@@ -315,6 +324,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\filter %283%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\trolley.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
