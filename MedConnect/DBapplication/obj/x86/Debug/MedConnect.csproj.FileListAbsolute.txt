@@ -103,3 +103,4 @@ C:\Users\p c\OneDrive\Desktop\Pro\MedConnect\MedConnect\DBapplication\obj\x86\De
 C:\Users\p c\OneDrive\Desktop\Pro\MedConnect\MedConnect\DBapplication\obj\x86\Debug\MedConnect.Pharmacist.View_Inventory_Form.resources
 C:\Users\p c\OneDrive\Desktop\Pro\MedConnect\MedConnect\DBapplication\obj\x86\Debug\MedConnect.Register.resources
 C:\Users\p c\OneDrive\Desktop\Pro\MedConnect\MedConnect\DBapplication\obj\x86\Debug\MedConnect.Secretary.UpdateSecretaryInfo.resources
+C:\Users\p c\OneDrive\Desktop\Pro\MedConnect\MedConnect\DBapplication\obj\x86\Debug\MedConnect.Secretary.UpdatePatientSec.resources

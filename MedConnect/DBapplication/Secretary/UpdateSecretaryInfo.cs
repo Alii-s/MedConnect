@@ -145,6 +145,7 @@ namespace MedConnect.Secretary
             editButton.Visible = true;
             doneButton.Visible = false;
             doneButton.Enabled = false;
+            emailTextBox.Enabled = false;
             //updating database
             SecretaryController.UpdateSecretaryInfo(UserID, firstNameTextBox.Text.ToString(), lastNameTextBox.Text.ToString(), phoneNumberTextBox.Text.ToString(), Convert.ToInt32(SalaryTextBox.Text));
         }

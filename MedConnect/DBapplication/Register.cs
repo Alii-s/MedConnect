@@ -17,7 +17,8 @@ namespace MedConnect
         Controller controller = new Controller();
         bool Validation = true;
         int userID;
-        public Register()
+        int IsSecretary;
+        public Register(int IsSecretary)
         {
             InitializeComponent();
             genderComboBox.SelectedIndex = 0;

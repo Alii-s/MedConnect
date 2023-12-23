@@ -35,12 +35,12 @@
             this.kryptonButton3 = new ComponentFactory.Krypton.Toolkit.KryptonButton();
             this.kryptonButton2 = new ComponentFactory.Krypton.Toolkit.KryptonButton();
             this.updatInfo = new ComponentFactory.Krypton.Toolkit.KryptonButton();
-            this.kryptonButton1 = new ComponentFactory.Krypton.Toolkit.KryptonButton();
+            this.UPatientInfo = new ComponentFactory.Krypton.Toolkit.KryptonButton();
             this.NewPatient = new ComponentFactory.Krypton.Toolkit.KryptonButton();
+            this.label2 = new System.Windows.Forms.Label();
             this.logOut = new System.Windows.Forms.Button();
             this.closeApplication = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.label2 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -177,31 +177,32 @@
             this.updatInfo.Values.Text = "Update personal Info";
             this.updatInfo.Click += new System.EventHandler(this.updatInfo_Click);
             // 
-            // kryptonButton1
+            // UPatientInfo
             // 
-            this.kryptonButton1.Location = new System.Drawing.Point(870, 157);
-            this.kryptonButton1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.kryptonButton1.Name = "kryptonButton1";
-            this.kryptonButton1.Size = new System.Drawing.Size(348, 247);
-            this.kryptonButton1.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(241)))), ((int)(((byte)(255)))));
-            this.kryptonButton1.StateCommon.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(241)))), ((int)(((byte)(255)))));
-            this.kryptonButton1.StateCommon.Back.ImageStyle = ComponentFactory.Krypton.Toolkit.PaletteImageStyle.CenterMiddle;
-            this.kryptonButton1.StateCommon.Border.DrawBorders = ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.None;
-            this.kryptonButton1.StateCommon.Content.LongText.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.kryptonButton1.StateCommon.Content.ShortText.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(7)))), ((int)(((byte)(73)))));
-            this.kryptonButton1.StateCommon.Content.ShortText.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(7)))), ((int)(((byte)(73)))));
-            this.kryptonButton1.StateCommon.Content.ShortText.Font = new System.Drawing.Font("OCR A Extended", 15F);
-            this.kryptonButton1.StateCommon.Content.ShortText.TextH = ComponentFactory.Krypton.Toolkit.PaletteRelativeAlign.Center;
-            this.kryptonButton1.StateCommon.Content.ShortText.TextV = ComponentFactory.Krypton.Toolkit.PaletteRelativeAlign.Far;
-            this.kryptonButton1.StatePressed.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(157)))), ((int)(((byte)(209)))), ((int)(((byte)(255)))));
-            this.kryptonButton1.StatePressed.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(157)))), ((int)(((byte)(209)))), ((int)(((byte)(255)))));
-            this.kryptonButton1.StateTracking.Back.Color1 = System.Drawing.Color.AliceBlue;
-            this.kryptonButton1.StateTracking.Back.Color2 = System.Drawing.Color.AliceBlue;
-            this.kryptonButton1.TabIndex = 17;
-            this.kryptonButton1.Tag = "";
-            this.kryptonButton1.Values.Image = global::MedConnect.Properties.Resources.medical_chechup__3_;
-            this.kryptonButton1.Values.ImageTransparentColor = System.Drawing.Color.Transparent;
-            this.kryptonButton1.Values.Text = "Update Patient info";
+            this.UPatientInfo.Location = new System.Drawing.Point(870, 157);
+            this.UPatientInfo.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.UPatientInfo.Name = "UPatientInfo";
+            this.UPatientInfo.Size = new System.Drawing.Size(348, 247);
+            this.UPatientInfo.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(241)))), ((int)(((byte)(255)))));
+            this.UPatientInfo.StateCommon.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(241)))), ((int)(((byte)(255)))));
+            this.UPatientInfo.StateCommon.Back.ImageStyle = ComponentFactory.Krypton.Toolkit.PaletteImageStyle.CenterMiddle;
+            this.UPatientInfo.StateCommon.Border.DrawBorders = ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.None;
+            this.UPatientInfo.StateCommon.Content.LongText.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.UPatientInfo.StateCommon.Content.ShortText.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(7)))), ((int)(((byte)(73)))));
+            this.UPatientInfo.StateCommon.Content.ShortText.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(7)))), ((int)(((byte)(73)))));
+            this.UPatientInfo.StateCommon.Content.ShortText.Font = new System.Drawing.Font("OCR A Extended", 15F);
+            this.UPatientInfo.StateCommon.Content.ShortText.TextH = ComponentFactory.Krypton.Toolkit.PaletteRelativeAlign.Center;
+            this.UPatientInfo.StateCommon.Content.ShortText.TextV = ComponentFactory.Krypton.Toolkit.PaletteRelativeAlign.Far;
+            this.UPatientInfo.StatePressed.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(157)))), ((int)(((byte)(209)))), ((int)(((byte)(255)))));
+            this.UPatientInfo.StatePressed.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(157)))), ((int)(((byte)(209)))), ((int)(((byte)(255)))));
+            this.UPatientInfo.StateTracking.Back.Color1 = System.Drawing.Color.AliceBlue;
+            this.UPatientInfo.StateTracking.Back.Color2 = System.Drawing.Color.AliceBlue;
+            this.UPatientInfo.TabIndex = 17;
+            this.UPatientInfo.Tag = "";
+            this.UPatientInfo.Values.Image = global::MedConnect.Properties.Resources.medical_chechup__3_;
+            this.UPatientInfo.Values.ImageTransparentColor = System.Drawing.Color.Transparent;
+            this.UPatientInfo.Values.Text = "Update Patient info";
+            this.UPatientInfo.Click += new System.EventHandler(this.UPatientInfo_Click);
             // 
             // NewPatient
             // 
@@ -228,6 +229,18 @@
             this.NewPatient.Values.Image = global::MedConnect.Properties.Resources.add__1_;
             this.NewPatient.Values.ImageTransparentColor = System.Drawing.Color.Transparent;
             this.NewPatient.Values.Text = "Add New Patient";
+            this.NewPatient.Click += new System.EventHandler(this.NewPatient_Click);
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("OCR A Extended", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(7)))), ((int)(((byte)(73)))));
+            this.label2.Location = new System.Drawing.Point(533, 47);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(315, 63);
+            this.label2.TabIndex = 9;
+            this.label2.Text = "UserName";
             // 
             // logOut
             // 
@@ -271,17 +284,6 @@
             this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;
             // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("OCR A Extended", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(7)))), ((int)(((byte)(73)))));
-            this.label2.Location = new System.Drawing.Point(533, 47);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(315, 63);
-            this.label2.TabIndex = 9;
-            this.label2.Text = "UserName";
-            // 
             // Secretary
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -292,7 +294,7 @@
             this.Controls.Add(this.kryptonButton3);
             this.Controls.Add(this.kryptonButton2);
             this.Controls.Add(this.updatInfo);
-            this.Controls.Add(this.kryptonButton1);
+            this.Controls.Add(this.UPatientInfo);
             this.Controls.Add(this.NewPatient);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -315,7 +317,7 @@
         private ComponentFactory.Krypton.Toolkit.KryptonButton kryptonButton3;
         private ComponentFactory.Krypton.Toolkit.KryptonButton kryptonButton2;
         private ComponentFactory.Krypton.Toolkit.KryptonButton updatInfo;
-        private ComponentFactory.Krypton.Toolkit.KryptonButton kryptonButton1;
+        private ComponentFactory.Krypton.Toolkit.KryptonButton UPatientInfo;
         private ComponentFactory.Krypton.Toolkit.KryptonButton NewPatient;
         private System.Windows.Forms.Label label2;
     }

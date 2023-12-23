@@ -56,7 +56,7 @@ namespace MedConnect
 
         private void label2_Click(object sender, EventArgs e)
         {
-            Register register = new Register();
+            Register register = new Register(0);
             register.Show();
             this.Hide();
         }

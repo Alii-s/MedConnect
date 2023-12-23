@@ -185,6 +185,12 @@
     </Compile>
     <Compile Include="Secretary\SecretaryController.cs" />
     <Compile Include="Secretary\SecretaryProcdures.cs" />
+    <Compile Include="Secretary\UpdatePatientSec.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Secretary\UpdatePatientSec.Designer.cs">
+      <DependentUpon>UpdatePatientSec.cs</DependentUpon>
+    </Compile>
     <Compile Include="Secretary\UpdateSecretaryInfo.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -262,6 +268,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Secretary\Secretary.resx">
       <DependentUpon>Secretary.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Secretary\UpdatePatientSec.resx">
+      <DependentUpon>UpdatePatientSec.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Secretary\UpdateSecretaryInfo.resx">
       <DependentUpon>UpdateSecretaryInfo.cs</DependentUpon>

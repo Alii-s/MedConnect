@@ -63,6 +63,7 @@
             this.button1 = new System.Windows.Forms.Button();
             this.closeApplication = new System.Windows.Forms.Button();
             this.logOut = new System.Windows.Forms.Button();
+            this.log_Out = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel1)).BeginInit();
             this.kryptonPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.maritalStateTextBox)).BeginInit();
@@ -74,10 +75,9 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("OCR A Extended", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(7)))), ((int)(((byte)(73)))));
-            this.label3.Location = new System.Drawing.Point(48, 294);
-            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label3.Location = new System.Drawing.Point(64, 362);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(127, 23);
+            this.label3.Size = new System.Drawing.Size(157, 29);
             this.label3.TabIndex = 10;
             this.label3.Text = "Last Name";
             this.label3.Click += new System.EventHandler(this.label3_Click);
@@ -87,10 +87,9 @@
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("OCR A Extended", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(7)))), ((int)(((byte)(73)))));
-            this.label4.Location = new System.Drawing.Point(48, 382);
-            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label4.Location = new System.Drawing.Point(64, 470);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(75, 23);
+            this.label4.Size = new System.Drawing.Size(93, 29);
             this.label4.TabIndex = 11;
             this.label4.Text = "Email";
             this.label4.Click += new System.EventHandler(this.label4_Click);
@@ -100,10 +99,9 @@
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("OCR A Extended", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(7)))), ((int)(((byte)(73)))));
-            this.label5.Location = new System.Drawing.Point(48, 481);
-            this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label5.Location = new System.Drawing.Point(64, 592);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(166, 23);
+            this.label5.Size = new System.Drawing.Size(205, 29);
             this.label5.TabIndex = 12;
             this.label5.Text = "Phone Number";
             this.label5.Click += new System.EventHandler(this.label5_Click);
@@ -113,10 +111,9 @@
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("OCR A Extended", 15.75F);
             this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(7)))), ((int)(((byte)(73)))));
-            this.label6.Location = new System.Drawing.Point(544, 197);
-            this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label6.Location = new System.Drawing.Point(725, 242);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(140, 23);
+            this.label6.Size = new System.Drawing.Size(173, 29);
             this.label6.TabIndex = 13;
             this.label6.Text = "Occupation";
             this.label6.Click += new System.EventHandler(this.label6_Click);
@@ -126,10 +123,9 @@
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("OCR A Extended", 15.75F);
             this.label7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(7)))), ((int)(((byte)(73)))));
-            this.label7.Location = new System.Drawing.Point(544, 382);
-            this.label7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label7.Location = new System.Drawing.Point(725, 470);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(101, 23);
+            this.label7.Size = new System.Drawing.Size(125, 29);
             this.label7.TabIndex = 14;
             this.label7.Text = "Address";
             this.label7.Click += new System.EventHandler(this.label7_Click);
@@ -138,9 +134,10 @@
             // 
             this.firstNameTextBox.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.firstNameTextBox.Enabled = false;
-            this.firstNameTextBox.Location = new System.Drawing.Point(52, 229);
+            this.firstNameTextBox.Location = new System.Drawing.Point(69, 282);
+            this.firstNameTextBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.firstNameTextBox.Name = "firstNameTextBox";
-            this.firstNameTextBox.Size = new System.Drawing.Size(208, 36);
+            this.firstNameTextBox.Size = new System.Drawing.Size(277, 40);
             this.firstNameTextBox.StateActive.Border.Color1 = System.Drawing.Color.Black;
             this.firstNameTextBox.StateActive.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
@@ -167,9 +164,10 @@
             // 
             this.lastNameTextBox.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.lastNameTextBox.Enabled = false;
-            this.lastNameTextBox.Location = new System.Drawing.Point(52, 320);
+            this.lastNameTextBox.Location = new System.Drawing.Point(69, 394);
+            this.lastNameTextBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.lastNameTextBox.Name = "lastNameTextBox";
-            this.lastNameTextBox.Size = new System.Drawing.Size(208, 36);
+            this.lastNameTextBox.Size = new System.Drawing.Size(277, 40);
             this.lastNameTextBox.StateActive.Border.Color1 = System.Drawing.Color.Black;
             this.lastNameTextBox.StateActive.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
@@ -196,9 +194,10 @@
             // 
             this.emailTextBox.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.emailTextBox.Enabled = false;
-            this.emailTextBox.Location = new System.Drawing.Point(52, 408);
+            this.emailTextBox.Location = new System.Drawing.Point(69, 502);
+            this.emailTextBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.emailTextBox.Name = "emailTextBox";
-            this.emailTextBox.Size = new System.Drawing.Size(208, 36);
+            this.emailTextBox.Size = new System.Drawing.Size(277, 40);
             this.emailTextBox.StateActive.Border.Color1 = System.Drawing.Color.Black;
             this.emailTextBox.StateActive.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
@@ -223,9 +222,10 @@
             // phoneNumberTextBox
             // 
             this.phoneNumberTextBox.Enabled = false;
-            this.phoneNumberTextBox.Location = new System.Drawing.Point(52, 507);
+            this.phoneNumberTextBox.Location = new System.Drawing.Point(69, 624);
+            this.phoneNumberTextBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.phoneNumberTextBox.Name = "phoneNumberTextBox";
-            this.phoneNumberTextBox.Size = new System.Drawing.Size(208, 36);
+            this.phoneNumberTextBox.Size = new System.Drawing.Size(277, 40);
             this.phoneNumberTextBox.StateActive.Border.Color1 = System.Drawing.Color.Black;
             this.phoneNumberTextBox.StateActive.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
@@ -252,9 +252,10 @@
             // 
             this.occupationTextBox.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.occupationTextBox.Enabled = false;
-            this.occupationTextBox.Location = new System.Drawing.Point(548, 229);
+            this.occupationTextBox.Location = new System.Drawing.Point(731, 282);
+            this.occupationTextBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.occupationTextBox.Name = "occupationTextBox";
-            this.occupationTextBox.Size = new System.Drawing.Size(208, 36);
+            this.occupationTextBox.Size = new System.Drawing.Size(277, 40);
             this.occupationTextBox.StateActive.Border.Color1 = System.Drawing.Color.Black;
             this.occupationTextBox.StateActive.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
@@ -279,9 +280,10 @@
             // cityTextBox
             // 
             this.cityTextBox.Enabled = false;
-            this.cityTextBox.Location = new System.Drawing.Point(548, 448);
+            this.cityTextBox.Location = new System.Drawing.Point(731, 551);
+            this.cityTextBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.cityTextBox.Name = "cityTextBox";
-            this.cityTextBox.Size = new System.Drawing.Size(136, 36);
+            this.cityTextBox.Size = new System.Drawing.Size(181, 40);
             this.cityTextBox.StateActive.Border.Color1 = System.Drawing.Color.Black;
             this.cityTextBox.StateActive.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
@@ -306,9 +308,10 @@
             // editButton
             // 
             this.editButton.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.editButton.Location = new System.Drawing.Point(548, 507);
+            this.editButton.Location = new System.Drawing.Point(731, 624);
+            this.editButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.editButton.Name = "editButton";
-            this.editButton.Size = new System.Drawing.Size(97, 42);
+            this.editButton.Size = new System.Drawing.Size(129, 52);
             this.editButton.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(72)))), ((int)(((byte)(170)))), ((int)(((byte)(255)))));
             this.editButton.StateCommon.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(72)))), ((int)(((byte)(170)))), ((int)(((byte)(255)))));
             this.editButton.StateCommon.Back.ColorAlign = ComponentFactory.Krypton.Toolkit.PaletteRectangleAlign.Local;
@@ -338,9 +341,10 @@
             // 
             this.doneButton.Cursor = System.Windows.Forms.Cursors.Hand;
             this.doneButton.Enabled = false;
-            this.doneButton.Location = new System.Drawing.Point(548, 507);
+            this.doneButton.Location = new System.Drawing.Point(731, 624);
+            this.doneButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.doneButton.Name = "doneButton";
-            this.doneButton.Size = new System.Drawing.Size(97, 42);
+            this.doneButton.Size = new System.Drawing.Size(129, 52);
             this.doneButton.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(72)))), ((int)(((byte)(170)))), ((int)(((byte)(255)))));
             this.doneButton.StateCommon.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(72)))), ((int)(((byte)(170)))), ((int)(((byte)(255)))));
             this.doneButton.StateCommon.Border.Color1 = System.Drawing.Color.Black;
@@ -372,9 +376,10 @@
             // buildingNoTextBox
             // 
             this.buildingNoTextBox.Enabled = false;
-            this.buildingNoTextBox.Location = new System.Drawing.Point(702, 448);
+            this.buildingNoTextBox.Location = new System.Drawing.Point(936, 551);
+            this.buildingNoTextBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.buildingNoTextBox.Name = "buildingNoTextBox";
-            this.buildingNoTextBox.Size = new System.Drawing.Size(136, 36);
+            this.buildingNoTextBox.Size = new System.Drawing.Size(181, 40);
             this.buildingNoTextBox.StateActive.Border.Color1 = System.Drawing.Color.Black;
             this.buildingNoTextBox.StateActive.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
@@ -400,9 +405,10 @@
             // streetNameTextBox
             // 
             this.streetNameTextBox.Enabled = false;
-            this.streetNameTextBox.Location = new System.Drawing.Point(855, 448);
+            this.streetNameTextBox.Location = new System.Drawing.Point(1140, 551);
+            this.streetNameTextBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.streetNameTextBox.Name = "streetNameTextBox";
-            this.streetNameTextBox.Size = new System.Drawing.Size(136, 36);
+            this.streetNameTextBox.Size = new System.Drawing.Size(181, 40);
             this.streetNameTextBox.StateActive.Border.Color1 = System.Drawing.Color.Black;
             this.streetNameTextBox.StateActive.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
@@ -429,10 +435,9 @@
             this.cityNameLabel.AutoSize = true;
             this.cityNameLabel.Font = new System.Drawing.Font("OCR A Extended", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cityNameLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(7)))), ((int)(((byte)(73)))));
-            this.cityNameLabel.Location = new System.Drawing.Point(544, 422);
-            this.cityNameLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.cityNameLabel.Location = new System.Drawing.Point(725, 519);
             this.cityNameLabel.Name = "cityNameLabel";
-            this.cityNameLabel.Size = new System.Drawing.Size(53, 20);
+            this.cityNameLabel.Size = new System.Drawing.Size(68, 25);
             this.cityNameLabel.TabIndex = 27;
             this.cityNameLabel.Text = "City";
             this.cityNameLabel.Click += new System.EventHandler(this.cityNameLabel_Click);
@@ -442,10 +447,9 @@
             this.buildingNoLabel.AutoSize = true;
             this.buildingNoLabel.Font = new System.Drawing.Font("OCR A Extended", 14.25F);
             this.buildingNoLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(7)))), ((int)(((byte)(73)))));
-            this.buildingNoLabel.Location = new System.Drawing.Point(685, 422);
-            this.buildingNoLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.buildingNoLabel.Location = new System.Drawing.Point(913, 519);
             this.buildingNoLabel.Name = "buildingNoLabel";
-            this.buildingNoLabel.Size = new System.Drawing.Size(141, 20);
+            this.buildingNoLabel.Size = new System.Drawing.Size(180, 25);
             this.buildingNoLabel.TabIndex = 28;
             this.buildingNoLabel.Text = "Building No.";
             this.buildingNoLabel.Click += new System.EventHandler(this.buildingNoLabel_Click);
@@ -455,10 +459,9 @@
             this.streetNameLabel.AutoSize = true;
             this.streetNameLabel.Font = new System.Drawing.Font("OCR A Extended", 14.25F);
             this.streetNameLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(7)))), ((int)(((byte)(73)))));
-            this.streetNameLabel.Location = new System.Drawing.Point(851, 422);
-            this.streetNameLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.streetNameLabel.Location = new System.Drawing.Point(1135, 519);
             this.streetNameLabel.Name = "streetNameLabel";
-            this.streetNameLabel.Size = new System.Drawing.Size(130, 20);
+            this.streetNameLabel.Size = new System.Drawing.Size(166, 25);
             this.streetNameLabel.TabIndex = 29;
             this.streetNameLabel.Text = "Street Name";
             this.streetNameLabel.Click += new System.EventHandler(this.streetNameLabel_Click);
@@ -468,10 +471,9 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("OCR A Extended", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(7)))), ((int)(((byte)(73)))));
-            this.label2.Location = new System.Drawing.Point(48, 197);
-            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label2.Location = new System.Drawing.Point(64, 242);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(140, 23);
+            this.label2.Size = new System.Drawing.Size(173, 29);
             this.label2.TabIndex = 9;
             this.label2.Text = "First Name";
             this.label2.Click += new System.EventHandler(this.label2_Click);
@@ -481,10 +483,9 @@
             this.emailValidationLabel.AutoSize = true;
             this.emailValidationLabel.Font = new System.Drawing.Font("OCR A Extended", 9.75F);
             this.emailValidationLabel.ForeColor = System.Drawing.Color.IndianRed;
-            this.emailValidationLabel.Location = new System.Drawing.Point(48, 448);
-            this.emailValidationLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.emailValidationLabel.Location = new System.Drawing.Point(64, 551);
             this.emailValidationLabel.Name = "emailValidationLabel";
-            this.emailValidationLabel.Size = new System.Drawing.Size(215, 13);
+            this.emailValidationLabel.Size = new System.Drawing.Size(268, 18);
             this.emailValidationLabel.TabIndex = 30;
             this.emailValidationLabel.Text = "Please enter a valid email";
             this.emailValidationLabel.Visible = false;
@@ -494,10 +495,9 @@
             this.phoneNumberValidationLabel.AutoSize = true;
             this.phoneNumberValidationLabel.Font = new System.Drawing.Font("OCR A Extended", 9.75F);
             this.phoneNumberValidationLabel.ForeColor = System.Drawing.Color.IndianRed;
-            this.phoneNumberValidationLabel.Location = new System.Drawing.Point(45, 546);
-            this.phoneNumberValidationLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.phoneNumberValidationLabel.Location = new System.Drawing.Point(60, 672);
             this.phoneNumberValidationLabel.Name = "phoneNumberValidationLabel";
-            this.phoneNumberValidationLabel.Size = new System.Drawing.Size(223, 13);
+            this.phoneNumberValidationLabel.Size = new System.Drawing.Size(278, 18);
             this.phoneNumberValidationLabel.TabIndex = 31;
             this.phoneNumberValidationLabel.Text = "Please enter a valid number";
             this.phoneNumberValidationLabel.Visible = false;
@@ -507,10 +507,9 @@
             this.lastNameLabel.AutoSize = true;
             this.lastNameLabel.Font = new System.Drawing.Font("OCR A Extended", 9.75F);
             this.lastNameLabel.ForeColor = System.Drawing.Color.IndianRed;
-            this.lastNameLabel.Location = new System.Drawing.Point(53, 359);
-            this.lastNameLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lastNameLabel.Location = new System.Drawing.Point(71, 442);
             this.lastNameLabel.Name = "lastNameLabel";
-            this.lastNameLabel.Size = new System.Drawing.Size(199, 13);
+            this.lastNameLabel.Size = new System.Drawing.Size(248, 18);
             this.lastNameLabel.TabIndex = 33;
             this.lastNameLabel.Text = "Last name can\'t be empty";
             this.lastNameLabel.Visible = false;
@@ -520,10 +519,9 @@
             this.occupationLabel.AutoSize = true;
             this.occupationLabel.Font = new System.Drawing.Font("OCR A Extended", 9.75F);
             this.occupationLabel.ForeColor = System.Drawing.Color.IndianRed;
-            this.occupationLabel.Location = new System.Drawing.Point(545, 268);
-            this.occupationLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.occupationLabel.Location = new System.Drawing.Point(727, 330);
             this.occupationLabel.Name = "occupationLabel";
-            this.occupationLabel.Size = new System.Drawing.Size(215, 13);
+            this.occupationLabel.Size = new System.Drawing.Size(268, 18);
             this.occupationLabel.TabIndex = 34;
             this.occupationLabel.Text = "Occupation  can\'t be empty";
             this.occupationLabel.Visible = false;
@@ -533,10 +531,9 @@
             this.addressLabel.AutoSize = true;
             this.addressLabel.Font = new System.Drawing.Font("OCR A Extended", 9.75F);
             this.addressLabel.ForeColor = System.Drawing.Color.IndianRed;
-            this.addressLabel.Location = new System.Drawing.Point(545, 408);
-            this.addressLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.addressLabel.Location = new System.Drawing.Point(727, 502);
             this.addressLabel.Name = "addressLabel";
-            this.addressLabel.Size = new System.Drawing.Size(183, 13);
+            this.addressLabel.Size = new System.Drawing.Size(228, 18);
             this.addressLabel.TabIndex = 36;
             this.addressLabel.Text = "Address can\'t be empty";
             this.addressLabel.Visible = false;
@@ -547,15 +544,15 @@
             this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(157)))), ((int)(((byte)(205)))), ((int)(((byte)(255)))));
             this.label1.Font = new System.Drawing.Font("OCR A Extended", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(7)))), ((int)(((byte)(73)))));
-            this.label1.Location = new System.Drawing.Point(218, 39);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label1.Location = new System.Drawing.Point(291, 48);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(611, 39);
+            this.label1.Size = new System.Drawing.Size(778, 49);
             this.label1.TabIndex = 0;
             this.label1.Text = "You can see your info below";
             // 
             // kryptonPanel1
             // 
+            this.kryptonPanel1.Controls.Add(this.log_Out);
             this.kryptonPanel1.Controls.Add(this.pictureBox1);
             this.kryptonPanel1.Controls.Add(this.button1);
             this.kryptonPanel1.Controls.Add(this.closeApplication);
@@ -563,8 +560,9 @@
             this.kryptonPanel1.Controls.Add(this.logOut);
             this.kryptonPanel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.kryptonPanel1.Location = new System.Drawing.Point(0, 0);
+            this.kryptonPanel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.kryptonPanel1.Name = "kryptonPanel1";
-            this.kryptonPanel1.Size = new System.Drawing.Size(1003, 124);
+            this.kryptonPanel1.Size = new System.Drawing.Size(1337, 153);
             this.kryptonPanel1.StateCommon.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(157)))), ((int)(((byte)(205)))), ((int)(((byte)(255)))));
             this.kryptonPanel1.TabIndex = 37;
             // 
@@ -573,10 +571,9 @@
             this.firstNameLabel.AutoSize = true;
             this.firstNameLabel.Font = new System.Drawing.Font("OCR A Extended", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.firstNameLabel.ForeColor = System.Drawing.Color.IndianRed;
-            this.firstNameLabel.Location = new System.Drawing.Point(53, 268);
-            this.firstNameLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.firstNameLabel.Location = new System.Drawing.Point(71, 330);
             this.firstNameLabel.Name = "firstNameLabel";
-            this.firstNameLabel.Size = new System.Drawing.Size(207, 13);
+            this.firstNameLabel.Size = new System.Drawing.Size(258, 18);
             this.firstNameLabel.TabIndex = 32;
             this.firstNameLabel.Text = "First name can\'t be empty";
             this.firstNameLabel.Visible = false;
@@ -586,10 +583,9 @@
             this.maritalSateLabel.AutoSize = true;
             this.maritalSateLabel.Font = new System.Drawing.Font("OCR A Extended", 15.75F);
             this.maritalSateLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(7)))), ((int)(((byte)(73)))));
-            this.maritalSateLabel.Location = new System.Drawing.Point(549, 294);
-            this.maritalSateLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.maritalSateLabel.Location = new System.Drawing.Point(732, 362);
             this.maritalSateLabel.Name = "maritalSateLabel";
-            this.maritalSateLabel.Size = new System.Drawing.Size(179, 23);
+            this.maritalSateLabel.Size = new System.Drawing.Size(221, 29);
             this.maritalSateLabel.TabIndex = 15;
             this.maritalSateLabel.Text = "Marital State";
             // 
@@ -598,10 +594,9 @@
             this.maritalStateLabel.AutoSize = true;
             this.maritalStateLabel.Font = new System.Drawing.Font("OCR A Extended", 9.75F);
             this.maritalStateLabel.ForeColor = System.Drawing.Color.IndianRed;
-            this.maritalStateLabel.Location = new System.Drawing.Point(545, 359);
-            this.maritalStateLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.maritalStateLabel.Location = new System.Drawing.Point(727, 442);
             this.maritalStateLabel.Name = "maritalStateLabel";
-            this.maritalStateLabel.Size = new System.Drawing.Size(239, 13);
+            this.maritalStateLabel.Size = new System.Drawing.Size(298, 18);
             this.maritalStateLabel.TabIndex = 35;
             this.maritalStateLabel.Text = "Marital state  can\'t be empty";
             this.maritalStateLabel.Visible = false;
@@ -617,10 +612,11 @@
             "Widowed",
             "Divorced",
             "Separated"});
-            this.maritalStateTextBox.Location = new System.Drawing.Point(548, 322);
+            this.maritalStateTextBox.Location = new System.Drawing.Point(731, 396);
+            this.maritalStateTextBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.maritalStateTextBox.Name = "maritalStateTextBox";
             this.maritalStateTextBox.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.Office2010Blue;
-            this.maritalStateTextBox.Size = new System.Drawing.Size(208, 34);
+            this.maritalStateTextBox.Size = new System.Drawing.Size(277, 38);
             this.maritalStateTextBox.StateCommon.ComboBox.Border.Color1 = System.Drawing.Color.Black;
             this.maritalStateTextBox.StateCommon.ComboBox.Border.Color2 = System.Drawing.Color.Black;
             this.maritalStateTextBox.StateCommon.ComboBox.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
@@ -644,10 +640,10 @@
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(157)))), ((int)(((byte)(205)))), ((int)(((byte)(255)))));
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(72, 11);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox1.Location = new System.Drawing.Point(96, 14);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(142, 91);
+            this.pictureBox1.Size = new System.Drawing.Size(189, 112);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;
@@ -660,10 +656,10 @@
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.Image = global::MedConnect.Properties.Resources._return;
-            this.button1.Location = new System.Drawing.Point(11, 65);
-            this.button1.Margin = new System.Windows.Forms.Padding(2);
+            this.button1.Location = new System.Drawing.Point(15, 80);
+            this.button1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(45, 37);
+            this.button1.Size = new System.Drawing.Size(60, 46);
             this.button1.TabIndex = 8;
             this.button1.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.button1.UseVisualStyleBackColor = false;
@@ -677,10 +673,10 @@
             this.closeApplication.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.closeApplication.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(153)))), ((int)(((byte)(255)))));
             this.closeApplication.Image = ((System.Drawing.Image)(resources.GetObject("closeApplication.Image")));
-            this.closeApplication.Location = new System.Drawing.Point(947, 11);
-            this.closeApplication.Margin = new System.Windows.Forms.Padding(2);
+            this.closeApplication.Location = new System.Drawing.Point(1263, 14);
+            this.closeApplication.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.closeApplication.Name = "closeApplication";
-            this.closeApplication.Size = new System.Drawing.Size(45, 37);
+            this.closeApplication.Size = new System.Drawing.Size(60, 46);
             this.closeApplication.TabIndex = 6;
             this.closeApplication.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.closeApplication.UseVisualStyleBackColor = false;
@@ -694,21 +690,38 @@
             this.logOut.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.logOut.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.logOut.Image = ((System.Drawing.Image)(resources.GetObject("logOut.Image")));
-            this.logOut.Location = new System.Drawing.Point(11, 11);
-            this.logOut.Margin = new System.Windows.Forms.Padding(2);
+            this.logOut.Location = new System.Drawing.Point(15, 14);
+            this.logOut.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.logOut.Name = "logOut";
-            this.logOut.Size = new System.Drawing.Size(45, 37);
+            this.logOut.Size = new System.Drawing.Size(1337, 673);
             this.logOut.TabIndex = 7;
             this.logOut.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.logOut.UseVisualStyleBackColor = false;
             this.logOut.Click += new System.EventHandler(this.logOut_Click);
             // 
+            // log_Out
+            // 
+            this.log_Out.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(157)))), ((int)(((byte)(205)))), ((int)(((byte)(255)))));
+            this.log_Out.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.log_Out.FlatAppearance.BorderSize = 0;
+            this.log_Out.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.log_Out.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.log_Out.Image = ((System.Drawing.Image)(resources.GetObject("log_Out.Image")));
+            this.log_Out.Location = new System.Drawing.Point(15, 11);
+            this.log_Out.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.log_Out.Name = "log_Out";
+            this.log_Out.Size = new System.Drawing.Size(60, 46);
+            this.log_Out.TabIndex = 76;
+            this.log_Out.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.log_Out.UseVisualStyleBackColor = false;
+            this.log_Out.Click += new System.EventHandler(this.logOut_Click);
+            // 
             // Patient_Info
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(241)))), ((int)(((byte)(255)))));
-            this.ClientSize = new System.Drawing.Size(1003, 586);
+            this.ClientSize = new System.Drawing.Size(1337, 721);
             this.Controls.Add(this.maritalStateTextBox);
             this.Controls.Add(this.kryptonPanel1);
             this.Controls.Add(this.addressLabel);
@@ -739,6 +752,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.maritalSateLabel);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "Patient_Info";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Patient_Info";
@@ -788,5 +802,6 @@
         private System.Windows.Forms.Label maritalSateLabel;
         private System.Windows.Forms.Label maritalStateLabel;
         private ComponentFactory.Krypton.Toolkit.KryptonComboBox maritalStateTextBox;
+        private System.Windows.Forms.Button log_Out;
     }
 }

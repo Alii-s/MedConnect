@@ -27,7 +27,7 @@ namespace MedConnect.Secretary
 
         private void updatInfo_Click(object sender, EventArgs e)
         {
-            this.Hide();
+            this.Close();
             UpdateSecretaryInfo f = new UpdateSecretaryInfo(UserID);
             f.Show();
           
@@ -37,6 +37,18 @@ namespace MedConnect.Secretary
         private void closeApplication_Click(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+
+        private void NewPatient_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            Register form = new Register(1);
+            form.Show();
+        }
+
+        private void UPatientInfo_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
