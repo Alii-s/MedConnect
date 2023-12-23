@@ -44,5 +44,12 @@ namespace MedConnect.Doctor
         {
 
         }
+
+        private void kryptonButton2_Click(object sender, EventArgs e)
+        {
+            ClinicsAppointments clinicsAppointments = new ClinicsAppointments();
+            clinicsAppointments.Show();
+            this.Hide();
+        }
     }
 }

@@ -68,6 +68,12 @@
     <Compile Include="Admin\AdminController.cs" />
     <Compile Include="Controller.cs" />
     <Compile Include="DBManager.cs" />
+    <Compile Include="Doctor\ClinicsAppointments.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Doctor\ClinicsAppointments.Designer.cs">
+      <DependentUpon>ClinicsAppointments.cs</DependentUpon>
+    </Compile>
     <Compile Include="Doctor\DoctorController.cs" />
     <Compile Include="Doctor\DoctorMainForm.cs">
       <SubType>Form</SubType>
@@ -211,6 +217,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Doctor\ClinicsAppointments.resx">
+      <DependentUpon>ClinicsAppointments.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Doctor\DoctorMainForm.resx">
       <DependentUpon>DoctorMainForm.cs</DependentUpon>
     </EmbeddedResource>

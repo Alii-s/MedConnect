@@ -21,6 +21,18 @@ namespace MedConnect.Doctor
         }
         #endregion
 
+        #region Get Active Reservations With Date
+        public DataTable GetActiveReservationsWithDate(int ClinicId, DateTime Date)
+        {
+            string StoredProcedureName = DoctorStoredProcedures.GetActiveReservationsWithDate;
+
+            Dictionary<string, object> Parameters = new Dictionary<string, object>();
+            Parameters.Add("@InputDate", Date);
+            Parameters.Add("@ClinicId", ClinicId);
+            return dbMan.ExecuteReader(StoredProcedureName, Parameters);
+        }
+        #endregion
+
         #region Get Doctor Name
         //public string GetDoctorName(int DoctorID)
         //{

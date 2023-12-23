@@ -217,6 +217,7 @@
             this.kryptonButton2.Values.Image = global::MedConnect.Properties.Resources.booking;
             this.kryptonButton2.Values.ImageTransparentColor = System.Drawing.Color.Transparent;
             this.kryptonButton2.Values.Text = "My Appointments ";
+            this.kryptonButton2.Click += new System.EventHandler(this.kryptonButton2_Click);
             // 
             // updatInfo
             // 
