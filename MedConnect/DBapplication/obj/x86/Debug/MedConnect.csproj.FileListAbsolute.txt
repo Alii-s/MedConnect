@@ -126,3 +126,4 @@ E:\KID\1.WORK\GitHubProjects\MedConnect\DBapplication\bin\Debug\ComponentFactory
 E:\KID\1.WORK\GitHubProjects\MedConnect\DBapplication\bin\Debug\ComponentFactory.Krypton.Workspace.pdb
 E:\KID\1.WORK\GitHubProjects\MedConnect\DBapplication\obj\x86\Debug\MedConnect.Secretary.MUbill.resources
 E:\KID\1.WORK\GitHubProjects\MedConnect\DBapplication\obj\x86\Debug\MedConnect.Doctor.ClinicsAppointments.resources
+E:\KID\1.WORK\GitHubProjects\MedConnect\DBapplication\obj\x86\Debug\MedConnect.Doctor.DoctorRating_Comments.resources

@@ -16,6 +16,9 @@ namespace MedConnect.Doctor
         public static string GetDoctorSchedule = "GetDoctorScheuale";
         public static string DeleteDoctorSchedule = "DeleteDoctorSchedule"; 
         public static string GetDayAtSchedule = "GetSchedule"; 
-        public static string GetActiveReservationsWithDate = "GetActiveReservationsWithInfo";
+        public static string GetActiveReservationsWithDate = "GetActiveReservationsWithInfo"; 
+        public static string GetSessionRatingsWithComments = "GetSessionRatingsWithComments"; 
+             public static string GetAverageRating = "GetAverageRating";
+
     }
 }

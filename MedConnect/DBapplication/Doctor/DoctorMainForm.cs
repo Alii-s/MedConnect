@@ -51,5 +51,12 @@ namespace MedConnect.Doctor
             clinicsAppointments.Show();
             this.Hide();
         }
+
+        private void kryptonButton1_Click(object sender, EventArgs e)
+        {
+            DoctorRating_Comments doctorRating_Comments = new DoctorRating_Comments(UserId);
+            doctorRating_Comments.Show();
+            this.Hide();
+        }
     }
 }

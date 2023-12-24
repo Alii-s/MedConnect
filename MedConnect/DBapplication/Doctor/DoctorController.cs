@@ -21,6 +21,25 @@ namespace MedConnect.Doctor
         }
         #endregion
 
+        #region Get Session Ratings With Comments
+        public DataTable GetSessionRatingsWithComments()
+        {
+            string StoredProcedureName = DoctorStoredProcedures.GetSessionRatingsWithComments;
+
+            return dbMan.ExecuteReader(StoredProcedureName);
+        }
+        #endregion
+
+        #region Get Average Rating
+        public float GetAverageRating()
+        {
+            string StoredProcedureName = DoctorStoredProcedures.GetAverageRating;
+
+
+            return float.Parse(dbMan.ExecuteScalar(StoredProcedureName).ToString());
+        }
+        #endregion
+
         #region Get Active Reservations With Date
         public DataTable GetActiveReservationsWithDate(int ClinicId, DateTime Date)
         {

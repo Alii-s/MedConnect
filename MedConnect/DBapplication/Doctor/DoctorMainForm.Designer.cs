@@ -138,6 +138,7 @@
             this.kryptonButton1.Values.Image = global::MedConnect.Properties.Resources.review;
             this.kryptonButton1.Values.ImageTransparentColor = System.Drawing.Color.Transparent;
             this.kryptonButton1.Values.Text = "My Reviews";
+            this.kryptonButton1.Click += new System.EventHandler(this.kryptonButton1_Click);
             // 
             // kryptonButton4
             // 

@@ -87,6 +87,12 @@
     <Compile Include="Doctor\DoctorPatientsInfo.Designer.cs">
       <DependentUpon>DoctorPatientsInfo.cs</DependentUpon>
     </Compile>
+    <Compile Include="Doctor\DoctorRating_Comments.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Doctor\DoctorRating_Comments.Designer.cs">
+      <DependentUpon>DoctorRating_Comments.cs</DependentUpon>
+    </Compile>
     <Compile Include="Doctor\DoctorScheuale.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -225,6 +231,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Doctor\DoctorPatientsInfo.resx">
       <DependentUpon>DoctorPatientsInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Doctor\DoctorRating_Comments.resx">
+      <DependentUpon>DoctorRating_Comments.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Doctor\DoctorScheuale.resx">
       <DependentUpon>DoctorScheuale.cs</DependentUpon>
