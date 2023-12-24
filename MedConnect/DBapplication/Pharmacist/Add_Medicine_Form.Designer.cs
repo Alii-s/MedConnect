@@ -61,8 +61,9 @@ namespace MedConnect.Pharmacist
             this.kryptonPanel1.Controls.Add(this.logOut);
             this.kryptonPanel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.kryptonPanel1.Location = new System.Drawing.Point(0, 0);
+            this.kryptonPanel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.kryptonPanel1.Name = "kryptonPanel1";
-            this.kryptonPanel1.Size = new System.Drawing.Size(987, 124);
+            this.kryptonPanel1.Size = new System.Drawing.Size(1316, 153);
             this.kryptonPanel1.StateCommon.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(157)))), ((int)(((byte)(205)))), ((int)(((byte)(255)))));
             this.kryptonPanel1.TabIndex = 39;
             // 
@@ -70,10 +71,10 @@ namespace MedConnect.Pharmacist
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(157)))), ((int)(((byte)(205)))), ((int)(((byte)(255)))));
             this.pictureBox1.Image = global::MedConnect.Properties.Resources.add1;
-            this.pictureBox1.Location = new System.Drawing.Point(72, 11);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox1.Location = new System.Drawing.Point(96, 14);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(142, 91);
+            this.pictureBox1.Size = new System.Drawing.Size(189, 112);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;
@@ -86,10 +87,10 @@ namespace MedConnect.Pharmacist
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.Image = global::MedConnect.Properties.Resources._return;
-            this.button1.Location = new System.Drawing.Point(11, 65);
-            this.button1.Margin = new System.Windows.Forms.Padding(2);
+            this.button1.Location = new System.Drawing.Point(15, 80);
+            this.button1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(45, 37);
+            this.button1.Size = new System.Drawing.Size(60, 46);
             this.button1.TabIndex = 8;
             this.button1.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.button1.UseVisualStyleBackColor = false;
@@ -103,10 +104,10 @@ namespace MedConnect.Pharmacist
             this.closeApplication.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.closeApplication.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(153)))), ((int)(((byte)(255)))));
             this.closeApplication.Image = ((System.Drawing.Image)(resources.GetObject("closeApplication.Image")));
-            this.closeApplication.Location = new System.Drawing.Point(931, 11);
-            this.closeApplication.Margin = new System.Windows.Forms.Padding(2);
+            this.closeApplication.Location = new System.Drawing.Point(1241, 14);
+            this.closeApplication.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.closeApplication.Name = "closeApplication";
-            this.closeApplication.Size = new System.Drawing.Size(45, 37);
+            this.closeApplication.Size = new System.Drawing.Size(60, 46);
             this.closeApplication.TabIndex = 6;
             this.closeApplication.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.closeApplication.UseVisualStyleBackColor = false;
@@ -118,10 +119,9 @@ namespace MedConnect.Pharmacist
             this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(157)))), ((int)(((byte)(205)))), ((int)(((byte)(255)))));
             this.label1.Font = new System.Drawing.Font("OCR A Extended", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(7)))), ((int)(((byte)(73)))));
-            this.label1.Location = new System.Drawing.Point(218, 39);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label1.Location = new System.Drawing.Point(291, 48);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(281, 39);
+            this.label1.Size = new System.Drawing.Size(358, 49);
             this.label1.TabIndex = 0;
             this.label1.Text = "Add Medicine";
             // 
@@ -133,10 +133,10 @@ namespace MedConnect.Pharmacist
             this.logOut.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.logOut.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.logOut.Image = ((System.Drawing.Image)(resources.GetObject("logOut.Image")));
-            this.logOut.Location = new System.Drawing.Point(11, 11);
-            this.logOut.Margin = new System.Windows.Forms.Padding(2);
+            this.logOut.Location = new System.Drawing.Point(15, 14);
+            this.logOut.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.logOut.Name = "logOut";
-            this.logOut.Size = new System.Drawing.Size(45, 37);
+            this.logOut.Size = new System.Drawing.Size(60, 46);
             this.logOut.TabIndex = 7;
             this.logOut.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.logOut.UseVisualStyleBackColor = false;
@@ -147,10 +147,9 @@ namespace MedConnect.Pharmacist
             this.nameLabel.AutoSize = true;
             this.nameLabel.Font = new System.Drawing.Font("OCR A Extended", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.nameLabel.ForeColor = System.Drawing.Color.IndianRed;
-            this.nameLabel.Location = new System.Drawing.Point(55, 236);
-            this.nameLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.nameLabel.Location = new System.Drawing.Point(40, 286);
             this.nameLabel.Name = "nameLabel";
-            this.nameLabel.Size = new System.Drawing.Size(159, 13);
+            this.nameLabel.Size = new System.Drawing.Size(198, 18);
             this.nameLabel.TabIndex = 35;
             this.nameLabel.Text = "Name can\'t be empty";
             this.nameLabel.Visible = false;
@@ -158,9 +157,10 @@ namespace MedConnect.Pharmacist
             // nameTextBox
             // 
             this.nameTextBox.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.nameTextBox.Location = new System.Drawing.Point(32, 197);
+            this.nameTextBox.Location = new System.Drawing.Point(43, 242);
+            this.nameTextBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.nameTextBox.Name = "nameTextBox";
-            this.nameTextBox.Size = new System.Drawing.Size(208, 36);
+            this.nameTextBox.Size = new System.Drawing.Size(277, 40);
             this.nameTextBox.StateActive.Border.Color1 = System.Drawing.Color.Black;
             this.nameTextBox.StateActive.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
@@ -187,10 +187,9 @@ namespace MedConnect.Pharmacist
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("OCR A Extended", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(7)))), ((int)(((byte)(73)))));
-            this.label2.Location = new System.Drawing.Point(28, 165);
-            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label2.Location = new System.Drawing.Point(37, 203);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(62, 23);
+            this.label2.Size = new System.Drawing.Size(77, 29);
             this.label2.TabIndex = 33;
             this.label2.Text = "Name";
             // 
@@ -199,10 +198,9 @@ namespace MedConnect.Pharmacist
             this.priceLabel.AutoSize = true;
             this.priceLabel.Font = new System.Drawing.Font("OCR A Extended", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.priceLabel.ForeColor = System.Drawing.Color.IndianRed;
-            this.priceLabel.Location = new System.Drawing.Point(377, 236);
-            this.priceLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.priceLabel.Location = new System.Drawing.Point(473, 286);
             this.priceLabel.Name = "priceLabel";
-            this.priceLabel.Size = new System.Drawing.Size(167, 13);
+            this.priceLabel.Size = new System.Drawing.Size(208, 18);
             this.priceLabel.TabIndex = 42;
             this.priceLabel.Text = "Price can\'t be empty";
             this.priceLabel.Visible = false;
@@ -210,9 +208,10 @@ namespace MedConnect.Pharmacist
             // priceTextBox
             // 
             this.priceTextBox.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.priceTextBox.Location = new System.Drawing.Point(357, 197);
+            this.priceTextBox.Location = new System.Drawing.Point(476, 242);
+            this.priceTextBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.priceTextBox.Name = "priceTextBox";
-            this.priceTextBox.Size = new System.Drawing.Size(208, 36);
+            this.priceTextBox.Size = new System.Drawing.Size(277, 40);
             this.priceTextBox.StateActive.Border.Color1 = System.Drawing.Color.Black;
             this.priceTextBox.StateActive.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
@@ -240,10 +239,9 @@ namespace MedConnect.Pharmacist
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("OCR A Extended", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(7)))), ((int)(((byte)(73)))));
-            this.label4.Location = new System.Drawing.Point(353, 165);
-            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label4.Location = new System.Drawing.Point(471, 203);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(75, 23);
+            this.label4.Size = new System.Drawing.Size(93, 29);
             this.label4.TabIndex = 40;
             this.label4.Text = "Price";
             // 
@@ -252,10 +250,9 @@ namespace MedConnect.Pharmacist
             this.quantityLabel.AutoSize = true;
             this.quantityLabel.Font = new System.Drawing.Font("OCR A Extended", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.quantityLabel.ForeColor = System.Drawing.Color.IndianRed;
-            this.quantityLabel.Location = new System.Drawing.Point(714, 236);
-            this.quantityLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.quantityLabel.Location = new System.Drawing.Point(938, 286);
             this.quantityLabel.Name = "quantityLabel";
-            this.quantityLabel.Size = new System.Drawing.Size(191, 13);
+            this.quantityLabel.Size = new System.Drawing.Size(238, 18);
             this.quantityLabel.TabIndex = 45;
             this.quantityLabel.Text = "Quantity can\'t be empty";
             this.quantityLabel.Visible = false;
@@ -263,9 +260,10 @@ namespace MedConnect.Pharmacist
             // quantityTextBox
             // 
             this.quantityTextBox.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.quantityTextBox.Location = new System.Drawing.Point(706, 197);
+            this.quantityTextBox.Location = new System.Drawing.Point(941, 242);
+            this.quantityTextBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.quantityTextBox.Name = "quantityTextBox";
-            this.quantityTextBox.Size = new System.Drawing.Size(208, 36);
+            this.quantityTextBox.Size = new System.Drawing.Size(277, 40);
             this.quantityTextBox.StateActive.Border.Color1 = System.Drawing.Color.Black;
             this.quantityTextBox.StateActive.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
@@ -293,19 +291,19 @@ namespace MedConnect.Pharmacist
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("OCR A Extended", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(7)))), ((int)(((byte)(73)))));
-            this.label6.Location = new System.Drawing.Point(702, 165);
-            this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label6.Location = new System.Drawing.Point(936, 203);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(114, 23);
+            this.label6.Size = new System.Drawing.Size(141, 29);
             this.label6.TabIndex = 43;
             this.label6.Text = "Quantity";
             // 
             // doneButton
             // 
             this.doneButton.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.doneButton.Location = new System.Drawing.Point(519, 377);
+            this.doneButton.Location = new System.Drawing.Point(692, 464);
+            this.doneButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.doneButton.Name = "doneButton";
-            this.doneButton.Size = new System.Drawing.Size(208, 42);
+            this.doneButton.Size = new System.Drawing.Size(277, 52);
             this.doneButton.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(72)))), ((int)(((byte)(170)))), ((int)(((byte)(255)))));
             this.doneButton.StateCommon.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(72)))), ((int)(((byte)(170)))), ((int)(((byte)(255)))));
             this.doneButton.StateCommon.Border.Color1 = System.Drawing.Color.Black;
@@ -338,27 +336,27 @@ namespace MedConnect.Pharmacist
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("OCR A Extended", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(7)))), ((int)(((byte)(73)))));
-            this.label5.Location = new System.Drawing.Point(28, 307);
-            this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label5.Location = new System.Drawing.Point(37, 378);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(205, 23);
+            this.label5.Size = new System.Drawing.Size(253, 29);
             this.label5.TabIndex = 47;
             this.label5.Text = "Expiration Date";
             // 
             // kryptonMonthCalendar1
             // 
-            this.kryptonMonthCalendar1.Location = new System.Drawing.Point(32, 333);
+            this.kryptonMonthCalendar1.Location = new System.Drawing.Point(43, 410);
+            this.kryptonMonthCalendar1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.kryptonMonthCalendar1.MaxSelectionCount = 1;
             this.kryptonMonthCalendar1.Name = "kryptonMonthCalendar1";
-            this.kryptonMonthCalendar1.Size = new System.Drawing.Size(230, 184);
+            this.kryptonMonthCalendar1.Size = new System.Drawing.Size(293, 220);
             this.kryptonMonthCalendar1.TabIndex = 51;
             // 
             // Add_Medicine_Form
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(241)))), ((int)(((byte)(255)))));
-            this.ClientSize = new System.Drawing.Size(987, 547);
+            this.ClientSize = new System.Drawing.Size(1316, 673);
             this.Controls.Add(this.kryptonMonthCalendar1);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.doneButton);
@@ -373,6 +371,7 @@ namespace MedConnect.Pharmacist
             this.Controls.Add(this.nameTextBox);
             this.Controls.Add(this.label2);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "Add_Medicine_Form";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Add_Medicine_Form";

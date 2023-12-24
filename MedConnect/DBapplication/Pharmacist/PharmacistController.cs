@@ -45,6 +45,36 @@ namespace MedConnect.Pharmacist
             return dbMan.ExecuteReader(StoredProcedureName, Parameters);
         }
 
+        public DataTable getMedicineDeliveryBills()
+        {
+            string StoredProcedureName = PharmacistStoredProcedures.GetMedicineDeliveryBills;
+            return dbMan.ExecuteReader(StoredProcedureName, null);
+        }
+
+        public DataTable getMedicineDeliveryBillsByDate(DateTime from_date, DateTime to_date)
+        {
+            string StoredProcedureName = PharmacistStoredProcedures.GetMedicineBillsByDate;
+            Dictionary<string, object> Parameters = new Dictionary<string, object>();
+            Parameters.Add("@from_date", from_date);
+            Parameters.Add("@to_date", to_date);
+            return dbMan.ExecuteReader(StoredProcedureName, Parameters);
+        }
+
+        public object getPharmacyTotalRevenue()
+        {
+            string StoredProcedureName = PharmacistStoredProcedures.GetPharmacyTotalRevenue;
+            return dbMan.ExecuteScalar(StoredProcedureName, null);
+        }
+
+        public object getPharmacyTotalRevenueByDate(DateTime from_date, DateTime to_date)
+        {
+            string StoredProcedureName = PharmacistStoredProcedures.GetPharmacyTotalRevenueByDate;
+            Dictionary<string, object> Parameters = new Dictionary<string, object>();
+            Parameters.Add("@from_date", from_date);
+            Parameters.Add("@to_date", to_date);
+            return dbMan.ExecuteScalar(StoredProcedureName, Parameters);
+        }
+
         public DataTable getExpiredMedicine(DateTime today_date)
         {
             string StoredProcedureName = PharmacistStoredProcedures.GetExpiredMedicine;
@@ -69,12 +99,30 @@ namespace MedConnect.Pharmacist
             return dbMan.ExecuteScalar(StoredProcedureName, Parameters);
         }
 
-        public int deliverMedicine(int quantity, int prescription_ID)
+        public object getNumberOfMedicine()
         {
+            string StoredProcedureName = PharmacistStoredProcedures.GetNumberOfMedicine;
+            return dbMan.ExecuteScalar(StoredProcedureName, null);
+        }
+
+        public object getNumberOfExpiredMedicine(DateTime today_date)
+        {
+            string StoredProcedureName = PharmacistStoredProcedures.GetNumebrOfExpiredMedicine;
+            Dictionary<string, object> Parameters = new Dictionary<string, object>();
+            Parameters.Add("@today_date", today_date);
+            return dbMan.ExecuteScalar(StoredProcedureName, Parameters);
+        }
+
+        public int deliverMedicine(int quantity, int prescription_ID, int pharmacist_ID)
+        {
+            DateTime td = DateTime.Now;
+
             string StoredProcedureName = PharmacistStoredProcedures.DeliverMedicine;
             Dictionary<string, object> Parameters = new Dictionary<string, object>();
             Parameters.Add("@quantity", quantity);
             Parameters.Add("@prescription_ID", prescription_ID);
+            Parameters.Add("@pharmacistID", pharmacist_ID);
+            Parameters.Add("@today_date", td);
             return dbMan.ExecuteNonQuery(StoredProcedureName, Parameters);
         }
 
