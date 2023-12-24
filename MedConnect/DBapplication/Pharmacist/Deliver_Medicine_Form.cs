@@ -79,7 +79,7 @@ namespace MedConnect.Pharmacist
                 return;
             }
 
-            int queryResult = controller.deliverMedicine(quantityToDeliver, prescription_ID);
+            int queryResult = controller.deliverMedicine(quantityToDeliver, prescription_ID, UserID);
 
             if (queryResult == 0)
             {

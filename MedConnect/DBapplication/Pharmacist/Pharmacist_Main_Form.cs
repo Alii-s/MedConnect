@@ -52,5 +52,12 @@ namespace MedConnect.Pharmacist
             Deliver_Medicine_Form form = new Deliver_Medicine_Form(UserID);
             form.Show();
         }
+
+        private void kryptonButton2_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Billing_History_Form form = new Billing_History_Form(UserID);
+            form.Show();
+        }
     }
 }

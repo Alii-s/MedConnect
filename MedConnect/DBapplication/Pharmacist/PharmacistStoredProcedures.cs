@@ -19,5 +19,11 @@ namespace MedConnect.Pharmacist
         public static string GetNotDeliveredPrescriptions = "getNotDeliveredPrescriptions";
         public static string GetMedicineQuantityByPrescriptionID = "getMedicineQuantityByPrescriptionID";
         public static string DeliverMedicine = "deliverMedicine";
+        public static string GetMedicineDeliveryBills = "getMedicineDeliveryBills";
+        public static string GetPharmacyTotalRevenue = "getPharmacyTotalRevenue";
+        public static string GetMedicineBillsByDate = "getMedicineBillsByDate";
+        public static string GetPharmacyTotalRevenueByDate = "getPharmacyTotalRevenueByDate";
+        public static string GetNumberOfMedicine = "getNumberOfMedicine";
+        public static string GetNumebrOfExpiredMedicine = "getNumebrOfExpiredMedicine";
     }
 }
