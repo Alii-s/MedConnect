@@ -190,7 +190,7 @@
             this.kryptonButton2.StateTracking.Back.Color2 = System.Drawing.Color.AliceBlue;
             this.kryptonButton2.TabIndex = 19;
             this.kryptonButton2.Tag = "";
-            this.kryptonButton2.Values.Image = global::MedConnect.Properties.Resources.booking__1_;
+            this.kryptonButton2.Values.Image = global::MedConnect.Properties.Resources.booking;
             this.kryptonButton2.Values.ImageTransparentColor = System.Drawing.Color.Transparent;
             this.kryptonButton2.Values.Text = "Reservations";
             // 

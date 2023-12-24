@@ -135,3 +135,4 @@ C:\Users\Ali\Desktop\MedConnect\MedConnect\DBapplication\obj\x86\Debug\MedConnec
 C:\Users\Ali\Desktop\MedConnect\MedConnect\DBapplication\obj\x86\Debug\MedConnect.Secretary.UpdatePatientSec.resources
 C:\Users\Ali\Desktop\MedConnect\MedConnect\DBapplication\obj\x86\Debug\MedConnect.Secretary.UpdateSecretaryInfo.resources
 C:\Users\Ali\Desktop\MedConnect\MedConnect\DBapplication\obj\x86\Debug\MedConnect.Patient.PatientReservation.resources
+C:\Users\Ali\Desktop\MedConnect\MedConnect\DBapplication\obj\x86\Debug\MedConnect.Pharmacist.Billing_History_Form.resources
