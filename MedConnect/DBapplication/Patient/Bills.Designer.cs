@@ -166,6 +166,7 @@
             this.diagnosisBills.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.diagnosisBills.Location = new System.Drawing.Point(72, 181);
             this.diagnosisBills.Name = "diagnosisBills";
+            this.diagnosisBills.ReadOnly = true;
             this.diagnosisBills.Size = new System.Drawing.Size(852, 190);
             this.diagnosisBills.TabIndex = 51;
             // 
@@ -175,6 +176,7 @@
             this.DeliveryBills.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.DeliveryBills.Location = new System.Drawing.Point(72, 430);
             this.DeliveryBills.Name = "DeliveryBills";
+            this.DeliveryBills.ReadOnly = true;
             this.DeliveryBills.Size = new System.Drawing.Size(852, 131);
             this.DeliveryBills.TabIndex = 88;
             // 

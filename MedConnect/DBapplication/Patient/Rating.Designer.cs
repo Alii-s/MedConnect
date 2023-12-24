@@ -64,9 +64,8 @@
             this.kryptonPanel1.Controls.Add(this.logOut);
             this.kryptonPanel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.kryptonPanel1.Location = new System.Drawing.Point(0, 0);
-            this.kryptonPanel1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.kryptonPanel1.Name = "kryptonPanel1";
-            this.kryptonPanel1.Size = new System.Drawing.Size(1504, 191);
+            this.kryptonPanel1.Size = new System.Drawing.Size(1003, 124);
             this.kryptonPanel1.StateCommon.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(157)))), ((int)(((byte)(205)))), ((int)(((byte)(255)))));
             this.kryptonPanel1.TabIndex = 39;
             // 
@@ -74,9 +73,10 @@
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(157)))), ((int)(((byte)(205)))), ((int)(((byte)(255)))));
             this.pictureBox1.Image = global::MedConnect.Properties.Resources.review;
-            this.pictureBox1.Location = new System.Drawing.Point(108, 17);
+            this.pictureBox1.Location = new System.Drawing.Point(72, 11);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(213, 140);
+            this.pictureBox1.Size = new System.Drawing.Size(142, 91);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;
@@ -89,9 +89,10 @@
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.Image = global::MedConnect.Properties.Resources._return;
-            this.button1.Location = new System.Drawing.Point(16, 100);
+            this.button1.Location = new System.Drawing.Point(11, 65);
+            this.button1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(68, 57);
+            this.button1.Size = new System.Drawing.Size(45, 37);
             this.button1.TabIndex = 8;
             this.button1.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.button1.UseVisualStyleBackColor = false;
@@ -105,9 +106,10 @@
             this.closeApplication.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.closeApplication.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(153)))), ((int)(((byte)(255)))));
             this.closeApplication.Image = ((System.Drawing.Image)(resources.GetObject("closeApplication.Image")));
-            this.closeApplication.Location = new System.Drawing.Point(1420, 17);
+            this.closeApplication.Location = new System.Drawing.Point(947, 11);
+            this.closeApplication.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.closeApplication.Name = "closeApplication";
-            this.closeApplication.Size = new System.Drawing.Size(68, 57);
+            this.closeApplication.Size = new System.Drawing.Size(45, 37);
             this.closeApplication.TabIndex = 6;
             this.closeApplication.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.closeApplication.UseVisualStyleBackColor = false;
@@ -119,9 +121,10 @@
             this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(157)))), ((int)(((byte)(205)))), ((int)(((byte)(255)))));
             this.label1.Font = new System.Drawing.Font("OCR A Extended", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(7)))), ((int)(((byte)(73)))));
-            this.label1.Location = new System.Drawing.Point(327, 60);
+            this.label1.Location = new System.Drawing.Point(218, 39);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(807, 58);
+            this.label1.Size = new System.Drawing.Size(523, 39);
             this.label1.TabIndex = 0;
             this.label1.Text = "Please give us feedback";
             // 
@@ -133,9 +136,10 @@
             this.logOut.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.logOut.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.logOut.Image = ((System.Drawing.Image)(resources.GetObject("logOut.Image")));
-            this.logOut.Location = new System.Drawing.Point(16, 17);
+            this.logOut.Location = new System.Drawing.Point(11, 11);
+            this.logOut.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.logOut.Name = "logOut";
-            this.logOut.Size = new System.Drawing.Size(68, 57);
+            this.logOut.Size = new System.Drawing.Size(45, 37);
             this.logOut.TabIndex = 7;
             this.logOut.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.logOut.UseVisualStyleBackColor = false;
@@ -144,11 +148,10 @@
             // Comments
             // 
             this.Comments.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.Comments.Location = new System.Drawing.Point(50, 518);
-            this.Comments.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.Comments.Location = new System.Drawing.Point(33, 337);
             this.Comments.Multiline = true;
             this.Comments.Name = "Comments";
-            this.Comments.Size = new System.Drawing.Size(616, 271);
+            this.Comments.Size = new System.Drawing.Size(411, 176);
             this.Comments.StateActive.Border.Color1 = System.Drawing.Color.Black;
             this.Comments.StateActive.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
@@ -180,11 +183,10 @@
             "Widowed",
             "Divorced",
             "Separated"});
-            this.sessionDate.Location = new System.Drawing.Point(50, 285);
-            this.sessionDate.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.sessionDate.Location = new System.Drawing.Point(33, 185);
             this.sessionDate.Name = "sessionDate";
             this.sessionDate.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.Office2010Blue;
-            this.sessionDate.Size = new System.Drawing.Size(351, 42);
+            this.sessionDate.Size = new System.Drawing.Size(234, 34);
             this.sessionDate.StateCommon.ComboBox.Border.Color1 = System.Drawing.Color.Black;
             this.sessionDate.StateCommon.ComboBox.Border.Color2 = System.Drawing.Color.Black;
             this.sessionDate.StateCommon.ComboBox.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
@@ -210,9 +212,10 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("OCR A Extended", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(7)))), ((int)(((byte)(73)))));
-            this.label2.Location = new System.Drawing.Point(44, 478);
+            this.label2.Location = new System.Drawing.Point(29, 311);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(167, 35);
+            this.label2.Size = new System.Drawing.Size(114, 23);
             this.label2.TabIndex = 77;
             this.label2.Text = "Comments";
             // 
@@ -221,9 +224,10 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("OCR A Extended", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(7)))), ((int)(((byte)(73)))));
-            this.label3.Location = new System.Drawing.Point(456, 218);
+            this.label3.Location = new System.Drawing.Point(304, 142);
+            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(129, 35);
+            this.label3.Size = new System.Drawing.Size(88, 23);
             this.label3.TabIndex = 78;
             this.label3.Text = "Rating";
             // 
@@ -232,19 +236,19 @@
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("OCR A Extended", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(7)))), ((int)(((byte)(73)))));
-            this.label4.Location = new System.Drawing.Point(44, 218);
+            this.label4.Location = new System.Drawing.Point(29, 142);
+            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(376, 35);
+            this.label4.Size = new System.Drawing.Size(257, 23);
             this.label4.TabIndex = 79;
             this.label4.Text = "Select Session Date";
             // 
             // doneButton
             // 
             this.doneButton.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.doneButton.Location = new System.Drawing.Point(302, 798);
-            this.doneButton.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.doneButton.Location = new System.Drawing.Point(201, 519);
             this.doneButton.Name = "doneButton";
-            this.doneButton.Size = new System.Drawing.Size(146, 65);
+            this.doneButton.Size = new System.Drawing.Size(97, 42);
             this.doneButton.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(72)))), ((int)(((byte)(170)))), ((int)(((byte)(255)))));
             this.doneButton.StateCommon.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(72)))), ((int)(((byte)(170)))), ((int)(((byte)(255)))));
             this.doneButton.StateCommon.Border.Color1 = System.Drawing.Color.Black;
@@ -288,11 +292,10 @@
             "2",
             "1",
             "0"});
-            this.ratingValue.Location = new System.Drawing.Point(462, 285);
-            this.ratingValue.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.ratingValue.Location = new System.Drawing.Point(308, 185);
             this.ratingValue.Name = "ratingValue";
             this.ratingValue.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.Office2010Blue;
-            this.ratingValue.Size = new System.Drawing.Size(204, 42);
+            this.ratingValue.Size = new System.Drawing.Size(136, 34);
             this.ratingValue.StateCommon.ComboBox.Border.Color1 = System.Drawing.Color.Black;
             this.ratingValue.StateCommon.ComboBox.Border.Color2 = System.Drawing.Color.Black;
             this.ratingValue.StateCommon.ComboBox.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
@@ -320,9 +323,10 @@
             this.SessionID.AutoSize = true;
             this.SessionID.Font = new System.Drawing.Font("OCR A Extended", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.SessionID.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(7)))), ((int)(((byte)(73)))));
-            this.SessionID.Location = new System.Drawing.Point(44, 363);
+            this.SessionID.Location = new System.Drawing.Point(29, 236);
+            this.SessionID.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.SessionID.Name = "SessionID";
-            this.SessionID.Size = new System.Drawing.Size(319, 35);
+            this.SessionID.Size = new System.Drawing.Size(218, 23);
             this.SessionID.TabIndex = 82;
             this.SessionID.Text = "Session\'s Doctor";
             // 
@@ -331,29 +335,29 @@
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("OCR A Extended", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(7)))), ((int)(((byte)(73)))));
-            this.label5.Location = new System.Drawing.Point(60, 422);
+            this.label5.Location = new System.Drawing.Point(40, 274);
+            this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(0, 35);
+            this.label5.Size = new System.Drawing.Size(0, 23);
             this.label5.TabIndex = 83;
             // 
             // kryptonDataGridView1
             // 
             this.kryptonDataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.kryptonDataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.kryptonDataGridView1.Location = new System.Drawing.Point(855, 503);
-            this.kryptonDataGridView1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.kryptonDataGridView1.Location = new System.Drawing.Point(570, 327);
             this.kryptonDataGridView1.Name = "kryptonDataGridView1";
+            this.kryptonDataGridView1.ReadOnly = true;
             this.kryptonDataGridView1.RowHeadersWidth = 62;
-            this.kryptonDataGridView1.Size = new System.Drawing.Size(580, 286);
+            this.kryptonDataGridView1.Size = new System.Drawing.Size(387, 186);
             this.kryptonDataGridView1.TabIndex = 84;
             // 
             // kryptonButton1
             // 
             this.kryptonButton1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.kryptonButton1.Location = new System.Drawing.Point(999, 798);
-            this.kryptonButton1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.kryptonButton1.Location = new System.Drawing.Point(666, 519);
             this.kryptonButton1.Name = "kryptonButton1";
-            this.kryptonButton1.Size = new System.Drawing.Size(309, 65);
+            this.kryptonButton1.Size = new System.Drawing.Size(206, 42);
             this.kryptonButton1.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(72)))), ((int)(((byte)(170)))), ((int)(((byte)(255)))));
             this.kryptonButton1.StateCommon.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(72)))), ((int)(((byte)(170)))), ((int)(((byte)(255)))));
             this.kryptonButton1.StateCommon.Border.Color1 = System.Drawing.Color.Black;
@@ -385,18 +389,19 @@
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("OCR A Extended", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(7)))), ((int)(((byte)(73)))));
-            this.label6.Location = new System.Drawing.Point(849, 422);
+            this.label6.Location = new System.Drawing.Point(566, 274);
+            this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(281, 35);
+            this.label6.Size = new System.Drawing.Size(192, 23);
             this.label6.TabIndex = 86;
             this.label6.Text = "Doctor Ratings";
             // 
             // Rating
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(241)))), ((int)(((byte)(255)))));
-            this.ClientSize = new System.Drawing.Size(1504, 902);
+            this.ClientSize = new System.Drawing.Size(1003, 586);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.kryptonButton1);
             this.Controls.Add(this.kryptonDataGridView1);
@@ -411,7 +416,6 @@
             this.Controls.Add(this.Comments);
             this.Controls.Add(this.kryptonPanel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "Rating";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Rating";
