@@ -45,36 +45,6 @@ namespace MedConnect.Pharmacist
             return dbMan.ExecuteReader(StoredProcedureName, Parameters);
         }
 
-        public DataTable getMedicineDeliveryBills()
-        {
-            string StoredProcedureName = PharmacistStoredProcedures.GetMedicineDeliveryBills;
-            return dbMan.ExecuteReader(StoredProcedureName, null);
-        }
-
-        public DataTable getMedicineDeliveryBillsByDate(DateTime from_date, DateTime to_date)
-        {
-            string StoredProcedureName = PharmacistStoredProcedures.GetMedicineDeliveryBillsByDate;
-            Dictionary<string, object> Parameters = new Dictionary<string, object>();
-            Parameters.Add("@from_date", from_date);
-            Parameters.Add("@to_date", to_date);
-            return dbMan.ExecuteReader(StoredProcedureName, Parameters);
-        }
-
-        public object getPharmacyTotalRevenue()
-        {
-            string StoredProcedureName = PharmacistStoredProcedures.GetPharmacyTotalRevenue;
-            return dbMan.ExecuteScalar(StoredProcedureName, null);
-        }
-
-        public object getPharmacyTotalRevenueByDate(DateTime from_date, DateTime to_date)
-        {
-            string StoredProcedureName = PharmacistStoredProcedures.GetPharmacyTotalRevenueByDate;
-            Dictionary<string, object> Parameters = new Dictionary<string, object>();
-            Parameters.Add("@from_date", from_date);
-            Parameters.Add("@to_date", to_date);
-            return dbMan.ExecuteScalar(StoredProcedureName, Parameters);
-        }
-
         public DataTable getExpiredMedicine(DateTime today_date)
         {
             string StoredProcedureName = PharmacistStoredProcedures.GetExpiredMedicine;
