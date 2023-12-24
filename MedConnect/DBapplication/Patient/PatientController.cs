@@ -46,6 +46,31 @@ namespace MedConnect.Patient
             string query = "SELECT Bill_ID, Method_of_payment, Total_Payment, SecretaryID,Bills.Session_ID,Date FROM Bills,Diagnosis_Sessions WHERE Bills.Session_ID=Diagnosis_Sessions.Session_ID AND PatientID="+ID;
             return dbMan.ExecuteReader(query);
         }
+        public DataTable SelectClinicCities()
+        {
+            string query = "SELECT ClinicID,City, CONCAT(City,', ',Street_Name,', ',Building_Num)as 'Address',Opening_Time,Close_Time FROM Clinics WHERE IsActive=1";
+            return dbMan.ExecuteReader(query);
+        }
+        public DataTable GetReservationList()
+        {
+            string query = "SELECT Time,Date,ClinicID FROM Reservations WHERE IsConfirmed = 1 AND IsActive=1";
+            return dbMan.ExecuteReader(query);
+        }
+        public DataTable GetPatientReservations(int userID,DateTime Date)
+        {
+            string query = "SELECT ReservationID, CONCAT(City,', ',Street_Name,', ',Building_Num) as'Clinic Location', Time,Date,IsConfirmed FROM Reservations,Clinics WHERE Date >= '" + Date+"' AND Reservations.ClinicID = Clinics.ClinicID AND Reservations.IsActive=1 AND PatientID="+userID;
+            return dbMan.ExecuteReader(query);
+        }
+        public int InsertReservation(DateTime Date, string Type, TimeSpan Time, int ClinicID,int PatientID)
+        {
+            string query = "INSERT INTO Reservations(Date,Type,Time,ClinicID,PatientID,IsActive) VALUES('" + Date + "','" + Type + "','" + Time + "'," + ClinicID + "," + PatientID + ",1)";
+            return dbMan.ExecuteNonQuery(query);
+        }
+        public int CancelReservation(int ReservationID)
+        {
+            string query = "Update Reservations SET IsActive=0 WHERE ReservationID = "+ReservationID;
+            return dbMan.ExecuteNonQuery(query);
+        }
 
         public int UpdatePatientInfo(int UserID, string Fname, string Lname, string PhoneNumber, string occupation, string City, int Building_Num, string Street_Name, string Marital_State)
         {

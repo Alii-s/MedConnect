@@ -52,7 +52,8 @@ namespace MedConnect.Patient
 
         private void sessionDate_SelectedIndexChanged(object sender, EventArgs e)
         {
-            label5.Text = SessionInfo.Rows[sessionDate.SelectedIndex][2].ToString();
+            if(controller.SelectSessionDates(UserID)!=null)
+                label5.Text = SessionInfo.Rows[sessionDate.SelectedIndex][2].ToString();
         }
 
         private void doneButton_Click(object sender, EventArgs e)

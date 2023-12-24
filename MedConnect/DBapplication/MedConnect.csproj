@@ -120,6 +120,12 @@
     <Compile Include="Patient\Bills.Designer.cs">
       <DependentUpon>Bills.cs</DependentUpon>
     </Compile>
+    <Compile Include="Patient\PatientReservation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Patient\PatientReservation.Designer.cs">
+      <DependentUpon>PatientReservation.cs</DependentUpon>
+    </Compile>
     <Compile Include="Patient\PatinetStoredProcedures.cs" />
     <Compile Include="Patient\Rating.cs">
       <SubType>Form</SubType>
@@ -256,6 +262,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Patient\PatientMainForm.resx">
       <DependentUpon>PatientMainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Patient\PatientReservation.resx">
+      <DependentUpon>PatientReservation.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Patient\Patient_Info.resx">
       <DependentUpon>Patient_Info.cs</DependentUpon>

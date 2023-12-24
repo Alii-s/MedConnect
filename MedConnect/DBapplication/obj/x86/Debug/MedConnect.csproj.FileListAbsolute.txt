@@ -128,3 +128,10 @@ E:\KID\1.WORK\GitHubProjects\MedConnect\DBapplication\obj\x86\Debug\MedConnect.S
 E:\KID\1.WORK\GitHubProjects\MedConnect\DBapplication\obj\x86\Debug\MedConnect.Doctor.ClinicsAppointments.resources
 E:\KID\1.WORK\GitHubProjects\MedConnect\DBapplication\obj\x86\Debug\MedConnect.Doctor.DoctorRating_Comments.resources
 E:\KID\1.WORK\GitHubProjects\MedConnect\DBapplication\obj\x86\Debug\MedConnect.Doctor.DoctorsRatingTrendChart.resources
+C:\Users\Ali\Desktop\MedConnect\MedConnect\DBapplication\obj\x86\Debug\MedConnect.Doctor.ClinicsAppointments.resources
+C:\Users\Ali\Desktop\MedConnect\MedConnect\DBapplication\obj\x86\Debug\MedConnect.Doctor.DoctorRating_Comments.resources
+C:\Users\Ali\Desktop\MedConnect\MedConnect\DBapplication\obj\x86\Debug\MedConnect.Doctor.DoctorsRatingTrendChart.resources
+C:\Users\Ali\Desktop\MedConnect\MedConnect\DBapplication\obj\x86\Debug\MedConnect.Secretary.MUbill.resources
+C:\Users\Ali\Desktop\MedConnect\MedConnect\DBapplication\obj\x86\Debug\MedConnect.Secretary.UpdatePatientSec.resources
+C:\Users\Ali\Desktop\MedConnect\MedConnect\DBapplication\obj\x86\Debug\MedConnect.Secretary.UpdateSecretaryInfo.resources
+C:\Users\Ali\Desktop\MedConnect\MedConnect\DBapplication\obj\x86\Debug\MedConnect.Patient.PatientReservation.resources

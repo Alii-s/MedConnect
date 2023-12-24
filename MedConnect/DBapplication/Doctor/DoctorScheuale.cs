@@ -152,17 +152,17 @@ namespace MedConnect.Doctor
           
                     if (int.Parse(kryptonComboBox3.Text) >= StarttimeSpanAlreadyRegistered && int.Parse(kryptonComboBox3.Text) <= endtimeSpanAlreadyRegistered)
                     {
-                        MessageBox.Show("You have a scheuale at that time");
+                        KryptonMessageBox.Show("You have a scheuale at that time");
                         return false;
                     }
                     else if (int.Parse(kryptonComboBox4.Text) >= StarttimeSpanAlreadyRegistered && int.Parse(kryptonComboBox4.Text) <= endtimeSpanAlreadyRegistered)
                     {
-                        MessageBox.Show("You have a scheuale at that time");
+                        KryptonMessageBox.Show("You have a scheuale at that time");
                         return false;
                     }
                     else if (int.Parse(kryptonComboBox3.Text) <= StarttimeSpanAlreadyRegistered && int.Parse(kryptonComboBox4.Text) >= endtimeSpanAlreadyRegistered)
                     {
-                        MessageBox.Show("You have a scheuale at that time");
+                        KryptonMessageBox.Show("You have a scheuale at that time");
                         return false;
                     }
                 }

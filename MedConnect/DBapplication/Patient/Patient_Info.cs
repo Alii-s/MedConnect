@@ -36,6 +36,7 @@ namespace MedConnect.Patient
             Street_Name = userData.Rows[0][8].ToString();
             City = userData.Rows[0][9].ToString();
             Marital_State = userData.Rows[0][10].ToString();
+            maritalStateTextBox.SelectedIndex = 0;
 
         }
  

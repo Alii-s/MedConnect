@@ -69,5 +69,12 @@ namespace MedConnect.Patient
             bills.Show();
             this.Close();
         }
+
+        private void kryptonButton2_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            PatientReservation p = new PatientReservation(UserID);
+            p.Show();
+        }
     }
 }
