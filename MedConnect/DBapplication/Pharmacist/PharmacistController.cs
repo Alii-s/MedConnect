@@ -53,7 +53,7 @@ namespace MedConnect.Pharmacist
 
         public DataTable getMedicineDeliveryBillsByDate(DateTime from_date, DateTime to_date)
         {
-            string StoredProcedureName = PharmacistStoredProcedures.GetMedicineBillsByDate;
+            string StoredProcedureName = PharmacistStoredProcedures.GetMedicineDeliveryBillsByDate;
             Dictionary<string, object> Parameters = new Dictionary<string, object>();
             Parameters.Add("@from_date", from_date);
             Parameters.Add("@to_date", to_date);
