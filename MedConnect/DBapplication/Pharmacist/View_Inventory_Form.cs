@@ -25,6 +25,8 @@ namespace MedConnect.Pharmacist
             kryptonComboBox1.DataSource = new String[] { "All medicine", "Expired medicine only" };
             viewMode = 0;
             DataGridUpdate();
+            numberOfMedicineTextBox.Text = Convert.ToString(controller.getNumberOfMedicine());
+            numberOfExpiredMedicineTextBox.Text = Convert.ToString(controller.getNumberOfExpiredMedicine(DateTime.Today));
         }
 
         private void closeApplication_Click(object sender, EventArgs e)

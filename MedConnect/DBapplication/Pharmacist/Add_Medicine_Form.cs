@@ -108,6 +108,9 @@ namespace MedConnect.Pharmacist
             else
             {
                 KryptonMessageBox.Show("Added successfully","Success");
+                nameTextBox.Text= string.Empty;
+                priceTextBox.Text= string.Empty;
+                quantityTextBox.Text= string.Empty;
             }
         }
     }
