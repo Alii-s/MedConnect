@@ -25,5 +25,6 @@ namespace MedConnect.Pharmacist
         public static string GetPharmacyTotalRevenueByDate = "getPharmacyTotalRevenueByDate";
         public static string GetNumberOfMedicine = "getNumberOfMedicine";
         public static string GetNumebrOfExpiredMedicine = "getNumebrOfExpiredMedicine";
+        public static string GetMedicineDeliveryBillsByDate = "getMedicineDeliveryBillsByDate";
     }
 }

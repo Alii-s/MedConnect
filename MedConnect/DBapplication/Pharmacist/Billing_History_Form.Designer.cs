@@ -69,7 +69,7 @@
             // pictureBox1
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(157)))), ((int)(((byte)(205)))), ((int)(((byte)(255)))));
-            this.pictureBox1.Image = global::MedConnect.Properties.Resources.receipt;
+            this.pictureBox1.Image = global::MedConnect.Properties.Resources.receipt1;
             this.pictureBox1.Location = new System.Drawing.Point(96, 14);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox1.Name = "pictureBox1";
