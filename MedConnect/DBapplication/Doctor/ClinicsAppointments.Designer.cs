@@ -38,6 +38,9 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
+            this.kryptonCheckButton1 = new ComponentFactory.Krypton.Toolkit.KryptonCheckButton();
+            this.kryptonCheckButton2 = new ComponentFactory.Krypton.Toolkit.KryptonCheckButton();
+            this.kryptonCheckButton3 = new ComponentFactory.Krypton.Toolkit.KryptonCheckButton();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonDataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonComboBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -59,7 +62,7 @@
             // kryptonDataGridView1
             // 
             this.kryptonDataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.kryptonDataGridView1.Location = new System.Drawing.Point(31, 226);
+            this.kryptonDataGridView1.Location = new System.Drawing.Point(31, 249);
             this.kryptonDataGridView1.Name = "kryptonDataGridView1";
             this.kryptonDataGridView1.Size = new System.Drawing.Size(929, 262);
             this.kryptonDataGridView1.TabIndex = 60;
@@ -97,6 +100,7 @@
             this.button1.TabIndex = 10;
             this.button1.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // logOut
             // 
@@ -112,6 +116,7 @@
             this.logOut.TabIndex = 8;
             this.logOut.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.logOut.UseVisualStyleBackColor = true;
+            this.logOut.Click += new System.EventHandler(this.logOut_Click);
             // 
             // closeApplication
             // 
@@ -127,6 +132,7 @@
             this.closeApplication.TabIndex = 6;
             this.closeApplication.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.closeApplication.UseVisualStyleBackColor = true;
+            this.closeApplication.Click += new System.EventHandler(this.closeApplication_Click);
             // 
             // pictureBox1
             // 
@@ -167,6 +173,33 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Clinic Appointments";
             // 
+            // kryptonCheckButton1
+            // 
+            this.kryptonCheckButton1.Location = new System.Drawing.Point(182, 227);
+            this.kryptonCheckButton1.Name = "kryptonCheckButton1";
+            this.kryptonCheckButton1.Size = new System.Drawing.Size(158, 25);
+            this.kryptonCheckButton1.TabIndex = 63;
+            this.kryptonCheckButton1.Values.Text = "Today";
+            this.kryptonCheckButton1.Click += new System.EventHandler(this.kryptonCheckButton1_Click);
+            // 
+            // kryptonCheckButton2
+            // 
+            this.kryptonCheckButton2.Location = new System.Drawing.Point(31, 227);
+            this.kryptonCheckButton2.Name = "kryptonCheckButton2";
+            this.kryptonCheckButton2.Size = new System.Drawing.Size(158, 25);
+            this.kryptonCheckButton2.TabIndex = 64;
+            this.kryptonCheckButton2.Values.Text = "Yesterday";
+            this.kryptonCheckButton2.Click += new System.EventHandler(this.kryptonCheckButton2_Click);
+            // 
+            // kryptonCheckButton3
+            // 
+            this.kryptonCheckButton3.Location = new System.Drawing.Point(337, 227);
+            this.kryptonCheckButton3.Name = "kryptonCheckButton3";
+            this.kryptonCheckButton3.Size = new System.Drawing.Size(158, 25);
+            this.kryptonCheckButton3.TabIndex = 65;
+            this.kryptonCheckButton3.Values.Text = "Tomorrow";
+            this.kryptonCheckButton3.Click += new System.EventHandler(this.kryptonCheckButton3_Click);
+            // 
             // ClinicsAppointments
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -174,6 +207,9 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(241)))), ((int)(((byte)(255)))));
             this.ClientSize = new System.Drawing.Size(987, 547);
             this.ControlBox = false;
+            this.Controls.Add(this.kryptonCheckButton3);
+            this.Controls.Add(this.kryptonCheckButton2);
+            this.Controls.Add(this.kryptonCheckButton1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.kryptonDataGridView1);
             this.Controls.Add(this.kryptonComboBox1);
@@ -203,5 +239,8 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label1;
+        private ComponentFactory.Krypton.Toolkit.KryptonCheckButton kryptonCheckButton1;
+        private ComponentFactory.Krypton.Toolkit.KryptonCheckButton kryptonCheckButton2;
+        private ComponentFactory.Krypton.Toolkit.KryptonCheckButton kryptonCheckButton3;
     }
 }
