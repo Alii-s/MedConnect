@@ -83,7 +83,7 @@ namespace MedConnect.Patient
                     TimeSpan Time = (TimeSpan)ReservationList.Rows[i][0];
                     DateTime Dates = (DateTime)ReservationList.Rows[i][1];
                     int cityID = (int)ReservationList.Rows[i][2];
-                    if ((TimeSpan)timeList.SelectedValue == Time && reservationDate.Value == Dates && (int)clinicCity.SelectedValue == cityID)
+                    if ((TimeSpan)timeList.SelectedValue == Time && reservationDate.Value == Dates && (int)clinicCity.SelectedValue == cityID && (bool)ReservationList.Rows[i][3]==true)
                     {
                         KryptonMessageBox.Show("There is a confirmed Reservation at that time");
                         return;
@@ -94,7 +94,9 @@ namespace MedConnect.Patient
             {
                 for (int i = 0; i <= PatientReservations.Rows.Count - 1; i++)
                 {
-                    if ((TimeSpan)timeList.SelectedValue == (TimeSpan)PatientReservations.Rows[i][2] && (DateTime)reservationDate.Value == (DateTime)PatientReservations.Rows[i][3])
+                    if ((TimeSpan)timeList.SelectedValue == (TimeSpan)PatientReservations.Rows[i][2] &&
+                        (DateTime)reservationDate.Value == (DateTime)PatientReservations.Rows[i][3] &&
+                        (bool)PatientReservations.Rows[i][5]==true)
                     {
                         KryptonMessageBox.Show("You Have an Reservation request at that time");
                         return;

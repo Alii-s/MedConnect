@@ -53,12 +53,12 @@ namespace MedConnect.Patient
         }
         public DataTable GetReservationList()
         {
-            string query = "SELECT Time,Date,ClinicID FROM Reservations WHERE IsConfirmed = 1 AND IsActive=1";
+            string query = "SELECT Time,Date,ClinicID,IsActive FROM Reservations WHERE IsConfirmed = 1 AND IsActive=1";
             return dbMan.ExecuteReader(query);
         }
         public DataTable GetPatientReservations(int userID,DateTime Date)
         {
-            string query = "SELECT ReservationID, CONCAT(City,', ',Street_Name,', ',Building_Num) as'Clinic Location', Time,Date,IsConfirmed FROM Reservations,Clinics WHERE Date >= '" + Date+"' AND Reservations.ClinicID = Clinics.ClinicID AND Reservations.IsActive=1 AND PatientID="+userID;
+            string query = "SELECT ReservationID, CONCAT(City,', ',Street_Name,', ',Building_Num) as'Clinic Location', Time,Date,IsConfirmed,Reservations.IsActive FROM Reservations,Clinics WHERE Date >= '" + Date+"' AND Reservations.ClinicID = Clinics.ClinicID AND Reservations.IsActive=1 AND PatientID="+userID;
             return dbMan.ExecuteReader(query);
         }
         public int InsertReservation(DateTime Date, string Type, TimeSpan Time, int ClinicID,int PatientID)
