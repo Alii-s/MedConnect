@@ -55,9 +55,8 @@
             this.kryptonPanel1.Controls.Add(this.logOut);
             this.kryptonPanel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.kryptonPanel1.Location = new System.Drawing.Point(0, 0);
-            this.kryptonPanel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.kryptonPanel1.Name = "kryptonPanel1";
-            this.kryptonPanel1.Size = new System.Drawing.Size(1316, 153);
+            this.kryptonPanel1.Size = new System.Drawing.Size(987, 124);
             this.kryptonPanel1.StateCommon.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(157)))), ((int)(((byte)(205)))), ((int)(((byte)(255)))));
             this.kryptonPanel1.TabIndex = 39;
             // 
@@ -65,10 +64,10 @@
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(157)))), ((int)(((byte)(205)))), ((int)(((byte)(255)))));
             this.pictureBox1.Image = global::MedConnect.Properties.Resources.delete__1_;
-            this.pictureBox1.Location = new System.Drawing.Point(96, 14);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pictureBox1.Location = new System.Drawing.Point(72, 11);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(189, 112);
+            this.pictureBox1.Size = new System.Drawing.Size(142, 91);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;
@@ -81,10 +80,10 @@
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.Image = global::MedConnect.Properties.Resources._return;
-            this.button1.Location = new System.Drawing.Point(15, 80);
-            this.button1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.button1.Location = new System.Drawing.Point(11, 65);
+            this.button1.Margin = new System.Windows.Forms.Padding(2);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(60, 46);
+            this.button1.Size = new System.Drawing.Size(45, 37);
             this.button1.TabIndex = 8;
             this.button1.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.button1.UseVisualStyleBackColor = false;
@@ -98,10 +97,10 @@
             this.closeApplication.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.closeApplication.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(153)))), ((int)(((byte)(255)))));
             this.closeApplication.Image = ((System.Drawing.Image)(resources.GetObject("closeApplication.Image")));
-            this.closeApplication.Location = new System.Drawing.Point(1241, 14);
-            this.closeApplication.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.closeApplication.Location = new System.Drawing.Point(931, 11);
+            this.closeApplication.Margin = new System.Windows.Forms.Padding(2);
             this.closeApplication.Name = "closeApplication";
-            this.closeApplication.Size = new System.Drawing.Size(60, 46);
+            this.closeApplication.Size = new System.Drawing.Size(45, 37);
             this.closeApplication.TabIndex = 6;
             this.closeApplication.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.closeApplication.UseVisualStyleBackColor = false;
@@ -113,9 +112,10 @@
             this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(157)))), ((int)(((byte)(205)))), ((int)(((byte)(255)))));
             this.label1.Font = new System.Drawing.Font("OCR A Extended", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(7)))), ((int)(((byte)(73)))));
-            this.label1.Location = new System.Drawing.Point(291, 48);
+            this.label1.Location = new System.Drawing.Point(218, 39);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(442, 49);
+            this.label1.Size = new System.Drawing.Size(347, 39);
             this.label1.TabIndex = 0;
             this.label1.Text = "Delete Medicine";
             // 
@@ -127,10 +127,10 @@
             this.logOut.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.logOut.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.logOut.Image = ((System.Drawing.Image)(resources.GetObject("logOut.Image")));
-            this.logOut.Location = new System.Drawing.Point(15, 14);
-            this.logOut.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.logOut.Location = new System.Drawing.Point(11, 11);
+            this.logOut.Margin = new System.Windows.Forms.Padding(2);
             this.logOut.Name = "logOut";
-            this.logOut.Size = new System.Drawing.Size(60, 46);
+            this.logOut.Size = new System.Drawing.Size(45, 37);
             this.logOut.TabIndex = 7;
             this.logOut.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.logOut.UseVisualStyleBackColor = false;
@@ -141,9 +141,10 @@
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("OCR A Extended", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(7)))), ((int)(((byte)(73)))));
-            this.label5.Location = new System.Drawing.Point(15, 214);
+            this.label5.Location = new System.Drawing.Point(11, 174);
+            this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(221, 29);
+            this.label5.Size = new System.Drawing.Size(179, 23);
             this.label5.TabIndex = 56;
             this.label5.Text = "Medicine Name";
             // 
@@ -151,11 +152,10 @@
             // 
             this.kryptonComboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.kryptonComboBox1.DropDownWidth = 162;
-            this.kryptonComboBox1.Location = new System.Drawing.Point(260, 214);
-            this.kryptonComboBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.kryptonComboBox1.Location = new System.Drawing.Point(195, 174);
             this.kryptonComboBox1.Name = "kryptonComboBox1";
             this.kryptonComboBox1.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.Office2010Blue;
-            this.kryptonComboBox1.Size = new System.Drawing.Size(216, 34);
+            this.kryptonComboBox1.Size = new System.Drawing.Size(162, 31);
             this.kryptonComboBox1.StateCommon.ComboBox.Border.Color1 = System.Drawing.Color.Black;
             this.kryptonComboBox1.StateCommon.ComboBox.Border.Color2 = System.Drawing.Color.Black;
             this.kryptonComboBox1.StateCommon.ComboBox.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
@@ -168,10 +168,9 @@
             // deleteButton
             // 
             this.deleteButton.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.deleteButton.Location = new System.Drawing.Point(1061, 191);
-            this.deleteButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.deleteButton.Location = new System.Drawing.Point(796, 155);
             this.deleteButton.Name = "deleteButton";
-            this.deleteButton.Size = new System.Drawing.Size(239, 52);
+            this.deleteButton.Size = new System.Drawing.Size(179, 42);
             this.deleteButton.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(72)))), ((int)(((byte)(170)))), ((int)(((byte)(255)))));
             this.deleteButton.StateCommon.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(72)))), ((int)(((byte)(170)))), ((int)(((byte)(255)))));
             this.deleteButton.StateCommon.Border.Color1 = System.Drawing.Color.Black;
@@ -202,31 +201,25 @@
             // 
             this.kryptonDataGridView1.AllowUserToAddRows = false;
             this.kryptonDataGridView1.AllowUserToDeleteRows = false;
-            this.kryptonDataGridView1.AllowUserToResizeColumns = false;
-            this.kryptonDataGridView1.AllowUserToResizeRows = false;
-            this.kryptonDataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.kryptonDataGridView1.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
+            this.kryptonDataGridView1.AllowUserToOrderColumns = true;
             this.kryptonDataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.kryptonDataGridView1.Location = new System.Drawing.Point(16, 265);
-            this.kryptonDataGridView1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.kryptonDataGridView1.Location = new System.Drawing.Point(12, 215);
             this.kryptonDataGridView1.Name = "kryptonDataGridView1";
-            this.kryptonDataGridView1.RowHeadersWidth = 51;
-            this.kryptonDataGridView1.Size = new System.Drawing.Size(1284, 394);
+            this.kryptonDataGridView1.Size = new System.Drawing.Size(963, 320);
             this.kryptonDataGridView1.TabIndex = 58;
             // 
             // Delete_Medicine_Form
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(241)))), ((int)(((byte)(255)))));
-            this.ClientSize = new System.Drawing.Size(1316, 673);
+            this.ClientSize = new System.Drawing.Size(987, 547);
             this.Controls.Add(this.kryptonDataGridView1);
             this.Controls.Add(this.deleteButton);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.kryptonComboBox1);
             this.Controls.Add(this.kryptonPanel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "Delete_Medicine_Form";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Delete_Medicine_Form";

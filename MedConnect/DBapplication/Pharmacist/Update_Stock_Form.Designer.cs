@@ -59,7 +59,7 @@
             this.kryptonPanel1.Controls.Add(this.logOut);
             this.kryptonPanel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.kryptonPanel1.Location = new System.Drawing.Point(0, 0);
-            this.kryptonPanel1.Margin = new System.Windows.Forms.Padding(4);
+            this.kryptonPanel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.kryptonPanel1.Name = "kryptonPanel1";
             this.kryptonPanel1.Size = new System.Drawing.Size(1316, 153);
             this.kryptonPanel1.StateCommon.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(157)))), ((int)(((byte)(205)))), ((int)(((byte)(255)))));
@@ -156,7 +156,7 @@
             this.kryptonComboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.kryptonComboBox1.DropDownWidth = 162;
             this.kryptonComboBox1.Location = new System.Drawing.Point(251, 193);
-            this.kryptonComboBox1.Margin = new System.Windows.Forms.Padding(4);
+            this.kryptonComboBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.kryptonComboBox1.Name = "kryptonComboBox1";
             this.kryptonComboBox1.Size = new System.Drawing.Size(216, 25);
             this.kryptonComboBox1.TabIndex = 57;
@@ -178,7 +178,7 @@
             // 
             this.quantityTextBox.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.quantityTextBox.Location = new System.Drawing.Point(251, 252);
-            this.quantityTextBox.Margin = new System.Windows.Forms.Padding(4);
+            this.quantityTextBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.quantityTextBox.Name = "quantityTextBox";
             this.quantityTextBox.Size = new System.Drawing.Size(277, 40);
             this.quantityTextBox.StateActive.Border.Color1 = System.Drawing.Color.Black;
@@ -218,7 +218,7 @@
             // 
             this.deleteButton.Cursor = System.Windows.Forms.Cursors.Hand;
             this.deleteButton.Location = new System.Drawing.Point(1061, 245);
-            this.deleteButton.Margin = new System.Windows.Forms.Padding(4);
+            this.deleteButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.deleteButton.Name = "deleteButton";
             this.deleteButton.Size = new System.Drawing.Size(239, 52);
             this.deleteButton.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(72)))), ((int)(((byte)(170)))), ((int)(((byte)(255)))));
@@ -251,7 +251,7 @@
             // 
             this.kryptonButton1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.kryptonButton1.Location = new System.Drawing.Point(815, 245);
-            this.kryptonButton1.Margin = new System.Windows.Forms.Padding(4);
+            this.kryptonButton1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.kryptonButton1.Name = "kryptonButton1";
             this.kryptonButton1.Size = new System.Drawing.Size(239, 52);
             this.kryptonButton1.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(72)))), ((int)(((byte)(170)))), ((int)(((byte)(255)))));
@@ -284,13 +284,10 @@
             // 
             this.kryptonDataGridView1.AllowUserToAddRows = false;
             this.kryptonDataGridView1.AllowUserToDeleteRows = false;
-            this.kryptonDataGridView1.AllowUserToResizeColumns = false;
-            this.kryptonDataGridView1.AllowUserToResizeRows = false;
-            this.kryptonDataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.kryptonDataGridView1.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
+            this.kryptonDataGridView1.AllowUserToOrderColumns = true;
             this.kryptonDataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.kryptonDataGridView1.Location = new System.Drawing.Point(16, 332);
-            this.kryptonDataGridView1.Margin = new System.Windows.Forms.Padding(4);
+            this.kryptonDataGridView1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.kryptonDataGridView1.Name = "kryptonDataGridView1";
             this.kryptonDataGridView1.RowHeadersWidth = 51;
             this.kryptonDataGridView1.Size = new System.Drawing.Size(1284, 326);
@@ -312,7 +309,7 @@
             this.Controls.Add(this.kryptonComboBox1);
             this.Controls.Add(this.kryptonPanel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "Update_Stock_Form";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Update_Stock_Form";
