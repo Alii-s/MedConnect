@@ -76,29 +76,39 @@ namespace MedConnect.Patient
 
         private void kryptonButton1_Click(object sender, EventArgs e)
         {
-            for(int i = 0; i <= ReservationList.Rows.Count - 1; i++)
+            if (ReservationList != null)
             {
-                TimeSpan Time = (TimeSpan)ReservationList.Rows[i][0];
-                DateTime Dates = (DateTime)ReservationList.Rows[i][1];
-                int cityID = (int)ReservationList.Rows[i][2];
-                if ((TimeSpan)timeList.SelectedValue == Time && reservationDate.Value == Dates && (int)clinicCity.SelectedValue == cityID)
+                for (int i = 0; i <= ReservationList.Rows.Count - 1; i++)
                 {
-                    KryptonMessageBox.Show("There is a confirmed Reservation at that time");
-                    return;
+                    TimeSpan Time = (TimeSpan)ReservationList.Rows[i][0];
+                    DateTime Dates = (DateTime)ReservationList.Rows[i][1];
+                    int cityID = (int)ReservationList.Rows[i][2];
+                    if ((TimeSpan)timeList.SelectedValue == Time && reservationDate.Value == Dates
+                        && (int)clinicCity.SelectedValue == cityID)
+                    {
+                        KryptonMessageBox.Show("There is a confirmed Reservation at that time");
+                        return;
+                    }
                 }
             }
-            for(int i = 0; i <= PatientReservations.Rows.Count - 1; i++)
+            if (PatientReservations != null)
             {
-                if((TimeSpan)timeList.SelectedValue == (TimeSpan)PatientReservations.Rows[i][2] && (DateTime)reservationDate.Value == (DateTime)PatientReservations.Rows[i][3])
+                for (int i = 0; i <= PatientReservations.Rows.Count - 1; i++)
                 {
-                    KryptonMessageBox.Show("You Have an Reservation request at that time");
-                    return;
+                    if ((TimeSpan)timeList.SelectedValue == (TimeSpan)PatientReservations.Rows[i][2] &&
+                        (DateTime)reservationDate.Value == (DateTime)PatientReservations.Rows[i][3])
+                    {
+                        KryptonMessageBox.Show("You Have an Reservation request at that time");
+                        return;
+                    }
                 }
             }
             PatientController.InsertReservation((DateTime)reservationDate.Value, typeBox.Text, (TimeSpan)timeList.SelectedValue, (int)clinicCity.SelectedValue, UserID);
             kryptonDataGridView1.DataSource = PatientController.GetPatientReservations(UserID, DateTime.Today);
             reservationID.DataSource = PatientController.GetPatientReservations(UserID, DateTime.Today);
             KryptonMessageBox.Show("Reserved Successfully");
+            ReservationList = PatientController.GetReservationList();
+            PatientReservations = PatientController.GetPatientReservations(UserID, DateTime.Today);
         }
 
         private void kryptonButton2_Click(object sender, EventArgs e)
@@ -107,6 +117,8 @@ namespace MedConnect.Patient
             kryptonDataGridView1.DataSource = PatientController.GetPatientReservations(UserID, DateTime.Today);
             reservationID.DataSource = PatientController.GetPatientReservations(UserID, DateTime.Today);
             KryptonMessageBox.Show("Cancelled Successfully");
+            ReservationList = PatientController.GetReservationList();
+            PatientReservations = PatientController.GetPatientReservations(UserID, DateTime.Today);
         }
     }
 }
