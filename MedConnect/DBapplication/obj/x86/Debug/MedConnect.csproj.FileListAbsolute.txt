@@ -142,3 +142,10 @@ C:\Users\Ali\Desktop\MedConnect\MedConnect\DBapplication\bin\Debug\ComponentFact
 C:\Users\Ali\Desktop\MedConnect\MedConnect\DBapplication\bin\Debug\ComponentFactory.Krypton.Toolkit.dll
 C:\Users\Ali\Desktop\MedConnect\MedConnect\DBapplication\bin\Debug\ComponentFactory.Krypton.Workspace.dll
 C:\Users\Ali\Desktop\MedConnect\MedConnect\DBapplication\obj\x86\Debug\MedConnect.Pharmacist.Medicine_Prescription_Statistics_Form.resources
+C:\Users\p c\OneDrive\Desktop\Pro\MedConnect\MedConnect\DBapplication\obj\x86\Debug\MedConnect.Doctor.ClinicsAppointments.resources
+C:\Users\p c\OneDrive\Desktop\Pro\MedConnect\MedConnect\DBapplication\obj\x86\Debug\MedConnect.Doctor.DoctorRating_Comments.resources
+C:\Users\p c\OneDrive\Desktop\Pro\MedConnect\MedConnect\DBapplication\obj\x86\Debug\MedConnect.Doctor.DoctorsRatingTrendChart.resources
+C:\Users\p c\OneDrive\Desktop\Pro\MedConnect\MedConnect\DBapplication\obj\x86\Debug\MedConnect.Patient.PatientReservation.resources
+C:\Users\p c\OneDrive\Desktop\Pro\MedConnect\MedConnect\DBapplication\obj\x86\Debug\MedConnect.Pharmacist.Billing_History_Form.resources
+C:\Users\p c\OneDrive\Desktop\Pro\MedConnect\MedConnect\DBapplication\obj\x86\Debug\MedConnect.Pharmacist.Medicine_Prescription_Statistics_Form.resources
+C:\Users\p c\OneDrive\Desktop\Pro\MedConnect\MedConnect\DBapplication\obj\x86\Debug\MedConnect.Secretary.MUbill.resources

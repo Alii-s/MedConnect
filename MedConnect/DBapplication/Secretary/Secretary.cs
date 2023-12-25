@@ -59,6 +59,18 @@ namespace MedConnect.Secretary
             trigger.Show();
             this.Close();
         }
+
+        private void Reservations_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void MUbill_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            MUbill form = new MUbill(UserID);
+            form.Show();
+        }
     }
 }
  

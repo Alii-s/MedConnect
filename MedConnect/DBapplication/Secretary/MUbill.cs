@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using ComponentFactory.Krypton.Toolkit;
 using MedConnect.Secertary;
 
 namespace MedConnect.Secretary
@@ -23,13 +24,13 @@ namespace MedConnect.Secretary
             PN.ValueMember = "UserID";
             PN.DisplayMember = "Lname";
             DataTable dt1 = secretaryController.SelectDoctorName();
-            PN.DataSource = dt1;
-            PN.ValueMember = "UserID";
-            PN.DisplayMember = "Lname";
+            DN.DataSource = dt1;
+            DN.ValueMember = "UserID";
+            DN.DisplayMember = "Lname";
             DataTable dt3 = secretaryController.SelectClinicLoc();
-            PN.DataSource = dt3;
-            PN.ValueMember = "ClinicID";
-            PN.DisplayMember = "City";
+            CL.DataSource = dt3;
+            CL.ValueMember = "ClinicID";
+            CL.DisplayMember = "City";
             UserID = userID;
 
 
@@ -59,6 +60,36 @@ namespace MedConnect.Secretary
         {
             panel1.Visible = true;
             Up.Visible = true;
+
+        }
+
+        private void Up_Click(object sender, EventArgs e)
+        {
+            int t;
+            t =secretaryController.UpdateBill(Convert.ToInt32(PN.SelectedValue),UserID, Convert.ToInt32(DN.SelectedValue),Convert.ToDateTime( Daate), Convert.ToInt32(CL.SelectedValue),Convert.ToInt32( Price.Text),MofP.SelectedText,IsPaid.Checked);
+            if(t == 0)
+            {
+                KryptonMessageBox.Show(" Update was not successful ");
+            }
+            else
+                KryptonMessageBox.Show(" Updated successfully ");
+        }
+
+        private void Price_KeyPress(object sender, KeyPressEventArgs e)
+        {
+
+            // Check if the input is not a digit
+            if (!char.IsDigit(e.KeyChar) && !char.IsControl(e.KeyChar))
+            {
+                e.Handled = true; // Ignore the character
+                plabel.Visible = true;
+            }
+            else
+            {
+                
+                plabel.Visible = false;
+            }
+
 
         }
     }

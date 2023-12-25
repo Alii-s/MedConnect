@@ -72,18 +72,26 @@ namespace MedConnect.Secertary
             string query = "SELECT ClinicID, City FROM Clinics ;";
             return dbMan.ExecuteReader(query);
         }
-        public int UpdateBill(int PatientID, int SecretaryID, int DoctorID, DateTime daate, int ClinicID, string Type)
+        public object GetOffer(int UserId)
         {
-            int totalPay;
+
+            string query = "SELECT Percentage FROM offers WHERE PatientID =" + UserId + ";";
+            return dbMan.ExecuteScalar(query);
+
+        }
+        public int UpdateBill(int PatientID, int SecretaryID, int DoctorID, DateTime daate, int ClinicID, int price, string MofPay,bool IsPaid)
+        {
+             
             int offer=Convert.ToInt32( GetOffer(PatientID));
-            if(Type == "Follow-Up")
-            {
-                totalPay = 300 - ((offer / 100) * 300);
-            }
-            else
-            {
-                totalPay = 500 - ((offer / 100) * 500);
-            }
+            price = price - (price*offer/100);
+            //if(Type == "Follow-Up")
+            //{
+            //    totalPay = 300 - ((offer / 100) * 300);
+            //}
+            //else
+            //{
+            //    totalPay = 500 - ((offer / 100) * 500);
+            //}
             string StoredProcedureName = SecretaryProcdures.UpdateBill;
 
             Dictionary<string, object> Parameters = new Dictionary<string, object>();
@@ -92,16 +100,13 @@ namespace MedConnect.Secertary
             Parameters.Add("@DoctorID", DoctorID);
             Parameters.Add("@daate", daate);
             Parameters.Add("@ClinicID", ClinicID);
-             
+            Parameters.Add("@MofPay", MofPay);
+            Parameters.Add("@IsPaid", IsPaid);
+            Parameters.Add("@price", price);
+
             return dbMan.ExecuteNonQuery(StoredProcedureName, Parameters);
         }
-        public object GetOffer(int UserId)
-        {
-
-            string query = "SELECT Percentage FROM offers WHERE PatientID =" + UserId + ";";
-            return dbMan.ExecuteScalar(query);
-
-        }
+        
 
     }
 

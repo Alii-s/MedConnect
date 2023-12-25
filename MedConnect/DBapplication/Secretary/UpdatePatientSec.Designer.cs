@@ -742,7 +742,11 @@
             this.PatientNameComboBox.DropDownWidth = 300;
             this.PatientNameComboBox.Location = new System.Drawing.Point(1017, 266);
             this.PatientNameComboBox.Name = "PatientNameComboBox";
-            this.PatientNameComboBox.Size = new System.Drawing.Size(300, 30);
+            this.PatientNameComboBox.Size = new System.Drawing.Size(300, 42);
+            this.PatientNameComboBox.StateCommon.ComboBox.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.PatientNameComboBox.StateCommon.ComboBox.Border.Rounding = 20;
             this.PatientNameComboBox.StateCommon.ComboBox.Content.Font = new System.Drawing.Font("OCR A Extended", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.PatientNameComboBox.StateCommon.Item.Content.LongText.Font = new System.Drawing.Font("OCR A Extended", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.PatientNameComboBox.StateCommon.Item.Content.ShortText.Font = new System.Drawing.Font("OCR A Extended", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
