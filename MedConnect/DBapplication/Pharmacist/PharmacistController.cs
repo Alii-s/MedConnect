@@ -31,6 +31,12 @@ namespace MedConnect.Pharmacist
             return dbMan.ExecuteReader(StoredProcedureName, null);
         }
 
+        public DataTable getMostPrescripedMedicine()
+        {
+            string StoredProcedureName = PharmacistStoredProcedures.GetMostPrescripedMedicine;
+            return dbMan.ExecuteReader(StoredProcedureName, null);
+        }
+
         public DataTable getNotDeliveredPrescriptions()
         {
             string StoredProcedureName = PharmacistStoredProcedures.GetNotDeliveredPrescriptions;

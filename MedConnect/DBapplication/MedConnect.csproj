@@ -38,19 +38,19 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="ComponentFactory.Krypton.Docking">
-      <HintPath>..\..\..\..\..\Downloads from chrome\Krypton-master\Bin\ComponentFactory.Krypton.Docking.dll</HintPath>
+      <HintPath>..\..\..\..\Downloads\Krypton-master\Bin\ComponentFactory.Krypton.Docking.dll</HintPath>
     </Reference>
     <Reference Include="ComponentFactory.Krypton.Navigator">
-      <HintPath>..\..\..\..\..\Downloads from chrome\Krypton-master\Bin\ComponentFactory.Krypton.Navigator.dll</HintPath>
+      <HintPath>..\..\..\..\Downloads\Krypton-master\Bin\ComponentFactory.Krypton.Navigator.dll</HintPath>
     </Reference>
     <Reference Include="ComponentFactory.Krypton.Ribbon">
-      <HintPath>..\..\..\..\..\Downloads from chrome\Krypton-master\Bin\ComponentFactory.Krypton.Ribbon.dll</HintPath>
+      <HintPath>..\..\..\..\Downloads\Krypton-master\Bin\ComponentFactory.Krypton.Ribbon.dll</HintPath>
     </Reference>
     <Reference Include="ComponentFactory.Krypton.Toolkit">
-      <HintPath>..\..\..\..\..\Downloads from chrome\Krypton-master\Bin\ComponentFactory.Krypton.Toolkit.dll</HintPath>
+      <HintPath>..\..\..\..\Downloads\Krypton-master\Bin\ComponentFactory.Krypton.Toolkit.dll</HintPath>
     </Reference>
     <Reference Include="ComponentFactory.Krypton.Workspace">
-      <HintPath>..\..\..\..\..\Downloads from chrome\Krypton-master\Bin\ComponentFactory.Krypton.Workspace.dll</HintPath>
+      <HintPath>..\..\..\..\Downloads\Krypton-master\Bin\ComponentFactory.Krypton.Workspace.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -168,6 +168,12 @@
     </Compile>
     <Compile Include="Pharmacist\Medical_Inventory_Form.Designer.cs">
       <DependentUpon>Medical_Inventory_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pharmacist\Medicine_Prescription_Statistics_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pharmacist\Medicine_Prescription_Statistics_Form.Designer.cs">
+      <DependentUpon>Medicine_Prescription_Statistics_Form.cs</DependentUpon>
     </Compile>
     <Compile Include="Pharmacist\PharmacistStoredProcedures.cs" />
     <Compile Include="Pharmacist\Pharmacist_Main_Form.cs">
@@ -296,6 +302,9 @@
     <EmbeddedResource Include="Pharmacist\Medical_Inventory_Form.resx">
       <DependentUpon>Medical_Inventory_Form.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Pharmacist\Medicine_Prescription_Statistics_Form.resx">
+      <DependentUpon>Medicine_Prescription_Statistics_Form.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Pharmacist\Pharmacist_Main_Form.resx">
       <DependentUpon>Pharmacist_Main_Form.cs</DependentUpon>
     </EmbeddedResource>
@@ -416,6 +425,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\receipt.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bar-chart.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
