@@ -1,4 +1,5 @@
 ﻿using ComponentFactory.Krypton.Toolkit;
+using MedConnect.Admin;
 using MedConnect.Doctor;
 using MedConnect.Patient;
 using MedConnect.Pharmacist;
@@ -101,12 +102,12 @@ namespace MedConnect
                 form.Show();
                 return;
             }
-            else
+            else if ((UserType =='A'))
             {
-                //this.Hide();
-                //AdminMainForm form = new AdminMainForm(UserID);
-                //form.Show();
-                //return;
+                this.Hide();
+                AdminMainForm form = new AdminMainForm(UserID);
+                form.Show();
+                return;
             }
         }
     }

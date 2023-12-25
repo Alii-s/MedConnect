@@ -8,5 +8,11 @@ namespace MedConnect
 {
     internal class AdminController
     {
+        DBManager dbMan = new DBManager();
+        public object SelectName(int ID)
+        {
+            string query = "SELECT Fname FROM Users WHERE UserID=" + ID;
+            return dbMan.ExecuteScalar(query);
+        }
     }
 }

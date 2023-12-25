@@ -71,8 +71,9 @@
             this.kryptonPanel1.Controls.Add(this.logOut);
             this.kryptonPanel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.kryptonPanel1.Location = new System.Drawing.Point(0, 0);
+            this.kryptonPanel1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.kryptonPanel1.Name = "kryptonPanel1";
-            this.kryptonPanel1.Size = new System.Drawing.Size(1003, 124);
+            this.kryptonPanel1.Size = new System.Drawing.Size(1504, 191);
             this.kryptonPanel1.StateCommon.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(157)))), ((int)(((byte)(205)))), ((int)(((byte)(255)))));
             this.kryptonPanel1.TabIndex = 40;
             // 
@@ -80,10 +81,9 @@
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(157)))), ((int)(((byte)(205)))), ((int)(((byte)(255)))));
             this.pictureBox1.Image = global::MedConnect.Properties.Resources.booking;
-            this.pictureBox1.Location = new System.Drawing.Point(72, 11);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox1.Location = new System.Drawing.Point(108, 17);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(142, 91);
+            this.pictureBox1.Size = new System.Drawing.Size(213, 140);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;
@@ -96,10 +96,9 @@
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.Image = global::MedConnect.Properties.Resources._return;
-            this.button1.Location = new System.Drawing.Point(11, 65);
-            this.button1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button1.Location = new System.Drawing.Point(16, 100);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(45, 37);
+            this.button1.Size = new System.Drawing.Size(68, 57);
             this.button1.TabIndex = 8;
             this.button1.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.button1.UseVisualStyleBackColor = false;
@@ -113,10 +112,9 @@
             this.closeApplication.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.closeApplication.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(153)))), ((int)(((byte)(255)))));
             this.closeApplication.Image = ((System.Drawing.Image)(resources.GetObject("closeApplication.Image")));
-            this.closeApplication.Location = new System.Drawing.Point(947, 11);
-            this.closeApplication.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.closeApplication.Location = new System.Drawing.Point(1420, 17);
             this.closeApplication.Name = "closeApplication";
-            this.closeApplication.Size = new System.Drawing.Size(45, 37);
+            this.closeApplication.Size = new System.Drawing.Size(68, 57);
             this.closeApplication.TabIndex = 6;
             this.closeApplication.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.closeApplication.UseVisualStyleBackColor = false;
@@ -128,10 +126,9 @@
             this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(157)))), ((int)(((byte)(205)))), ((int)(((byte)(255)))));
             this.label1.Font = new System.Drawing.Font("OCR A Extended", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(7)))), ((int)(((byte)(73)))));
-            this.label1.Location = new System.Drawing.Point(218, 39);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label1.Location = new System.Drawing.Point(327, 60);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(413, 39);
+            this.label1.Size = new System.Drawing.Size(637, 58);
             this.label1.TabIndex = 0;
             this.label1.Text = "Book a Reservation";
             // 
@@ -143,10 +140,9 @@
             this.logOut.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.logOut.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.logOut.Image = ((System.Drawing.Image)(resources.GetObject("logOut.Image")));
-            this.logOut.Location = new System.Drawing.Point(11, 11);
-            this.logOut.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.logOut.Location = new System.Drawing.Point(16, 17);
             this.logOut.Name = "logOut";
-            this.logOut.Size = new System.Drawing.Size(45, 37);
+            this.logOut.Size = new System.Drawing.Size(68, 57);
             this.logOut.TabIndex = 7;
             this.logOut.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.logOut.UseVisualStyleBackColor = false;
@@ -168,10 +164,11 @@
             "2",
             "1",
             "0"});
-            this.clinicCity.Location = new System.Drawing.Point(61, 178);
+            this.clinicCity.Location = new System.Drawing.Point(92, 274);
+            this.clinicCity.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.clinicCity.Name = "clinicCity";
             this.clinicCity.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.Office2010Blue;
-            this.clinicCity.Size = new System.Drawing.Size(164, 34);
+            this.clinicCity.Size = new System.Drawing.Size(246, 42);
             this.clinicCity.StateCommon.ComboBox.Border.Color1 = System.Drawing.Color.Black;
             this.clinicCity.StateCommon.ComboBox.Border.Color2 = System.Drawing.Color.Black;
             this.clinicCity.StateCommon.ComboBox.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
@@ -200,10 +197,9 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("OCR A Extended", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(7)))), ((int)(((byte)(73)))));
-            this.label2.Location = new System.Drawing.Point(57, 232);
-            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label2.Location = new System.Drawing.Point(86, 357);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(101, 23);
+            this.label2.Size = new System.Drawing.Size(148, 35);
             this.label2.TabIndex = 84;
             this.label2.Text = "Address";
             // 
@@ -212,10 +208,9 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("OCR A Extended", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(7)))), ((int)(((byte)(73)))));
-            this.label3.Location = new System.Drawing.Point(57, 270);
-            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label3.Location = new System.Drawing.Point(86, 415);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(86, 20);
+            this.label3.Size = new System.Drawing.Size(139, 30);
             this.label3.TabIndex = 85;
             this.label3.Text = "Address";
             // 
@@ -235,10 +230,11 @@
             "2",
             "1",
             "0"});
-            this.timeList.Location = new System.Drawing.Point(643, 178);
+            this.timeList.Location = new System.Drawing.Point(964, 274);
+            this.timeList.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.timeList.Name = "timeList";
             this.timeList.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.Office2010Blue;
-            this.timeList.Size = new System.Drawing.Size(193, 34);
+            this.timeList.Size = new System.Drawing.Size(290, 42);
             this.timeList.StateCommon.ComboBox.Border.Color1 = System.Drawing.Color.Black;
             this.timeList.StateCommon.ComboBox.Border.Color2 = System.Drawing.Color.Black;
             this.timeList.StateCommon.ComboBox.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
@@ -266,10 +262,9 @@
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("OCR A Extended", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(7)))), ((int)(((byte)(73)))));
-            this.label4.Location = new System.Drawing.Point(57, 137);
-            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label4.Location = new System.Drawing.Point(86, 211);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(153, 23);
+            this.label4.Size = new System.Drawing.Size(224, 35);
             this.label4.TabIndex = 83;
             this.label4.Text = "Select City";
             // 
@@ -278,19 +273,19 @@
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("OCR A Extended", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(7)))), ((int)(((byte)(73)))));
-            this.label5.Location = new System.Drawing.Point(639, 137);
-            this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label5.Location = new System.Drawing.Point(958, 211);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(153, 23);
+            this.label5.Size = new System.Drawing.Size(224, 35);
             this.label5.TabIndex = 87;
             this.label5.Text = "Select Time";
             // 
             // kryptonButton1
             // 
             this.kryptonButton1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.kryptonButton1.Location = new System.Drawing.Point(629, 270);
+            this.kryptonButton1.Location = new System.Drawing.Point(944, 415);
+            this.kryptonButton1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.kryptonButton1.Name = "kryptonButton1";
-            this.kryptonButton1.Size = new System.Drawing.Size(263, 42);
+            this.kryptonButton1.Size = new System.Drawing.Size(394, 65);
             this.kryptonButton1.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(72)))), ((int)(((byte)(170)))), ((int)(((byte)(255)))));
             this.kryptonButton1.StateCommon.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(72)))), ((int)(((byte)(170)))), ((int)(((byte)(255)))));
             this.kryptonButton1.StateCommon.Border.Color1 = System.Drawing.Color.Black;
@@ -322,10 +317,9 @@
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("OCR A Extended", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(7)))), ((int)(((byte)(73)))));
-            this.label6.Location = new System.Drawing.Point(640, 215);
-            this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label6.Location = new System.Drawing.Point(960, 331);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(280, 13);
+            this.label6.Size = new System.Drawing.Size(438, 19);
             this.label6.TabIndex = 90;
             this.label6.Text = "Appointment duration is 30 minutes long";
             // 
@@ -334,10 +328,9 @@
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("OCR A Extended", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(7)))), ((int)(((byte)(73)))));
-            this.label7.Location = new System.Drawing.Point(336, 137);
-            this.label7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label7.Location = new System.Drawing.Point(504, 211);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(153, 23);
+            this.label7.Size = new System.Drawing.Size(224, 35);
             this.label7.TabIndex = 92;
             this.label7.Text = "Select Date";
             // 
@@ -348,10 +341,11 @@
             this.typeBox.Items.AddRange(new object[] {
             "Regular",
             "Emergency"});
-            this.typeBox.Location = new System.Drawing.Point(340, 270);
+            this.typeBox.Location = new System.Drawing.Point(510, 415);
+            this.typeBox.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.typeBox.Name = "typeBox";
             this.typeBox.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.Office2010Blue;
-            this.typeBox.Size = new System.Drawing.Size(193, 34);
+            this.typeBox.Size = new System.Drawing.Size(290, 42);
             this.typeBox.StateCommon.ComboBox.Border.Color1 = System.Drawing.Color.Black;
             this.typeBox.StateCommon.ComboBox.Border.Color2 = System.Drawing.Color.Black;
             this.typeBox.StateCommon.ComboBox.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
@@ -376,10 +370,11 @@
             // 
             // reservationDate
             // 
-            this.reservationDate.Location = new System.Drawing.Point(340, 178);
+            this.reservationDate.Location = new System.Drawing.Point(510, 274);
+            this.reservationDate.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.reservationDate.MaxDate = new System.DateTime(4111, 1, 3, 0, 0, 0, 0);
             this.reservationDate.Name = "reservationDate";
-            this.reservationDate.Size = new System.Drawing.Size(281, 34);
+            this.reservationDate.Size = new System.Drawing.Size(422, 42);
             this.reservationDate.StateCommon.Border.Color1 = System.Drawing.Color.Black;
             this.reservationDate.StateCommon.Border.Color2 = System.Drawing.Color.Black;
             this.reservationDate.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
@@ -395,22 +390,26 @@
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("OCR A Extended", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(7)))), ((int)(((byte)(73)))));
-            this.label8.Location = new System.Drawing.Point(353, 232);
-            this.label8.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label8.Location = new System.Drawing.Point(530, 357);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(62, 23);
+            this.label8.Size = new System.Drawing.Size(91, 35);
             this.label8.TabIndex = 96;
             this.label8.Text = "Type";
             // 
             // kryptonDataGridView1
             // 
+            this.kryptonDataGridView1.AllowUserToAddRows = false;
+            this.kryptonDataGridView1.AllowUserToDeleteRows = false;
+            this.kryptonDataGridView1.AllowUserToResizeColumns = false;
+            this.kryptonDataGridView1.AllowUserToResizeRows = false;
             this.kryptonDataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.kryptonDataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.kryptonDataGridView1.Location = new System.Drawing.Point(61, 424);
+            this.kryptonDataGridView1.Location = new System.Drawing.Point(92, 652);
+            this.kryptonDataGridView1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.kryptonDataGridView1.Name = "kryptonDataGridView1";
             this.kryptonDataGridView1.ReadOnly = true;
             this.kryptonDataGridView1.RowHeadersWidth = 62;
-            this.kryptonDataGridView1.Size = new System.Drawing.Size(859, 150);
+            this.kryptonDataGridView1.Size = new System.Drawing.Size(1288, 231);
             this.kryptonDataGridView1.TabIndex = 97;
             // 
             // label9
@@ -418,19 +417,19 @@
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("OCR A Extended", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(7)))), ((int)(((byte)(73)))));
-            this.label9.Location = new System.Drawing.Point(379, 398);
-            this.label9.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label9.Location = new System.Drawing.Point(568, 612);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(231, 23);
+            this.label9.Size = new System.Drawing.Size(338, 35);
             this.label9.TabIndex = 98;
             this.label9.Text = "Your Appointments";
             // 
             // kryptonButton2
             // 
             this.kryptonButton2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.kryptonButton2.Location = new System.Drawing.Point(316, 342);
+            this.kryptonButton2.Location = new System.Drawing.Point(474, 526);
+            this.kryptonButton2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.kryptonButton2.Name = "kryptonButton2";
-            this.kryptonButton2.Size = new System.Drawing.Size(263, 42);
+            this.kryptonButton2.Size = new System.Drawing.Size(394, 65);
             this.kryptonButton2.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(72)))), ((int)(((byte)(170)))), ((int)(((byte)(255)))));
             this.kryptonButton2.StateCommon.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(72)))), ((int)(((byte)(170)))), ((int)(((byte)(255)))));
             this.kryptonButton2.StateCommon.Border.Color1 = System.Drawing.Color.Black;
@@ -462,10 +461,9 @@
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("OCR A Extended", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(7)))), ((int)(((byte)(73)))));
-            this.label10.Location = new System.Drawing.Point(46, 309);
-            this.label10.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label10.Location = new System.Drawing.Point(69, 475);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(179, 23);
+            this.label10.Size = new System.Drawing.Size(262, 35);
             this.label10.TabIndex = 101;
             this.label10.Text = "ReservationID";
             // 
@@ -485,10 +483,11 @@
             "2",
             "1",
             "0"});
-            this.reservationID.Location = new System.Drawing.Point(46, 342);
+            this.reservationID.Location = new System.Drawing.Point(69, 526);
+            this.reservationID.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.reservationID.Name = "reservationID";
             this.reservationID.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.Office2010Blue;
-            this.reservationID.Size = new System.Drawing.Size(164, 34);
+            this.reservationID.Size = new System.Drawing.Size(246, 42);
             this.reservationID.StateCommon.ComboBox.Border.Color1 = System.Drawing.Color.Black;
             this.reservationID.StateCommon.ComboBox.Border.Color2 = System.Drawing.Color.Black;
             this.reservationID.StateCommon.ComboBox.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
@@ -513,10 +512,10 @@
             // 
             // PatientReservation
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(241)))), ((int)(((byte)(255)))));
-            this.ClientSize = new System.Drawing.Size(1003, 586);
+            this.ClientSize = new System.Drawing.Size(1504, 902);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.reservationID);
             this.Controls.Add(this.kryptonButton2);
@@ -536,7 +535,6 @@
             this.Controls.Add(this.clinicCity);
             this.Controls.Add(this.kryptonPanel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "PatientReservation";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "PatientReservation";

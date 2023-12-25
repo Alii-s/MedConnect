@@ -66,7 +66,37 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Admin\AddUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\AddUser.Designer.cs">
+      <DependentUpon>AddUser.cs</DependentUpon>
+    </Compile>
     <Compile Include="Admin\AdminController.cs" />
+    <Compile Include="Admin\AdminMainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\AdminMainForm.Designer.cs">
+      <DependentUpon>AdminMainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\ClinicStatistics.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\ClinicStatistics.Designer.cs">
+      <DependentUpon>ClinicStatistics.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\RemoveUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\RemoveUser.Designer.cs">
+      <DependentUpon>RemoveUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\SwitchInterface.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\SwitchInterface.Designer.cs">
+      <DependentUpon>SwitchInterface.cs</DependentUpon>
+    </Compile>
     <Compile Include="Controller.cs" />
     <Compile Include="DBManager.cs" />
     <Compile Include="Doctor\ClinicsAppointments.cs">
@@ -248,6 +278,21 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Admin\AddUser.resx">
+      <DependentUpon>AddUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\AdminMainForm.resx">
+      <DependentUpon>AdminMainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\ClinicStatistics.resx">
+      <DependentUpon>ClinicStatistics.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\RemoveUser.resx">
+      <DependentUpon>RemoveUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\SwitchInterface.resx">
+      <DependentUpon>SwitchInterface.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Doctor\ClinicsAppointments.resx">
       <DependentUpon>ClinicsAppointments.cs</DependentUpon>
     </EmbeddedResource>
@@ -428,6 +473,15 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\bar-chart.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\setting %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\remove-user.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\change.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
