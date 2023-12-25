@@ -38,6 +38,7 @@ namespace MedConnect.Pharmacist
         {
             this.Close();
             Pharmacist_Main_Form form = new Pharmacist_Main_Form(UserID);
+            form.Show();
         }
 
         private void Medicine_Prescription_Statistics_Form_Load(object sender, EventArgs e)

@@ -89,6 +89,7 @@ namespace MedConnect.Pharmacist
             {
                 KryptonMessageBox.Show("Delivered successfully", "Success");
                 updatePrescriptions();
+                quantityTextBox.Text = string.Empty;
             }
 
         }
