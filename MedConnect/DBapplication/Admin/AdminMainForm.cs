@@ -13,9 +13,11 @@ namespace MedConnect.Admin
 {
     public partial class AdminMainForm : Form
     {
+        int UserID;
         AdminController adminController = new AdminController();
         public AdminMainForm(int UserID)
         {
+            this.UserID = UserID;
             InitializeComponent();
             label1.Text +=" " + adminController.SelectName(UserID);
 
@@ -31,6 +33,13 @@ namespace MedConnect.Admin
             Trigger trigger = new Trigger();
             trigger.Show();
             this.Close();
+        }
+
+        private void updatInfo_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            AddUser addUser = new AddUser(UserID);
+            addUser.Show();
         }
     }
 }

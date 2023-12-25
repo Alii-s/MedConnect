@@ -297,11 +297,10 @@ namespace MedConnect
 
         private void firstNameTextBox_KeyPress(object sender, KeyPressEventArgs e)
         {
-            // Check if the pressed key is a letter
             if (char.IsLetter(e.KeyChar))
             {
                 // If it's the first letter, convert it to uppercase
-                if (firstNameTextBox.SelectionStart == 0)
+                if (lastNameTextBox.SelectionStart == 0)
                 {
                     e.KeyChar = char.ToUpper(e.KeyChar);
                 }
@@ -310,12 +309,6 @@ namespace MedConnect
                 {
                     e.KeyChar = char.ToLower(e.KeyChar);
                 }
-            }
-            // If it's not a letter, allow Backspace and Space
-            else if (e.KeyChar != (char)Keys.Back)
-            {
-                // Suppress the key press
-                e.Handled = true;
             }
         }
 

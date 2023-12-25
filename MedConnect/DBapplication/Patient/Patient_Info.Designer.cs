@@ -690,6 +690,7 @@
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
             this.maritalStateTextBox.StateCommon.ComboBox.Border.Rounding = 18;
+            this.maritalStateTextBox.StateCommon.ComboBox.Content.Color1 = System.Drawing.Color.Black;
             this.maritalStateTextBox.StateCommon.ComboBox.Content.Font = new System.Drawing.Font("OCR A Extended", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.maritalStateTextBox.StateCommon.ComboBox.Content.Padding = new System.Windows.Forms.Padding(1);
             this.maritalStateTextBox.StateCommon.Item.Back.Color1 = System.Drawing.Color.Black;

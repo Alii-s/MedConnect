@@ -43,7 +43,7 @@ namespace MedConnect.Patient
         }
         public DataTable SelectDiagnosisBills(int ID)
         {
-            string query = "SELECT Bill_ID, Method_of_payment, Total_Payment, SecretaryID,Bills.Session_ID,Date FROM Bills,Diagnosis_Sessions WHERE Bills.Session_ID=Diagnosis_Sessions.Session_ID AND PatientID="+ID;
+            string query = "SELECT Bills.Session_ID as 'Bill ID', Method_of_payment, Total_Payment, SecretaryID,Bills.Session_ID,Date FROM Bills,Diagnosis_Sessions WHERE Bills.Session_ID=Diagnosis_Sessions.Session_ID AND PatientID="+ID;
             return dbMan.ExecuteReader(query);
         }
         public DataTable SelectClinicCities()
