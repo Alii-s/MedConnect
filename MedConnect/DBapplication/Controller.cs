@@ -5,6 +5,7 @@ using System.Text;
 using System.Data;
 using System.Windows.Forms;
 using MedConnect.Doctor;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.ListView;
 
 namespace MedConnect
 {
@@ -65,6 +66,33 @@ namespace MedConnect
 
 
             // Pass the parameters to the ExecuteReader method
+            return dbMan.ExecuteScalar(StoredProcedureName, Parameters);
+        }
+        #endregion
+        #region Change Password
+        public object checkPassword(int UserID, string password)
+        {
+            string StoredProcedureName = GeneralStoredProcedures.CheckPassword;
+            Dictionary<string, object> Parameters = new Dictionary<string, object>();
+            Parameters.Add("@UserID", UserID);
+            Parameters.Add("@password", password);
+            return dbMan.ExecuteScalar(StoredProcedureName, Parameters);
+        }
+
+        public int changePassword(int UserID, string password)
+        {
+            string StoredProcedureName = GeneralStoredProcedures.ChangePassword;
+            Dictionary<string, object> Parameters = new Dictionary<string, object>();
+            Parameters.Add("@UserID", UserID);
+            Parameters.Add("@password", password);
+            return dbMan.ExecuteNonQuery(StoredProcedureName,Parameters);
+        }
+
+        public object getUserType(int UserID)
+        {
+            string StoredProcedureName = GeneralStoredProcedures.GetUserType;
+            Dictionary<string, object> Parameters = new Dictionary<string, object>();
+            Parameters.Add("@UserID", UserID);
             return dbMan.ExecuteScalar(StoredProcedureName, Parameters);
         }
         #endregion

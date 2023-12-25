@@ -149,3 +149,9 @@ C:\Users\Ali\Desktop\MedConnect\MedConnect\DBapplication\obj\x86\Debug\MedConnec
 C:\Users\Ali\Desktop\MedConnect\MedConnect\DBapplication\obj\x86\Debug\MedConnect.Admin.ClinicStatistics.resources
 C:\Users\Ali\Desktop\MedConnect\MedConnect\DBapplication\obj\x86\Debug\MedConnect.Admin.RemoveUser.resources
 C:\Users\Ali\Desktop\MedConnect\MedConnect\DBapplication\obj\x86\Debug\MedConnect.Admin.SwitchInterface.resources
+C:\Users\Ali\Desktop\MedConnect\MedConnect\DBapplication\bin\Debug\ComponentFactory.Krypton.Docking.dll
+C:\Users\Ali\Desktop\MedConnect\MedConnect\DBapplication\bin\Debug\ComponentFactory.Krypton.Navigator.dll
+C:\Users\Ali\Desktop\MedConnect\MedConnect\DBapplication\bin\Debug\ComponentFactory.Krypton.Ribbon.dll
+C:\Users\Ali\Desktop\MedConnect\MedConnect\DBapplication\bin\Debug\ComponentFactory.Krypton.Toolkit.dll
+C:\Users\Ali\Desktop\MedConnect\MedConnect\DBapplication\bin\Debug\ComponentFactory.Krypton.Workspace.dll
+C:\Users\Ali\Desktop\MedConnect\MedConnect\DBapplication\obj\x86\Debug\MedConnect.Change_Password_Form.resources

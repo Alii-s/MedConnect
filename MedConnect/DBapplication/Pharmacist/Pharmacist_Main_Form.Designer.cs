@@ -30,6 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Pharmacist_Main_Form));
             this.panel1 = new System.Windows.Forms.Panel();
+            this.label2 = new System.Windows.Forms.Label();
             this.logOut = new System.Windows.Forms.Button();
             this.closeApplication = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
@@ -45,6 +46,7 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(157)))), ((int)(((byte)(209)))), ((int)(((byte)(255)))));
+            this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.logOut);
             this.panel1.Controls.Add(this.closeApplication);
             this.panel1.Controls.Add(this.pictureBox1);
@@ -56,6 +58,20 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1337, 153);
             this.panel1.TabIndex = 1;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("OCR A Extended", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(7)))), ((int)(((byte)(73)))));
+            this.label2.Location = new System.Drawing.Point(327, 123);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(174, 20);
+            this.label2.TabIndex = 44;
+            this.label2.Text = "Change Password";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
+            this.label2.MouseEnter += new System.EventHandler(this.label2_MouseEnter);
+            this.label2.MouseLeave += new System.EventHandler(this.label2_MouseLeave);
             // 
             // logOut
             // 
@@ -254,5 +270,6 @@
         private ComponentFactory.Krypton.Toolkit.KryptonButton kryptonButton1;
         private ComponentFactory.Krypton.Toolkit.KryptonButton kryptonButton2;
         private ComponentFactory.Krypton.Toolkit.KryptonButton kryptonButton3;
+        private System.Windows.Forms.Label label2;
     }
 }

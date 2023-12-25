@@ -66,5 +66,24 @@ namespace MedConnect.Pharmacist
             Medicine_Prescription_Statistics_Form form = new Medicine_Prescription_Statistics_Form(UserID);
             form.Show();
         }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Change_Password_Form form = new Change_Password_Form(UserID);
+            form.Show();
+        }
+
+        private void label2_MouseEnter(object sender, EventArgs e)
+        {
+            label2.Font = new Font(label2.Font, label2.Font.Style | FontStyle.Underline);
+            this.Cursor = Cursors.Hand;
+        }
+
+        private void label2_MouseLeave(object sender, EventArgs e)
+        {
+            label2.Font = new Font(label2.Font, label2.Font.Style & ~FontStyle.Underline);
+            this.Cursor = Cursors.Default;
+        }
     }
 }
