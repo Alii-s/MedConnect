@@ -207,7 +207,6 @@
             this.newPasswordTextBox.Location = new System.Drawing.Point(709, 299);
             this.newPasswordTextBox.Margin = new System.Windows.Forms.Padding(4);
             this.newPasswordTextBox.Name = "newPasswordTextBox";
-            this.newPasswordTextBox.PasswordChar = '●';
             this.newPasswordTextBox.Size = new System.Drawing.Size(277, 40);
             this.newPasswordTextBox.StateActive.Border.Color1 = System.Drawing.Color.Black;
             this.newPasswordTextBox.StateActive.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
@@ -229,7 +228,6 @@
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
             this.newPasswordTextBox.TabIndex = 48;
-            this.newPasswordTextBox.UseSystemPasswordChar = true;
             // 
             // label
             // 
@@ -287,7 +285,6 @@
             this.confirmPasswordTextBox.Location = new System.Drawing.Point(709, 390);
             this.confirmPasswordTextBox.Margin = new System.Windows.Forms.Padding(4);
             this.confirmPasswordTextBox.Name = "confirmPasswordTextBox";
-            this.confirmPasswordTextBox.PasswordChar = '●';
             this.confirmPasswordTextBox.Size = new System.Drawing.Size(277, 40);
             this.confirmPasswordTextBox.StateActive.Border.Color1 = System.Drawing.Color.Black;
             this.confirmPasswordTextBox.StateActive.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
@@ -309,7 +306,6 @@
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
             this.confirmPasswordTextBox.TabIndex = 51;
-            this.confirmPasswordTextBox.UseSystemPasswordChar = true;
             // 
             // confirmPasswordLabel
             // 
