@@ -60,19 +60,20 @@ namespace MedConnect.Secretary
         {
             panel1.Visible = true;
             Up.Visible = true;
+            create_button.Visible = false;
 
         }
 
         private void Up_Click(object sender, EventArgs e)
         {
             int t;
-           // t =secretaryController.UpdateBill(Convert.ToInt32(PN.SelectedValue),UserID, Convert.ToInt32(DN.SelectedValue),ComponentName.Daate, Convert.ToInt32(CL.SelectedValue),Convert.ToInt32( Price.Text),MofP.SelectedText,IsPaid.Checked);
-        //    if(t == 0)
-        //    {
-        //        KryptonMessageBox.Show(" Update was not successful ");
-        //    }
-        //    else
-        //        KryptonMessageBox.Show(" Updated successfully ");
+            t = secretaryController.UpdateBill(Convert.ToInt32(PN.SelectedValue), UserID, Convert.ToInt32(DN.SelectedValue), Daate.Value, Convert.ToInt32(CL.SelectedValue), Convert.ToInt32(Price.Text), MofP.Text, IsPaid.Checked);
+            if (t == 0)
+            {
+                KryptonMessageBox.Show(" Update was not successful ");
+            }
+            else
+                KryptonMessageBox.Show(" Updated successfully ");
         }
 
         private void Price_KeyPress(object sender, KeyPressEventArgs e)
@@ -91,6 +92,25 @@ namespace MedConnect.Secretary
             }
 
 
+        }
+
+        private void Cbill_Click(object sender, EventArgs e)
+        {
+            panel1.Visible = true;
+            Up.Visible = false;
+            create_button.Visible = true;
+        }
+
+        private void create_button_Click(object sender, EventArgs e)
+        {
+            int t;
+            t = secretaryController.CreateBill(Convert.ToInt32(PN.SelectedValue), UserID, Convert.ToInt32(DN.SelectedValue), Daate.Value, Convert.ToInt32(CL.SelectedValue), Convert.ToInt32(Price.Text), MofP.Text, IsPaid.Checked);
+            if (t == 0)
+            {
+                KryptonMessageBox.Show(" Creation was not successful ");
+            }
+            else
+                KryptonMessageBox.Show(" Created successfully ");
         }
     }
 }

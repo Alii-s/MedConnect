@@ -11,7 +11,8 @@ namespace MedConnect.Secretary
         public static string UpdateSecretary = "Updatesecretary";
         public static string UpdatePatient = "UpdatePatientSec";
          
-        public static string UpdateBill = "UpdateBill";
-         
+        public static string UpdateBill = "UpdateBillS";
+        public static string CreateBill = "CreateBill";
+
     }
 }

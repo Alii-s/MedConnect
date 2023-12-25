@@ -106,7 +106,33 @@ namespace MedConnect.Secertary
 
             return dbMan.ExecuteNonQuery(StoredProcedureName, Parameters);
         }
-        
+        public int CreateBill(int PatientID, int SecretaryID, int DoctorID, DateTime daate, int ClinicID, int price, string MofPay, bool IsPaid)
+        {
+
+            int offer = Convert.ToInt32(GetOffer(PatientID));
+            price = price - (price * offer / 100);
+            //if(Type == "Follow-Up")
+            //{
+            //    totalPay = 300 - ((offer / 100) * 300);
+            //}
+            //else
+            //{
+            //    totalPay = 500 - ((offer / 100) * 500);
+            //}
+            string StoredProcedureName = SecretaryProcdures.CreateBill;
+
+            Dictionary<string, object> Parameters = new Dictionary<string, object>();
+            Parameters.Add("@PatientID", PatientID);
+            Parameters.Add("@SecretaryID", SecretaryID);
+            Parameters.Add("@DoctorID", DoctorID);
+            Parameters.Add("@daate", daate);
+            Parameters.Add("@ClinicID", ClinicID);
+            Parameters.Add("@MofPay", MofPay);
+            Parameters.Add("@IsPaid", IsPaid);
+            Parameters.Add("@price", price);
+
+            return dbMan.ExecuteNonQuery(StoredProcedureName, Parameters);
+        }
 
     }
 
