@@ -66,13 +66,13 @@ namespace MedConnect.Secretary
         private void Up_Click(object sender, EventArgs e)
         {
             int t;
-            t =secretaryController.UpdateBill(Convert.ToInt32(PN.SelectedValue),UserID, Convert.ToInt32(DN.SelectedValue),Convert.ToDateTime( Daate), Convert.ToInt32(CL.SelectedValue),Convert.ToInt32( Price.Text),MofP.SelectedText,IsPaid.Checked);
-            if(t == 0)
-            {
-                KryptonMessageBox.Show(" Update was not successful ");
-            }
-            else
-                KryptonMessageBox.Show(" Updated successfully ");
+           // t =secretaryController.UpdateBill(Convert.ToInt32(PN.SelectedValue),UserID, Convert.ToInt32(DN.SelectedValue),ComponentName.Daate, Convert.ToInt32(CL.SelectedValue),Convert.ToInt32( Price.Text),MofP.SelectedText,IsPaid.Checked);
+        //    if(t == 0)
+        //    {
+        //        KryptonMessageBox.Show(" Update was not successful ");
+        //    }
+        //    else
+        //        KryptonMessageBox.Show(" Updated successfully ");
         }
 
         private void Price_KeyPress(object sender, KeyPressEventArgs e)
