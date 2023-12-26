@@ -9,7 +9,7 @@ namespace MedConnect.Doctor
     internal class DoctorStoredProcedures
     {
 
-            public static string GetDoctorPatients = "GetDoctorPatients";
+        public static string GetDoctorPatients = "GetDoctorPatients";
         public static string GetDoctorPatientsWithFilter = "GetDoctorPatientsWithFilter";
         public static string GetAllClinicData = "GetAllClinicData";
         public static string AddDoctorSchedule = "AddDoctorSchedule";
@@ -18,7 +18,7 @@ namespace MedConnect.Doctor
         public static string GetDayAtSchedule = "GetSchedule"; 
         public static string GetActiveReservationsWithDate = "GetActiveReservationsWithInfo"; 
         public static string GetSessionRatingsWithComments = "GetSessionRatingsWithComments"; 
-             public static string GetAverageRating = "GetAverageRating";
-
+        public static string GetAverageRating = "GetAverageRating"; 
+        public static string InsertIntoDiagnosisSessionsAndMedicalRecords = "InsertIntoDiagnosisSessionsAndMedicalRecords";
     }
 }
