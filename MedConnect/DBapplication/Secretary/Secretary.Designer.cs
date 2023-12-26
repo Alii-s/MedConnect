@@ -41,6 +41,7 @@
             this.updatInfo = new ComponentFactory.Krypton.Toolkit.KryptonButton();
             this.UPatientInfo = new ComponentFactory.Krypton.Toolkit.KryptonButton();
             this.NewPatient = new ComponentFactory.Krypton.Toolkit.KryptonButton();
+            this.label3 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -48,6 +49,7 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(157)))), ((int)(((byte)(209)))), ((int)(((byte)(255)))));
+            this.panel1.Controls.Add(this.label3);
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.logOut);
             this.panel1.Controls.Add(this.closeApplication);
@@ -287,6 +289,20 @@
             this.NewPatient.Values.Text = "Add New Patient";
             this.NewPatient.Click += new System.EventHandler(this.NewPatient_Click);
             // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("OCR A Extended", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(7)))), ((int)(((byte)(73)))));
+            this.label3.Location = new System.Drawing.Point(327, 114);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(174, 20);
+            this.label3.TabIndex = 47;
+            this.label3.Text = "Change Password";
+            this.label3.Click += new System.EventHandler(this.label3_Click);
+            this.label3.MouseEnter += new System.EventHandler(this.label3_MouseEnter);
+            this.label3.MouseLeave += new System.EventHandler(this.label3_MouseLeave);
+            // 
             // Secretary
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -324,5 +340,6 @@
         private ComponentFactory.Krypton.Toolkit.KryptonButton UPatientInfo;
         private ComponentFactory.Krypton.Toolkit.KryptonButton NewPatient;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label3;
     }
 }

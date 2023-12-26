@@ -110,5 +110,23 @@ namespace MedConnect
                 return;
             }
         }
+
+        private void emailTextBox_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                loginButton.PerformClick();
+                e.SuppressKeyPress = true;
+            }
+        }
+
+        private void passwordTextBox_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                loginButton.PerformClick();
+                e.SuppressKeyPress = true;
+            }
+        }
     }
 }

@@ -159,5 +159,32 @@ namespace MedConnect
         {
             confirmPasswordTextBox.UseSystemPasswordChar = !confirmPasswordTextBox.UseSystemPasswordChar;
         }
+
+        private void currentPasswordTextBox_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                changePasswordButton.PerformClick();
+                e.SuppressKeyPress = true;
+            }
+        }
+
+        private void newPasswordTextBox_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                changePasswordButton.PerformClick();
+                e.SuppressKeyPress = true;
+            }
+        }
+
+        private void confirmPasswordTextBox_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                changePasswordButton.PerformClick();
+                e.SuppressKeyPress = true;
+            }
+        }
     }
 }

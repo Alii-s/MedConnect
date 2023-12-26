@@ -36,7 +36,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.logOut = new System.Windows.Forms.Button();
             this.currentPasswordLabel = new System.Windows.Forms.Label();
-            this.loginButton = new ComponentFactory.Krypton.Toolkit.KryptonButton();
+            this.changePasswordButton = new ComponentFactory.Krypton.Toolkit.KryptonButton();
             this.label5 = new System.Windows.Forms.Label();
             this.newPasswordTextBox = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
             this.label = new System.Windows.Forms.Label();
@@ -148,54 +148,54 @@
             this.currentPasswordLabel.AutoSize = true;
             this.currentPasswordLabel.Font = new System.Drawing.Font("OCR A Extended", 9.75F);
             this.currentPasswordLabel.ForeColor = System.Drawing.Color.IndianRed;
-            this.currentPasswordLabel.Location = new System.Drawing.Point(715, 252);
+            this.currentPasswordLabel.Location = new System.Drawing.Point(637, 266);
             this.currentPasswordLabel.Name = "currentPasswordLabel";
             this.currentPasswordLabel.Size = new System.Drawing.Size(0, 18);
             this.currentPasswordLabel.TabIndex = 45;
             this.currentPasswordLabel.Visible = false;
             // 
-            // loginButton
+            // changePasswordButton
             // 
-            this.loginButton.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.loginButton.Location = new System.Drawing.Point(529, 510);
-            this.loginButton.Margin = new System.Windows.Forms.Padding(4);
-            this.loginButton.Name = "loginButton";
-            this.loginButton.Size = new System.Drawing.Size(315, 52);
-            this.loginButton.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(72)))), ((int)(((byte)(170)))), ((int)(((byte)(255)))));
-            this.loginButton.StateCommon.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(72)))), ((int)(((byte)(170)))), ((int)(((byte)(255)))));
-            this.loginButton.StateCommon.Border.Color1 = System.Drawing.Color.Black;
-            this.loginButton.StateCommon.Border.Color2 = System.Drawing.Color.Black;
-            this.loginButton.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            this.changePasswordButton.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.changePasswordButton.Location = new System.Drawing.Point(451, 524);
+            this.changePasswordButton.Margin = new System.Windows.Forms.Padding(4);
+            this.changePasswordButton.Name = "changePasswordButton";
+            this.changePasswordButton.Size = new System.Drawing.Size(315, 52);
+            this.changePasswordButton.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(72)))), ((int)(((byte)(170)))), ((int)(((byte)(255)))));
+            this.changePasswordButton.StateCommon.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(72)))), ((int)(((byte)(170)))), ((int)(((byte)(255)))));
+            this.changePasswordButton.StateCommon.Border.Color1 = System.Drawing.Color.Black;
+            this.changePasswordButton.StateCommon.Border.Color2 = System.Drawing.Color.Black;
+            this.changePasswordButton.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.loginButton.StateCommon.Border.Rounding = 18;
-            this.loginButton.StateCommon.Content.LongText.Color1 = System.Drawing.Color.Black;
-            this.loginButton.StateCommon.Content.LongText.Image = global::MedConnect.Properties.Resources.login;
-            this.loginButton.StateCommon.Content.ShortText.Color1 = System.Drawing.Color.Black;
-            this.loginButton.StateCommon.Content.ShortText.Color2 = System.Drawing.Color.Black;
-            this.loginButton.StateCommon.Content.ShortText.Font = new System.Drawing.Font("OCR A Extended", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.loginButton.StateCommon.Content.ShortText.Image = ((System.Drawing.Image)(resources.GetObject("loginButton.StateCommon.Content.ShortText.Image")));
-            this.loginButton.StateDisabled.Back.Color1 = System.Drawing.Color.Gainsboro;
-            this.loginButton.StateDisabled.Back.Color2 = System.Drawing.Color.Gainsboro;
-            this.loginButton.StateNormal.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(157)))), ((int)(((byte)(209)))), ((int)(((byte)(255)))));
-            this.loginButton.StateNormal.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(157)))), ((int)(((byte)(209)))), ((int)(((byte)(255)))));
-            this.loginButton.StateNormal.Back.ColorAlign = ComponentFactory.Krypton.Toolkit.PaletteRectangleAlign.Local;
-            this.loginButton.StatePressed.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(153)))), ((int)(((byte)(255)))));
-            this.loginButton.StatePressed.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(153)))), ((int)(((byte)(255)))));
-            this.loginButton.StatePressed.Back.ColorAlign = ComponentFactory.Krypton.Toolkit.PaletteRectangleAlign.Local;
-            this.loginButton.StatePressed.Back.Draw = ComponentFactory.Krypton.Toolkit.InheritBool.False;
-            this.loginButton.StatePressed.Back.GraphicsHint = ComponentFactory.Krypton.Toolkit.PaletteGraphicsHint.None;
-            this.loginButton.TabIndex = 50;
-            this.loginButton.Values.Image = ((System.Drawing.Image)(resources.GetObject("loginButton.Values.Image")));
-            this.loginButton.Values.Text = "Change Password";
-            this.loginButton.Click += new System.EventHandler(this.loginButton_Click);
+            this.changePasswordButton.StateCommon.Border.Rounding = 18;
+            this.changePasswordButton.StateCommon.Content.LongText.Color1 = System.Drawing.Color.Black;
+            this.changePasswordButton.StateCommon.Content.LongText.Image = global::MedConnect.Properties.Resources.login;
+            this.changePasswordButton.StateCommon.Content.ShortText.Color1 = System.Drawing.Color.Black;
+            this.changePasswordButton.StateCommon.Content.ShortText.Color2 = System.Drawing.Color.Black;
+            this.changePasswordButton.StateCommon.Content.ShortText.Font = new System.Drawing.Font("OCR A Extended", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.changePasswordButton.StateCommon.Content.ShortText.Image = ((System.Drawing.Image)(resources.GetObject("changePasswordButton.StateCommon.Content.ShortText.Image")));
+            this.changePasswordButton.StateDisabled.Back.Color1 = System.Drawing.Color.Gainsboro;
+            this.changePasswordButton.StateDisabled.Back.Color2 = System.Drawing.Color.Gainsboro;
+            this.changePasswordButton.StateNormal.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(157)))), ((int)(((byte)(209)))), ((int)(((byte)(255)))));
+            this.changePasswordButton.StateNormal.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(157)))), ((int)(((byte)(209)))), ((int)(((byte)(255)))));
+            this.changePasswordButton.StateNormal.Back.ColorAlign = ComponentFactory.Krypton.Toolkit.PaletteRectangleAlign.Local;
+            this.changePasswordButton.StatePressed.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(153)))), ((int)(((byte)(255)))));
+            this.changePasswordButton.StatePressed.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(153)))), ((int)(((byte)(255)))));
+            this.changePasswordButton.StatePressed.Back.ColorAlign = ComponentFactory.Krypton.Toolkit.PaletteRectangleAlign.Local;
+            this.changePasswordButton.StatePressed.Back.Draw = ComponentFactory.Krypton.Toolkit.InheritBool.False;
+            this.changePasswordButton.StatePressed.Back.GraphicsHint = ComponentFactory.Krypton.Toolkit.PaletteGraphicsHint.None;
+            this.changePasswordButton.TabIndex = 50;
+            this.changePasswordButton.Values.Image = ((System.Drawing.Image)(resources.GetObject("changePasswordButton.Values.Image")));
+            this.changePasswordButton.Values.Text = "Change Password";
+            this.changePasswordButton.Click += new System.EventHandler(this.loginButton_Click);
             // 
             // label5
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("OCR A Extended", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(7)))), ((int)(((byte)(73)))));
-            this.label5.Location = new System.Drawing.Point(370, 310);
+            this.label5.Location = new System.Drawing.Point(292, 324);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(205, 29);
             this.label5.TabIndex = 49;
@@ -204,7 +204,7 @@
             // newPasswordTextBox
             // 
             this.newPasswordTextBox.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.newPasswordTextBox.Location = new System.Drawing.Point(709, 299);
+            this.newPasswordTextBox.Location = new System.Drawing.Point(631, 313);
             this.newPasswordTextBox.Margin = new System.Windows.Forms.Padding(4);
             this.newPasswordTextBox.Name = "newPasswordTextBox";
             this.newPasswordTextBox.Size = new System.Drawing.Size(277, 40);
@@ -228,13 +228,14 @@
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
             this.newPasswordTextBox.TabIndex = 48;
+            this.newPasswordTextBox.KeyDown += new System.Windows.Forms.KeyEventHandler(this.newPasswordTextBox_KeyDown);
             // 
             // label
             // 
             this.label.AutoSize = true;
             this.label.Font = new System.Drawing.Font("OCR A Extended", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(7)))), ((int)(((byte)(73)))));
-            this.label.Location = new System.Drawing.Point(370, 219);
+            this.label.Location = new System.Drawing.Point(292, 233);
             this.label.Name = "label";
             this.label.Size = new System.Drawing.Size(269, 29);
             this.label.TabIndex = 47;
@@ -243,7 +244,7 @@
             // currentPasswordTextBox
             // 
             this.currentPasswordTextBox.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.currentPasswordTextBox.Location = new System.Drawing.Point(709, 208);
+            this.currentPasswordTextBox.Location = new System.Drawing.Point(631, 222);
             this.currentPasswordTextBox.Margin = new System.Windows.Forms.Padding(4);
             this.currentPasswordTextBox.Name = "currentPasswordTextBox";
             this.currentPasswordTextBox.Size = new System.Drawing.Size(277, 40);
@@ -267,13 +268,14 @@
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
             this.currentPasswordTextBox.TabIndex = 46;
+            this.currentPasswordTextBox.KeyDown += new System.Windows.Forms.KeyEventHandler(this.currentPasswordTextBox_KeyDown);
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("OCR A Extended", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(7)))), ((int)(((byte)(73)))));
-            this.label2.Location = new System.Drawing.Point(370, 401);
+            this.label2.Location = new System.Drawing.Point(292, 415);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(269, 29);
             this.label2.TabIndex = 52;
@@ -282,7 +284,7 @@
             // confirmPasswordTextBox
             // 
             this.confirmPasswordTextBox.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.confirmPasswordTextBox.Location = new System.Drawing.Point(709, 390);
+            this.confirmPasswordTextBox.Location = new System.Drawing.Point(631, 404);
             this.confirmPasswordTextBox.Margin = new System.Windows.Forms.Padding(4);
             this.confirmPasswordTextBox.Name = "confirmPasswordTextBox";
             this.confirmPasswordTextBox.Size = new System.Drawing.Size(277, 40);
@@ -306,13 +308,14 @@
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
             this.confirmPasswordTextBox.TabIndex = 51;
+            this.confirmPasswordTextBox.KeyDown += new System.Windows.Forms.KeyEventHandler(this.confirmPasswordTextBox_KeyDown);
             // 
             // confirmPasswordLabel
             // 
             this.confirmPasswordLabel.AutoSize = true;
             this.confirmPasswordLabel.Font = new System.Drawing.Font("OCR A Extended", 9.75F);
             this.confirmPasswordLabel.ForeColor = System.Drawing.Color.IndianRed;
-            this.confirmPasswordLabel.Location = new System.Drawing.Point(715, 434);
+            this.confirmPasswordLabel.Location = new System.Drawing.Point(637, 448);
             this.confirmPasswordLabel.Name = "confirmPasswordLabel";
             this.confirmPasswordLabel.Size = new System.Drawing.Size(0, 18);
             this.confirmPasswordLabel.TabIndex = 54;
@@ -323,7 +326,7 @@
             this.newPasswordLabel.AutoSize = true;
             this.newPasswordLabel.Font = new System.Drawing.Font("OCR A Extended", 9.75F);
             this.newPasswordLabel.ForeColor = System.Drawing.Color.IndianRed;
-            this.newPasswordLabel.Location = new System.Drawing.Point(715, 343);
+            this.newPasswordLabel.Location = new System.Drawing.Point(637, 357);
             this.newPasswordLabel.Name = "newPasswordLabel";
             this.newPasswordLabel.Size = new System.Drawing.Size(0, 18);
             this.newPasswordLabel.TabIndex = 55;
@@ -331,27 +334,30 @@
             // 
             // kryptonCheckBox1
             // 
-            this.kryptonCheckBox1.Location = new System.Drawing.Point(1033, 224);
+            this.kryptonCheckBox1.Location = new System.Drawing.Point(955, 236);
             this.kryptonCheckBox1.Name = "kryptonCheckBox1";
-            this.kryptonCheckBox1.Size = new System.Drawing.Size(130, 24);
+            this.kryptonCheckBox1.Size = new System.Drawing.Size(188, 26);
+            this.kryptonCheckBox1.StateCommon.ShortText.Font = new System.Drawing.Font("OCR A Extended", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.kryptonCheckBox1.TabIndex = 56;
             this.kryptonCheckBox1.Values.Text = "Show Password";
             this.kryptonCheckBox1.CheckedChanged += new System.EventHandler(this.kryptonCheckBox1_CheckedChanged_1);
             // 
             // kryptonCheckBox2
             // 
-            this.kryptonCheckBox2.Location = new System.Drawing.Point(1033, 315);
+            this.kryptonCheckBox2.Location = new System.Drawing.Point(955, 329);
             this.kryptonCheckBox2.Name = "kryptonCheckBox2";
-            this.kryptonCheckBox2.Size = new System.Drawing.Size(130, 24);
+            this.kryptonCheckBox2.Size = new System.Drawing.Size(188, 26);
+            this.kryptonCheckBox2.StateCommon.ShortText.Font = new System.Drawing.Font("OCR A Extended", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.kryptonCheckBox2.TabIndex = 57;
             this.kryptonCheckBox2.Values.Text = "Show Password";
             this.kryptonCheckBox2.CheckedChanged += new System.EventHandler(this.kryptonCheckBox2_CheckedChanged);
             // 
             // kryptonCheckBox3
             // 
-            this.kryptonCheckBox3.Location = new System.Drawing.Point(1033, 406);
+            this.kryptonCheckBox3.Location = new System.Drawing.Point(955, 418);
             this.kryptonCheckBox3.Name = "kryptonCheckBox3";
-            this.kryptonCheckBox3.Size = new System.Drawing.Size(130, 24);
+            this.kryptonCheckBox3.Size = new System.Drawing.Size(188, 26);
+            this.kryptonCheckBox3.StateCommon.ShortText.Font = new System.Drawing.Font("OCR A Extended", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.kryptonCheckBox3.TabIndex = 58;
             this.kryptonCheckBox3.Values.Text = "Show Password";
             this.kryptonCheckBox3.CheckedChanged += new System.EventHandler(this.kryptonCheckBox3_CheckedChanged);
@@ -370,7 +376,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.confirmPasswordTextBox);
             this.Controls.Add(this.currentPasswordLabel);
-            this.Controls.Add(this.loginButton);
+            this.Controls.Add(this.changePasswordButton);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.newPasswordTextBox);
             this.Controls.Add(this.label);
@@ -398,7 +404,7 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button logOut;
         private System.Windows.Forms.Label currentPasswordLabel;
-        private ComponentFactory.Krypton.Toolkit.KryptonButton loginButton;
+        private ComponentFactory.Krypton.Toolkit.KryptonButton changePasswordButton;
         private System.Windows.Forms.Label label5;
         private ComponentFactory.Krypton.Toolkit.KryptonTextBox newPasswordTextBox;
         private System.Windows.Forms.Label label;

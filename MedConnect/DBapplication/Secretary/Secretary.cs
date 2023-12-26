@@ -71,6 +71,25 @@ namespace MedConnect.Secretary
             MUbill form = new MUbill(UserID);
             form.Show();
         }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Change_Password_Form form = new Change_Password_Form(UserID);
+            form.Show();
+        }
+
+        private void label3_MouseEnter(object sender, EventArgs e)
+        {
+            label3.Font = new Font(label3.Font, label3.Font.Style | FontStyle.Underline);
+            this.Cursor = Cursors.Hand;
+        }
+
+        private void label3_MouseLeave(object sender, EventArgs e)
+        {
+            label3.Font = new Font(label3.Font, label3.Font.Style & ~FontStyle.Underline);
+            this.Cursor = Cursors.Default;
+        }
     }
 }
  
