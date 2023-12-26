@@ -45,11 +45,6 @@ E:\KID\1.WORK\GitHubProjects\MedConnect\DBapplication\obj\x86\Debug\MedConnect.D
 E:\KID\1.WORK\GitHubProjects\MedConnect\DBapplication\obj\x86\Debug\MedConnect.Doctor.DoctorViewPatients.resources
 E:\KID\1.WORK\GitHubProjects\MedConnect\DBapplication\obj\x86\Debug\MedConnect.Register.resources
 E:\KID\1.WORK\GitHubProjects\MedConnect\DBapplication\obj\x86\Debug\MedConnect.Doctor.DoctorScheuale.resources
-C:\Users\p c\OneDrive\Desktop\Pro\MedConnect\MedConnect\DBapplication\bin\Debug\ComponentFactory.Krypton.Docking.dll
-C:\Users\p c\OneDrive\Desktop\Pro\MedConnect\MedConnect\DBapplication\bin\Debug\ComponentFactory.Krypton.Navigator.dll
-C:\Users\p c\OneDrive\Desktop\Pro\MedConnect\MedConnect\DBapplication\bin\Debug\ComponentFactory.Krypton.Ribbon.dll
-C:\Users\p c\OneDrive\Desktop\Pro\MedConnect\MedConnect\DBapplication\bin\Debug\ComponentFactory.Krypton.Toolkit.dll
-C:\Users\p c\OneDrive\Desktop\Pro\MedConnect\MedConnect\DBapplication\bin\Debug\ComponentFactory.Krypton.Workspace.dll
 C:\Users\p c\OneDrive\Desktop\Pro\MedConnect\MedConnect\DBapplication\bin\Debug\ComponentFactory.Krypton.Docking.pdb
 C:\Users\p c\OneDrive\Desktop\Pro\MedConnect\MedConnect\DBapplication\bin\Debug\ComponentFactory.Krypton.Navigator.pdb
 C:\Users\p c\OneDrive\Desktop\Pro\MedConnect\MedConnect\DBapplication\bin\Debug\ComponentFactory.Krypton.Workspace.pdb
@@ -150,3 +145,10 @@ C:\Users\Ali\Desktop\MedConnect\MedConnect\DBapplication\obj\x86\Debug\MedConnec
 C:\Users\Ali\Desktop\MedConnect\MedConnect\DBapplication\obj\x86\Debug\MedConnect.csproj.CopyComplete
 C:\Users\Ali\Desktop\MedConnect\MedConnect\DBapplication\obj\x86\Debug\MedConnect.exe
 C:\Users\Ali\Desktop\MedConnect\MedConnect\DBapplication\obj\x86\Debug\MedConnect.pdb
+C:\Users\p c\OneDrive\Desktop\Pro\MedConnect\MedConnect\DBapplication\obj\x86\Debug\MedConnect.Admin.AddUser.resources
+C:\Users\p c\OneDrive\Desktop\Pro\MedConnect\MedConnect\DBapplication\obj\x86\Debug\MedConnect.Admin.AdminMainForm.resources
+C:\Users\p c\OneDrive\Desktop\Pro\MedConnect\MedConnect\DBapplication\obj\x86\Debug\MedConnect.Admin.ClinicStatistics.resources
+C:\Users\p c\OneDrive\Desktop\Pro\MedConnect\MedConnect\DBapplication\obj\x86\Debug\MedConnect.Admin.RemoveUser.resources
+C:\Users\p c\OneDrive\Desktop\Pro\MedConnect\MedConnect\DBapplication\obj\x86\Debug\MedConnect.Admin.SwitchInterface.resources
+C:\Users\p c\OneDrive\Desktop\Pro\MedConnect\MedConnect\DBapplication\obj\x86\Debug\MedConnect.Change_Password_Form.resources
+C:\Users\p c\OneDrive\Desktop\Pro\MedConnect\MedConnect\DBapplication\obj\x86\Debug\MedConnect.Secretary.Reservation.resources
