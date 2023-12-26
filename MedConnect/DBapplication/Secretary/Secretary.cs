@@ -42,7 +42,7 @@ namespace MedConnect.Secretary
         private void NewPatient_Click(object sender, EventArgs e)
         {
             this.Close();
-            Register form = new Register(1);
+            Register form = new Register(UserID);
             form.Show();
         }
 

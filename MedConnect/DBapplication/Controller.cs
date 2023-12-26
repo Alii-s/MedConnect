@@ -32,7 +32,7 @@ namespace MedConnect
         }
         #endregion
         #region Register
-        public int Register(string Fname, string Lname, string Email, string PhoneNumber, string Gender, string Password, DateTime DateOfBirth, string occupation, string City, int Building_Num, string Street_Name, string Marital_State)
+        public int Register(string Fname, string Lname, string Email, string PhoneNumber, string Gender, string Password, DateTime DateOfBirth, string occupation, string City, int Building_Num, string Street_Name, string Marital_State,int CreatedBy)
         {
             string StoredProcedureName = GeneralStoredProcedures.RegisterPatient;
 
@@ -49,6 +49,7 @@ namespace MedConnect
             Parameters.Add("@Building_Num", Building_Num);
             Parameters.Add("@Street_Name", Street_Name);
             Parameters.Add("@Marital_State", Marital_State);
+            Parameters.Add("@CreatedBy", CreatedBy);
 
 
 
