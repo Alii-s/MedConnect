@@ -80,8 +80,12 @@ namespace MedConnect.Doctor
             if (value == 0)
                 MessageBox.Show("Session Not Added Successfully");
             else
-            MessageBox.Show("Session Added Successfully");
-           // this.Close();
+            {
+                MessageBox.Show("Session Added Successfully");
+                this.Close();
+               // DoctorPrescribeMedicine doctorPrescribeMedicine = new DoctorPrescribeMedicine(sessionId);
+            }
+
         }
 
         private void kryptonTextBox4_TextChanged(object sender, EventArgs e)

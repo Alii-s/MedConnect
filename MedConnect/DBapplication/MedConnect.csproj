@@ -130,6 +130,12 @@
     <Compile Include="Doctor\DoctorPatientsInfo.Designer.cs">
       <DependentUpon>DoctorPatientsInfo.cs</DependentUpon>
     </Compile>
+    <Compile Include="Doctor\DoctorPrescribeMedicine.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Doctor\DoctorPrescribeMedicine.Designer.cs">
+      <DependentUpon>DoctorPrescribeMedicine.cs</DependentUpon>
+    </Compile>
     <Compile Include="Doctor\DoctorRating_Comments.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -319,6 +325,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Doctor\DoctorPatientsInfo.resx">
       <DependentUpon>DoctorPatientsInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Doctor\DoctorPrescribeMedicine.resx">
+      <DependentUpon>DoctorPrescribeMedicine.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Doctor\DoctorRating_Comments.resx">
       <DependentUpon>DoctorRating_Comments.cs</DependentUpon>
