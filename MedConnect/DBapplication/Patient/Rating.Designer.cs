@@ -174,12 +174,6 @@
             // 
             this.sessionDate.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.sessionDate.DropDownWidth = 196;
-            this.sessionDate.Items.AddRange(new object[] {
-            "Single",
-            "Married",
-            "Widowed",
-            "Divorced",
-            "Separated"});
             this.sessionDate.Location = new System.Drawing.Point(50, 285);
             this.sessionDate.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.sessionDate.Name = "sessionDate";

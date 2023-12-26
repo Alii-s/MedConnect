@@ -295,7 +295,7 @@ namespace MedConnect.Admin
                 occupation.Enabled = false; maritalSateLabel.Enabled = false; salary.Enabled = true; certificate.Enabled = false;
                 Specialization.Enabled = false; experience.Enabled = false;
             }
-            addressLabel.Visible = false; occupationLabel.Visible = false; maritalSateLabel.Visible = false; salaryLabel.Visible = false; certificateLabel.Visible = false; specializationLabel.Visible = false;
+            addressLabel.Visible = false; occupationLabel.Visible = false; maritalSateLabel.Visible = true; salaryLabel.Visible = false; certificateLabel.Visible = false; specializationLabel.Visible = false;
             experienceLabel.Visible = false;
         }
 

@@ -22,10 +22,14 @@ namespace MedConnect.Patient
             InitializeComponent();
             this.UserID = UserID;
             SessionInfo = controller.SelectSessionDates(UserID);
+            sessionDate.DataSource = SessionInfo;
             sessionDate.DisplayMember = "Date";
             sessionDate.ValueMember = "Session_ID";
             sessionDate.DataSource = SessionInfo;
-            sessionDate.SelectedIndex = 0;
+            if (SessionInfo != null)
+            {
+                sessionDate.SelectedIndex = 0;
+            }
             kryptonDataGridView1.DataSource = controller.SelectDoctorRatings();
             ratingValue.DisplayMember= "Value";
             ratingValue.SelectedIndex = 0;
