@@ -271,6 +271,7 @@ namespace MedConnect
                 }
                 Secretary.Secretary secretary = new Secretary.Secretary(SecretaryID);
                 secretary.Show();
+                KryptonMessageBox.Show("User Registered Successfully");
 
 
             }

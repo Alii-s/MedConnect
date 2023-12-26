@@ -194,7 +194,7 @@ namespace MedConnect.Admin
             if (char.IsLetter(e.KeyChar))
             {
                 // If it's the first letter, convert it to uppercase
-                if (lastNameTextBox.SelectionStart == 0)
+                if (firstNameTextBox.SelectionStart == 0)
                 {
                     e.KeyChar = char.ToUpper(e.KeyChar);
                 }
@@ -203,6 +203,12 @@ namespace MedConnect.Admin
                 {
                     e.KeyChar = char.ToLower(e.KeyChar);
                 }
+            }
+            // If it's not a letter, allow Backspace and Space
+            else if (e.KeyChar != (char)Keys.Back)
+            {
+                // Suppress the key press
+                e.Handled = true;
             }
         }
 
