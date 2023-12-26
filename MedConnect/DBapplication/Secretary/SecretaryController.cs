@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Data;
 using System.Linq;
@@ -133,7 +134,16 @@ namespace MedConnect.Secertary
 
             return dbMan.ExecuteNonQuery(StoredProcedureName, Parameters);
         }
-
+        public DataTable SelectReservations()
+        {
+            string query = "SELECT Lname, City, Date, Time, r.Type, IsConfirmed, ReservationID  FROM Clinics c, Users, Reservations r WHERE r.IsActive = 1 AND PatientID = UserID AND r.ClinicID = c.ClinicID ORDER BY Date ;";
+            return dbMan.ExecuteReader(query);
+        }
+        public int updateIsConf(int RID, int IsC)
+        {
+          string query = "UPDATE Reservations SET IsConfirmed = "+IsC+" WHERE ReservationID = "+RID+" ;";
+          return  dbMan.ExecuteNonQuery(query);
+        }
     }
 
 }
