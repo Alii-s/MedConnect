@@ -17,7 +17,7 @@ namespace MedConnect
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Reservation(24));
+            Application.Run(new Trigger());
         }
     }
 }

@@ -62,7 +62,9 @@ namespace MedConnect.Secretary
 
         private void Reservations_Click(object sender, EventArgs e)
         {
-
+            this.Close();
+            Reservation reservation = new Reservation(UserID);
+            reservation.Show();
         }
 
         private void MUbill_Click(object sender, EventArgs e)
