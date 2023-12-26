@@ -21,6 +21,28 @@ namespace MedConnect.Doctor
         }
         #endregion
 
+        #region Insert Into Diagnosis Sessions And Medical Records
+        public int InsertIntoDiagnosisSessionsAndMedicalRecords(int DoctorID,int ClinicId ,int PatientID,string Type,DateTime date,string exNotes ,string VitalSigns, string PreviousIllnesses, string OngoingMedication, string PreviousSurgeries)
+        {
+            string StoredProcedureName = DoctorStoredProcedures.InsertIntoDiagnosisSessionsAndMedicalRecords;
+
+            Dictionary<string, object> Parameters = new Dictionary<string, object>();
+
+            Parameters.Add("@DoctorID", DoctorID);
+            Parameters.Add("@ClinicID", ClinicId);
+            Parameters.Add("@PatientID", PatientID);
+            Parameters.Add("@Type", Type);
+            Parameters.Add("@Date", date);
+            Parameters.Add("@ExNotes", exNotes);
+            Parameters.Add("@VitalSigns", VitalSigns);
+            Parameters.Add("@PreviousIllness", PreviousIllnesses);
+            Parameters.Add("@OngoingMedication", OngoingMedication);
+            Parameters.Add("@PreviousSurgeries", PreviousSurgeries);
+
+            return dbMan.ExecuteNonQuery(StoredProcedureName, Parameters);
+        }
+        #endregion
+
         #region Get Session Ratings With Comments
         public DataTable GetSessionRatingsWithComments()
         {

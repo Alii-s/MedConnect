@@ -48,9 +48,24 @@ namespace MedConnect.Doctor
 
         private void kryptonDataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-       
 
+            if (e.RowIndex >= 0)
+            {
+       
+                if (int.TryParse(kryptonDataGridView1.Rows[e.RowIndex].Cells[0].Value.ToString(), out int patientId))
+                {
+                    DoctorDiagnosisSession doctorDiagnosticSessions = new DoctorDiagnosisSession(UserId, patientId);
+                    doctorDiagnosticSessions.Show();
+                    this.Close();
+                }
+                else
+                {
+        
+                    MessageBox.Show("Invalid Patient ID");
+                }
+            }
         }
+
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
