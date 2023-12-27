@@ -20,5 +20,8 @@ namespace MedConnect.Doctor
         public static string GetSessionRatingsWithComments = "GetSessionRatingsWithComments"; 
         public static string GetAverageRating = "GetAverageRating"; 
         public static string InsertIntoDiagnosisSessionsAndMedicalRecords = "InsertIntoDiagnosisSessionsAndMedicalRecords";
+        public static string SelectSessionId = "SelectSessionId";
+        public static string GetActiveNonExpiredMedicines = "GetActiveNonExpiredMedicines";
+        public static string InsertIntoPrescription = "InsertIntoPrescribed";
     }
 }

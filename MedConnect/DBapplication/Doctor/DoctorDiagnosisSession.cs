@@ -75,15 +75,20 @@ namespace MedConnect.Doctor
 
         private void kryptonButton1_Click(object sender, EventArgs e)
         {
+            DateTime date = DateTime.Now;
+            string type = sessionDate.Text;
+
            int value=  doctorController.InsertIntoDiagnosisSessionsAndMedicalRecords(DoctorID, int.Parse(kryptonComboBox1.SelectedValue.ToString()), patientId
-             , sessionDate.Text, DateTime.Now, Comments.Text, kryptonTextBox1.Text, kryptonTextBox3.Text, kryptonTextBox2.Text, kryptonTextBox4.Text);
+             , sessionDate.Text, date, Comments.Text, kryptonTextBox1.Text, kryptonTextBox3.Text, kryptonTextBox2.Text, kryptonTextBox4.Text);
             if (value == 0)
                 MessageBox.Show("Session Not Added Successfully");
             else
             {
                 MessageBox.Show("Session Added Successfully");
                 this.Close();
-               // DoctorPrescribeMedicine doctorPrescribeMedicine = new DoctorPrescribeMedicine(sessionId);
+                int sessionid = doctorController.SelectSessionId(DoctorID, int.Parse(kryptonComboBox1.SelectedValue.ToString()), patientId, type, date);
+                DoctorPrescribeMedicine doctorPrescribeMedicine = new DoctorPrescribeMedicine(sessionid, DoctorID);
+                doctorPrescribeMedicine.Show();
             }
 
         }

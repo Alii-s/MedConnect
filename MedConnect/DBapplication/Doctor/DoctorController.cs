@@ -21,6 +21,49 @@ namespace MedConnect.Doctor
         }
         #endregion
 
+        #region Insert Into Prescription
+        public int InsertIntoPrescription(int SessionID, int MedicineID, int Dosage_Frequency_Daily,int Dosage,string Notes)
+        {
+            string StoredProcedureName = DoctorStoredProcedures.InsertIntoPrescription;
+
+            Dictionary<string, object> Parameters = new Dictionary<string, object>();
+
+            Parameters.Add("@SessionID", SessionID);
+            Parameters.Add("@MedicineID", MedicineID);
+            Parameters.Add("@Dosage_Frequency_Daily", Dosage_Frequency_Daily);
+            Parameters.Add("@Dosage", Dosage);
+            Parameters.Add("@Notes", Notes);
+
+            return dbMan.ExecuteNonQuery(StoredProcedureName, Parameters);
+        }
+        #endregion
+
+        #region Get Active Non Expired Medicines
+        public DataTable GetActiveNonExpiredMedicines()
+        {
+            string StoredProcedureName = DoctorStoredProcedures.GetActiveNonExpiredMedicines;
+
+            return dbMan.ExecuteReader(StoredProcedureName);
+        }
+        #endregion
+
+        #region Select Session Id
+        public int SelectSessionId(int DoctorID, int ClinicId, int PatientID, string Type, DateTime date)
+        {
+            string StoredProcedureName = DoctorStoredProcedures.SelectSessionId;
+            date = date.Date;
+            Dictionary<string, object> Parameters = new Dictionary<string, object>();
+
+            Parameters.Add("@DoctorID", DoctorID);
+            Parameters.Add("@ClinicID", ClinicId);
+            Parameters.Add("@PatientID", PatientID);
+            Parameters.Add("@Type", Type);
+            Parameters.Add("@Date", date);
+
+            return int.Parse(dbMan.ExecuteScalar(StoredProcedureName, Parameters).ToString());
+        }
+        #endregion
+
         #region Insert Into Diagnosis Sessions And Medical Records
         public int InsertIntoDiagnosisSessionsAndMedicalRecords(int DoctorID,int ClinicId ,int PatientID,string Type,DateTime date,string exNotes ,string VitalSigns, string PreviousIllnesses, string OngoingMedication, string PreviousSurgeries)
         {
