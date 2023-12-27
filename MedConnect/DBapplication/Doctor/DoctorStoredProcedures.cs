@@ -25,5 +25,9 @@ namespace MedConnect.Doctor
         public static string InsertIntoPrescription = "InsertIntoPrescribed";
         public static string GetMostRepeatedTypeInDiagnosisSessions = "GetMostRepeatedTypeInDiagnosisSessions";
         public static string CountRepeatedDatesInDiagnosisSession = "CountRepeatedDatesInDiagnosisSession";
+        //very important note i have discovered that iam idiot and that i could literally do like 3 procedures in only one procedure
+        //but its 3am never too late to learn i guess
+        public static string GetPatientsByName = "GetPatientsByName";
+        public static string GetPatientsByPhone = "GetPatientsByPhone";
     }
 }

@@ -29,14 +29,14 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(DoctorsRatingTrendChart));
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend2 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
-            this.doneButton = new ComponentFactory.Krypton.Toolkit.KryptonButton();
             this.closeApplication = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.doneButton = new ComponentFactory.Krypton.Toolkit.KryptonButton();
+            this.label1 = new System.Windows.Forms.Label();
             this.chart1 = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -58,17 +58,32 @@
             this.panel1.Size = new System.Drawing.Size(987, 124);
             this.panel1.TabIndex = 70;
             // 
-            // label1
+            // closeApplication
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("OCR A Extended", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(7)))), ((int)(((byte)(73)))));
-            this.label1.Location = new System.Drawing.Point(240, 38);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(486, 50);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Ratings as chart";
+            this.closeApplication.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.closeApplication.FlatAppearance.BorderSize = 0;
+            this.closeApplication.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.closeApplication.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.closeApplication.Image = ((System.Drawing.Image)(resources.GetObject("closeApplication.Image")));
+            this.closeApplication.Location = new System.Drawing.Point(931, 11);
+            this.closeApplication.Margin = new System.Windows.Forms.Padding(2);
+            this.closeApplication.Name = "closeApplication";
+            this.closeApplication.Size = new System.Drawing.Size(45, 37);
+            this.closeApplication.TabIndex = 6;
+            this.closeApplication.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.closeApplication.UseVisualStyleBackColor = true;
+            this.closeApplication.Click += new System.EventHandler(this.closeApplication_Click);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::MedConnect.Properties.Resources.review;
+            this.pictureBox1.Location = new System.Drawing.Point(94, 11);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(142, 91);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 1;
+            this.pictureBox1.TabStop = false;
             // 
             // doneButton
             // 
@@ -102,48 +117,34 @@
             this.doneButton.Values.Text = "<-";
             this.doneButton.Click += new System.EventHandler(this.doneButton_Click);
             // 
-            // closeApplication
+            // label1
             // 
-            this.closeApplication.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.closeApplication.FlatAppearance.BorderSize = 0;
-            this.closeApplication.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.closeApplication.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.closeApplication.Image = ((System.Drawing.Image)(resources.GetObject("closeApplication.Image")));
-            this.closeApplication.Location = new System.Drawing.Point(931, 11);
-            this.closeApplication.Margin = new System.Windows.Forms.Padding(2);
-            this.closeApplication.Name = "closeApplication";
-            this.closeApplication.Size = new System.Drawing.Size(45, 37);
-            this.closeApplication.TabIndex = 6;
-            this.closeApplication.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.closeApplication.UseVisualStyleBackColor = true;
-            this.closeApplication.Click += new System.EventHandler(this.closeApplication_Click);
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::MedConnect.Properties.Resources.review;
-            this.pictureBox1.Location = new System.Drawing.Point(94, 11);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(142, 91);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 1;
-            this.pictureBox1.TabStop = false;
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("OCR A Extended", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(7)))), ((int)(((byte)(73)))));
+            this.label1.Location = new System.Drawing.Point(240, 38);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(486, 50);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Ratings as chart";
             // 
             // chart1
             // 
-            chartArea2.Name = "ChartArea1";
-            this.chart1.ChartAreas.Add(chartArea2);
-            legend2.Name = "Legend1";
-            this.chart1.Legends.Add(legend2);
+            chartArea1.Name = "ChartArea1";
+            this.chart1.ChartAreas.Add(chartArea1);
+            legend1.Name = "Legend1";
+            this.chart1.Legends.Add(legend1);
             this.chart1.Location = new System.Drawing.Point(402, 239);
             this.chart1.Name = "chart1";
-            series2.ChartArea = "ChartArea1";
-            series2.Legend = "Legend1";
-            series2.Name = "Series1";
-            this.chart1.Series.Add(series2);
+            series1.ChartArea = "ChartArea1";
+            series1.Legend = "Legend1";
+            series1.Name = "Series1";
+            this.chart1.Series.Add(series1);
             this.chart1.Size = new System.Drawing.Size(300, 205);
             this.chart1.TabIndex = 78;
             this.chart1.Text = "chart1";
+            this.chart1.Click += new System.EventHandler(this.chart1_Click);
             // 
             // DoctorsRatingTrendChart
             // 

@@ -76,19 +76,37 @@ namespace MedConnect.Doctor
         private void doneButton_Click(object sender, EventArgs e)
         {
             string fullName = firstNameTextBox.Text;
+            string phoneNumber = kryptonTextBox1.Text;
             string[] names = fullName.Split(' ');
 
+            DataTable dataTable;
+
             // Check if names array has at least two elements
-            if (names.Length >= 2)
+            if (names.Length >= 2 && !string.IsNullOrEmpty(phoneNumber))
             {
                 string firstName = names[0];
-                string lastName = names[1];         
-                DataTable dataTable = doctorController.SelectAllPatientsWithFilter(firstName, lastName, kryptonTextBox1.Text);
-                kryptonDataGridView1.DataSource = dataTable;
-                kryptonDataGridView1.Refresh();
+                string lastName = names[1];
+                dataTable = doctorController.SelectAllPatientsWithFilter(firstName, lastName, phoneNumber);
             }
-           
+            else if (names.Length >= 2 && string.IsNullOrEmpty(phoneNumber))
+            {
+                string firstName = names[0];
+                string lastName = names[1];
+                dataTable = doctorController.SelectAllPatientsWithNameFilter(firstName, lastName);
+            }
+            else if (names.Length < 2 && !string.IsNullOrEmpty(phoneNumber))
+            {
+                dataTable = doctorController.SelectAllPatientsWithPhoneFilter(phoneNumber);
+            }
+            else
+            {
+                dataTable = doctorController.SelectAllPatients();
+            }
+
+            kryptonDataGridView1.DataSource = dataTable;
+            kryptonDataGridView1.Refresh();
         }
+
 
         private void firstNameTextBox_TextChanged(object sender, EventArgs e)
         {

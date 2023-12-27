@@ -21,6 +21,30 @@ namespace MedConnect.Doctor
         }
         #endregion
 
+        #region SelectAllPatientsWithPhoneFilter
+        public DataTable SelectAllPatientsWithPhoneFilter(string PhoneNumber)
+        {
+            string StoredProcedureName = DoctorStoredProcedures.GetPatientsByPhone;
+
+            Dictionary<string, object> Parameters = new Dictionary<string, object>();
+            Parameters.Add("@PhoneNumber", PhoneNumber);
+
+            return dbMan.ExecuteReader(StoredProcedureName, Parameters);
+        }
+        #endregion
+
+        #region SelectAllPatientsWithNameFilter
+        public DataTable SelectAllPatientsWithNameFilter(string Fname, string Lname)
+        {
+            string StoredProcedureName = DoctorStoredProcedures.GetPatientsByName;
+
+            Dictionary<string, object> Parameters = new Dictionary<string, object>();
+            Parameters.Add("@Fname", Fname);
+            Parameters.Add("@Lname", Lname);
+            return dbMan.ExecuteReader(StoredProcedureName, Parameters);
+        }
+        #endregion
+
         #region CountRepeatedDatesInDiagnosisSession
         public DataTable CountRepeatedDatesInDiagnosisSession()
         {
@@ -29,6 +53,7 @@ namespace MedConnect.Doctor
             return dbMan.ExecuteReader(StoredProcedureName);
         }
         #endregion
+
         #region Get Most Repeated Type In Diagnosis Sessions
         public DataTable GetMostRepeatedTypeInDiagnosisSessions(DateTime d1 , DateTime d2)
         {

@@ -98,5 +98,10 @@ namespace MedConnect.Doctor
         {
             Application.Exit();
         }
+
+        private void chart1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
