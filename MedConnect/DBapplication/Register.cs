@@ -10,6 +10,8 @@ using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using ComponentFactory.Krypton.Toolkit;
+using MedConnect.Secretary;
+
 namespace MedConnect
 {
     public partial class Register : Form
@@ -17,9 +19,10 @@ namespace MedConnect
         Controller controller = new Controller();
         bool Validation = true;
         int userID;
-        int IsSecretary;
-        public Register(int IsSecretary)
+        int SecretaryID;
+        public Register(int SecretaryID=-1)
         {
+            this.SecretaryID = SecretaryID;
             InitializeComponent();
             genderComboBox.SelectedIndex = 0;
             maritalStateTextBox.SelectedIndex = 0 ;
@@ -112,9 +115,18 @@ namespace MedConnect
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Trigger trigger = new Trigger();
-            trigger.Show();
-            this.Close();
+            if (SecretaryID == -1)
+            {
+                Trigger trigger = new Trigger();
+                trigger.Show();
+                this.Close();
+            }
+            else
+            {
+                Secretary.Secretary secretary = new Secretary.Secretary(SecretaryID);
+                secretary.Show();
+                this.Close();
+            }
             
         }
         #region Focus
@@ -246,13 +258,22 @@ namespace MedConnect
             {
                 return;
             }
-            if (controller.Register(firstNameTextBox.Text, lastNameTextBox.Text, emailTextBox.Text, phoneNumberTextBox.Text, genderComboBox.Text, passwordTextBox.Text, dateTimeBox.Value, occupationTextBox.Text, cityTextBox.Text, int.Parse(buildingNoTextBox.Text), streetNameTextBox.Text, maritalStateTextBox.Text) == 2)
+            if (controller.Register(firstNameTextBox.Text, lastNameTextBox.Text, emailTextBox.Text, phoneNumberTextBox.Text, genderComboBox.Text, passwordTextBox.Text, dateTimeBox.Value, occupationTextBox.Text, cityTextBox.Text, int.Parse(buildingNoTextBox.Text), streetNameTextBox.Text, maritalStateTextBox.Text,SecretaryID) == 2)
             {
                 userID = int.Parse(controller.RetrieveID(emailTextBox.Text).ToString());
-                PatientMainForm f = new Patient.PatientMainForm(userID);
-                KryptonMessageBox.Show("Registered Successfully, You will be now logged in");
-                this.Close();
-                f.Show();
+                if (SecretaryID == -1)
+                {
+                    PatientMainForm f = new Patient.PatientMainForm(userID);
+                    KryptonMessageBox.Show("Registered Successfully, You will be now logged in");
+                    f.Show();
+                    this.Close();
+                    return;
+                }
+                Secretary.Secretary secretary = new Secretary.Secretary(SecretaryID);
+                secretary.Show();
+                KryptonMessageBox.Show("User Registered Successfully");
+
+
             }
             else
             {
@@ -300,7 +321,7 @@ namespace MedConnect
             if (char.IsLetter(e.KeyChar))
             {
                 // If it's the first letter, convert it to uppercase
-                if (lastNameTextBox.SelectionStart == 0)
+                if (firstNameTextBox.SelectionStart == 0)
                 {
                     e.KeyChar = char.ToUpper(e.KeyChar);
                 }
@@ -309,6 +330,12 @@ namespace MedConnect
                 {
                     e.KeyChar = char.ToLower(e.KeyChar);
                 }
+            }
+            // If it's not a letter, allow Backspace and Space
+            else if (e.KeyChar != (char)Keys.Back)
+            {
+                // Suppress the key press
+                e.Handled = true;
             }
         }
 

@@ -92,7 +92,8 @@ namespace MedConnect.Patient
 
         private void label2_MouseLeave(object sender, EventArgs e)
         {
-
+            label2.Font = new Font(label2.Font, label2.Font.Style & ~FontStyle.Underline);
+            this.Cursor = Cursors.Default;
         }
     }
 }
