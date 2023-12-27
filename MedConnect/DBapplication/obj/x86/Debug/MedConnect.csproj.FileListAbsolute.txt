@@ -106,3 +106,4 @@ E:\KID\1.WORK\MedConnect\MedConnect\DBapplication\obj\x86\Debug\MedConnect.cspro
 E:\KID\1.WORK\MedConnect\MedConnect\DBapplication\obj\x86\Debug\MedConnect.csproj.CopyComplete
 E:\KID\1.WORK\MedConnect\MedConnect\DBapplication\obj\x86\Debug\MedConnect.exe
 E:\KID\1.WORK\MedConnect\MedConnect\DBapplication\obj\x86\Debug\MedConnect.pdb
+E:\KID\1.WORK\MedConnect\MedConnect\DBapplication\obj\x86\Debug\MedConnect.Doctor.DoctorStatistics.resources

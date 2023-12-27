@@ -36,8 +36,8 @@ namespace MedConnect.Doctor
        
         private void button1_Click(object sender, EventArgs e)
         {
-            DoctorPatientsInfo DoctorPatientsinfo = new DoctorPatientsInfo(UserId);
-            DoctorPatientsinfo.Show();
+            DoctorMainForm doctormainform = new DoctorMainForm(UserId);
+            doctormainform.Show();
             this.Close();
         }
 

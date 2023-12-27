@@ -23,5 +23,7 @@ namespace MedConnect.Doctor
         public static string SelectSessionId = "SelectSessionId";
         public static string GetActiveNonExpiredMedicines = "GetActiveNonExpiredMedicines";
         public static string InsertIntoPrescription = "InsertIntoPrescribed";
+        public static string GetMostRepeatedTypeInDiagnosisSessions = "GetMostRepeatedTypeInDiagnosisSessions";
+        public static string CountRepeatedDatesInDiagnosisSession = "CountRepeatedDatesInDiagnosisSession";
     }
 }

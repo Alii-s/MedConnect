@@ -21,6 +21,27 @@ namespace MedConnect.Doctor
         }
         #endregion
 
+        #region CountRepeatedDatesInDiagnosisSession
+        public DataTable CountRepeatedDatesInDiagnosisSession()
+        {
+            string StoredProcedureName = DoctorStoredProcedures.CountRepeatedDatesInDiagnosisSession;
+
+            return dbMan.ExecuteReader(StoredProcedureName);
+        }
+        #endregion
+        #region Get Most Repeated Type In Diagnosis Sessions
+        public DataTable GetMostRepeatedTypeInDiagnosisSessions(DateTime d1 , DateTime d2)
+        {
+            string StoredProcedureName = DoctorStoredProcedures.GetMostRepeatedTypeInDiagnosisSessions;
+
+            Dictionary<string, object> Parameters = new Dictionary<string, object>();
+            Parameters.Add("@Date1", d1);
+            Parameters.Add("@Date2", d2);
+
+            return dbMan.ExecuteReader(StoredProcedureName, Parameters);
+        }
+        #endregion
+
         #region Insert Into Prescription
         public int InsertIntoPrescription(int SessionID, int MedicineID, int Dosage_Frequency_Daily,int Dosage,string Notes)
         {

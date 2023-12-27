@@ -27,8 +27,8 @@ namespace MedConnect.Doctor
 
         private void updatInfo_Click(object sender, EventArgs e)
         {
-            DoctorPatientsInfo updateInfoForm = new DoctorPatientsInfo(UserId);
-            updateInfoForm.Show();
+            DoctorViewPatients doctorViewPatients = new DoctorViewPatients(UserId);
+            doctorViewPatients.Show();
             this.Hide();
             
         }
@@ -78,6 +78,13 @@ namespace MedConnect.Doctor
         {
             label2.Font = new Font(label2.Font, label2.Font.Style & ~FontStyle.Underline);
             this.Cursor = Cursors.Default;
+        }
+
+        private void kryptonButton3_Click(object sender, EventArgs e)
+        {
+            DoctorStatistics doctorStatistics = new DoctorStatistics(UserId);
+            doctorStatistics.Show();
+            this.Hide();
         }
     }
 }
