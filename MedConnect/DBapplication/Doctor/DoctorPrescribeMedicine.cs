@@ -41,7 +41,7 @@ namespace MedConnect.Doctor
             controllerObj.InsertIntoPrescription(sessionID, Convert.ToInt32(kryptonComboBox1.SelectedValue),int.Parse( kryptonTextBox1.Text), Convert.ToInt32(kryptonTextBox2.Text), kryptonTextBox3.Text);
             MessageBox.Show("Prescription Added Successfully");
             this.Close();
-            DoctorMainForm form = new DoctorMainForm(DoctorID);
+            DoctorMainForm form = new DoctorMainForm(DoctorID, 0);
             form.Show();
         }
 

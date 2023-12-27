@@ -1,4 +1,5 @@
-﻿using MedConnect.Doctor.PatientsInfo;
+﻿using MedConnect.Admin;
+using MedConnect.Doctor.PatientsInfo;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -14,10 +15,11 @@ namespace MedConnect.Doctor
     public partial class DoctorMainForm : Form
     {
         int UserId;
-        public DoctorMainForm(int UserId)
+        public DoctorMainForm(int UserId,int IsAdmin)
         {
             this.UserId = UserId;
             InitializeComponent();
+            if(IsAdmin == 1) { Switch_interface.Visible = true; }
         }
 
         private void closeApplication_Click(object sender, EventArgs e)
@@ -85,6 +87,13 @@ namespace MedConnect.Doctor
             DoctorStatistics doctorStatistics = new DoctorStatistics(UserId);
             doctorStatistics.Show();
             this.Hide();
+        }
+
+        private void Switch_interface_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            AdminMainForm form = new AdminMainForm(UserId);
+            form.Show();
         }
     }
 }

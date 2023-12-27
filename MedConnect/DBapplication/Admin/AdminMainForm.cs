@@ -1,4 +1,5 @@
-﻿using MedConnect.Patient;
+﻿using MedConnect.Doctor;
+using MedConnect.Patient;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -59,6 +60,20 @@ namespace MedConnect.Admin
         {
             label2.Font = new Font(label2.Font, label2.Font.Style & ~FontStyle.Underline);
             this.Cursor = Cursors.Default;
+        }
+
+        private void kryptonButton1_Click(object sender, EventArgs e) //remove user button
+        {
+            this.Close();
+            RemoveUser form = new RemoveUser(UserID);
+            form.Show();
+        }
+
+        private void Switch_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            DoctorMainForm form = new DoctorMainForm(UserID,1);
+            form.Show();
         }
     }
 }

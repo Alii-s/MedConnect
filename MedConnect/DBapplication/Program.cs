@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Windows.Forms;
+using MedConnect.Admin;
+using MedConnect.Doctor;
 using MedConnect.Patient;
 using MedConnect.Secretary;
 
@@ -17,7 +19,7 @@ namespace MedConnect
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Trigger());
+            Application.Run(new AddClinic(4 ));
         }
     }
 }
