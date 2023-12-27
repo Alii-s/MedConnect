@@ -95,14 +95,29 @@ namespace MedConnect.Doctor
             if (dt == null || dt.Rows.Count == 0)
             {
                 MessageBox.Show("No data available for the chart.", "Data Error");
-                dt = new DataTable();
-                dt.Columns.Add("Date", typeof(DateTime));
-                dt.Columns.Add("Count", typeof(int));
-                dt.Rows.Add(DateTime.Now, 0);
-       
-            }
-                 chart1.DataSource = dt;
+               DataTable dt1 = new DataTable();
+                dt1.Columns.Add("Date", typeof(DateTime));
+                dt1.Columns.Add("Count", typeof(int));
+                for (int i = 0; i < chart1.Series["Series1"].Points.Count; i++)
+                {
+                    dt1.Rows.Add(DateTime.Now, 0);
+                }
+                chart1.DataSource = dt1;
                 chart1.Series["Series1"].XValueMember = "Date";
+                chart1.Series["Series1"].YValueMembers = "Count";
+                chart1.DataBind();
+                return;
+            }
+            dt.Columns.Add("FormattedDate", typeof(string));
+            foreach (DataRow row in dt.Rows)
+            {
+                if (dt.Columns.Contains("FormattedDate"))
+                {
+                    row["FormattedDate"] = ((DateTime)row["Date"]).ToString("MM/dd/yyyy");
+                }
+            }
+            chart1.DataSource = dt;
+                chart1.Series["Series1"].XValueMember = "FormattedDate";
                 chart1.Series["Series1"].YValueMembers = "Count";
                 chart1.DataBind();
 
