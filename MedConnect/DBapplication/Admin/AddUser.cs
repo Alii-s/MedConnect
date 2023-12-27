@@ -16,6 +16,7 @@ namespace MedConnect.Admin
     public partial class AddUser : Form
     {
         int UserID;
+        AdminController controller = new AdminController();
         DataTable UserTypes = new DataTable("MyTable");
         DataColumn idColumn = new DataColumn("Character", typeof(char));
         DataColumn nameColumn = new DataColumn("Type", typeof(string));
@@ -35,6 +36,12 @@ namespace MedConnect.Admin
             userType.ValueMember = "Character";
             genderComboBox.SelectedIndex = 0;
             maritalStateTextBox.SelectedIndex = 0;
+            DataTable CSL = controller.SelectClinicLoc();
+            ClinicLocSec.DataSource = CSL;
+            ClinicLocSec.ValueMember = "ClinicID";
+            ClinicLocSec.DisplayMember = "City";
+
+
         }
 
         private void closeApplication_Click(object sender, EventArgs e)
@@ -258,12 +265,18 @@ namespace MedConnect.Admin
         {
             if (userType.SelectedValue.ToString() == "A")
             {
-                cityTextBox.Enabled = true; buildingNoTextBox.Enabled = true; streetNameTextBox.Enabled = true; occupationTextBox.Enabled = true;
-                maritalStateTextBox.Enabled = true; salaryTextBox.Enabled = true; doctorCertificate.Enabled = true; doctorSpecialization.Enabled = true;
+                cityTextBox.Enabled = false; buildingNoTextBox.Enabled = false; streetNameTextBox.Enabled = false; occupationTextBox.Enabled = false;
+                maritalStateTextBox.Enabled = false; salaryTextBox.Enabled = true; doctorCertificate.Enabled = true; doctorSpecialization.Enabled = true;
                 doctorExperience.Enabled = true;
-                address.Enabled = true; cityNameLabel.Enabled = true; buildingNoLabel.Enabled = true; streetNameLabel.Enabled = true;
-                occupation.Enabled = true; maritalSateLabel.Enabled = true; salary.Enabled = true; certificate.Enabled = true;
+                address.Enabled = false; cityNameLabel.Enabled = false; buildingNoLabel.Enabled = false; streetNameLabel.Enabled = false;
+                occupation.Enabled = false; maritalSateLabel.Enabled = false; salary.Enabled = true; certificate.Enabled = true;
                 Specialization.Enabled = true; experience.Enabled = true;
+                ClinicLocSec.Enabled = false;
+                DoH.Enabled = false;
+
+                ClinicLocSecl.Enabled = false;
+                DoHl.Enabled = false;
+
             }
             if (userType.SelectedValue.ToString() == "P")
             {
@@ -273,6 +286,12 @@ namespace MedConnect.Admin
                 address.Enabled = true; cityNameLabel.Enabled = true; buildingNoLabel.Enabled = true; streetNameLabel.Enabled = true;
                 occupation.Enabled = true; maritalSateLabel.Enabled = true; salary.Enabled = false; certificate.Enabled = false;
                 Specialization.Enabled = false; experience.Enabled = false;
+                ClinicLocSec.Enabled = false;
+                DoH.Enabled = false;
+
+                ClinicLocSecl.Enabled = false;
+                DoHl.Enabled = false;
+
             }
             if (userType.SelectedValue.ToString() == "D")
             {
@@ -282,6 +301,12 @@ namespace MedConnect.Admin
                 address.Enabled = false; cityNameLabel.Enabled = false; buildingNoLabel.Enabled = false; streetNameLabel.Enabled = false;
                 occupation.Enabled = false; maritalSateLabel.Enabled = false; salary.Enabled = true; certificate.Enabled = true;
                 Specialization.Enabled = true; experience.Enabled = true;
+                ClinicLocSec.Enabled = false;
+                DoH.Enabled = false;
+
+                ClinicLocSecl.Enabled = false;
+                DoHl.Enabled = false;
+
             }
             if (userType.SelectedValue.ToString() == "F")
             {
@@ -291,6 +316,12 @@ namespace MedConnect.Admin
                 address.Enabled = false; cityNameLabel.Enabled = false; buildingNoLabel.Enabled = false; streetNameLabel.Enabled = false;
                 occupation.Enabled = false; maritalSateLabel.Enabled = false; salary.Enabled = false; certificate.Enabled = false;
                 Specialization.Enabled = false; experience.Enabled = false;
+                ClinicLocSec.Enabled = false;
+                DoH.Enabled = false;
+
+                ClinicLocSecl.Enabled = false;
+                DoHl.Enabled = false;
+
             }
             if (userType.SelectedValue.ToString() == "S")
             {
@@ -300,6 +331,13 @@ namespace MedConnect.Admin
                 address.Enabled = false; cityNameLabel.Enabled = false; buildingNoLabel.Enabled = false; streetNameLabel.Enabled = false;
                 occupation.Enabled = false; maritalSateLabel.Enabled = false; salary.Enabled = true; certificate.Enabled = false;
                 Specialization.Enabled = false; experience.Enabled = false;
+                doctorSpecialization.Enabled = false;
+                ClinicLocSec.Enabled = true;
+                DoH.Enabled = true;
+
+                ClinicLocSecl.Enabled = true;
+                DoHl.Enabled = true;
+
             }
             addressLabel.Visible = false; occupationLabel.Visible = false; maritalSateLabel.Visible = true; salaryLabel.Visible = false; certificateLabel.Visible = false; specializationLabel.Visible = false;
             experienceLabel.Visible = false;
@@ -323,7 +361,7 @@ namespace MedConnect.Admin
             }
         }
 
-        private void kryptonButton1_Click_1(object sender, EventArgs e)
+        private void kryptonButton1_Click_1(object sender, EventArgs e) //register button
         {
             if (!isValidEmail())
             {
@@ -374,7 +412,8 @@ namespace MedConnect.Admin
             {
                 passwordConfirmationLabel.Visible = false;
             }
-            if (Convert.ToChar(userType.SelectedValue) == 'P' || Convert.ToChar(userType.SelectedValue) == 'A')
+             
+            if (Convert.ToChar(userType.SelectedValue) == 'P')
             {
                 {
                     if (!isOccupation())
@@ -393,50 +432,15 @@ namespace MedConnect.Admin
                     {
                         addressLabel.Visible = false;
                     }
-                    if (Convert.ToChar(userType.SelectedValue) == 'A')
-                    {
-                        if (!isExperience())
-                        {
-                            experienceLabel.Visible = true;
-                        }
-                        else
-                        {
-                            experienceLabel.Visible = false;
-                        }
-                        if (!isSalary())
-                        {
-                            salaryLabel.Visible = true;
-                        }
-                        else
-                        {
-                            salaryLabel.Visible = false;
-                        }
-                        if (!isCertificate())
-                        {
-                            certificateLabel.Visible = true;
-                        }
-                        else
-                        {
-                            certificateLabel.Visible = false;
-                        }
-                        if (!isSpecialization())
-                        {
-                            specializationLabel.Visible = true;
-                        }
-                        else
-                        {
-                            specializationLabel.Visible = false;
-                        }
-                        if (isValidEmail() && isFirstName() && isLastName() && isPassword() && isConfirmPassword() && isValidPhone() && isAdress() && isOccupation() && isSalary() && isCertificate() && isSpecialization() && isExperience() && Convert.ToChar(userType.SelectedValue) == 'A')
-                        {
-                            KryptonMessageBox.Show("YOU CAN REGISTER NOW!!! ADMIN");
-                            return;
-                            //call ADMIN query/procedure
-                        }
-                    }
                     if (isValidEmail() && isFirstName() && isLastName() && isPassword() && isConfirmPassword() && isValidPhone() && isAdress() && isOccupation() && Convert.ToChar(userType.SelectedValue) == 'P')
                     {
-                        KryptonMessageBox.Show("YOU CAN REGISTER NOW!!! PATIENT");
+                        int t = controller.AddPatient(UserID, firstNameTextBox.Text.ToString(), lastNameTextBox.Text.ToString(), emailTextBox.Text.ToString(), phoneNumberTextBox.Text.ToString(), genderComboBox.Text.ToString(), passwordTextBox.Text.ToString(), dateTimeBox.Value, occupationTextBox.Text.ToString(),cityTextBox.Text.ToString(),Convert.ToInt32(buildingNoTextBox.Text),streetNameTextBox.Text.ToString(),maritalStateTextBox.Text.ToString());
+                        if (t == 0)
+                        {
+                            KryptonMessageBox.Show("Error in Registerion");
+                        }
+                        else
+                            KryptonMessageBox.Show("YOU CAN REGISTER NOW!!! Patient");
                         return;
                         //call Patient query/procedure
                     }
@@ -454,14 +458,26 @@ namespace MedConnect.Admin
                 }
                 if (isValidEmail() && isFirstName() && isLastName() && isPassword() && isConfirmPassword() && isValidPhone() && isSalary())
                 {
-                    KryptonMessageBox.Show("YOU CAN REGISTER NOW!!! SECRETARY");
+                    int t = controller.AddSecretary(UserID, firstNameTextBox.Text.ToString(), lastNameTextBox.Text.ToString(), emailTextBox.Text.ToString(), phoneNumberTextBox.Text.ToString(), genderComboBox.Text.ToString(), passwordTextBox.Text.ToString(), dateTimeBox.Value,Convert.ToInt32(salaryTextBox.Text),Convert.ToInt32(ClinicLocSec.SelectedValue),DoH.Value);
+                    if (t == 0)
+                    {
+                        KryptonMessageBox.Show("Error in Registerion");
+                    }
+                    else
+                        KryptonMessageBox.Show("YOU CAN REGISTER NOW!!! Secretary");
                     return;
                     //call secretary query/procedure
                 }
             }
             if (Convert.ToChar(userType.SelectedValue) == 'F')
             {
-                KryptonMessageBox.Show("YOU CAN REGISTER NOW!!! PHARMACIST");
+                int t = controller.AddPharmacist(UserID, firstNameTextBox.Text.ToString(), lastNameTextBox.Text.ToString(), emailTextBox.Text.ToString(), phoneNumberTextBox.Text.ToString(), genderComboBox.Text.ToString(), passwordTextBox.Text.ToString(), dateTimeBox.Value);
+                if (t == 0)
+                {
+                    KryptonMessageBox.Show("Error in Registerion");
+                }
+                else
+                    KryptonMessageBox.Show("YOU CAN REGISTER NOW!!! Pharmacist");
                 return;
                 //call Pharmacist query/procedure
             }
@@ -501,9 +517,62 @@ namespace MedConnect.Admin
                 }
                 if (isValidEmail() && isFirstName() && isLastName() && isPassword() && isConfirmPassword() && isValidPhone() && isSalary() && isCertificate() && isSpecialization() && isExperience() && Convert.ToChar(userType.SelectedValue) == 'D')
                 {
-                    KryptonMessageBox.Show("YOU CAN REGISTER NOW!!! DOCTOR");
+                    int t = controller.AddDoctor(UserID, firstNameTextBox.Text.ToString(), lastNameTextBox.Text.ToString(), emailTextBox.Text.ToString(), phoneNumberTextBox.Text.ToString(), genderComboBox.Text.ToString(), passwordTextBox.Text.ToString(), dateTimeBox.Value, Convert.ToInt32(salaryTextBox.Text), doctorCertificate.Text.ToString(), doctorExperience.Text.ToString(), doctorSpecialization.Text.ToString());
+                    if (t == 0)
+                    {
+                        KryptonMessageBox.Show("Error in Registerion");
+                    }
+                    else
+                        KryptonMessageBox.Show("YOU CAN REGISTER NOW!!! DOCTOR");
                     return;
                     //call Doctor query/procedure
+                }
+            }
+            if (Convert.ToChar(userType.SelectedValue) == 'A')
+            {
+                if (!isExperience())
+                {
+                    experienceLabel.Visible = true;
+                }
+                else
+                {
+                    experienceLabel.Visible = false;
+                }
+                if (!isSalary())
+                {
+                    salaryLabel.Visible = true;
+                }
+                else
+                {
+                    salaryLabel.Visible = false;
+                }
+                if (!isCertificate())
+                {
+                    certificateLabel.Visible = true;
+                }
+                else
+                {
+                    certificateLabel.Visible = false;
+                }
+                if (!isSpecialization())
+                {
+                    specializationLabel.Visible = true;
+                }
+                else
+                {
+                    specializationLabel.Visible = false;
+                }
+                if (isValidEmail() && isFirstName() && isLastName() && isPassword() && isConfirmPassword() && isValidPhone() && isSalary() && isCertificate() && isSpecialization() && isExperience() )
+                {
+                    int t = controller.AddAdmin(UserID, firstNameTextBox.Text.ToString(), lastNameTextBox.Text.ToString(), emailTextBox.Text.ToString(), phoneNumberTextBox.Text.ToString(), genderComboBox.Text.ToString(), passwordTextBox.Text.ToString(), dateTimeBox.Value, Convert.ToInt32(salaryTextBox.Text), doctorCertificate.Text.ToString(), doctorExperience.Text.ToString(), doctorSpecialization.Text.ToString());
+                    if (t == 0)
+                    {
+                        KryptonMessageBox.Show("Error in Registerion");
+                    }
+                    else
+                        KryptonMessageBox.Show("YOU CAN REGISTER NOW!!! Admin");
+                    return;
+                    //call ADMIN query/procedure
                 }
             }
         }

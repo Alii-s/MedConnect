@@ -148,7 +148,7 @@ namespace MedConnect.Doctor
 
         private void button1_Click(object sender, EventArgs e)
         {
-            DoctorMainForm doctormainform = new DoctorMainForm(UserID);
+            DoctorMainForm doctormainform = new DoctorMainForm(UserID, 0);
             doctormainform.Show();
             this.Close();
         }
