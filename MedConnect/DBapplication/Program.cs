@@ -19,7 +19,7 @@ namespace MedConnect
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new AddClinic(4 ));
+            Application.Run(new Trigger());
         }
     }
 }

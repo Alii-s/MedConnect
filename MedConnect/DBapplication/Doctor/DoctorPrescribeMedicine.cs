@@ -46,7 +46,7 @@ namespace MedConnect.Doctor
                 controllerObj.InsertIntoPrescription(sessionID, medicineId, quantity, dosage, kryptonTextBox3.Text);
                 MessageBox.Show("Prescription Added Successfully");
                 this.Close();
-                DoctorMainForm form = new DoctorMainForm(DoctorID);
+                DoctorMainForm form = new DoctorMainForm(DoctorID, 0);
                 form.Show();
             }
             else
