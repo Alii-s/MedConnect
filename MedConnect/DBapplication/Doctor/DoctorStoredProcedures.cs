@@ -8,7 +8,6 @@ namespace MedConnect.Doctor
 {
     internal class DoctorStoredProcedures
     {
-
         public static string GetDoctorPatients = "GetDoctorPatients";
         public static string GetDoctorPatientsWithFilter = "GetDoctorPatientsWithFilter";
         public static string GetAllClinicData = "GetAllClinicData";

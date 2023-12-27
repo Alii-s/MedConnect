@@ -38,12 +38,23 @@ namespace MedConnect.Doctor
 
         private void kryptonButton1_Click(object sender, EventArgs e)
         {
-            controllerObj.InsertIntoPrescription(sessionID, Convert.ToInt32(kryptonComboBox1.SelectedValue),int.Parse( kryptonTextBox1.Text), Convert.ToInt32(kryptonTextBox2.Text), kryptonTextBox3.Text);
-            MessageBox.Show("Prescription Added Successfully");
-            this.Close();
-            DoctorMainForm form = new DoctorMainForm(DoctorID);
-            form.Show();
+            if (int.TryParse(kryptonComboBox1.SelectedValue.ToString(), out int medicineId) &&
+                int.TryParse(kryptonTextBox1.Text, out int quantity) &&
+                int.TryParse(kryptonTextBox2.Text, out int dosage) &&
+                !string.IsNullOrEmpty(kryptonTextBox3.Text))
+            {
+                controllerObj.InsertIntoPrescription(sessionID, medicineId, quantity, dosage, kryptonTextBox3.Text);
+                MessageBox.Show("Prescription Added Successfully");
+                this.Close();
+                DoctorMainForm form = new DoctorMainForm(DoctorID);
+                form.Show();
+            }
+            else
+            {
+                MessageBox.Show("Please ensure all fields are correctly filled.");
+            }
         }
+
 
         private void kryptonTextBox1_TextChanged(object sender, EventArgs e)
         {
@@ -58,6 +69,25 @@ namespace MedConnect.Doctor
         private void kryptonTextBox3_TextChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            DoctorDiagnosisSession doctorDiagnosisSession = new DoctorDiagnosisSession(DoctorID, sessionID);
+            doctorDiagnosisSession.Show();
+            this.Close();
+        }
+
+        private void logOut_Click(object sender, EventArgs e)
+        {
+            Trigger trigger = new Trigger();
+            trigger.Show();
+            this.Close();
+        }
+
+        private void closeApplication_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

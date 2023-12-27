@@ -97,5 +97,24 @@ namespace MedConnect.Doctor
         {
 
         }
+
+        private void logOut_Click(object sender, EventArgs e)
+        {
+            Trigger trigger = new Trigger();
+            trigger.Show();
+            this.Close();
+        }
+
+        private void closeApplication_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            DoctorViewPatients doctorViewPatients = new DoctorViewPatients(DoctorID);
+            doctorViewPatients.Show();
+            this.Hide();
+        }
     }
 }

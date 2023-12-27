@@ -33,7 +33,7 @@ namespace MedConnect.Doctor
             {
                 DateTime dateTimeValue = (DateTime)row[0]; 
                 string date = dateTimeValue.ToString("yyyy-MM-dd");
-                int rating = Convert.ToInt32(row[2]); 
+                int rating = Convert.ToInt32(row[1]); 
                 dtSelectedColumns.Rows.Add(date, rating);
             }
 

@@ -133,5 +133,24 @@ namespace MedConnect.Doctor
         {
 
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            DoctorMainForm doctorMainForm = new DoctorMainForm(doctorId);
+            doctorMainForm.Show();
+            this.Close();
+        }
+
+        private void closeApplication_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void logOut_Click(object sender, EventArgs e)
+        {
+            Trigger trigger = new Trigger();
+            trigger.Show();
+            this.Close();
+        }
     }
 }
