@@ -36,6 +36,8 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.ReservT = new ComponentFactory.Krypton.Toolkit.KryptonDataGridView();
+            this.label2 = new System.Windows.Forms.Label();
+            this.save = new ComponentFactory.Krypton.Toolkit.KryptonButton();
             this.PN = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CL = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Daate = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -43,8 +45,6 @@
             this.Type = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Conf = new System.Windows.Forms.DataGridViewCheckBoxColumn();
             this.Id = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.label2 = new System.Windows.Forms.Label();
-            this.save = new ComponentFactory.Krypton.Toolkit.KryptonButton();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ReservT)).BeginInit();
@@ -61,8 +61,9 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.ForeColor = System.Drawing.Color.White;
             this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1480, 191);
+            this.panel1.Size = new System.Drawing.Size(1316, 153);
             this.panel1.TabIndex = 9;
             // 
             // return_button
@@ -73,9 +74,10 @@
             this.return_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.return_button.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.return_button.Image = global::MedConnect.Properties.Resources._return;
-            this.return_button.Location = new System.Drawing.Point(16, 111);
+            this.return_button.Location = new System.Drawing.Point(14, 89);
+            this.return_button.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.return_button.Name = "return_button";
-            this.return_button.Size = new System.Drawing.Size(68, 57);
+            this.return_button.Size = new System.Drawing.Size(60, 46);
             this.return_button.TabIndex = 10;
             this.return_button.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.return_button.UseVisualStyleBackColor = false;
@@ -88,9 +90,10 @@
             this.logOut.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.logOut.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.logOut.Image = ((System.Drawing.Image)(resources.GetObject("logOut.Image")));
-            this.logOut.Location = new System.Drawing.Point(16, 17);
+            this.logOut.Location = new System.Drawing.Point(14, 14);
+            this.logOut.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.logOut.Name = "logOut";
-            this.logOut.Size = new System.Drawing.Size(68, 57);
+            this.logOut.Size = new System.Drawing.Size(60, 46);
             this.logOut.TabIndex = 8;
             this.logOut.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.logOut.UseVisualStyleBackColor = true;
@@ -103,9 +106,10 @@
             this.closeApplication.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.closeApplication.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.closeApplication.Image = ((System.Drawing.Image)(resources.GetObject("closeApplication.Image")));
-            this.closeApplication.Location = new System.Drawing.Point(1413, 0);
+            this.closeApplication.Location = new System.Drawing.Point(1256, 0);
+            this.closeApplication.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.closeApplication.Name = "closeApplication";
-            this.closeApplication.Size = new System.Drawing.Size(68, 57);
+            this.closeApplication.Size = new System.Drawing.Size(60, 46);
             this.closeApplication.TabIndex = 6;
             this.closeApplication.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.closeApplication.UseVisualStyleBackColor = true;
@@ -114,9 +118,10 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = global::MedConnect.Properties.Resources.booking;
-            this.pictureBox1.Location = new System.Drawing.Point(141, 14);
+            this.pictureBox1.Location = new System.Drawing.Point(125, 11);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(212, 154);
+            this.pictureBox1.Size = new System.Drawing.Size(188, 123);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;
@@ -126,9 +131,9 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("OCR A Extended", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(7)))), ((int)(((byte)(73)))));
-            this.label1.Location = new System.Drawing.Point(360, 58);
+            this.label1.Location = new System.Drawing.Point(320, 46);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(548, 75);
+            this.label1.Size = new System.Drawing.Size(459, 63);
             this.label1.TabIndex = 0;
             this.label1.Text = "Reservations";
             // 
@@ -147,12 +152,11 @@
             this.Type,
             this.Conf,
             this.Id});
-            this.ReservT.Location = new System.Drawing.Point(30, 328);
-            this.ReservT.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.ReservT.Location = new System.Drawing.Point(27, 262);
+            this.ReservT.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.ReservT.Name = "ReservT";
-            this.ReservT.ReadOnly = true;
             this.ReservT.RowHeadersWidth = 62;
-            this.ReservT.Size = new System.Drawing.Size(1432, 402);
+            this.ReservT.Size = new System.Drawing.Size(1273, 322);
             this.ReservT.StateCommon.Background.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(241)))), ((int)(((byte)(255)))));
             this.ReservT.StateCommon.Background.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(241)))), ((int)(((byte)(255)))));
             this.ReservT.StateCommon.BackStyle = ComponentFactory.Krypton.Toolkit.PaletteBackStyle.GridBackgroundList;
@@ -178,6 +182,28 @@
             this.ReservT.StateCommon.HeaderRow.Content.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(241)))), ((int)(((byte)(255)))));
             this.ReservT.StateCommon.HeaderRow.Content.Font = new System.Drawing.Font("OCR A Extended", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ReservT.TabIndex = 10;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("OCR A Extended", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(59, 187);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(460, 25);
+            this.label2.TabIndex = 11;
+            this.label2.Text = "All Reservations ordered by date";
+            // 
+            // save
+            // 
+            this.save.Location = new System.Drawing.Point(956, 176);
+            this.save.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.save.Name = "save";
+            this.save.Size = new System.Drawing.Size(208, 52);
+            this.save.StateCommon.Content.ShortText.Font = new System.Drawing.Font("OCR A Extended", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.save.TabIndex = 12;
+            this.save.Values.Text = "Save";
+            this.save.Click += new System.EventHandler(this.save_Click);
             // 
             // PN
             // 
@@ -245,40 +271,18 @@
             this.Id.Visible = false;
             this.Id.Width = 150;
             // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("OCR A Extended", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(66, 234);
-            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(557, 30);
-            this.label2.TabIndex = 11;
-            this.label2.Text = "All Reservations ordered by date";
-            // 
-            // save
-            // 
-            this.save.Location = new System.Drawing.Point(1076, 220);
-            this.save.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.save.Name = "save";
-            this.save.Size = new System.Drawing.Size(234, 65);
-            this.save.StateCommon.Content.ShortText.Font = new System.Drawing.Font("OCR A Extended", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.save.TabIndex = 12;
-            this.save.Values.Text = "Save";
-            this.save.Click += new System.EventHandler(this.save_Click);
-            // 
             // Reservation
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(241)))), ((int)(((byte)(255)))));
-            this.ClientSize = new System.Drawing.Size(1480, 782);
+            this.ClientSize = new System.Drawing.Size(1316, 626);
             this.Controls.Add(this.save);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.ReservT);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "Reservation";
             this.Text = "Reservation";
             this.panel1.ResumeLayout(false);

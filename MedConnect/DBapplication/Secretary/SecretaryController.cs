@@ -20,7 +20,7 @@ namespace MedConnect.Secertary
             return dbMan.ExecuteReader(query);
         }
 
-        public int UpdateSecretaryInfo(int UserID, string Fname, string Lname, string PhoneNumber, int Salary)
+        public int UpdateSecretaryInfo(int UserID, string Fname, string Lname, string PhoneNumber, int Salary, int ClinicID )
         {
             string StoredProcedureName = SecretaryProcdures.UpdateSecretary;
 
@@ -30,7 +30,8 @@ namespace MedConnect.Secertary
             Parameters.Add("@Lname", Lname);
             Parameters.Add("@PhoneNumber", PhoneNumber);
             Parameters.Add("@Salary", Salary);
-
+            Parameters.Add("@ClinicID", ClinicID);
+            
             return dbMan.ExecuteNonQuery(StoredProcedureName, Parameters);
         }
 
@@ -46,7 +47,7 @@ namespace MedConnect.Secertary
             string query = "SELECT Lname , UserID FROM Users WHERE Type = 'P';";
             return dbMan.ExecuteReader(query);
         }
-        public int UpdatePatientInfo(int PatientID,int UserID, string Fname, string Lname, string PhoneNumber, string occupation, string City, int Building_Num, string Street_Name, string Marital_State)
+        public int UpdatePatientInfo(int PatientID,int UserID, string Fname, string Lname, string PhoneNumber, string occupation, string City, int Building_Num, string Street_Name, string Marital_State, string email)
         {
             string StoredProcedureName = SecretaryProcdures.UpdatePatient;
 
@@ -61,6 +62,7 @@ namespace MedConnect.Secertary
             Parameters.Add("@Building_Num", Building_Num);
             Parameters.Add("@Street_Name", Street_Name);
             Parameters.Add("@Marital_State", Marital_State);
+            Parameters.Add("@email", email);
             return dbMan.ExecuteNonQuery(StoredProcedureName, Parameters);
         }
         public DataTable SelectDoctorName()

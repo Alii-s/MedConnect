@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DataSet1" targetNamespace="http://tempuri.org/DataSet1.xsd" xmlns:mstns="http://tempuri.org/DataSet1.xsd" xmlns="http://tempuri.org/DataSet1.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="ClinicConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="ClinicConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.MedConnect.Properties.Settings.GlobalReference.Default.ClinicConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="SessionClinicTableAdapter" GeneratorDataComponentClassName="SessionClinicTableAdapter" Name="SessionClinic" UserDataComponentName="SessionClinicTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="ClinicConnectionString (Settings)" DbObjectName="Clinic.dbo.SessionClinic" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>Select count(Session_ID) as SessionCount, City   FROM SessionClinic group by City</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="SessionCount" DataSetColumn="SessionCount" />
+              <Mapping SourceColumn="City" DataSetColumn="City" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DataSet1" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_UserDSName="DataSet1" msprop:Generator_DataSetName="DataSet1">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="SessionClinic" msprop:Generator_RowEvHandlerName="SessionClinicRowChangeEventHandler" msprop:Generator_RowDeletedName="SessionClinicRowDeleted" msprop:Generator_RowDeletingName="SessionClinicRowDeleting" msprop:Generator_RowEvArgName="SessionClinicRowChangeEvent" msprop:Generator_TablePropName="SessionClinic" msprop:Generator_RowChangedName="SessionClinicRowChanged" msprop:Generator_RowChangingName="SessionClinicRowChanging" msprop:Generator_TableClassName="SessionClinicDataTable" msprop:Generator_RowClassName="SessionClinicRow" msprop:Generator_TableVarName="tableSessionClinic" msprop:Generator_UserTableName="SessionClinic">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="SessionCount" msdata:ReadOnly="true" msprop:Generator_ColumnPropNameInRow="SessionCount" msprop:Generator_ColumnPropNameInTable="SessionCountColumn" msprop:Generator_ColumnVarNameInTable="columnSessionCount" msprop:Generator_UserColumnName="SessionCount" type="xs:int" minOccurs="0" />
+              <xs:element name="City" msprop:Generator_ColumnPropNameInRow="City" msprop:Generator_ColumnPropNameInTable="CityColumn" msprop:Generator_ColumnVarNameInTable="columnCity" msprop:Generator_UserColumnName="City">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

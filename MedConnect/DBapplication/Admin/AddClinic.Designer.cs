@@ -30,11 +30,11 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AddClinic));
             this.kryptonPanel1 = new ComponentFactory.Krypton.Toolkit.KryptonPanel();
-            this.label1 = new System.Windows.Forms.Label();
             this.log_Out = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.return_button = new System.Windows.Forms.Button();
             this.closeApplication = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
             this.address = new System.Windows.Forms.Label();
             this.addressLabel = new System.Windows.Forms.Label();
             this.streetNameLabel = new System.Windows.Forms.Label();
@@ -81,18 +81,6 @@
             this.kryptonPanel1.StateCommon.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(157)))), ((int)(((byte)(205)))), ((int)(((byte)(255)))));
             this.kryptonPanel1.TabIndex = 40;
             // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(157)))), ((int)(((byte)(205)))), ((int)(((byte)(255)))));
-            this.label1.Font = new System.Drawing.Font("OCR A Extended", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(7)))), ((int)(((byte)(73)))));
-            this.label1.Location = new System.Drawing.Point(377, 57);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(414, 49);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Add New Clinic";
-            // 
             // log_Out
             // 
             this.log_Out.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(157)))), ((int)(((byte)(205)))), ((int)(((byte)(255)))));
@@ -113,7 +101,7 @@
             // pictureBox1
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(157)))), ((int)(((byte)(205)))), ((int)(((byte)(255)))));
-            this.pictureBox1.Image = global::MedConnect.Properties.Resources.remove_user;
+            this.pictureBox1.Image = global::MedConnect.Properties.Resources.location;
             this.pictureBox1.Location = new System.Drawing.Point(130, 11);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox1.Name = "pictureBox1";
@@ -155,6 +143,18 @@
             this.closeApplication.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.closeApplication.UseVisualStyleBackColor = false;
             this.closeApplication.Click += new System.EventHandler(this.closeApplication_Click);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(157)))), ((int)(((byte)(205)))), ((int)(((byte)(255)))));
+            this.label1.Font = new System.Drawing.Font("OCR A Extended", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(7)))), ((int)(((byte)(73)))));
+            this.label1.Location = new System.Drawing.Point(377, 57);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(414, 49);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Add New Clinic";
             // 
             // address
             // 
@@ -563,7 +563,7 @@
             this.Add.StateCommon.Content.ShortText.Color1 = System.Drawing.Color.Black;
             this.Add.StateCommon.Content.ShortText.Color2 = System.Drawing.Color.Black;
             this.Add.StateCommon.Content.ShortText.Font = new System.Drawing.Font("OCR A Extended", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Add.StateCommon.Content.ShortText.Image = ((System.Drawing.Image)(resources.GetObject("kryptonButton1.StateCommon.Content.ShortText.Image")));
+            this.Add.StateCommon.Content.ShortText.Image = ((System.Drawing.Image)(resources.GetObject("Add.StateCommon.Content.ShortText.Image")));
             this.Add.StateDisabled.Back.Color1 = System.Drawing.Color.Gainsboro;
             this.Add.StateDisabled.Back.Color2 = System.Drawing.Color.Gainsboro;
             this.Add.StateNormal.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(157)))), ((int)(((byte)(209)))), ((int)(((byte)(255)))));

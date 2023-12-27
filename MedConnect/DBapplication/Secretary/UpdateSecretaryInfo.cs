@@ -13,12 +13,14 @@ using MedConnect.Secertary;
 
 namespace MedConnect.Secretary
 {
+    
     public partial class UpdateSecretaryInfo : Form
     {
         readonly int UserID, Salary;
         readonly string Fname, Lname, Email, PhoneNumber, Gender;
         readonly DateTime DateOfBirth;
         SecretaryController SecretaryController = new SecretaryController();
+        AdminController controller = new AdminController();
         readonly DataTable userData;
 
         public UpdateSecretaryInfo(int userID)
@@ -40,6 +42,11 @@ namespace MedConnect.Secretary
             emailTextBox.Text = Email;
             phoneNumberTextBox.Text = PhoneNumber;
             SalaryTextBox.Text = Salary.ToString();
+            DataTable CSL = controller.SelectClinicLoc();
+            ClinicLocSec.DataSource = CSL;
+            ClinicLocSec.ValueMember = "ClinicID";
+            ClinicLocSec.DisplayMember = "City";
+
 
         }
 
@@ -97,6 +104,8 @@ namespace MedConnect.Secretary
             doneButton.Visible = true;
             doneButton.Enabled = true;
             emailTextBox.Enabled = true;
+            
+            ClinicLocSec.Enabled = true;
         }
 
         private void doneButton_Click(object sender, EventArgs e)
@@ -146,8 +155,10 @@ namespace MedConnect.Secretary
             doneButton.Visible = false;
             doneButton.Enabled = false;
             emailTextBox.Enabled = false;
+             
+            ClinicLocSec.Enabled = false;
             //updating database
-            SecretaryController.UpdateSecretaryInfo(UserID, firstNameTextBox.Text.ToString(), lastNameTextBox.Text.ToString(), phoneNumberTextBox.Text.ToString(), Convert.ToInt32(SalaryTextBox.Text));
+            SecretaryController.UpdateSecretaryInfo(UserID, firstNameTextBox.Text.ToString(), lastNameTextBox.Text.ToString(), phoneNumberTextBox.Text.ToString(), Convert.ToInt32(SalaryTextBox.Text),Convert.ToInt32(ClinicLocSec.SelectedValue) );
         }
 
         private void label2_Click(object sender, EventArgs e)
@@ -191,7 +202,10 @@ namespace MedConnect.Secretary
 
         }
 
+        private void phoneNumberValidationLabel_Click(object sender, EventArgs e)
+        {
 
+        }
 
         private void return_button_Click(object sender, EventArgs e)
         {

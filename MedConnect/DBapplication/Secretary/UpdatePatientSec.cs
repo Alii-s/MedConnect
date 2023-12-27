@@ -180,7 +180,7 @@ namespace MedConnect.Secretary
             doneButton.Visible = false;
             doneButton.Enabled = false;
             //updating database
-            SecretaryController.UpdatePatientInfo(UserID, Convert.ToInt32(PatientNameComboBox.SelectedValue),firstNameTextBox.Text, lastNameTextBox.Text, phoneNumberTextBox.Text, occupationTextBox.Text, cityTextBox.Text, int.Parse(buildingNoTextBox.Text), streetNameTextBox.Text, maritalStateTextBox.Text);
+            SecretaryController.UpdatePatientInfo(UserID, Convert.ToInt32(PatientNameComboBox.SelectedValue),firstNameTextBox.Text, lastNameTextBox.Text, phoneNumberTextBox.Text, occupationTextBox.Text, cityTextBox.Text, int.Parse(buildingNoTextBox.Text), streetNameTextBox.Text, maritalStateTextBox.Text,emailTextBox.Text.ToString());
             KryptonMessageBox.Show("Info Editted Successfully");
         }
 

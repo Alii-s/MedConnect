@@ -30,10 +30,10 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UpdateSecretaryInfo));
             this.kryptonPanel1 = new ComponentFactory.Krypton.Toolkit.KryptonPanel();
-            this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.return_button = new System.Windows.Forms.Button();
             this.closeApplication = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
             this.logOut = new System.Windows.Forms.Button();
             this.phoneNumberValidationLabel = new System.Windows.Forms.Label();
             this.SalaryLabel = new System.Windows.Forms.Label();
@@ -52,9 +52,12 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            this.ClinicLocSecl = new System.Windows.Forms.Label();
+            this.ClinicLocSec = new ComponentFactory.Krypton.Toolkit.KryptonComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel1)).BeginInit();
             this.kryptonPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ClinicLocSec)).BeginInit();
             this.SuspendLayout();
             // 
             // kryptonPanel1
@@ -71,18 +74,6 @@
             this.kryptonPanel1.Size = new System.Drawing.Size(1319, 153);
             this.kryptonPanel1.StateCommon.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(157)))), ((int)(((byte)(205)))), ((int)(((byte)(255)))));
             this.kryptonPanel1.TabIndex = 38;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(157)))), ((int)(((byte)(205)))), ((int)(((byte)(255)))));
-            this.label1.Font = new System.Drawing.Font("OCR A Extended", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(7)))), ((int)(((byte)(73)))));
-            this.label1.Location = new System.Drawing.Point(291, 48);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(778, 49);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "You can see your info below";
             // 
             // pictureBox1
             // 
@@ -130,6 +121,18 @@
             this.closeApplication.UseVisualStyleBackColor = false;
             this.closeApplication.Click += new System.EventHandler(this.closeApplication_Click);
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(157)))), ((int)(((byte)(205)))), ((int)(((byte)(255)))));
+            this.label1.Font = new System.Drawing.Font("OCR A Extended", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(7)))), ((int)(((byte)(73)))));
+            this.label1.Location = new System.Drawing.Point(291, 48);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(778, 49);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "You can see your info below";
+            // 
             // logOut
             // 
             this.logOut.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(157)))), ((int)(((byte)(205)))), ((int)(((byte)(255)))));
@@ -152,12 +155,13 @@
             this.phoneNumberValidationLabel.AutoSize = true;
             this.phoneNumberValidationLabel.Font = new System.Drawing.Font("OCR A Extended", 9.75F);
             this.phoneNumberValidationLabel.ForeColor = System.Drawing.Color.IndianRed;
-            this.phoneNumberValidationLabel.Location = new System.Drawing.Point(743, 423);
+            this.phoneNumberValidationLabel.Location = new System.Drawing.Point(115, 602);
             this.phoneNumberValidationLabel.Name = "phoneNumberValidationLabel";
             this.phoneNumberValidationLabel.Size = new System.Drawing.Size(278, 18);
             this.phoneNumberValidationLabel.TabIndex = 117;
             this.phoneNumberValidationLabel.Text = "Please enter a valid number";
             this.phoneNumberValidationLabel.Visible = false;
+            this.phoneNumberValidationLabel.Click += new System.EventHandler(this.phoneNumberValidationLabel_Click);
             // 
             // SalaryLabel
             // 
@@ -308,7 +312,7 @@
             // phoneNumberTextBox
             // 
             this.phoneNumberTextBox.Enabled = false;
-            this.phoneNumberTextBox.Location = new System.Drawing.Point(758, 375);
+            this.phoneNumberTextBox.Location = new System.Drawing.Point(101, 558);
             this.phoneNumberTextBox.Margin = new System.Windows.Forms.Padding(4);
             this.phoneNumberTextBox.Name = "phoneNumberTextBox";
             this.phoneNumberTextBox.Size = new System.Drawing.Size(277, 40);
@@ -439,7 +443,7 @@
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("OCR A Extended", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(7)))), ((int)(((byte)(73)))));
-            this.label5.Location = new System.Drawing.Point(766, 343);
+            this.label5.Location = new System.Drawing.Point(96, 523);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(205, 29);
             this.label5.TabIndex = 104;
@@ -478,12 +482,57 @@
             this.label2.TabIndex = 101;
             this.label2.Text = "First Name";
             // 
+            // ClinicLocSecl
+            // 
+            this.ClinicLocSecl.AutoSize = true;
+            this.ClinicLocSecl.Font = new System.Drawing.Font("OCR A Extended", 14.25F);
+            this.ClinicLocSecl.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(7)))), ((int)(((byte)(73)))));
+            this.ClinicLocSecl.Location = new System.Drawing.Point(738, 326);
+            this.ClinicLocSecl.Name = "ClinicLocSecl";
+            this.ClinicLocSecl.Size = new System.Drawing.Size(222, 25);
+            this.ClinicLocSecl.TabIndex = 125;
+            this.ClinicLocSecl.Text = "Clinic Location";
+            // 
+            // ClinicLocSec
+            // 
+            this.ClinicLocSec.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.ClinicLocSec.DropDownWidth = 196;
+            this.ClinicLocSec.Enabled = false;
+            this.ClinicLocSec.Items.AddRange(new object[] {
+            " "});
+            this.ClinicLocSec.Location = new System.Drawing.Point(743, 355);
+            this.ClinicLocSec.Margin = new System.Windows.Forms.Padding(4);
+            this.ClinicLocSec.Name = "ClinicLocSec";
+            this.ClinicLocSec.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.Office2010Blue;
+            this.ClinicLocSec.Size = new System.Drawing.Size(277, 38);
+            this.ClinicLocSec.StateActive.ComboBox.Border.Color1 = System.Drawing.Color.Black;
+            this.ClinicLocSec.StateActive.ComboBox.Border.Color2 = System.Drawing.Color.Black;
+            this.ClinicLocSec.StateActive.ComboBox.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.ClinicLocSec.StateCommon.ComboBox.Back.Color1 = System.Drawing.Color.White;
+            this.ClinicLocSec.StateCommon.ComboBox.Border.Color1 = System.Drawing.Color.DarkGray;
+            this.ClinicLocSec.StateCommon.ComboBox.Border.Color2 = System.Drawing.Color.DarkGray;
+            this.ClinicLocSec.StateCommon.ComboBox.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.ClinicLocSec.StateCommon.ComboBox.Border.Rounding = 18;
+            this.ClinicLocSec.StateCommon.ComboBox.Content.Font = new System.Drawing.Font("OCR A Extended", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ClinicLocSec.StateCommon.ComboBox.Content.Padding = new System.Windows.Forms.Padding(1);
+            this.ClinicLocSec.StateCommon.Item.Content.ShortText.Font = new System.Drawing.Font("OCR A Extended", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ClinicLocSec.StateDisabled.ComboBox.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.ClinicLocSec.TabIndex = 124;
+            // 
             // UpdateSecretaryInfo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(241)))), ((int)(((byte)(255)))));
             this.ClientSize = new System.Drawing.Size(1319, 626);
+            this.Controls.Add(this.ClinicLocSecl);
+            this.Controls.Add(this.ClinicLocSec);
             this.Controls.Add(this.phoneNumberValidationLabel);
             this.Controls.Add(this.SalaryLabel);
             this.Controls.Add(this.lastNameLabel);
@@ -509,6 +558,7 @@
             this.kryptonPanel1.ResumeLayout(false);
             this.kryptonPanel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ClinicLocSec)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -539,5 +589,7 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label ClinicLocSecl;
+        private ComponentFactory.Krypton.Toolkit.KryptonComboBox ClinicLocSec;
     }
 }

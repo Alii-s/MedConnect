@@ -75,5 +75,17 @@ namespace MedConnect.Admin
             DoctorMainForm form = new DoctorMainForm(UserID,1);
             form.Show();
         }
+
+        private void AdminMainForm_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void AddCl_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            AddClinic form = new AddClinic(UserID);
+            form.Show();    
+        }
     }
 }
