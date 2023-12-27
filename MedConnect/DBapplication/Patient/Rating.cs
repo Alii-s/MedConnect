@@ -62,13 +62,16 @@ namespace MedConnect.Patient
 
         private void doneButton_Click(object sender, EventArgs e)
         {
-            if (controller.InsertRating(int.Parse(sessionDate.SelectedValue.ToString()),Comments.Text,int.Parse(ratingValue.Text), int.Parse(SessionInfo.Rows[sessionDate.SelectedIndex][3].ToString()),UserID) != 0)
+            if (SessionInfo != null)
             {
-                KryptonMessageBox.Show("Rating Successful");
-            }
-            else
-            {
-                KryptonMessageBox.Show("Rating Not Successful");
+                if (controller.InsertRating(int.Parse(sessionDate.SelectedValue.ToString()), Comments.Text, int.Parse(ratingValue.Text), int.Parse(SessionInfo.Rows[sessionDate.SelectedIndex][3].ToString()), UserID) != 0)
+                {
+                    KryptonMessageBox.Show("Rating Successful");
+                }
+                else
+                {
+                    KryptonMessageBox.Show("Rating Not Successful");
+                }
             }
         }
 
