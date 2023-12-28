@@ -31,15 +31,15 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AdminMainForm));
             this.panel1 = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
+            this.logOut = new System.Windows.Forms.Button();
+            this.closeApplication = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.updatInfo = new ComponentFactory.Krypton.Toolkit.KryptonButton();
             this.kryptonButton1 = new ComponentFactory.Krypton.Toolkit.KryptonButton();
             this.Statistics = new ComponentFactory.Krypton.Toolkit.KryptonButton();
             this.Switch = new ComponentFactory.Krypton.Toolkit.KryptonButton();
             this.AddCl = new ComponentFactory.Krypton.Toolkit.KryptonButton();
-            this.logOut = new System.Windows.Forms.Button();
-            this.closeApplication = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -55,9 +55,9 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.ForeColor = System.Drawing.Color.White;
             this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1337, 153);
+            this.panel1.Size = new System.Drawing.Size(1003, 124);
             this.panel1.TabIndex = 1;
             // 
             // label2
@@ -65,32 +65,77 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("OCR A Extended", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(7)))), ((int)(((byte)(73)))));
-            this.label2.Location = new System.Drawing.Point(327, 120);
+            this.label2.Location = new System.Drawing.Point(245, 98);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(174, 20);
+            this.label2.Size = new System.Drawing.Size(143, 17);
             this.label2.TabIndex = 46;
             this.label2.Text = "Change Password";
             this.label2.Click += new System.EventHandler(this.label2_Click);
             this.label2.MouseEnter += new System.EventHandler(this.label2_MouseEnter);
             this.label2.MouseLeave += new System.EventHandler(this.label2_MouseLeave);
             // 
+            // logOut
+            // 
+            this.logOut.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.logOut.FlatAppearance.BorderSize = 0;
+            this.logOut.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.logOut.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.logOut.Image = ((System.Drawing.Image)(resources.GetObject("logOut.Image")));
+            this.logOut.Location = new System.Drawing.Point(11, 11);
+            this.logOut.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.logOut.Name = "logOut";
+            this.logOut.Size = new System.Drawing.Size(45, 37);
+            this.logOut.TabIndex = 8;
+            this.logOut.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.logOut.UseVisualStyleBackColor = true;
+            this.logOut.Click += new System.EventHandler(this.logOut_Click);
+            // 
+            // closeApplication
+            // 
+            this.closeApplication.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.closeApplication.FlatAppearance.BorderSize = 0;
+            this.closeApplication.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.closeApplication.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.closeApplication.Image = ((System.Drawing.Image)(resources.GetObject("closeApplication.Image")));
+            this.closeApplication.Location = new System.Drawing.Point(947, 11);
+            this.closeApplication.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.closeApplication.Name = "closeApplication";
+            this.closeApplication.Size = new System.Drawing.Size(45, 37);
+            this.closeApplication.TabIndex = 6;
+            this.closeApplication.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.closeApplication.UseVisualStyleBackColor = true;
+            this.closeApplication.Click += new System.EventHandler(this.closeApplication_Click);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::MedConnect.Properties.Resources.setting__1_;
+            this.pictureBox1.Location = new System.Drawing.Point(94, 11);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(142, 91);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 1;
+            this.pictureBox1.TabStop = false;
+            // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("OCR A Extended", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(7)))), ((int)(((byte)(73)))));
-            this.label1.Location = new System.Drawing.Point(320, 47);
+            this.label1.Location = new System.Drawing.Point(240, 38);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(207, 63);
+            this.label1.Size = new System.Drawing.Size(167, 50);
             this.label1.TabIndex = 0;
             this.label1.Text = "Hello";
             // 
             // updatInfo
             // 
-            this.updatInfo.Location = new System.Drawing.Point(42, 185);
-            this.updatInfo.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.updatInfo.Location = new System.Drawing.Point(32, 150);
+            this.updatInfo.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.updatInfo.Name = "updatInfo";
-            this.updatInfo.Size = new System.Drawing.Size(348, 249);
+            this.updatInfo.Size = new System.Drawing.Size(261, 202);
             this.updatInfo.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(241)))), ((int)(((byte)(255)))));
             this.updatInfo.StateCommon.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(241)))), ((int)(((byte)(255)))));
             this.updatInfo.StateCommon.Back.ImageStyle = ComponentFactory.Krypton.Toolkit.PaletteImageStyle.CenterMiddle;
@@ -114,10 +159,10 @@
             // 
             // kryptonButton1
             // 
-            this.kryptonButton1.Location = new System.Drawing.Point(892, 185);
-            this.kryptonButton1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.kryptonButton1.Location = new System.Drawing.Point(669, 150);
+            this.kryptonButton1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.kryptonButton1.Name = "kryptonButton1";
-            this.kryptonButton1.Size = new System.Drawing.Size(348, 249);
+            this.kryptonButton1.Size = new System.Drawing.Size(261, 202);
             this.kryptonButton1.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(241)))), ((int)(((byte)(255)))));
             this.kryptonButton1.StateCommon.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(241)))), ((int)(((byte)(255)))));
             this.kryptonButton1.StateCommon.Back.ImageStyle = ComponentFactory.Krypton.Toolkit.PaletteImageStyle.CenterMiddle;
@@ -141,10 +186,10 @@
             // 
             // Statistics
             // 
-            this.Statistics.Location = new System.Drawing.Point(809, 461);
-            this.Statistics.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Statistics.Location = new System.Drawing.Point(607, 375);
+            this.Statistics.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Statistics.Name = "Statistics";
-            this.Statistics.Size = new System.Drawing.Size(348, 249);
+            this.Statistics.Size = new System.Drawing.Size(261, 202);
             this.Statistics.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(241)))), ((int)(((byte)(255)))));
             this.Statistics.StateCommon.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(241)))), ((int)(((byte)(255)))));
             this.Statistics.StateCommon.Back.ImageStyle = ComponentFactory.Krypton.Toolkit.PaletteImageStyle.CenterMiddle;
@@ -164,13 +209,14 @@
             this.Statistics.Values.Image = global::MedConnect.Properties.Resources.bar_chart;
             this.Statistics.Values.ImageTransparentColor = System.Drawing.Color.Transparent;
             this.Statistics.Values.Text = "Clinic Statistics";
+            this.Statistics.Click += new System.EventHandler(this.Statistics_Click);
             // 
             // Switch
             // 
-            this.Switch.Location = new System.Drawing.Point(125, 450);
-            this.Switch.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Switch.Location = new System.Drawing.Point(94, 366);
+            this.Switch.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Switch.Name = "Switch";
-            this.Switch.Size = new System.Drawing.Size(500, 249);
+            this.Switch.Size = new System.Drawing.Size(375, 202);
             this.Switch.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(241)))), ((int)(((byte)(255)))));
             this.Switch.StateCommon.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(241)))), ((int)(((byte)(255)))));
             this.Switch.StateCommon.Back.ImageStyle = ComponentFactory.Krypton.Toolkit.PaletteImageStyle.CenterMiddle;
@@ -194,10 +240,10 @@
             // 
             // AddCl
             // 
-            this.AddCl.Location = new System.Drawing.Point(470, 185);
-            this.AddCl.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.AddCl.Location = new System.Drawing.Point(352, 150);
+            this.AddCl.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.AddCl.Name = "AddCl";
-            this.AddCl.Size = new System.Drawing.Size(348, 249);
+            this.AddCl.Size = new System.Drawing.Size(261, 202);
             this.AddCl.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(241)))), ((int)(((byte)(255)))));
             this.AddCl.StateCommon.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(241)))), ((int)(((byte)(255)))));
             this.AddCl.StateCommon.Back.ImageStyle = ComponentFactory.Krypton.Toolkit.PaletteImageStyle.CenterMiddle;
@@ -219,55 +265,12 @@
             this.AddCl.Values.Text = "Add Clinic";
             this.AddCl.Click += new System.EventHandler(this.AddCl_Click);
             // 
-            // logOut
-            // 
-            this.logOut.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.logOut.FlatAppearance.BorderSize = 0;
-            this.logOut.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.logOut.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.logOut.Image = ((System.Drawing.Image)(resources.GetObject("logOut.Image")));
-            this.logOut.Location = new System.Drawing.Point(15, 14);
-            this.logOut.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.logOut.Name = "logOut";
-            this.logOut.Size = new System.Drawing.Size(60, 46);
-            this.logOut.TabIndex = 8;
-            this.logOut.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.logOut.UseVisualStyleBackColor = true;
-            this.logOut.Click += new System.EventHandler(this.logOut_Click);
-            // 
-            // closeApplication
-            // 
-            this.closeApplication.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.closeApplication.FlatAppearance.BorderSize = 0;
-            this.closeApplication.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.closeApplication.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.closeApplication.Image = ((System.Drawing.Image)(resources.GetObject("closeApplication.Image")));
-            this.closeApplication.Location = new System.Drawing.Point(1263, 14);
-            this.closeApplication.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.closeApplication.Name = "closeApplication";
-            this.closeApplication.Size = new System.Drawing.Size(60, 46);
-            this.closeApplication.TabIndex = 6;
-            this.closeApplication.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.closeApplication.UseVisualStyleBackColor = true;
-            this.closeApplication.Click += new System.EventHandler(this.closeApplication_Click);
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::MedConnect.Properties.Resources.setting__1_;
-            this.pictureBox1.Location = new System.Drawing.Point(125, 14);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(189, 112);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 1;
-            this.pictureBox1.TabStop = false;
-            // 
             // AdminMainForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(241)))), ((int)(((byte)(255)))));
-            this.ClientSize = new System.Drawing.Size(1337, 721);
+            this.ClientSize = new System.Drawing.Size(1003, 586);
             this.Controls.Add(this.AddCl);
             this.Controls.Add(this.Switch);
             this.Controls.Add(this.Statistics);
@@ -275,7 +278,7 @@
             this.Controls.Add(this.updatInfo);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "AdminMainForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "AdminMainForm";

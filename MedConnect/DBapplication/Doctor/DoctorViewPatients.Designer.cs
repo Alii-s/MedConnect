@@ -57,6 +57,7 @@
             this.label1.Size = new System.Drawing.Size(486, 50);
             this.label1.TabIndex = 0;
             this.label1.Text = "Patients Records";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // panel1
             // 
@@ -73,6 +74,7 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(987, 124);
             this.panel1.TabIndex = 24;
+            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // button1
             // 
@@ -132,6 +134,7 @@
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // kryptonDataGridView1
             // 
@@ -174,6 +177,7 @@
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
             this.firstNameTextBox.TabIndex = 34;
             this.firstNameTextBox.TextChanged += new System.EventHandler(this.firstNameTextBox_TextChanged);
+            this.firstNameTextBox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.firstNameTextBox_KeyPress);
             // 
             // label2
             // 
@@ -186,6 +190,7 @@
             this.label2.Size = new System.Drawing.Size(62, 23);
             this.label2.TabIndex = 33;
             this.label2.Text = "Name";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // doneButton
             // 
@@ -247,6 +252,7 @@
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
             this.kryptonTextBox1.TabIndex = 38;
             this.kryptonTextBox1.TextChanged += new System.EventHandler(this.kryptonTextBox1_TextChanged);
+            this.kryptonTextBox1.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.kryptonTextBox1_KeyPress);
             // 
             // label3
             // 
@@ -259,6 +265,7 @@
             this.label3.Size = new System.Drawing.Size(166, 23);
             this.label3.TabIndex = 37;
             this.label3.Text = "Phone Number";
+            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // DoctorViewPatients
             // 

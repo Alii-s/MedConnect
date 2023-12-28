@@ -47,7 +47,7 @@ namespace MedConnect.Secertary
             string query = "SELECT Lname , UserID FROM Users WHERE Type = 'P';";
             return dbMan.ExecuteReader(query);
         }
-        public int UpdatePatientInfo(int PatientID,int UserID, string Fname, string Lname, string PhoneNumber, string occupation, string City, int Building_Num, string Street_Name, string Marital_State, string email)
+        public int UpdatePatientInfo(int PatientID,int UserID, string Fname, string Lname, string PhoneNumber, string occupation, string City, int Building_Num, string Street_Name, string Marital_State)
         {
             string StoredProcedureName = SecretaryProcdures.UpdatePatient;
 
@@ -62,7 +62,6 @@ namespace MedConnect.Secertary
             Parameters.Add("@Building_Num", Building_Num);
             Parameters.Add("@Street_Name", Street_Name);
             Parameters.Add("@Marital_State", Marital_State);
-            Parameters.Add("@email", email);
             return dbMan.ExecuteNonQuery(StoredProcedureName, Parameters);
         }
         public DataTable SelectDoctorName()

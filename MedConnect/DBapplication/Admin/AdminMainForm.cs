@@ -87,5 +87,12 @@ namespace MedConnect.Admin
             AddClinic form = new AddClinic(UserID);
             form.Show();    
         }
+
+        private void Statistics_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            ClinicStatistics c = new ClinicStatistics(UserID);
+            c.Show();
+        }
     }
 }

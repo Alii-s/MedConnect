@@ -20,7 +20,7 @@ namespace MedConnect.Secretary
     
     public partial class UpdatePatientSec : Form
     {
-        PatientController PatientController = new PatientController();
+        PatientController x = new PatientController();
         SecretaryController SecretaryController = new SecretaryController();
         int UserID;  //Secretary
         int PatientID;
@@ -33,7 +33,7 @@ namespace MedConnect.Secretary
             PatientNameComboBox.DataSource = dt;
             PatientNameComboBox.ValueMember = "UserID";
             PatientNameComboBox.DisplayMember = "Lname";
-             
+             emailTextBox.Enabled= false;
 
         }
 
@@ -180,8 +180,10 @@ namespace MedConnect.Secretary
             doneButton.Visible = false;
             doneButton.Enabled = false;
             //updating database
-            SecretaryController.UpdatePatientInfo(UserID, Convert.ToInt32(PatientNameComboBox.SelectedValue),firstNameTextBox.Text, lastNameTextBox.Text, phoneNumberTextBox.Text, occupationTextBox.Text, cityTextBox.Text, int.Parse(buildingNoTextBox.Text), streetNameTextBox.Text, maritalStateTextBox.Text,emailTextBox.Text.ToString());
-            KryptonMessageBox.Show("Info Editted Successfully");
+            if (x.UpdatePatientInfo(Convert.ToInt32(PatientNameComboBox.SelectedValue), firstNameTextBox.Text, lastNameTextBox.Text, phoneNumberTextBox.Text, occupationTextBox.Text, cityTextBox.Text, int.Parse(buildingNoTextBox.Text), streetNameTextBox.Text, maritalStateTextBox.Text) != 0)
+            {
+                KryptonMessageBox.Show("Info Editted Successfully");
+            }
         }
 
         private void label2_Click(object sender, EventArgs e)
@@ -283,7 +285,7 @@ namespace MedConnect.Secretary
               DateTime DateOfBirth;
            
               DataTable userData;
-            userData = PatientController.SelectPatientInfo(Convert.ToInt32(PatientNameComboBox.SelectedValue));
+            userData = x.SelectPatientInfo(Convert.ToInt32(PatientNameComboBox.SelectedValue));
             Fname = userData.Rows[0][0].ToString();
             Lname = userData.Rows[0][1].ToString();
             Email = userData.Rows[0][2].ToString();
@@ -433,6 +435,11 @@ namespace MedConnect.Secretary
             this.Close();
             Secretary form = new Secretary(UserID);
             form.Show();
+        }
+
+        private void PatientNameComboBox_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

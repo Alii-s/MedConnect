@@ -26,7 +26,7 @@ namespace MedConnect.Patient
             clinicCity.DisplayMember = "City";
             clinicCity.ValueMember = "ClinicID";
             clinicCity.DataSource = clinicInfo;
-            reservationDate.MinDate = DateTime.Today.AddDays(+1);
+            reservationDate.MinDate = DateTime.Today;
             reservationDate.MaxDate = DateTime.Today.AddMonths(1);
             reservationDate.Value = DateTime.Today.AddDays(1);
             typeBox.DisplayMember = "Value";

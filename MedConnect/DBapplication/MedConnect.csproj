@@ -110,6 +110,9 @@
     <Compile Include="Admin\ClinicStatistics.Designer.cs">
       <DependentUpon>ClinicStatistics.cs</DependentUpon>
     </Compile>
+    <Compile Include="Admin\DataSet1.cs">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Admin\DataSet1.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -144,6 +147,12 @@
     </Compile>
     <Compile Include="Doctor\ClinicsAppointments.Designer.cs">
       <DependentUpon>ClinicsAppointments.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Doctor\DiagnosisSessions.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Doctor\DiagnosisSessions.Designer.cs">
+      <DependentUpon>DiagnosisSessions.cs</DependentUpon>
     </Compile>
     <Compile Include="Doctor\DoctorController.cs" />
     <Compile Include="Doctor\DoctorDiagnosisSession.cs">
@@ -366,6 +375,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Doctor\ClinicsAppointments.resx">
       <DependentUpon>ClinicsAppointments.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Doctor\DiagnosisSessions.resx">
+      <DependentUpon>DiagnosisSessions.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Doctor\DoctorDiagnosisSession.resx">
       <DependentUpon>DoctorDiagnosisSession.cs</DependentUpon>

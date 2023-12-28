@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ComponentFactory.Krypton.Toolkit;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -44,14 +45,14 @@ namespace MedConnect.Doctor
                 !string.IsNullOrEmpty(kryptonTextBox3.Text))
             {
                 controllerObj.InsertIntoPrescription(sessionID, medicineId, quantity, dosage, kryptonTextBox3.Text);
-                MessageBox.Show("Prescription Added Successfully");
+                KryptonMessageBox.Show("Prescription Added Successfully");
                 this.Close();
                 DoctorMainForm form = new DoctorMainForm(DoctorID, 0);
                 form.Show();
             }
             else
             {
-                MessageBox.Show("Please ensure all fields are correctly filled.");
+                KryptonMessageBox.Show("Please ensure all fields are correctly filled.");
             }
         }
 
@@ -88,6 +89,13 @@ namespace MedConnect.Doctor
         private void closeApplication_Click(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+
+        private void kryptonButton2_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            DoctorMainForm form = new DoctorMainForm(DoctorID, 0);
+            form.Show();
         }
     }
 }

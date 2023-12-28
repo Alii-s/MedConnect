@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using ComponentFactory.Krypton.Toolkit;
 
 namespace MedConnect.Doctor
 {
@@ -26,6 +27,8 @@ namespace MedConnect.Doctor
             kryptonComboBox1.DataSource = doctorController.SelectAllClinicData();
             kryptonComboBox1.DisplayMember = "City";
             kryptonComboBox1.ValueMember = "ClinicID";
+            sessionDate.SelectedIndex = 0;
+            kryptonComboBox1.SelectedIndex = 0;
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -81,10 +84,10 @@ namespace MedConnect.Doctor
            int value=  doctorController.InsertIntoDiagnosisSessionsAndMedicalRecords(DoctorID, int.Parse(kryptonComboBox1.SelectedValue.ToString()), patientId
              , sessionDate.Text, date, Comments.Text, kryptonTextBox1.Text, kryptonTextBox3.Text, kryptonTextBox2.Text, kryptonTextBox4.Text);
             if (value == 0)
-                MessageBox.Show("Session Not Added Successfully");
+                KryptonMessageBox.Show("Session Not Added Successfully");
             else
             {
-                MessageBox.Show("Session Added Successfully");
+                KryptonMessageBox.Show("Session Added Successfully");
                 this.Close();
                 int sessionid = doctorController.SelectSessionId(DoctorID, int.Parse(kryptonComboBox1.SelectedValue.ToString()), patientId, type, date);
                 DoctorPrescribeMedicine doctorPrescribeMedicine = new DoctorPrescribeMedicine(sessionid, DoctorID);

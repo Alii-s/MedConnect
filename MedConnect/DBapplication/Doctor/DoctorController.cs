@@ -313,6 +313,17 @@ namespace MedConnect.Doctor
             }
         #endregion
 
+        public DataTable SelectSessions()
+        {
+            string query = "SELECT Session_ID,Date,CONCAT(Fname,' ',Lname) AS 'Patient Name',DoctorID ,CONCAT(City,' ',Street_Name,' ',Building_num) AS 'Clinic Location',Diagnosis_Sessions.Type,Ex_Notes,Vital_Signs FROM Diagnosis_Sessions,Users,Clinics WHERE Diagnosis_Sessions.IsActive=1 AND PatientID=UserID AND Diagnosis_Sessions.ClinicID=Clinics.ClinicID";
+            return dbMan.ExecuteReader(query);
+        }
+
+        public DataTable SelectPatientRecords()
+        {
+            string query = "SELECT CONCAT(Fname,' ', Lname) as 'Name', Previous_illness AS 'Previous Illnesses', Ongoing_medication as 'Ongoing Medication',Previous_Surgeries as 'Previous Surgeries' FROM Users,Patients,MedicalRecords WHERE MedicalRecords.PatientID=UserID AND Patients.PatientID=MedicalRecords.PatientID AND Users.IsActive=1;";
+            return dbMan.ExecuteReader(query);
+        }
 
     }
 }

@@ -440,7 +440,7 @@ namespace MedConnect.Admin
                             KryptonMessageBox.Show("Error in Registerion");
                         }
                         else
-                            KryptonMessageBox.Show("YOU CAN REGISTER NOW!!! Patient");
+                            KryptonMessageBox.Show("Patient Registered Successfully");
                         return;
                         //call Patient query/procedure
                     }
@@ -464,7 +464,7 @@ namespace MedConnect.Admin
                         KryptonMessageBox.Show("Error in Registerion");
                     }
                     else
-                        KryptonMessageBox.Show("YOU CAN REGISTER NOW!!! Secretary");
+                        KryptonMessageBox.Show("Secretary Registered Successfully");
                     return;
                     //call secretary query/procedure
                 }
@@ -477,7 +477,7 @@ namespace MedConnect.Admin
                     KryptonMessageBox.Show("Error in Registerion");
                 }
                 else
-                    KryptonMessageBox.Show("YOU CAN REGISTER NOW!!! Pharmacist");
+                    KryptonMessageBox.Show("Pharmacist Registered Successfully");
                 return;
                 //call Pharmacist query/procedure
             }
@@ -523,7 +523,7 @@ namespace MedConnect.Admin
                         KryptonMessageBox.Show("Error in Registerion");
                     }
                     else
-                        KryptonMessageBox.Show("YOU CAN REGISTER NOW!!! DOCTOR");
+                        KryptonMessageBox.Show("Doctor Registered Successfully");
                     return;
                     //call Doctor query/procedure
                 }
@@ -570,7 +570,7 @@ namespace MedConnect.Admin
                         KryptonMessageBox.Show("Error in Registerion");
                     }
                     else
-                        KryptonMessageBox.Show("YOU CAN REGISTER NOW!!! Admin");
+                        KryptonMessageBox.Show("Admin Registered Successfully");
                     return;
                     //call ADMIN query/procedure
                 }

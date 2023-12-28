@@ -95,5 +95,13 @@ namespace MedConnect.Doctor
             AdminMainForm form = new AdminMainForm(UserId);
             form.Show();
         }
+
+        private void kryptonButton5_Click(object sender, EventArgs e)
+        {
+
+            DiagnosisSessions f = new DiagnosisSessions(UserId);
+            f.Show();
+            this.Close();
+        }
     }
 }
